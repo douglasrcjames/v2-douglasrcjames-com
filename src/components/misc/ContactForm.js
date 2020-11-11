@@ -44,7 +44,7 @@ export default class ContactForm extends Component {
                             <Grid fluid>
                                 {/* Row 1 */}
                                 <Row>
-                                    <Col sm={12} md={6} className="s-margin-b">
+                                    <Col sm={12} md={6} className="sm-margin-b">
                                         <label>Name:</label>
                                         <br/>
                                         <Field
@@ -63,7 +63,7 @@ export default class ContactForm extends Component {
                                         )}
                                         
                                     </Col>
-                                    <Col sm={12} md={6} className="s-margin-b">
+                                    <Col sm={12} md={6} className="sm-margin-b">
                                         <label>Email:</label>
                                         <br/>
                                         <Field
@@ -83,7 +83,7 @@ export default class ContactForm extends Component {
                                     </Col>
                                 </Row>
                                 <Row>
-                                    <Col xs={12} className="s-margin-b">
+                                    <Col xs={12} className="sm-margin-b">
                                         <label>Message:</label>
                                         <br/>
                                         <Field
@@ -102,9 +102,10 @@ export default class ContactForm extends Component {
                                         )}
                                     </Col>
                                 </Row>
-                                <Row className="m-margin-b">
+                                <Row center="xs" className="md-margin-b">
                                     <Col xs={12}>
                                         <button 
+                                            className="md-blue-btn"
                                             type="submit" 
                                             disabled={!props.dirty && !props.isSubmitting}>
                                                 Submit

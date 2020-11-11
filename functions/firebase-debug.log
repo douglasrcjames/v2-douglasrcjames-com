@@ -1,0 +1,116 @@
+[debug] [2020-11-10T01:44:29.167Z] ----------------------------------------------------------------------
+[debug] [2020-11-10T01:44:29.169Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\dougl\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-11-10T01:44:29.169Z] CLI Version:   8.14.1
+[debug] [2020-11-10T01:44:29.169Z] Platform:      win32
+[debug] [2020-11-10T01:44:29.169Z] Node Version:  v14.7.0
+[debug] [2020-11-10T01:44:29.175Z] Time:          Mon Nov 09 2020 17:44:29 GMT-0800 (Pacific Standard Time)
+[debug] [2020-11-10T01:44:29.175Z] ----------------------------------------------------------------------
+[debug] [2020-11-10T01:44:29.175Z] 
+[debug] [2020-11-10T01:44:29.182Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-11-10T01:44:29.182Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\dougl\OneDrive\Documents\GitHub\douglasrcjames.com
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2020-11-10T01:44:41.539Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-11-10T01:44:41.539Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-11-10T01:44:41.730Z] <<< HTTP RESPONSE 200 {"date":"Tue, 10 Nov 2020 01:44:42 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-10T01:44:41.733Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/dougs-react-boiler  
+ 
+[debug] [2020-11-10T01:44:42.005Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 10 Nov 2020 01:44:42 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  Using project dougs-react-boiler (dougs-react-boiler) 
+[info] 
+=== Firestore Setup
+[debug] [2020-11-10T01:44:42.017Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/dougs-react-boiler/services/firestore.googleapis.com  
+ 
+[debug] [2020-11-10T01:44:42.425Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 10 Nov 2020 01:44:42 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-10T01:44:42.426Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/dougs-react-boiler  
+ 
+[debug] [2020-11-10T01:44:42.843Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 10 Nov 2020 01:44:43 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-10T01:44:42.844Z] database_type: CLOUD_FIRESTORE
+[debug] [2020-11-10T01:44:42.845Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-11-10T01:44:42.846Z] > authorizing via signed-in user
+[debug] [2020-11-10T01:44:42.846Z] [iam] checking project dougs-react-boiler for permissions ["firebase.projects.get"]
+[debug] [2020-11-10T01:44:42.847Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/dougs-react-boiler:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-11-10T01:44:43.130Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 10 Nov 2020 01:44:43 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=85","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2020-11-10T01:45:12.355Z] ----------------------------------------------------------------------
+[debug] [2020-11-10T01:45:12.356Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\dougl\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-11-10T01:45:12.356Z] CLI Version:   8.14.1
+[debug] [2020-11-10T01:45:12.357Z] Platform:      win32
+[debug] [2020-11-10T01:45:12.357Z] Node Version:  v14.7.0
+[debug] [2020-11-10T01:45:12.357Z] Time:          Mon Nov 09 2020 17:45:12 GMT-0800 (Pacific Standard Time)
+[debug] [2020-11-10T01:45:12.357Z] ----------------------------------------------------------------------
+[debug] [2020-11-10T01:45:12.357Z] 
+[debug] [2020-11-10T01:45:12.361Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-11-10T01:45:12.362Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\dougl\OneDrive\Documents\GitHub\douglasrcjames.com
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2020-11-10T01:45:28.768Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/dougs-react-boiler  
+ 
+[debug] [2020-11-10T01:45:29.034Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 10 Nov 2020 01:45:29 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  Using project dougs-react-boiler (dougs-react-boiler) 
+[info] 
+=== Firestore Setup
+[debug] [2020-11-10T01:45:29.052Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/dougs-react-boiler/services/firestore.googleapis.com  
+ 
+[debug] [2020-11-10T01:45:29.422Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 10 Nov 2020 01:45:29 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-10T01:45:29.422Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/dougs-react-boiler  
+ 
+[debug] [2020-11-10T01:45:29.733Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 10 Nov 2020 01:45:30 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-10T01:45:29.733Z] database_type: CLOUD_FIRESTORE
+[debug] [2020-11-10T01:45:29.733Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-11-10T01:45:29.734Z] > authorizing via signed-in user
+[debug] [2020-11-10T01:45:29.734Z] [iam] checking project dougs-react-boiler for permissions ["firebase.projects.get"]
+[debug] [2020-11-10T01:45:29.734Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/dougs-react-boiler:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-11-10T01:45:29.944Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 10 Nov 2020 01:45:30 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=72","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 

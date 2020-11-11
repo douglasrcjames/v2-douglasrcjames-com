@@ -1,0 +1,68 @@
+/*//*/ /*/ Variables /*/ /*//*/
+//// Colors ////
+$white: #fff;
+$black: #000;
+
+$dark-grey: #6B6B6B;
+$grey: #A1A1A1;
+$light-grey: #D6D6D6;
+
+$dark-blue: #151D28;
+$blue: #202D3E;
+$light-blue: #31445E;
+$xlight-blue: #3F5878;
+
+$dark-green: #529438;
+$green: #5FAD41;
+$light-green: #79C15C;
+
+$dark-yellow: #D6A70A;
+$yellow: #EEBA0B;
+$light-yellow: #F6CB3C;
+
+$dark-red: #CB152B;
+$red: #E71D36;
+$light-red: #EC465A;
+
+$dark-orange: #E05515;
+$orange: #EB6424;
+$light-orange: #EF8757;
+
+//// Fonts ////
+@font-face {
+    font-family: "Roboto-Thin";
+    src: url(../fonts/Roboto/Roboto-Thin.ttf);
+}
+@font-face {
+    font-family: "Roboto-Light";
+    src: url(../fonts/Roboto/Roboto-Light.ttf);
+}
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: "Roboto-Medium";
+    src: url(../fonts/Roboto/Roboto-Medium.ttf);
+}
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url(../fonts/Roboto/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: "Roboto-Black";
+    src: url(../fonts/Roboto/Roboto-Black.ttf);
+}
+@font-face {
+    font-family: "Roboto-Italic";
+    src: url(../fonts/Roboto/Roboto-Italic.ttf);
+}
+
+$roboto-thin: "Roboto-Thin", "Arial Thin", sans-serif;
+$roboto-light: "Roboto-Light", "Arial Light", sans-serif;
+$roboto-regular: "Roboto-Regular", "Arial Regular", sans-serif;
+$roboto-medium: "Roboto-Medium", "Arial Medium", sans-serif;
+$roboto-bold: "Roboto-Bold", "Arial Bold", sans-serif;
+$roboto-black: "Roboto-Black", "Arial Black", sans-serif;
+$roboto-italic: "Roboto-Italic", "Arial Italic", sans-serif;
+// note: Roboto as primary, Arial if Roboto not available, then just an Sans-Serif if Arial not available

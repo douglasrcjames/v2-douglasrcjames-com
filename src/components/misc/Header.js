@@ -1,38 +1,40 @@
 import React, { Component } from 'react'
-import { NavLink, Link, withRouter } from "react-router-dom";
-import "../../assets/css/Header.css";
+import { NavLink, withRouter } from "react-router-dom";
+import { HashLink as HashNavLink } from 'react-router-hash-link';
+
+import "../../assets/css/Header.scss";
 
 class Header extends Component {
     render() {
         return (
             <header>
                 <nav className="nav-container">
-                    <Link to="/" className="">
-                        {/* TODO: update name & logo */}
-                        <img
-                            className="nav-logo"
-                            alt="logo"
-                            src={require("../../assets/images/logos/logo512.png")}
-                        />
-                        <span className="nav-l-text">Doug's React Boiler</span>
-                    </Link>
+                    <NavLink exact to="/" className="nav-lg-text" activeClassName="nav-select">
+                        Douglas R.C. James
+                    </NavLink>
                     <div className="nav-links">
                         <NavLink 
                             exact
-                            to="/" 
+                            to="/experience" 
                             className="nav-link" 
-                            activeClassName="nav-select">
-                            Home
+                            activeClassName="nav-select"
+                        >
+                            Experience
                         </NavLink>
                         <NavLink 
                             exact
-                            to="/about" 
+                            to="/social" 
                             className="nav-link" 
-                            activeClassName="nav-select">
-                            About
+                            activeClassName="nav-select"
+                        >
+                            Social
                         </NavLink>
+                        <HashNavLink 
+                            to="/#Contact" 
+                            className="md-blue-btn nav-button">
+                            Contact
+                        </HashNavLink>
                     </div>
-                    
                 </nav>
             </header>
         )
