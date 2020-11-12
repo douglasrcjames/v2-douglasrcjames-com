@@ -9,46 +9,248 @@
     vertical-align: middle;
 }
 
+// nav-lg-text: Main "logo" name on left //
 .nav-lg-text {
+    position: relative;
     font-size: 2rem;
     color: $black;
     vertical-align: middle;
     display: inline-block;
     font-weight: 700;
+    margin: 20px;
+    padding: 0 0 10px 15px;
+    text-decoration: none !important;
 }
 
+.nav-lg-text:hover {
+    font-family: $roboto-bold !important;
+}
+
+// Lines to left and under on hover
+.nav-lg-text:hover:after {
+    content: "";
+    background: $light-blue;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 75%;
+    width: 2px;
+    border-radius: 4px;
+}
+
+.nav-lg-text:hover:before {
+    content: "";
+    background: $light-blue;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 75%;
+    border-radius: 4px;
+  }
+  
+  // Selected route
+  .nav-lg-text-select {
+    font-family: $roboto-bold !important;
+  }
+
+  // Lines to left and under when selected route
+  .nav-lg-text-select:after {
+    content: "";
+    background: $light-blue;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 75%;
+    width: 2px;
+    border-radius: 4px;
+}
+
+.nav-lg-text-select:before {
+    content: "";
+    background: $light-blue;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 75%;
+    border-radius: 4px;
+  }
+
+// nav-links: to the right of the navbar, full grouping //
 .nav-links {
     float: right;
     text-align: right;
     padding-right: 25px;
 }
 
+// Individual link
 .nav-link {
     display: inline-block;
     cursor: pointer;
-    height: 75px;
-    line-height: 75px;
     color: $black !important;
-    padding: 0px 25px;
+    text-decoration: none !important;
+    margin: 25px;
+    padding: 8px;
     font-size: 20px;
   }
 
 .nav-link:hover {
+    position: relative;
     color: $blue !important;
+    font-family: $roboto-bold !important;
 }
 
+// Lines on hover
+.nav-link:hover:after {
+    content: "";
+    background: $light-blue;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 75%;
+    width: 2px;
+    border-radius: 4px;
+  }
+
+.nav-link:hover:before {
+    content: "";
+    background: $light-blue;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 75%;
+    border-radius: 4px;
+  }
+
+// When selected route
 .nav-select {
+    position: relative;
     color: $light-blue !important;
-    text-decoration: underline !important;
+    font-family: $roboto-bold !important;
 }
+
+.nav-select:after {
+    content: "";
+    background: $light-blue;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 75%;
+    width: 2px;
+    border-radius: 4px;
+  }
+
+.nav-select:before {
+    content: "";
+    background: $light-blue;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 75%;
+    border-radius: 4px;
+  }
 
 .nav-button {
-    margin-left: 25px
+    margin-left: 25px;
+    color: $white !important;
+    text-decoration: none !important;
 }
+
+// Side nav //
+
+.side-menu {
+    nav {
+      ul {
+        list-style: none;
+        text-align: center;
+        li {
+          a {
+            color: $white !important;
+          }
+          a.md-white-btn {
+            color: $blue !important;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  
+  // Individual link
+  .side-nav-link {
+    display: inline-block;
+    cursor: pointer;
+    color: $black !important;
+    text-decoration: none !important;
+    margin: 10px;
+    padding: 8px;
+    font-size: 20px;
+  }
+  
+  .side-nav-link:hover {
+    position: relative;
+    color: $light-grey !important;
+    font-family: $roboto-bold !important;
+  }
+  
+  // Lines on hover
+  .side-nav-link:hover:after {
+    content: "";
+    background: $light-grey;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 75%;
+    width: 2px;
+    border-radius: 4px;
+  }
+  
+  .side-nav-link:hover:before {
+    content: "";
+    background: $light-grey;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 75%;
+    border-radius: 4px;
+  }
+  
+  // When selected route
+  .side-nav-select {
+    position: relative;
+    color: $light-grey !important;
+    font-family: $roboto-bold !important;
+  }
+  
+  .side-nav-select:after {
+    content: "";
+    background: $light-grey;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 75%;
+    width: 2px;
+    border-radius: 4px;
+  }
+  
+  .side-nav-select:before {
+    content: "";
+    background: $light-grey;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 75%;
+    border-radius: 4px;
+  }
 
 /* Mobile */
 @media screen and (max-width: 901px) {
-    .nav-l-text {
+    .nav-lg-text {
         font-size: 1.2rem !important;
     }
     

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import { Helmet } from 'react-helmet';
+import { Link } from 'react-router-dom';
 import ContactForm from '../misc/ContactForm';
 
 export default class Home extends Component {
@@ -19,8 +20,14 @@ export default class Home extends Component {
                     <p>
                         + I'm trained as a computer engineer in Silicon Valley, California.<br/>
                         + I'm a freelance front and back end software developer working with React.js/Native to build great user experiences.<br/>
-                        + I'm working on Minute.tech to connect non-techies to techies for tech support.
+                        + I'm working on <Link to="/experience">Minute.tech</Link> to connect non-techies to techies for tech support.
                     </p>
+                    <Link to="/experience">
+                        <button className="md-blue-btn">
+                            View my work
+                        </button>
+                    </Link>
+                    
                 </div>
             </div>
            

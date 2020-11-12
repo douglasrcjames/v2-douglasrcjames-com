@@ -73,10 +73,20 @@ label {
     font-family: $roboto-bold;
 }
 
-a {
-    text-decoration: none;
+a:link {
+    color: $blue;
+    text-decoration: underline;
     font-family: $roboto-regular;
     cursor: pointer;
+}
+
+a:visited {
+    color: $dark-blue;
+}
+
+a:hover {
+    color: $light-blue;
+    text-decoration: underline;
 }
 
 b {

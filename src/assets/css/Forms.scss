@@ -53,3 +53,18 @@ textarea {
 .md-blue-btn:hover {
   background-color: $light-blue;
 }
+
+.md-white-btn {
+  background-color: $white;
+  font-family: $roboto-bold;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+  padding: 10px 35px;
+  color: $blue !important;
+  border: $dark-grey solid 1px; 
+}
+
+.md-white-btn:hover {
+  background-color: $light-grey;
+}
