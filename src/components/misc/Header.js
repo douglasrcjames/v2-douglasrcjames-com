@@ -6,40 +6,6 @@ import { HashLink as HashNavLink } from 'react-router-hash-link';
 import "../../assets/css/Header.scss";
 import "../../assets/css/Hamburger.scss"
 
-const MobilNav = () => (
-    <nav id="menu">
-      <ul>
-        <li>
-            <NavLink 
-                exact
-                to="/experience" 
-                className="side-nav-link" 
-                activeClassName="side-nav-select"
-            >
-                Experience
-            </NavLink>     
-        </li>
-        <li>
-            <NavLink 
-                exact
-                to="/social" 
-                className="side-nav-link" 
-                activeClassName="side-nav-select"
-            >
-                Social
-            </NavLink>
-        </li>
-        <li className="md-margin-t">
-            <HashNavLink 
-                to="/#Contact" 
-                className="md-white-btn blue">
-                Contact
-            </HashNavLink>
-        </li>
-      </ul>
-    </nav>
-  )
-
 class Header extends Component {
     constructor(props) {
         super(props);
@@ -50,7 +16,7 @@ class Header extends Component {
           isMenuOpen: false,
         };
 
-        this.hamburgerRef = React.createRef();
+        // this.hamburgerRef = React.createRef();
     }
       
     componentDidMount() {
@@ -91,8 +57,44 @@ class Header extends Component {
         this.setState({ isMenuOpen: !this.state.isMenuOpen })
     }
 
-    // TODO: on Contact button click we cant scroll after??
+    // TODO: click we cant scroll after??
     render() {
+        const MobilNav = () => (
+            <nav id="menu">
+              <ul>
+                <li>
+                    <NavLink 
+                        exact
+                        to="/experience" 
+                        className="side-nav-link" 
+                        activeClassName="side-nav-select"
+                        onClick={()=>this.toggleMenu()}
+                    >
+                        Experience
+                    </NavLink>     
+                </li>
+                <li>
+                    <NavLink 
+                        exact
+                        to="/social" 
+                        className="side-nav-link" 
+                        activeClassName="side-nav-select"
+                        onClick={()=>this.toggleMenu()}
+                    >
+                        Social
+                    </NavLink>
+                </li>
+                <li className="md-margin-t">
+                    <HashNavLink 
+                        to="/#Contact" 
+                        onClick={()=>this.toggleMenu()}
+                        className="md-white-btn blue">
+                        Contact
+                    </HashNavLink>
+                </li>
+              </ul>
+            </nav>
+          )
         return (
             <>
             <header className={this.state.deviceWidth >= 900 ? "" : "hide"}>
@@ -149,20 +151,17 @@ class Header extends Component {
                                 onClose={this.toggleMenu}
                                 height="100%"
                                 className="side-menu"
+                                lockBodyAfterOpen={false}
                                 style={{
                                     content: {
                                         backgroundColor: "#202D3E",
                                         color: "#fff"
                                     }
                                 }}
-                                
                             >
                             <i className="fas fa-times times" onClick={() => this.toggleMenu()}/>
                             <br/><br/>
-                            <div onClick={()=>this.toggleMenu()}>
-                                <MobilNav />
-                            </div>
-                            
+                            <MobilNav />
                         </OffCanvas>
                     </div>
                 </nav>
