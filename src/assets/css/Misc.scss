@@ -207,6 +207,95 @@ hr {
     }
 }
 
+.big-icon-btn {
+    border: $blue 2px solid;
+    border-radius: 4px;
+    background-color: $white;
+    padding: 10px 20px;
+    text-decoration: none !important;
+    transition: padding 0.1s linear;
+    color: $black !important;
+    div {
+        img {
+            width: 100%;
+            height: auto;
+            max-width: 50px;
+        }
+        p {
+            font-size: 12px;
+            font-family: $roboto-bold !important;
+            margin: 0;
+        }
+    }
+}
+
+.big-icon-btn:hover {
+    padding: 15px 25px;
+}
+
+.big-icon-btn:active {
+    padding: 20px 30px;
+}
+
+// Timeline
+
+.custom-line:before {background: $blue;}
+
+.vertical-timeline-element-icon {
+    -webkit-box-shadow: 0 0 0 4px $blue, inset 0 2px 0 rgba(0,0,0,.08), 0 3px 0 4px rgba(0,0,0,.05);
+    box-shadow: 0 0 0 4px $blue, inset 0 2px 0 rgba(0,0,0,.08), 0 3px 0 4px rgba(0,0,0,.05);
+}
+
+.vertical-timeline-element-subtitle {
+    font-family: $roboto-bold;
+}
+
+.vertical-timeline-element-content {
+    span.view-btn {
+        display: none;
+    }
+}
+
+.vertical-timeline-element-date {
+    pointer-events:none;
+}
+
+.vertical-timeline-element-content:hover {
+    background-color: $white !important;
+    border: 2px $blue solid;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    cursor: pointer;
+    .vertical-timeline-element-content-arrow {
+        border-right: 7px solid $blue !important;
+    }
+    h3 {
+        color: $blue;
+    }
+    h4 {
+        color: $blue;
+    }
+    p {
+        color: $blue;
+    }
+    span.view-btn {
+        color: $blue !important;
+        display: block;
+        text-align: center;
+        font-size: 16px;
+        transition: font-size 0.1s linear;
+    }
+    span.view-btn:hover {
+        font-size: 20px;
+    }
+}
+
+
+.vertical-timeline-element-date {
+    color: $dark-blue;
+    opacity: 1 !important;
+}
+
 
 
 
