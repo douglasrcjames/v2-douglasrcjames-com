@@ -20,9 +20,9 @@ export default class Home extends Component {
                     <p>
                         + I'm trained as a computer engineer in Silicon Valley, California.<br/>
                         + I'm a freelance front and back end software developer working with React.js/Native to build great user experiences.<br/>
-                        + I'm working on <Link to="/experience">Minute.tech</Link> to connect non-techies to techies for tech support.
+                        + I'm working on <Link to="/work">Minute.tech</Link> to connect non-techies to techies for tech support.
                     </p>
-                    <Link to="/experience">
+                    <Link to="/work">
                         <button className="md-blue-btn">
                             View my work
                         </button>

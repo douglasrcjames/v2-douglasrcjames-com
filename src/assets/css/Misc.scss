@@ -250,14 +250,17 @@ hr {
     font-family: $roboto-bold;
 }
 
+.vertical-timeline-element-date {
+    color: $dark-blue;
+    opacity: 1 !important;
+    pointer-events:none;
+}
+
 .vertical-timeline-element-content {
+    transition: background-color 0.25s linear;
     span.view-btn {
         display: none;
     }
-}
-
-.vertical-timeline-element-date {
-    pointer-events:none;
 }
 
 .vertical-timeline-element-content:hover {
@@ -265,6 +268,7 @@ hr {
     border: 2px $blue solid;
     -webkit-box-shadow: none;
     box-shadow: none;
+    position: relative;
     cursor: pointer;
     .vertical-timeline-element-content-arrow {
         border-right: 7px solid $blue !important;
@@ -279,7 +283,10 @@ hr {
         color: $blue;
     }
     span.view-btn {
-        color: $blue !important;
+        position: absolute;
+        top: 25px;
+        right: 40px;
+        color: $dark-green !important;
         display: block;
         text-align: center;
         font-size: 16px;
@@ -287,20 +294,21 @@ hr {
     }
     span.view-btn:hover {
         font-size: 20px;
+        
     }
 }
 
+@media screen and (max-width: 1169px) {
+    .vertical-timeline-element-date {
+        color: $white;
+    }
 
-.vertical-timeline-element-date {
-    color: $dark-blue;
-    opacity: 1 !important;
+    .vertical-timeline-element-content:hover {
+        .vertical-timeline-element-date {
+            color: $blue;
+        }
+    }
 }
-
-
-
-
-
-
 
 
 

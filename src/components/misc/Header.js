@@ -43,12 +43,12 @@ class Header extends Component {
                 <li>
                     <NavLink 
                         exact
-                        to="/experience" 
+                        to="/work" 
                         className="side-nav-link" 
                         activeClassName="side-nav-select"
                         onClick={()=>this.toggleMenu()}
                     >
-                        Experience
+                        Work
                     </NavLink>     
                 </li>
                 <li>
@@ -83,11 +83,11 @@ class Header extends Component {
                     <div className="nav-links">
                         <NavLink 
                             exact
-                            to="/experience" 
+                            to="/work" 
                             className="nav-link" 
                             activeClassName="nav-select"
                         >
-                            Experience
+                            Work
                         </NavLink>
                         <NavLink 
                             exact
