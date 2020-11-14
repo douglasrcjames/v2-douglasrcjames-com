@@ -6,7 +6,6 @@ import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timel
 import 'react-vertical-timeline-component/style.min.css';
 
 import resume from '../../../assets/pdfs/DouglasJames-Resume-4.22.2020.pdf'
-import { Link } from 'react-router-dom';
 
 export default class Experience extends Component {
     render() {
