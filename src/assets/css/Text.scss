@@ -1,4 +1,11 @@
 @import 'variables';
+.roboto-thin {
+    font-family: $roboto-thin !important;
+}
+
+.roboto-light {
+    font-family: $roboto-light !important;
+}
 
 .roboto-regular {
     font-family: $roboto-regular !important;
@@ -40,6 +47,16 @@ h3 {
     white-space: normal !important;
 }
 
+h4 {
+    font-size: 1.25em;
+    font-family: $roboto-black;
+    margin: 10px 0;
+}
+
+h5 {
+    font-family: $roboto-black;
+}
+
 @media screen and (max-width: 900px) {
     h1 {
         font-size: 2em;
@@ -49,16 +66,15 @@ h3 {
     }
     h3 {
         font-size: 1em;
+        margin: 10px 0;
+    }
+    h4 {
+        font-size: 0.9em;
+        margin: 5px 0;
     }
 }
 
-h4 {
-    font-family: $roboto-black;
-}
 
-h5 {
-    font-family: $roboto-black;
-}
 
 /* 
 * Body

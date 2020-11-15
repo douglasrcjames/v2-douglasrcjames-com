@@ -50,6 +50,31 @@ img.xxlarge {
     max-width: 550px;
 }
 
+// Fit
+img.xsmall-fit {
+    width: 75px;
+    height: 75px;
+    object-fit: scale-down;
+}
+
+img.small-fit {
+    width: 100px;
+    height: 100px;
+    object-fit: scale-down;
+}
+
+img.xmedium-fit {
+    width: 250px;
+    height: 250px;
+    object-fit: scale-down;
+}
+
+img.large-fit {
+    width: 300px;
+    height: 300px;
+    object-fit: scale-down;
+}
+
 /* 
 * em sizing
 */
