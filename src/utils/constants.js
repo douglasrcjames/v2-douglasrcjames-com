@@ -5,6 +5,12 @@ export const STATUS = {
     COMPLETE: "complete"
 }
 
+export const SIZE = {
+    SMALL: "small",
+    MEDIUM: "medium",
+    LARGE: "large"
+}
+
 export const SKILLS = {
     HTML: "html",
     CSS: "css",

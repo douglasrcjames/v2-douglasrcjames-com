@@ -258,8 +258,13 @@ hr {
 
 .vertical-timeline-element-content {
     transition: background-color 0.25s linear;
-    span.view-btn {
-        display: none;
+    span.status-icon {
+        position: absolute;
+        top: 25px;
+        right: 40px;
+        color: $dark-green !important;
+        display: block;
+        font-size: 16px;
     }
 }
 
@@ -288,13 +293,14 @@ hr {
         right: 40px;
         color: $dark-green !important;
         display: block;
-        text-align: center;
         font-size: 16px;
         transition: font-size 0.1s linear;
     }
     span.view-btn:hover {
         font-size: 20px;
-        
+    }
+    span.status-icon { 
+        display: none;
     }
 }
 

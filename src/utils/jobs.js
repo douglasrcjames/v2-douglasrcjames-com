@@ -3,7 +3,7 @@ import { MdWork, MdSchool } from "react-icons/md";
 import { BiCodeAlt, BiRocket } from "react-icons/bi"
 
 import MinuteTech from "../components/pages/work/MinuteTech";
-import { STATUS, SKILLS } from "./constants";
+import { STATUS, SKILLS, SIZE } from "./constants";
 
 // TODO: allow link within long description (like for friend's linkedin)
 export const jobs = [
@@ -12,7 +12,8 @@ export const jobs = [
         role: "Web developer",
         shortDescription: "Built a custom CRM web app and front end site for solar sales company out of Orange County, California.",
         longDescription: "",
-        logoUrl: "",
+        logoUrl: require("../assets/images/logos/external/tesla.png"),
+        logoSize: SIZE.LARGE,
         period: "July, 2020 - August, 2020",
         status: STATUS.COMPLETE,
         link: "https://www.goprestigepower.com",
@@ -37,7 +38,8 @@ export const jobs = [
         Ultimately, I left the job because I quickly found that moving from selling cars to an engineering position was difficult due to the size of the company. I felt I had 
         also reached the limit on the challenges I was being presented, and wanted to move to a more challenging engineering job that took advantage of what I was studying in school. 
         I am grateful for the opportunity I had at Tesla and the valuable lessons I learned along the way.`,
-        logoUrl: "",
+        logoUrl: require("../assets/images/logos/external/tesla.png"),
+        logoSize: SIZE.MEDIUM,
         period: "August, 2016 - December, 2016",
         status: STATUS.COMPLETE,
         link: "https://www.tesla.com",
@@ -46,7 +48,7 @@ export const jobs = [
                 SKILLS.SALES, SKILLS.CUSTOMER_SERVICE
             ]
         },
-        headerUrl: "",
+        headerUrl: require("../assets/images/headers/tesla.png"),
         icon: <MdWork />,
         extraContent: ""
     },
@@ -60,7 +62,8 @@ export const jobs = [
             remote connection, and in-person scheduling, and a payment solution all under the application's hood. 
             I recognize this project is ambitious, and has taken me many years, team members, advisors, and prototypes, 
             but I do believe the opportunity is worth the effort based on my personal experience and extensive research.`,
-        logoUrl: "",
+        logoUrl: require("../assets/images/logos/external/minutetech.png"),
+        logoSize: SIZE.LARGE,
         period: "May, 2016 - Today",
         status: STATUS.WORKING,
         link: "https://www.minute.tech",
@@ -69,7 +72,7 @@ export const jobs = [
                 SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.NODEJS, SKILLS.REACTJS, SKILLS.GITHUB, SKILLS.FIREBASE
             ]
         },
-        headerUrl: "",
+        headerUrl: require("../assets/images/headers/minutetech.png"),
         icon: <BiRocket />,
         extraContent: <MinuteTech />
     },
@@ -79,7 +82,8 @@ export const jobs = [
         shortDescription: "Earned a computer engineering major and business & math minors in the heart of Silicon Valley.",
         longDescription: `Earned computer engineering major with business & math minors in the heart of Silicon Valley. Member of Computer & Software Engineering Society. 
             Member of the Pi Kappa Alpha fraternity. Earned the confidence and paperwork to work professionally as an engineer solving problems around the world!`,
-        logoUrl: "",
+        logoUrl: require("../assets/images/logos/external/sjsu.png"),
+        logoSize: SIZE.LARGE,
         period: "August, 2013 - December, 2019",
         status: STATUS.COMPLETE,
         link: "https://www.sjsu.edu",
@@ -88,7 +92,7 @@ export const jobs = [
                 
             ]
         },
-        headerUrl: "",
+        headerUrl: require("../assets/images/headers/sjsu.png"),
         icon: <MdSchool />,
         extraContent: ""
     },
