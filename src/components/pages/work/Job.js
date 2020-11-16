@@ -10,7 +10,7 @@ export default class Job extends Component {
             width: "100%",
             height: "200px",
             backgroundImage: `url(${this.props.job.headerUrl})`,
-            backgroundPosition: "50% 50%", // change me around to move up and down!
+            backgroundPosition: this.props.job.headerPosition, // change me around to move up and down!
             backgroundSize: "cover"
           };
         return (
@@ -57,7 +57,7 @@ export default class Job extends Component {
                                         this.props.job.skills.primary.map((skill, i) => {
                                             return (
                                                 <span key={i}>
-                                                     <img className="xsmall-fit sm-padding  " alt="skill logo" src={require(`../../../assets/images/logos/skills/${skill}.png`)} /> 
+                                                     <img className="xsmall-fit sm-padding  " alt="skill logo" src={require(`../../../assets/images/logos/skills/${skill.split(" ").join("-").toLowerCase()}.png`)} /> 
                                                 </span>
                                             )
                                         }) 
@@ -71,7 +71,7 @@ export default class Job extends Component {
                                         this.props.job.skills.secondary.map((skill, i) => {
                                             return (
                                                 <span key={i}>
-                                                     <img className="xsmall-fit sm-padding  " alt="skill logo" src={require(`../../../assets/images/logos/skills/${skill}.png`)} /> 
+                                                     <img className="xsmall-fit sm-padding  " alt="skill logo" src={require(`../../../assets/images/logos/skills/${skill.split(" ").join("-").toLowerCase()}.png`)} /> 
                                                 </span>
                                             )
                                         }) 

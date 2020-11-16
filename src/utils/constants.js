@@ -8,11 +8,24 @@ export const STATUS = {
 export const SIZE = {
     SMALL: "small",
     MEDIUM: "medium",
-    LARGE: "large"
+    LARGE: "large",
+    XLARGE: "xlarge"
 }
 
 export const SKILLS = {
+    // General
+    LEADERSHIP: "leadership",
+    TEAMWORK: "teamwork",
+    CUSTOMER_SERVICE: "customer service",
+    TECHNICAL_SUPPORT: "technical support",
+    ELECTRIC_VEHICLES: "electric vehicles",
+    ADOBE_PRODUCTS: "Adobe products",
+    SOCCER: "soccer",
+    LACROSSE: "lacrosse",
+    ATM_TECHNOLOGY: "ATM technology",
+
     // Coding
+    WEB_FUNDAMENTALS: "web fundamentals",
     HTML: "html",
     CSS: "css",
     JS: "javascript",
@@ -26,19 +39,16 @@ export const SKILLS = {
     PYTHON: "python",
     MYSQL: "mysql",
     FLASK: "flask",
+    PHP: "php",
+    WORDPRESS: "wordpress",
+    SQUARESPACE: "squarespace",
 
     // Business
     BUSINESS_DEV: "business development",
     ACCOUNTING: "accounting",
     ENTREPRENEURSHIP: "entrepreneurship",
     SALES: "sales",
-
-    // General
-    LEADERSHIP: "leadership",
-    TEAMWORK: "teamwork",
-    CUSTOMER_SERVICE: "customer service",
-    TECHNICAL_SUPPORT: "technical support",
-    ELECTRIC_VEHICLES: "electric vehicles",
+    MARKETING: "marketing",
 
     // Engineering
     MATHEMATICS: "mathematics",

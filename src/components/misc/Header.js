@@ -42,7 +42,6 @@ class Header extends Component {
               <ul>
                 <li>
                     <NavLink 
-                        exact
                         to="/work" 
                         className="side-nav-link" 
                         activeClassName="side-nav-select"
@@ -53,7 +52,6 @@ class Header extends Component {
                 </li>
                 <li>
                     <NavLink 
-                        exact
                         to="/social" 
                         className="side-nav-link" 
                         activeClassName="side-nav-select"
@@ -82,7 +80,6 @@ class Header extends Component {
                     </NavLink>
                     <div className="nav-links">
                         <NavLink 
-                            exact
                             to="/work" 
                             className="nav-link" 
                             activeClassName="nav-select"
@@ -90,7 +87,6 @@ class Header extends Component {
                             Work
                         </NavLink>
                         <NavLink 
-                            exact
                             to="/social" 
                             className="nav-link" 
                             activeClassName="nav-select"

@@ -20,7 +20,10 @@ export default class Work extends Component {
                                     <h1 className="white">Work</h1>
                                     <p>
                                         I am a web developer, computer technician, and an entrepreneur with a lifelong dream to build great products. 
-                                        I have broken down my relevant work into chronological order below, with a detailed view for each job on tap.
+                                        I have broken down my relevant work into chronological order below, with a detailed view for each job on tap. 
+                                    </p>
+                                    <p>
+                                        <b>Note: My work in this section was last updated: 11/15/2020</b>
                                     </p>
                                 </Col>
                                 <Col md={12} lg={4}>
