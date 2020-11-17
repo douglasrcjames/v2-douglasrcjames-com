@@ -22,8 +22,60 @@ import IHealPhones from '../components/pages/work/jobs/IHealPhones';
 import ACFN from '../components/pages/work/jobs/ACFN';
 import PaloAltoNetworks from '../components/pages/work/jobs/PaloAltoNetworks';
 import BodyByYama from '../components/pages/work/jobs/BodyByYama';
+import VectorPSI from '../components/pages/work/jobs/VectorPSI';
 
 export const jobs = [
+    {
+        title: "smithzellner.consulting",
+        role: "Web developer",
+        shortDescription: "Built a front end website for a civil rights consulting firm in Fairhope, Alabama.",
+        longDescription: <p>Explain Bob Zellner being a author. Ullamco excepteur adipisicing sit nisi duis sint ex aliquip excepteur ut eiusmod. 
+            Pariatur nostrud est cupidatat commodo labore eiusmod quis aliquip quis nulla consequat. 
+            Ad nostrud Lorem nulla ut esse consequat Lorem exercitation nisi ipsum ex adipisicing aliqua magna. 
+            Minim enim aliquip consectetur est ipsum incididunt labore aliquip. Magna consequat sint laboris velit 
+            do tempor irure. Ullamco nulla excepteur in ea enim ipsum minim ullamco aliqua. Ullamco qui excepteur do 
+            nostrud non.</p>,
+        logoUrl: require("../assets/images/jobs/smithzellner/logo.png"),
+        logoSize: SIZE.LARGE,
+        period: "August, 2020 - September, 2020",
+        status: STATUS.COMPLETE,
+        link: "https://www.smithzellner.consulting",
+        skills: {
+            primary: [
+                SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.NODE, SKILLS.REACT, SKILLS.GITHUB, SKILLS.FIREBASE
+            ]
+        },
+        headerUrl: require("../assets/images/jobs/smithzellner/header.png"),
+        headerPosition: "50% 50%",
+        icon: <BiCodeAlt />,
+        extraContent: <SmithZellnerConsulting />
+    },
+    // TODO: wait to put this one in there
+    // {
+    //     title: "zestydoug.com",
+    //     role: "Web developer",
+    //     shortDescription: "Built a front end website for my live streaming persona.",
+    //     longDescription: <p>Explain that I stream gaming and coding and is a work in progress. Ullamco excepteur adipisicing sit nisi duis sint ex aliquip excepteur ut eiusmod. 
+    //         Pariatur nostrud est cupidatat commodo labore eiusmod quis aliquip quis nulla consequat. 
+    //         Ad nostrud Lorem nulla ut esse consequat Lorem exercitation nisi ipsum ex adipisicing aliqua magna. 
+    //         Minim enim aliquip consectetur est ipsum incididunt labore aliquip. Magna consequat sint laboris velit 
+    //         do tempor irure. Ullamco nulla excepteur in ea enim ipsum minim ullamco aliqua. Ullamco qui excepteur do 
+    //         nostrud non.</p>,
+    //     logoUrl: require("../assets/images/logos/logo512.png"),
+    //     logoSize: SIZE.LARGE,
+    //     period: "August, 2020 - September, 2020",
+    //     status: STATUS.WORKING,
+    //     link: "https://www.zestydoug.com",
+    //     skills: {
+    //         primary: [
+    //             SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.NODE, SKILLS.REACT, SKILLS.GITHUB, SKILLS.FIREBASE
+    //         ]
+    //     },
+    //     headerUrl: require("../assets/images/jobs/zestydoug/header.png"),
+    //     headerPosition: "50% 40%",
+    //     icon: <BiCodeAlt />,
+    //     extraContent: ""
+    // },
     {
         title: "goprestigepower.com",
         role: "Web developer",
@@ -50,54 +102,29 @@ export const jobs = [
         extraContent: <GoPrestigePower />
     },
     {
-        title: "smithzellner.consulting",
+        title: "vectorpsi.com",
         role: "Web developer",
-        shortDescription: "Built a front end website for a civil rights consulting firm in Fairhope, Alabama.",
-        longDescription: <p>Explain Bob Zellner being a author. Ullamco excepteur adipisicing sit nisi duis sint ex aliquip excepteur ut eiusmod. 
+        shortDescription: "Built a front end website for a industrial manufacturing sales company in Danville, California.",
+        longDescription: <p>Discuss collabing wtih Ana to create branding guidelines. Ullamco excepteur adipisicing sit nisi duis sint ex aliquip excepteur ut eiusmod. 
             Pariatur nostrud est cupidatat commodo labore eiusmod quis aliquip quis nulla consequat. 
             Ad nostrud Lorem nulla ut esse consequat Lorem exercitation nisi ipsum ex adipisicing aliqua magna. 
             Minim enim aliquip consectetur est ipsum incididunt labore aliquip. Magna consequat sint laboris velit 
             do tempor irure. Ullamco nulla excepteur in ea enim ipsum minim ullamco aliqua. Ullamco qui excepteur do 
             nostrud non.</p>,
-        logoUrl: require("../assets/images/jobs/smithzellner/logo.png"),
+        logoUrl: require("../assets/images/jobs/vectorpsi/logo.png"),
         logoSize: SIZE.LARGE,
-        period: "August, 2020 - September, 2020",
+        period: "June, 2020 - October, 2020",
         status: STATUS.COMPLETE,
-        link: "https://www.smithzellner.consulting",
+        link: "https://www.vectorpsi.com",
         skills: {
             primary: [
                 SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.NODE, SKILLS.REACT, SKILLS.GITHUB, SKILLS.FIREBASE
             ]
         },
-        headerUrl: require("../assets/images/jobs/smithzellner/header.png"),
+        headerUrl: require("../assets/images/jobs/vectorpsi/header.png"),
         headerPosition: "50% 50%",
         icon: <BiCodeAlt />,
-        extraContent: <SmithZellnerConsulting />
-    },
-    {
-        title: "zestydoug.com",
-        role: "Web developer",
-        shortDescription: "Built a front end website for my live streaming persona.",
-        longDescription: <p>Explain that I stream gaming and coding and is a work in progress. Ullamco excepteur adipisicing sit nisi duis sint ex aliquip excepteur ut eiusmod. 
-            Pariatur nostrud est cupidatat commodo labore eiusmod quis aliquip quis nulla consequat. 
-            Ad nostrud Lorem nulla ut esse consequat Lorem exercitation nisi ipsum ex adipisicing aliqua magna. 
-            Minim enim aliquip consectetur est ipsum incididunt labore aliquip. Magna consequat sint laboris velit 
-            do tempor irure. Ullamco nulla excepteur in ea enim ipsum minim ullamco aliqua. Ullamco qui excepteur do 
-            nostrud non.</p>,
-        logoUrl: require("../assets/images/logos/logo512.png"),
-        logoSize: SIZE.LARGE,
-        period: "August, 2020 - September, 2020",
-        status: STATUS.WORKING,
-        link: "https://www.zestydoug.com",
-        skills: {
-            primary: [
-                SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.NODE, SKILLS.REACT, SKILLS.GITHUB, SKILLS.FIREBASE
-            ]
-        },
-        headerUrl: require("../assets/images/jobs/zestydoug/header.png"),
-        headerPosition: "50% 40%",
-        icon: <BiCodeAlt />,
-        extraContent: ""
+        extraContent: <VectorPSI />
     },
     {
         title: "Doug's React Boiler",
@@ -124,6 +151,31 @@ export const jobs = [
         headerPosition: "50% 50%",
         icon: <BiCodeAlt />,
         extraContent: <DougsReactBoiler />
+    },
+    {
+        title: "blairfamily.foundation",
+        role: "Web developer",
+        shortDescription: "Built a front end website for a philanthropy foundation in Montgomery, Maryland.",
+        longDescription: <p>Ullamco excepteur adipisicing sit nisi duis sint ex aliquip excepteur ut eiusmod. 
+            Pariatur nostrud est cupidatat commodo labore eiusmod quis aliquip quis nulla consequat. 
+            Ad nostrud Lorem nulla ut esse consequat Lorem exercitation nisi ipsum ex adipisicing aliqua magna. 
+            Minim enim aliquip consectetur est ipsum incididunt labore aliquip. Magna consequat sint laboris velit 
+            do tempor irure. Ullamco nulla excepteur in ea enim ipsum minim ullamco aliqua. Ullamco qui excepteur do 
+            nostrud non.</p>,
+        logoUrl: require("../assets/images/jobs/blairfamily/logo.png"),
+        logoSize: SIZE.LARGE,
+        period: "April, 2020 - September, 2020",
+        status: STATUS.COMPLETE,
+        link: "https://www.blairfamily.foundation",
+        skills: {
+            primary: [
+                SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.NODE, SKILLS.REACT, SKILLS.GITHUB, SKILLS.FIREBASE
+            ]
+        },
+        headerUrl: require("../assets/images/jobs/blairfamily/header.png"),
+        headerPosition: "50% 50%",
+        icon: <BiCodeAlt />,
+        extraContent: <BlairFamilyFoundation />
     },
     {
         title: "retreatonnichols.com",
@@ -158,29 +210,29 @@ export const jobs = [
         extraContent: <RetreatOnNichols />
     },
     {
-        title: "blairfamily.foundation",
+        title: "douglasrcjames.com",
         role: "Web developer",
-        shortDescription: "Built a front end website for a philanthropy foundation in Montgomery, Maryland.",
-        longDescription: <p>Ullamco excepteur adipisicing sit nisi duis sint ex aliquip excepteur ut eiusmod. 
+        shortDescription: "Built a front end portfolio website for myself demonstrating and showcasing my skills.",
+        longDescription: <p>Display link to V1 @ live address on firebase hosting. Have V2 at live address. Ullamco excepteur adipisicing sit nisi duis sint ex aliquip excepteur ut eiusmod. 
             Pariatur nostrud est cupidatat commodo labore eiusmod quis aliquip quis nulla consequat. 
             Ad nostrud Lorem nulla ut esse consequat Lorem exercitation nisi ipsum ex adipisicing aliqua magna. 
             Minim enim aliquip consectetur est ipsum incididunt labore aliquip. Magna consequat sint laboris velit 
             do tempor irure. Ullamco nulla excepteur in ea enim ipsum minim ullamco aliqua. Ullamco qui excepteur do 
             nostrud non.</p>,
-        logoUrl: require("../assets/images/jobs/blairfamily/logo.png"),
+        logoUrl: require("../assets/images/logos/logo512.png"),
         logoSize: SIZE.LARGE,
-        period: "April, 2020 - September, 2020",
-        status: STATUS.COMPLETE,
-        link: "https://www.blairfamily.foundation",
+        period: "August, 2019 - Today",
+        status: STATUS.WORKING,
+        link: "https://www.douglasrcjames.com",
         skills: {
             primary: [
                 SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.NODE, SKILLS.REACT, SKILLS.GITHUB, SKILLS.FIREBASE
             ]
         },
-        headerUrl: require("../assets/images/jobs/blairfamily/header.png"),
-        headerPosition: "50% 50%",
+        headerUrl: require("../assets/images/jobs/douglasrcjames/header.png"),
+        headerPosition: "50% 40%",
         icon: <BiCodeAlt />,
-        extraContent: <BlairFamilyFoundation />
+        extraContent: <Douglasrcjames />
     },
     {
         title: "capsmd.org",
@@ -292,31 +344,6 @@ export const jobs = [
         extraContent: <GlassHouseFarms />
     },
     {
-        title: "douglasrcjames.com",
-        role: "Web developer",
-        shortDescription: "Built a front end website for myself demonstrating and showcasing my skills.",
-        longDescription: <p>Display link to V1 @ live address on firebase hosting. Have V2 at live address. Ullamco excepteur adipisicing sit nisi duis sint ex aliquip excepteur ut eiusmod. 
-            Pariatur nostrud est cupidatat commodo labore eiusmod quis aliquip quis nulla consequat. 
-            Ad nostrud Lorem nulla ut esse consequat Lorem exercitation nisi ipsum ex adipisicing aliqua magna. 
-            Minim enim aliquip consectetur est ipsum incididunt labore aliquip. Magna consequat sint laboris velit 
-            do tempor irure. Ullamco nulla excepteur in ea enim ipsum minim ullamco aliqua. Ullamco qui excepteur do 
-            nostrud non.</p>,
-        logoUrl: require("../assets/images/logos/logo512.png"),
-        logoSize: SIZE.LARGE,
-        period: "August, 2019 - Today",
-        status: STATUS.WORKING,
-        link: "https://www.douglasrcjames.com",
-        skills: {
-            primary: [
-                SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.NODE, SKILLS.REACT, SKILLS.GITHUB, SKILLS.FIREBASE
-            ]
-        },
-        headerUrl: require("../assets/images/jobs/douglasrcjames/header.png"),
-        headerPosition: "50% 40%",
-        icon: <BiCodeAlt />,
-        extraContent: <Douglasrcjames />
-    },
-    {
         title: "Coldbrew Creative",
         role: "Web developer",
         shortDescription: "Built, updated, and managed websites for a small digital marketing team in San Jose, California.",
@@ -343,62 +370,6 @@ export const jobs = [
         headerPosition: "50% 50%",
         icon: <MdWork />,
         extraContent: <ColdBrewCreative />
-    },
-    {
-        title: "Palo Alto Networks",
-        role: "IT Specialist",
-        shortDescription: "Provided on-site technical support at the previous Palo Alto Networks headquarters in Sunnyvale, California",
-        longDescription: <p>While attending San Jose State, I got into a deep conversation at a party with <a href="https://www.linkedin.com/in/matthew-elliott11/" target="_blank" rel="noopener noreferrer">Matt Elliott,</a>&nbsp;
-            an MIS student and employee at Palo Alto Networks at the time. After discussion on my interest in all things technology, he advised that I send him my 
-            resume to forward to his hiring manager. After a few phone interviews, and one in-person interview, I got the job! The job fit me perfectly, 
-            I was stationed in the room where all the tech hardware like monitors, cables, and computers were kept and organized.
-            I was tasked at distributing this hardware to new hire employees or employees with broken/outdated hardware. I would grab the appropriate hardware for them, deliver it to their
-            desk, and set all the hardware and software up. Palo Alto Networks was growing rapidly at the time and thus new hires were coming in daily, so a good chunk of my time was occupied
-            by setting up desks. While not setting up desks, I was busy re-imaging old laptops to be recirculated into the company. This doesn't sound that glamorous, but to me I loved it; 
-            I always enjoyed tearing my computer setup apart at home and putting it back together in a more organized or optimal way. My main project was for hardware reconciliation, 
-            where I had to account for all hardware under the hood of the headquarters in Sunnyvale, which was more than a million dollars in assets. I needed to sift through hundreds 
-            of separate spreadsheets and cross reference them into one consolidated list to reference. I was able to finish the project, but it was more difficult than my manager or 
-            I had anticipated because many assets were either unaccounted for or unaccessible.  Through this, I learned the bureaucracy of a large, publicly traded, network security corporation.         </p>,
-        logoUrl: require("../assets/images/jobs/palo-alto-networks/logo.png"),
-        logoSize: SIZE.LARGE,
-        period: "May, 2015 - August, 2015",
-        status: STATUS.COMPLETE,
-        link: "https://www.paloaltonetworks.com/",
-        skills: {
-            other: [
-                SKILLS.TECHNICAL_SUPPORT, SKILLS.CUSTOMER_SERVICE
-            ]
-        },
-        headerUrl: require("../assets/images/jobs/palo-alto-networks/header.png"),
-        headerPosition: "50% 50%",
-        icon: <MdWork />,
-        extraContent: <PaloAltoNetworks />
-    },
-    {
-        title: "ACFN Franchise",
-        role: "ATM Technician",
-        shortDescription: "Worked as a remote ATM technician at an ATM franchising company in San Jose, California",
-        longDescription: <p>ACFN is an ATM company with 2500+ machines worldwide that operates on a franchise business model.
-            ACFN provides market research on the best placement of the ATM and follow up support for the ATM front and back end.
-            The franchisee buys an ACFN supported ATM, usually <a href="https://www.tritonatm.com/" target="_blank" rel="noopener noreferrer">Triton</a> branded,  
-            then "buys" the cash that goes into the ATM, and ACFN as a business takes a percentage off every transaction. I sat in an office in downtown
-            San Jose answering phone calls from franchisees dialing in from around the world when trying to setup, service, or troubleshoot the machines (or customers calling with issues, which rarely happened.)
-            In this position, I learned how to remotely troubleshoot with clients with semi-high level hardware and software. The troubleshooting patterns I learned
-            at this job directly applied to the inception of <Link to="/work/minute.tech-llc">Minute.tech</Link>. </p>,
-        logoUrl: require("../assets/images/jobs/acfn/logo.png"),
-        logoSize: SIZE.LARGE,
-        period: "February, 2015 - June, 2015",
-        status: STATUS.COMPLETE,
-        link: "https://www.atmfranchise.com",
-        skills: {
-            other: [
-                SKILLS.TECHNICAL_SUPPORT, SKILLS.CUSTOMER_SERVICE, SKILLS.ATM_TECHNOLOGY
-            ]
-        },
-        headerUrl: require("../assets/images/jobs/acfn/header.png"),
-        headerPosition: "50% 50%",
-        icon: <MdWork />,
-        extraContent: <ACFN />
     },
     {
         title: "Tesla",
@@ -457,6 +428,62 @@ export const jobs = [
         headerPosition: "50% 50%",
         icon: <BiRocket />,
         extraContent: <MinuteTech />
+    },
+    {
+        title: "Palo Alto Networks",
+        role: "IT Specialist",
+        shortDescription: "Provided on-site technical support at the previous Palo Alto Networks headquarters in Sunnyvale, California",
+        longDescription: <p>While attending San Jose State, I got into a deep conversation at a party with <a href="https://www.linkedin.com/in/matthew-elliott11/" target="_blank" rel="noopener noreferrer">Matt Elliott,</a>&nbsp;
+            an MIS student and employee at Palo Alto Networks at the time. After discussion on my interest in all things technology, he advised that I send him my 
+            resume to forward to his hiring manager. After a few phone interviews, and one in-person interview, I got the job! The job fit me perfectly, 
+            I was stationed in the room where all the tech hardware like monitors, cables, and computers were kept and organized.
+            I was tasked at distributing this hardware to new hire employees or employees with broken/outdated hardware. I would grab the appropriate hardware for them, deliver it to their
+            desk, and set all the hardware and software up. Palo Alto Networks was growing rapidly at the time and thus new hires were coming in daily, so a good chunk of my time was occupied
+            by setting up desks. While not setting up desks, I was busy re-imaging old laptops to be recirculated into the company. This doesn't sound that glamorous, but to me I loved it; 
+            I always enjoyed tearing my computer setup apart at home and putting it back together in a more organized or optimal way. My main project was for hardware reconciliation, 
+            where I had to account for all hardware under the hood of the headquarters in Sunnyvale, which was more than a million dollars in assets. I needed to sift through hundreds 
+            of separate spreadsheets and cross reference them into one consolidated list to reference. I was able to finish the project, but it was more difficult than my manager or 
+            I had anticipated because many assets were either unaccounted for or unaccessible.  Through this, I learned the bureaucracy of a large, publicly traded, network security corporation.         </p>,
+        logoUrl: require("../assets/images/jobs/palo-alto-networks/logo.png"),
+        logoSize: SIZE.LARGE,
+        period: "May, 2015 - August, 2015",
+        status: STATUS.COMPLETE,
+        link: "https://www.paloaltonetworks.com/",
+        skills: {
+            other: [
+                SKILLS.TECHNICAL_SUPPORT, SKILLS.CUSTOMER_SERVICE
+            ]
+        },
+        headerUrl: require("../assets/images/jobs/palo-alto-networks/header.png"),
+        headerPosition: "50% 50%",
+        icon: <MdWork />,
+        extraContent: <PaloAltoNetworks />
+    },
+    {
+        title: "ACFN Franchise",
+        role: "ATM Technician",
+        shortDescription: "Worked as a remote ATM technician at an ATM franchising company in San Jose, California",
+        longDescription: <p>ACFN is an ATM company with 2500+ machines worldwide that operates on a franchise business model.
+            ACFN provides market research on the best placement of the ATM and follow up support for the ATM front and back end.
+            The franchisee buys an ACFN supported ATM, usually <a href="https://www.tritonatm.com/" target="_blank" rel="noopener noreferrer">Triton</a> branded,  
+            then "buys" the cash that goes into the ATM, and ACFN as a business takes a percentage off every transaction. I sat in an office in downtown
+            San Jose answering phone calls from franchisees dialing in from around the world when trying to setup, service, or troubleshoot the machines (or customers calling with issues, which rarely happened.)
+            In this position, I learned how to remotely troubleshoot with clients with semi-high level hardware and software. The troubleshooting patterns I learned
+            at this job directly applied to the inception of <Link to="/work/minute.tech-llc">Minute.tech</Link>. </p>,
+        logoUrl: require("../assets/images/jobs/acfn/logo.png"),
+        logoSize: SIZE.LARGE,
+        period: "February, 2015 - June, 2015",
+        status: STATUS.COMPLETE,
+        link: "https://www.atmfranchise.com",
+        skills: {
+            other: [
+                SKILLS.TECHNICAL_SUPPORT, SKILLS.CUSTOMER_SERVICE, SKILLS.ATM_TECHNOLOGY
+            ]
+        },
+        headerUrl: require("../assets/images/jobs/acfn/header.png"),
+        headerPosition: "50% 50%",
+        icon: <MdWork />,
+        extraContent: <ACFN />
     },
     {
         title: "San Jose State University",
