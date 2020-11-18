@@ -27,7 +27,7 @@ class Routes extends Component {
                                 exact 
                                 path={`/work/${job.title.split(" ").join("-").toLowerCase()}`} 
                                 component={() => 
-                                    <Job job={job} />} 
+                                    <Job job={job} previousJob={jobs[i-1]} nextJob={jobs[i+1]} />} 
                                 />
                             )
                     })  

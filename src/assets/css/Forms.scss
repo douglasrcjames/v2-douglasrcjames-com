@@ -46,8 +46,9 @@ textarea {
   font-size: 16px;
   border-radius: 4px;
   padding: 10px 35px;
-  color: $white;
   border: $dark-grey solid 1px; 
+  color: $white !important;
+  text-decoration: none !important;
 }
 
 .md-blue-btn:hover {
