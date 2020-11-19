@@ -131,37 +131,3 @@ img.xl-em {
         padding: 5px;
     }
 }
-
-
-// react-images //
-
-// Bug: https://github.com/jossmac/react-images/issues/373
-.react-images__view-image {
-    max-height: 90vh !important;
-}
-
-.react-images__footer {
-    color: $blue !important;
-    background-color: $white;
-    span {
-        margin: 0 20px;
-        font-family: $roboto-bold;
-        font-size: 24px;
-    }
-    
-}
-
-.react-images__navigation {
-    button {
-        background: $blue;
-        opacity: .8;
-    }
-
-    button:hover {
-        background: $white;
-        opacity: .8;
-        svg {
-            color: $dark-blue;
-        }
-    }
-}

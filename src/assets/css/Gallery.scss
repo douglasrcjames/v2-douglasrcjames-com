@@ -1,0 +1,74 @@
+@import "variables";
+
+  .imageViewerHeaderButton {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .imageViewerFooter {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+  }
+  
+  .desktop__only__button {
+    display: none;
+  }
+  
+  @media (min-width: 1200px) {
+    .imageViewerFooter {
+      left: 50% !important;
+      margin-left: -300px;
+      width: 600px !important;
+    }
+  
+    .desktop__only__button {
+      display: unset;
+    }
+  }
+  
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .ImageStyleCss {
+      left: 50% !important;
+      margin-left: -300px;
+      width: 600px !important;
+    }
+  }
+  
+
+// Bug: https://github.com/jossmac/react-images/issues/373
+.react-images__view-image {
+    max-height: 90vh !important;
+}
+
+.react-images__footer {
+    color: $blue !important;
+    background-color: $white;
+    span {
+        margin: 0 20px;
+        font-family: $roboto-bold;
+        font-size: 24px;
+    }
+    
+}
+
+.react-images__navigation {
+    button {
+        background: $blue;
+        opacity: .8;
+    }
+
+    button:hover {
+        background: $white;
+        opacity: .8;
+        svg {
+            color: $dark-blue;
+        }
+    }
+}
