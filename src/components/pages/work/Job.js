@@ -39,7 +39,6 @@ export default class Job extends Component {
             )
         } else {
             return (
-
                 <div>
                     <div style={bgImageContainer}>
                         <div style={ topBgImageStyle }></div>
@@ -167,7 +166,8 @@ export default class Job extends Component {
                         </Grid>
                         
                         <br/>
-
+                    </div>
+                    <div className="md-margin-b">
                         {this.props.job.extraContent}
                     </div>
                 </div>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { smithZellnerV1 } from "../../../../utils/photos"
-import PhotoGallery from '../../../misc/Utilities'
+import { PhotoGallery } from '../../../../utils/misc'
 
 export default class SmithZellnerConsulting extends Component {
     render() {
@@ -8,6 +8,7 @@ export default class SmithZellnerConsulting extends Component {
             <div>
                 <p>Screenshots and demo coming soon!</p>
                 <PhotoGallery photos={smithZellnerV1} />
+                
             </div>
         )
     }
