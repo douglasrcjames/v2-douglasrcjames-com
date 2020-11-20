@@ -2,8 +2,6 @@
 // Some random handy functions! 
 //
 import React from "react"
-import SimpleBar from 'simplebar-react';
-import 'simplebar/dist/simplebar.min.css';
 
 // First letter is uppercase
 export function ucFirst(string) {
@@ -61,19 +59,3 @@ export const SocialLink = ({ label, link }) =>
         />
   </a>
 
-export default function PhotoGallery(props) {
-  return (
-    <SimpleBar className="slider-container">
-      { props.photos.map((photo, i) => {
-        return (
-          <span key={i}>
-            <img src={photo.src} alt={photo.caption} className="large-fit" />
-            {/* TODO: get me on a new line from image, but not have every image on a new line... might have to this be overlayed on the image or only shown in the lightbox */}
-            {/* TODO: add buttons for more obvious side to side scrolling */}
-            {/* <span>{photo.caption}</span> */}
-          </span>
-        )
-      })}
-    </SimpleBar>
-  );
-}

@@ -238,6 +238,9 @@ hr {
 }
 
 // Timeline
+.overflow-x-hidden {
+    overflow-x:hidden 
+}
 
 .custom-line:before {background: $blue;}
 
@@ -322,8 +325,14 @@ hr {
 
 // Misc
 
-
-
+.horiz-rule:before,
+.horiz-rule:after {
+  margin: auto;
+  display: block;
+  width: 45%;
+  border-bottom: 1px solid black;
+  content: "";
+}
 
  
 

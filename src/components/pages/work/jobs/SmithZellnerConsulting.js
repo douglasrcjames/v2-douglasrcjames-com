@@ -1,15 +1,13 @@
 import React, { Component } from 'react'
-import { smithZellnerV1 } from "../../../../utils/photos"
-import PhotoGallery from '../../../../utils/misc'
+import { smithzellnerV1, smithzellnerV2 } from "../../../../utils/photos"
+import PhotoGallery from '../../../misc/PhotoGallery'
 
 export default class SmithZellnerConsulting extends Component {
     render() {
         return (
             <div>
-                <div className="center-text">
-                    <h3>Version 1</h3>
-                </div>
-                <PhotoGallery photos={smithZellnerV1} />
+                <PhotoGallery photos={smithzellnerV1} title={"Before screens"}/>
+                <PhotoGallery photos={smithzellnerV2} title={"After screens"}/>
             </div>
         )
     }

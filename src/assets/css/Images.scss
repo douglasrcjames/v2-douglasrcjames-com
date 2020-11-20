@@ -134,23 +134,51 @@ img.xl-em {
 
 // Image slider
  .slider-container {
-    height: 325px;
+    height: 425px;
     overflow-y: hidden;
     white-space: nowrap;
+    
     img {
+        width: 400px;
+        height: 400px;
+        object-fit: scale-down;
         display: inline-block;
         vertical-align: middle;
         margin: 5px;
+        transition: filter 0.25s linear;
+        // transition: width 0.1s linear;
+        // transition: height 0.1s linear;
         filter:
         /* Each shadow becomes part of the image and the next filter
             adds a shadow beneath it, so we have to be very careful. */
-            drop-shadow(0 -2px 0 $dark-grey)
-            drop-shadow(0 2px 0 $dark-grey)
-            drop-shadow(-2px 0 0 $dark-grey)
-            drop-shadow(2px 0 0 $dark-grey);
+            drop-shadow(0 -2px 0 $light-grey)
+            drop-shadow(0 2px 0 $light-grey)
+            drop-shadow(-2px 0 0 $light-grey)
+            drop-shadow(2px 0 0 $light-grey);
     }
+    img:hover {
+        // width: 410px;
+        // height: 410px;
+        cursor: pointer;
+        filter:
+        /* Each shadow becomes part of the image and the next filter
+            adds a shadow beneath it, so we have to be very careful. */
+            drop-shadow(0 -2px 0 $light-yellow)
+            drop-shadow(0 8px 0 $light-yellow)
+            drop-shadow(-2px 0 0 $light-yellow)
+            drop-shadow(2px 0 0 $light-yellow);
+    }
+
 }
 
 .simplebar-scrollbar::before {
     background-color: $blue;
   }
+
+.ril__inner {
+    margin-top: 75px;
+}
+
+.ril-next-button, .ril-prev-button {
+    background-color: $xlight-blue !important;
+}
