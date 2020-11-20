@@ -132,36 +132,22 @@ img.xl-em {
     }
 }
 
-
-// react-images //
-
-// Bug: https://github.com/jossmac/react-images/issues/373
-.react-images__view-image {
-    max-height: 90vh !important;
-}
-
-.react-images__footer {
-    color: $blue !important;
-    background-color: $white;
-    span {
-        margin: 0 20px;
-        font-family: $roboto-bold;
-        font-size: 24px;
-    }
-    
-}
-
-.react-images__navigation {
-    button {
-        background: $blue;
-        opacity: .8;
-    }
-
-    button:hover {
-        background: $white;
-        opacity: .8;
-        svg {
-            color: $dark-blue;
-        }
+// Image slider
+ .slider-container {
+    height: 325px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    img {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 5px;
+        filter:
+        /* Each shadow becomes part of the image and the next filter
+            adds a shadow beneath it, so we have to be very careful. */
+            drop-shadow(0 -2px 0 $dark-grey)
+            drop-shadow(0 2px 0 $dark-grey)
+            drop-shadow(-2px 0 0 $dark-grey)
+            drop-shadow(2px 0 0 $dark-grey);
     }
 }

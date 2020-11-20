@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Col, Grid, Row } from 'react-flexbox-grid';
-import { SocialLink } from '../misc/Utilities'
+import { SocialLink } from '../../utils/misc'
 
 export default class Footer extends Component {
     constructor(props) {

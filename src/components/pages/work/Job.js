@@ -165,9 +165,9 @@ export default class Job extends Component {
                                 </Col>
                             </Row>
                         </Grid>
-                        
                         <br/>
-
+                    </div>
+                    <div className="md-margin-b">
                         {this.props.job.extraContent}
                     </div>
                 </div>
