@@ -6,7 +6,9 @@ export default class SmithZellnerConsulting extends Component {
     render() {
         return (
             <div>
-                <p>Screenshots and demo coming soon!</p>
+                <div className="center-text">
+                    <h3>Version 1</h3>
+                </div>
                 <PhotoGallery photos={smithZellnerV1} />
             </div>
         )
