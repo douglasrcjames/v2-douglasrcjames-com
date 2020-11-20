@@ -133,26 +133,35 @@ img.xl-em {
 }
 
 
-// Image slider
-.carousel {
-    .control-dots { 
-        .dot {
-            background-color: $black !important;
-        }
+// react-images //
+
+// Bug: https://github.com/jossmac/react-images/issues/373
+.react-images__view-image {
+    max-height: 90vh !important;
+}
+
+.react-images__footer {
+    color: $blue !important;
+    background-color: $white;
+    span {
+        margin: 0 20px;
+        font-family: $roboto-bold;
+        font-size: 24px;
     }
-    .slide {
-        background-color: $white !important;
-        img {
-            max-height: 300px; 
-            width: auto;
-        }
-        p {
-            background-color: $blue !important;
-        }
-        
+    
+}
+
+.react-images__navigation {
+    button {
+        background: $blue;
+        opacity: .8;
     }
-    .thumb img {
-        width: 100% !important;
-        height: 100% !important;
+
+    button:hover {
+        background: $white;
+        opacity: .8;
+        svg {
+            color: $dark-blue;
+        }
     }
 }

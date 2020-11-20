@@ -16,53 +16,5 @@ export const smithZellnerV1 = [
         width: 2.5,
         height: 1.5,
         caption: "Version 1 - 'Recent Media' screen"
-    },
-    {
-        src: require("../assets/images/jobs/smithzellner/screens/v1/RecentMedia.png"),
-        width: 2.5,
-        height: 1.5,
-        caption: "Version 1 - 'Recent Media' screen"
-    },
-    {
-        src: require("../assets/images/jobs/smithzellner/screens/v1/RecentMedia.png"),
-        width: 2.5,
-        height: 1.5,
-        caption: "Version 1 - 'Recent Media' screen"
-    },
-    {
-        src: require("../assets/images/jobs/smithzellner/screens/v1/RecentMedia.png"),
-        width: 2.5,
-        height: 1.5,
-        caption: "Version 1 - 'Recent Media' screen"
-    },
-    {
-        src: require("../assets/images/jobs/smithzellner/screens/v1/RecentMedia.png"),
-        width: 2.5,
-        height: 1.5,
-        caption: "Version 1 - 'Recent Media' screen"
-    },
-    {
-        src: require("../assets/images/jobs/smithzellner/screens/v1/RecentMedia.png"),
-        width: 2.5,
-        height: 1.5,
-        caption: "Version 1 - 'Recent Media' screen"
-    },
-    {
-        src: require("../assets/images/jobs/smithzellner/screens/v1/RecentMedia.png"),
-        width: 2.5,
-        height: 1.5,
-        caption: "Version 1 - 'Recent Media' screen"
-    },
-    {
-        src: require("../assets/images/jobs/smithzellner/screens/v1/RecentMedia.png"),
-        width: 2.5,
-        height: 1.5,
-        caption: "Version 1 - 'Recent Media' screen"
-    },
-    {
-        src: require("../assets/images/jobs/smithzellner/screens/v1/RecentMedia.png"),
-        width: 2.5,
-        height: 1.5,
-        caption: "Version 1 - 'Recent Media' screen"
     }
 ]
