@@ -40,7 +40,7 @@ export default class Work extends Component {
                         </Grid>
                     </div>
                 </div>
-                <div className="overflow-x-hidden">
+                <div className="timeline-x-scroll">
                     <VerticalTimeline className="custom-line">
                         {
                             jobs.map((job, i) => { 

@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
+import { dougsReactBoilerV1 } from "../../../../utils/photos"
+import PhotoGallery from '../../../misc/PhotoGallery'
 
 export default class DougsReactBoiler extends Component {
     render() {
         return (
             <div>
-                <p>Screenshots and demo coming soon!</p>
+                <PhotoGallery photos={dougsReactBoilerV1} title={"Screens"}/>
             </div>
         )
     }

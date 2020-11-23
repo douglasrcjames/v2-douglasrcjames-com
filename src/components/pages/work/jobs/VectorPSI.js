@@ -6,7 +6,7 @@ export default class VectorPSI extends Component {
     render() {
         return (
             <div>
-                <PhotoGallery photos={vectorpsiV1} title={"After screens"}/>
+                <PhotoGallery photos={vectorpsiV1} title={"Screens"}/>
             </div>
         )
     }
