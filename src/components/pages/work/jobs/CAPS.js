@@ -7,7 +7,7 @@ export default class CAPS extends Component {
         return (
             <div>
                 <PhotoGallery photos={CAPSV1} title={"Version 1 screens"}/>
-                <PhotoGallery photos={CAPSV2} title={"Version 1 screens"}/>
+                <PhotoGallery photos={CAPSV2} title={"Version 2 screens"}/>
             </div>
         )
     }

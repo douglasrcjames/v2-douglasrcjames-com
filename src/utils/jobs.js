@@ -302,7 +302,7 @@ export const jobs = [
         link: "https://www.bodybyyama.com",
         skills: {
             primary: [
-                SKILLS.HTML, SKILLS.CSS, SKILLS.PHP
+                SKILLS.HTML, SKILLS.CSS, SKILLS.PHP, SKILLS.MYSQL
             ]
         },
         headerUrl: require("../assets/images/jobs/bodybyyama/header.png"),
