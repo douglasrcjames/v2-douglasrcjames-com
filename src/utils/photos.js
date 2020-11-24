@@ -550,51 +550,47 @@ export const mtWebLive = [
 export const mtMobileWireframe = [
     {
         src: require("../assets/images/jobs/minutetech/screens/mobile/wireframe/Home.png"),
+        caption: "'Home' screen"
+    },
+    {
+        src: require("../assets/images/jobs/minutetech/screens/mobile/wireframe/Ask.png"),
         caption: "'Ask' screen"
     },
     {
-        src: require("../assets/images/jobs/minutetech/screens/mobile/wireframe/Home.png"),
-        caption: "'Ask' screen"
+        src: require("../assets/images/jobs/minutetech/screens/mobile/wireframe/Questions.png"),
+        caption: "'Questions' list screen"
     },
     {
-        src: require("../assets/images/jobs/minutetech/screens/mobile/wireframe/Home.png"),
-        caption: "'Ask' screen"
+        src: require("../assets/images/jobs/minutetech/screens/mobile/wireframe/ChatPending.png"),
+        caption: "'Chat' screen in a pending state"
     },
     {
-        src: require("../assets/images/jobs/minutetech/screens/mobile/wireframe/Home.png"),
-        caption: "'Ask' screen"
+        src: require("../assets/images/jobs/minutetech/screens/mobile/wireframe/ChatPendingExpanded.png"),
+        caption: "'Chat' screen in a pending state and expanded details"
     },
     {
-        src: require("../assets/images/jobs/minutetech/screens/mobile/wireframe/Home.png"),
-        caption: "'Ask' screen"
+        src: require("../assets/images/jobs/minutetech/screens/mobile/wireframe/ChatResolved.png"),
+        caption: "'Chat' screen in a resolved state"
     },
     {
-        src: require("../assets/images/jobs/minutetech/screens/mobile/wireframe/Home.png"),
-        caption: "'Ask' screen"
+        src: require("../assets/images/jobs/minutetech/screens/mobile/wireframe/ScheduleTime.png"),
+        caption: "'Schedule' screen in the Time select step"
     },
     {
-        src: require("../assets/images/jobs/minutetech/screens/mobile/wireframe/Home.png"),
-        caption: "'Ask' screen"
+        src: require("../assets/images/jobs/minutetech/screens/mobile/wireframe/ScheduleLocation.png"),
+        caption: "'Schedule' screen in the Location select step"
     },
     {
-        src: require("../assets/images/jobs/minutetech/screens/mobile/wireframe/Home.png"),
-        caption: "'Ask' screen"
+        src: require("../assets/images/jobs/minutetech/screens/mobile/wireframe/Profile.png"),
+        caption: "'Profile' screen"
     },
     {
-        src: require("../assets/images/jobs/minutetech/screens/mobile/wireframe/Home.png"),
-        caption: "'Ask' screen"
+        src: require("../assets/images/jobs/minutetech/screens/mobile/wireframe/Register.png"),
+        caption: "'Register' screen"
     },
     {
-        src: require("../assets/images/jobs/minutetech/screens/mobile/wireframe/Home.png"),
-        caption: "'Ask' screen"
-    },
-    {
-        src: require("../assets/images/jobs/minutetech/screens/mobile/wireframe/Home.png"),
-        caption: "'Ask' screen"
-    },
-    {
-        src: require("../assets/images/jobs/minutetech/screens/mobile/wireframe/Home.png"),
-        caption: "'Ask' screen"
+        src: require("../assets/images/jobs/minutetech/screens/mobile/wireframe/SignIn.png"),
+        caption: "'Sign In' screen"
     },
 ]
 
@@ -604,44 +600,40 @@ export const mtMobileSwift = [
         caption: "'Ask' screen"
     },
     {
-        src: require("../assets/images/jobs/minutetech/screens/mobile/swift/Ask.png"),
-        caption: "'Ask' screen"
+        src: require("../assets/images/jobs/minutetech/screens/mobile/swift/PendingQuestions.png"),
+        caption: "'Pending Questions' screen"
     },
     {
-        src: require("../assets/images/jobs/minutetech/screens/mobile/swift/Ask.png"),
-        caption: "'Ask' screen"
+        src: require("../assets/images/jobs/minutetech/screens/mobile/swift/Chat.png"),
+        caption: "'Chat' screen"
     },
     {
-        src: require("../assets/images/jobs/minutetech/screens/mobile/swift/Ask.png"),
-        caption: "'Ask' screen"
+        src: require("../assets/images/jobs/minutetech/screens/mobile/swift/QuestionDetails.png"),
+        caption: "'Question Details' screen"
     },
     {
-        src: require("../assets/images/jobs/minutetech/screens/mobile/swift/Ask.png"),
-        caption: "'Ask' screen"
+        src: require("../assets/images/jobs/minutetech/screens/mobile/swift/ScheduleLocation.png"),
+        caption: "'Schedule' screen in the Location select step"
     },
     {
-        src: require("../assets/images/jobs/minutetech/screens/mobile/swift/Ask.png"),
-        caption: "'Ask' screen"
+        src: require("../assets/images/jobs/minutetech/screens/mobile/swift/ScheduleTime.png"),
+        caption: "'Schedule' screen in the Time select step"
     },
     {
-        src: require("../assets/images/jobs/minutetech/screens/mobile/swift/Ask.png"),
-        caption: "'Ask' screen"
+        src: require("../assets/images/jobs/minutetech/screens/mobile/swift/VideoCall.png"),
+        caption: "Video call in progress screen"
     },
     {
-        src: require("../assets/images/jobs/minutetech/screens/mobile/swift/Ask.png"),
-        caption: "'Ask' screen"
+        src: require("../assets/images/jobs/minutetech/screens/mobile/swift/Review.png"),
+        caption: "'Review' screen"
     },
     {
-        src: require("../assets/images/jobs/minutetech/screens/mobile/swift/Ask.png"),
-        caption: "'Ask' screen"
+        src: require("../assets/images/jobs/minutetech/screens/mobile/swift/Invoice.png"),
+        caption: "'Invoice' screen"
     },
     {
-        src: require("../assets/images/jobs/minutetech/screens/mobile/swift/Ask.png"),
-        caption: "'Ask' screen"
-    },
-    {
-        src: require("../assets/images/jobs/minutetech/screens/mobile/swift/Ask.png"),
-        caption: "'Ask' screen"
+        src: require("../assets/images/jobs/minutetech/screens/mobile/swift/Profile.png"),
+        caption: "'Profile' screen"
     },
 ]
 
@@ -651,35 +643,35 @@ export const mtMobileNative = [
         caption: "'Home' screen"
     },
     {
-        src: require("../assets/images/jobs/minutetech/screens/mobile/native/Home.png"),
-        caption: "'Home' screen"
+        src: require("../assets/images/jobs/minutetech/screens/mobile/native/SignIn.png"),
+        caption: "'Sign In' screen"
     },
     {
-        src: require("../assets/images/jobs/minutetech/screens/mobile/native/Home.png"),
-        caption: "'Home' screen"
+        src: require("../assets/images/jobs/minutetech/screens/mobile/native/Register.png"),
+        caption: "'Register' screen"
     },
     {
-        src: require("../assets/images/jobs/minutetech/screens/mobile/native/Home.png"),
-        caption: "'Home' screen"
+        src: require("../assets/images/jobs/minutetech/screens/mobile/native/Ask.png"),
+        caption: "'Ask' screen"
     },
     {
-        src: require("../assets/images/jobs/minutetech/screens/mobile/native/Home.png"),
-        caption: "'Home' screen"
+        src: require("../assets/images/jobs/minutetech/screens/mobile/native/ClientQuestions.png"),
+        caption: "Client's 'Questions' screen"
     },
     {
-        src: require("../assets/images/jobs/minutetech/screens/mobile/native/Home.png"),
-        caption: "'Home' screen"
+        src: require("../assets/images/jobs/minutetech/screens/mobile/native/ChatUnclaimed.png"),
+        caption: "Question 'Chat' screen in an unclaimed state"
     },
     {
-        src: require("../assets/images/jobs/minutetech/screens/mobile/native/Home.png"),
-        caption: "'Home' screen"
+        src: require("../assets/images/jobs/minutetech/screens/mobile/native/QuestionDetails1.png"),
+        caption: "Question 'Details' screen"
     },
     {
-        src: require("../assets/images/jobs/minutetech/screens/mobile/native/Home.png"),
-        caption: "'Home' screen"
+        src: require("../assets/images/jobs/minutetech/screens/mobile/native/QuestionDetails2.png"),
+        caption: "Question 'Details' screen"
     },
     {
-        src: require("../assets/images/jobs/minutetech/screens/mobile/native/Home.png"),
-        caption: "'Home' screen"
+        src: require("../assets/images/jobs/minutetech/screens/mobile/native/Account.png"),
+        caption: "'Account' screen"
     },
 ]
