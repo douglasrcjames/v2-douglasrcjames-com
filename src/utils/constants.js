@@ -42,6 +42,7 @@ export const SKILLS = {
     PHP: "php",
     WORDPRESS: "wordpress",
     SQUARESPACE: "squarespace",
+    WIREFRAMING: "wireframing",
 
     // Business
     BUSINESS_DEV: "business development",

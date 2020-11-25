@@ -169,7 +169,7 @@ export const jobs = [
         link: "https://www.blairfamily.foundation",
         skills: {
             primary: [
-                SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.NODE, SKILLS.REACT, SKILLS.GITHUB, SKILLS.FIREBASE
+                SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.NODE, SKILLS.REACT, SKILLS.GITHUB, SKILLS.FIREBASE, SKILLS.WIREFRAMING
             ]
         },
         headerUrl: require("../assets/images/jobs/blairfamily/header.png"),
@@ -227,7 +227,7 @@ export const jobs = [
         link: "https://www.douglasrcjames.com",
         skills: {
             primary: [
-                SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.NODE, SKILLS.REACT, SKILLS.GITHUB, SKILLS.FIREBASE
+                SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.NODE, SKILLS.REACT, SKILLS.GITHUB, SKILLS.FIREBASE, SKILLS.WIREFRAMING
             ]
         },
         headerUrl: require("../assets/images/jobs/douglasrcjames/header.png"),
@@ -306,7 +306,7 @@ export const jobs = [
         link: "https://www.bodybyyama.com",
         skills: {
             primary: [
-                SKILLS.HTML, SKILLS.CSS, SKILLS.PHP, SKILLS.MYSQL
+                SKILLS.HTML, SKILLS.CSS, SKILLS.PHP, SKILLS.MYSQL, SKILLS.WIREFRAMING
             ]
         },
         headerUrl: require("../assets/images/jobs/bodybyyama/header.png"),
@@ -338,7 +338,7 @@ export const jobs = [
         link: "https://www.glasshousefarms.co",
         skills: {
             primary: [
-                SKILLS.HTML, SKILLS.CSS, SKILLS.PHP, SKILLS.MYSQL
+                SKILLS.HTML, SKILLS.CSS, SKILLS.PHP, SKILLS.MYSQL, SKILLS.WIREFRAMING
             ]
         },
         headerUrl: require("../assets/images/jobs/glasshousefarms/header.png"),
@@ -421,7 +421,7 @@ export const jobs = [
         link: "https://www.minute.tech",
         skills: {
             primary: [
-                SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.NODE, SKILLS.REACT, SKILLS.GITHUB, SKILLS.FIREBASE
+                SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.NODE, SKILLS.REACT, SKILLS.GITHUB, SKILLS.FIREBASE, SKILLS.WIREFRAMING
             ],
             secondary: [
                 SKILLS.SWIFT, SKILLS.PYTHON, SKILLS.MYSQL, SKILLS.FLASK
