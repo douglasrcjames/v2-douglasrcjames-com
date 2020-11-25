@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import { vectorpsiV1 } from "../../../../utils/photos"
-import PhotoGallery from '../../../misc/PhotoGallery'
+import ScreensGallery from '../../../misc/ScreensGallery'
 
 export default class VectorPSI extends Component {
     render() {
         return (
             <div>
-                <PhotoGallery photos={vectorpsiV1} title={"Screens"}/>
+                <ScreensGallery photos={vectorpsiV1} title={"Screens"}/>
             </div>
         )
     }

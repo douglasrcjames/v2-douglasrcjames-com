@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-import { mtMobileSwift, mtMobileWireframe, mtWebLive, mtMobileNative, mtWebWireframe } from '../../../../utils/photos'
+import { mtMobileSwift, mtMobileWireframe, mtWebLive, mtMobileNative, mtWebWireframe, mtMisc } from '../../../../utils/photos'
 import PhotoGallery from '../../../misc/PhotoGallery'
+import ScreensGallery from '../../../misc/ScreensGallery'
 
 export default class MinuteTech extends Component {
     render() {
@@ -33,8 +34,8 @@ export default class MinuteTech extends Component {
                         webkitallowfullscreen="webkitallowfullscreen"
                     />
                 </div>
-                <PhotoGallery photos={mtWebWireframe} title={"Wireframe screens"} />
-                <PhotoGallery photos={mtWebLive} title={"Live screens"} />
+                <ScreensGallery photos={mtWebWireframe} title={"Wireframe screens"} />
+                <ScreensGallery photos={mtWebLive} title={"Live screens"} />
 
                 <div className="lg-container">
                     <h2>Mobile Application</h2>
@@ -62,10 +63,17 @@ export default class MinuteTech extends Component {
                     />
                 </div>
 
-                <PhotoGallery photos={mtMobileWireframe} title={"Wireframe screens"} />
-                <PhotoGallery photos={mtMobileSwift} title={"Swift screens"} />
-                <PhotoGallery photos={mtMobileNative} title={"React Native screens"} />
-            
+                <ScreensGallery photos={mtMobileWireframe} title={"Wireframe screens"} />
+                <ScreensGallery photos={mtMobileSwift} title={"Swift screens"} />
+                <ScreensGallery photos={mtMobileNative} title={"React Native screens"} />
+
+                <br/>
+                <div className="horiz-rule" />
+                <br/>
+
+                <div className="md-width center">
+                    <PhotoGallery photos={mtMisc} />
+                </div>
             </div>
         )
     }

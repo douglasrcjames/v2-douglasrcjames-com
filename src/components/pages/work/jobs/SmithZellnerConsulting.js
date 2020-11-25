@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 import { smithzellnerV1, smithzellnerV2 } from "../../../../utils/photos"
-import PhotoGallery from '../../../misc/PhotoGallery'
+import ScreensGallery from '../../../misc/ScreensGallery'
 
 export default class SmithZellnerConsulting extends Component {
     render() {
         return (
             <div>
-                <PhotoGallery photos={smithzellnerV1} title={"Before screens"}/>
-                <PhotoGallery photos={smithzellnerV2} title={"After screens"}/>
+                <ScreensGallery photos={smithzellnerV1} title={"Before screens"}/>
+                <ScreensGallery photos={smithzellnerV2} title={"After screens"}/>
             </div>
         )
     }

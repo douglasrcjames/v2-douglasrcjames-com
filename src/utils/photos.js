@@ -675,3 +675,26 @@ export const mtMobileNative = [
         caption: "'Account' screen"
     },
 ]
+
+export const mtMisc = [
+    {
+        src: require("../assets/images/jobs/minutetech/misc/svbpc-cert.jpg"),
+        width: 4,
+        height: 3
+      },
+      {
+        src: require("../assets/images/jobs/minutetech/misc/trademark-cert.jpg"),
+        width: 4,
+        height: 5
+      },
+      {
+        src: require("../assets/images/jobs/minutetech/misc/expo.jpeg"),
+        width: 4,
+        height: 4
+      },
+      {
+        src: require("../assets/images/jobs/minutetech/misc/ios-team.jpg"),
+        width: 4,
+        height: 3
+      },
+]

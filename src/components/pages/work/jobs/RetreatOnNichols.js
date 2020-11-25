@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import { retreatonnicholsV1 } from "../../../../utils/photos"
-import PhotoGallery from '../../../misc/PhotoGallery'
+import ScreensGallery from '../../../misc/ScreensGallery'
 
 export default class RetreatOnNichols extends Component {
     render() {
         return (
             <div>
-                <PhotoGallery photos={retreatonnicholsV1} title={"Screens"}/>
+                <ScreensGallery photos={retreatonnicholsV1} title={"Screens"}/>
             </div>
         )
     }

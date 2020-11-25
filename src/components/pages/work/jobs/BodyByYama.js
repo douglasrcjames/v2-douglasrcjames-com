@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import { bodybyyamaWireframe } from '../../../../utils/photos'
-import PhotoGallery from '../../../misc/PhotoGallery'
+import ScreensGallery from '../../../misc/ScreensGallery'
 
 export default class BodyByYama extends Component {
     render() {
         return (
             <div>
-                <PhotoGallery photos={bodybyyamaWireframe} title={"Wireframe"} />
+                <ScreensGallery photos={bodybyyamaWireframe} title={"Wireframe"} />
                  
                 <div className="center-text sm-margin-t-b">
                     <h3 style={{fontSize: "30px", verticalAlign: "middle"}}><u>Finished product</u></h3>

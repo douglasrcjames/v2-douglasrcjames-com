@@ -213,7 +213,7 @@ export const jobs = [
         title: "douglasrcjames.com",
         role: "Web developer",
         shortDescription: "Built a front end portfolio website for myself demonstrating and showcasing my skills.",
-        longDescription: <p>Display link to V1 @ live address on firebase hosting. Have V2 at live address. Ullamco excepteur adipisicing sit nisi duis sint ex aliquip excepteur ut eiusmod. 
+        longDescription: <p>Display link to V1 @ live address on firebase hosting. Have V2 at live address. Talk about how meta this is. Ullamco excepteur adipisicing sit nisi duis sint ex aliquip excepteur ut eiusmod. 
             Pariatur nostrud est cupidatat commodo labore eiusmod quis aliquip quis nulla consequat. 
             Ad nostrud Lorem nulla ut esse consequat Lorem exercitation nisi ipsum ex adipisicing aliqua magna. 
             Minim enim aliquip consectetur est ipsum incididunt labore aliquip. Magna consequat sint laboris velit 
