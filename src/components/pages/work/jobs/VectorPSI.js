@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { vectorpsiV1 } from "../../../../utils/photos"
+import { vectorpsiV1 } from "../../../../utils/screens"
 import ScreensGallery from '../../../misc/ScreensGallery'
 
 export default class VectorPSI extends Component {

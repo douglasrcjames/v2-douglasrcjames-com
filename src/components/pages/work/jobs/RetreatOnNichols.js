@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { retreatonnicholsV1 } from "../../../../utils/photos"
+import { retreatonnicholsV1 } from "../../../../utils/screens"
 import ScreensGallery from '../../../misc/ScreensGallery'
 
 export default class RetreatOnNichols extends Component {

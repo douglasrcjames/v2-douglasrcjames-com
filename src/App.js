@@ -14,6 +14,8 @@ import "./assets/css/Align.scss";
 import "./assets/css/Images.scss";
 import "./assets/css/Forms.scss";
 import "./assets/css/Misc.scss";
+import 'simplebar/dist/simplebar.min.css';
+import 'react-image-lightbox/style.css';
 
 // This component fixes bug where new page load would sometimes be in the middle or bottom
 import ScrollToTop from "./components/misc/ScrollToTop";

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { bodybyyamaWireframe } from '../../../../utils/photos'
+import { bodybyyamaWireframe } from '../../../../utils/screens'
 import ScreensGallery from '../../../misc/ScreensGallery'
 
 export default class BodyByYama extends Component {

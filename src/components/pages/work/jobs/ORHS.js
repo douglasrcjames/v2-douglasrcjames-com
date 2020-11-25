@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
+import { orhs } from '../../../../utils/photos'
+import PhotoGallery from '../../../misc/PhotoGallery'
 
 export default class ORHS extends Component {
     render() {
         return (
             <div>
-                <p>Screenshots and demo coming soon!</p>
+                <PhotoGallery photos={orhs} />
             </div>
         )
     }

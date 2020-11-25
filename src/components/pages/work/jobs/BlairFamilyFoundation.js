@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { blairFamilyV1, blairFamilyV2, blairFamilyWireframe } from "../../../../utils/photos"
+import { blairFamilyV1, blairFamilyV2, blairFamilyWireframe } from "../../../../utils/screens"
 import ScreensGallery from '../../../misc/ScreensGallery'
 
 export default class BlairFamilyFoundation extends Component {

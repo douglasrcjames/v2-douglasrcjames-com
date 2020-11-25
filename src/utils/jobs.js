@@ -189,9 +189,10 @@ export const jobs = [
             </p>
             <p>
                 I built this site using React.js as the front end, and Firebase for the database backend to store contact info, and send that contact info to the client's email via 
-                node-mailer. The site took me about a month to plan, design, and build. The design phase was fairly quick, because I had previously built a SquareSpace site for the 
-                client, so I based much of my design off that template. I had to do a quick rework of the logo because the client did not have the original image for the logo. 
-                I also worked with a videographer and photographer to fit their content captured into the site. Since August 2019 the site has garnered 500 unique website visitors.
+                node-mailer. Firebase was also used for free SSL hosting and server side functions. The site took me about a month to plan, design, and build, but I continue to this day updating various media and wording content for the clients. 
+                The design phase was fairly quick, because I had previously built a SquareSpace site for the client, so I based much of my design off that template. 
+                I had to do a quick rework of the logo with my Photoshop skills because the client did not have the original image for the logo. 
+                I also worked with a videographer and photographer to fit their content captured into the site. 
             </p>
         </>,
         logoUrl: require("../assets/images/jobs/retreatonnichols/logo.png"),
@@ -239,11 +240,10 @@ export const jobs = [
         role: "Web developer",
         shortDescription: "Built a custom CMS and front end website for a political publication non-profit organization in Montgomery, Maryland.",
         longDescription: <div>
-            <p>Discuss that I still occasionally help them out, they are one of my more active clients.</p>
             <p>
                 CAPS (Council for Advocacy and Policy Solutions) is a non-profit political publication group with the goal to educate constituents in 
                 Montgomery County, Maryland about legislation that effects them. The group came to me in May, 2019 during my finals week for school because their previous web developer had dropped
-                the ball building a site with Webflow.com. <a href="https://capswebsite.webflow.io/" target="_blank" rel="noopener noreferrer">(See previous webflow site here.)</a> They were launching their CAPS program in a few weeks and were in a mad rush to get the site up and operational. 
+                the ball building a site with Webflow.com. <a href="https://capswebsite.webflow.io/" target="_blank" rel="noopener noreferrer">(See previous webflow site here</a> and screenshots below.) They were launching their CAPS program in a few weeks and were in a mad rush to get the site up and operational. 
                 I agreed, excited to use my new React and Firebase skills and was able to crank out a website for them in a week. (and still pass 4 of my engineering classes!)
                 There was one hiccup the night before they were launching, I was making a few final (vital) touches to the site, and suddenly my computer crashed. I spent hours 
                 troubleshooting to get back hours of un-pushed changes, but unfortunately, my hard drive was bust. 
@@ -267,7 +267,8 @@ export const jobs = [
                 I am very proud of the website I developed and the client was very pleased with the finished product as well. I recently developed a custom CMS 
                 solution for them to be able to post their own articles within my intervention. In hindsight, I definitely should have started this project by building the CMS, 
                 but along the way I learned the true difference between WordPress/SquareSpace/other CMS use case and my CMS solution. 
-                Oh and since July 2019 the site has garnered 1,500 unique website visitors!
+
+                Discuss that I still occasionally help them out, they are one of my more active clients.
             </p>
         </div>,
         logoUrl: require("../assets/images/jobs/caps/logo.png"),
@@ -289,12 +290,15 @@ export const jobs = [
         title: "bodybyyama.com",
         role: "Web developer",
         shortDescription: "Built a front end website the personal fitness trainer Yamato Nishino in San Jose, California.",
-        longDescription: <p>Discuss that site is no longer live. Yamato Nishino is a friend and personal fitness trainer in the San Fransisco Bay Area. In June of 2018, she wanted a website to 
+        longDescription: <p>
+            Yamato Nishino was a friend and personal fitness trainer in the San Fransisco Bay Area. She wanted a website to 
             centralize her personal training business, where potential clients could read and watch more about what she had to offer. 
             I worked with two other graphic designers, <a href="https://www.linkedin.com/in/ryan-wall-287837132/" target="_blank" rel="noopener noreferrer">Ryan Wall</a>&nbsp;
             and <a href="https://www.linkedin.com/in/mitchell-licata/" target="_blank" rel="noopener noreferrer">Mitch Licata</a> to create logo, branding (colors, fonts, etc), and 
-            website wireframe. I developed her one-page site with PHP for the contact form and UIkit 3 for the front end work. This site turned out simply beautiful, I was so proud 
-            of what we were able to design as a 3 man team. My favorite part of the site are the animations, such as the background image that moves a bit as the viewer scrolls down the page. </p>,
+            website wireframe. I developed her one-page site with PHP for the contact form and UIkit3 for the front end work. This site turned out simply beautiful, I was so proud 
+            of what we were able to design as a 3 man team. My favorite part of the site is the background image of her and how it that moves a bit as the viewer scrolls down the page.
+            Yamato has recently decided to step away from her personal training business and the site is no longer live. 
+        </p>,
         logoUrl: require("../assets/images/jobs/bodybyyama/logo.png"),
         logoSize: SIZE.LARGE,
         period: "June, 2018 - August, 2018",
@@ -325,7 +329,6 @@ export const jobs = [
             the site in under a week! Both Ryan and I, as well as the client are stoked with the outcome of the website. I was particularly excited because this was my first experience with
             translating a wireframe to a working website. There was only one style I wasn't able to figure out, which was the green or white stripe that went from the headers
             to the edge of the screen. Perhaps with more time on the project, I would have found a solution to this, but it was not vital to the design so I scrapped it in the final design.
-            I continue to provide occasional updates to the site when necessary to the client.  Since April of 2018, the site has garnered 3500 unique website visitors.
         </p>
         </>,
         logoUrl: require("../assets/images/jobs/glasshousefarms/logo.png"),
@@ -347,7 +350,7 @@ export const jobs = [
         title: "Coldbrew Creative",
         role: "Web developer",
         shortDescription: "Built, updated, and managed websites for a small digital marketing team in San Jose, California.",
-        longDescription: <p>Now Manticore, Coldbrew Creative is a small digital marketing firm based in San Jose, California. The CEO, 
+        longDescription: <p>Coldbrew Creative (now Manticore) is a small digital marketing firm based in San Jose, California. The CEO, 
             <a href="https://www.linkedin.com/in/mikeejlee/" target="_blank" rel="noopener noreferrer">&nbsp;Mike Lee</a>,&nbsp; was a classmate of mine at San Jose State,
             and I caught wind that he was looking for a web designer to help with client demand. I joined his Slack team, Trello workspace, and Github repositories
             so I could jump in to help with various web maintenance tasks. There was an even mix between fixing and updating WordPress, SquareSpace, and HTML/CSS/JS/PHP bugs and content. 
@@ -355,7 +358,7 @@ export const jobs = [
             they wanted to build on the site. Overall, this was a great job and with a motivated team around me that I gained a plethora of knowledge from. Mike motivated me
             as a leader, <a href="https://github.com/andyhqtran" target="_blank" rel="noopener noreferrer">Andy Tran</a> motivated me as a software engineer, and&nbsp;
             <a href="https://www.linkedin.com/in/ryan-wall-287837132/" target="_blank" rel="noopener noreferrer">Ryan Wall</a> motivated me as a designer. Ultimately, I left
-            the team because I was working with technology too far up the stack (WordPress) and wanted to work with less abstracted technologies, like Node and Python. </p>,
+            the team because I was working with technology too far up the stack (WordPress) and wanted to work with less abstracted technologies, like Node and Python.</p>,
         logoUrl: require("../assets/images/jobs/coldbrewcreative/logo.png"),
         logoSize: SIZE.LARGE,
         period: "October, 2017 - January, 2018",
@@ -363,7 +366,10 @@ export const jobs = [
         link: "https://mntcre.com/",
         skills: {
             primary: [
-                SKILLS.HTML, SKILLS.CSS, SKILLS.PHP, SKILLS.SQUARESPACE, SKILLS.WORDPRESS
+                SKILLS.HTML, SKILLS.CSS, SKILLS.PHP, SKILLS.SQUARESPACE, SKILLS.WORDPRESS, SKILLS.GITHUB
+            ],
+            other: [
+                SKILLS.TEAMWORK
             ]
         },
         headerUrl: require("../assets/images/jobs/coldbrewcreative/header.png"),
@@ -375,13 +381,13 @@ export const jobs = [
         title: "Tesla",
         role: "Product Specialist",
         shortDescription: "Car salesman at the flagship Tesla electric vehicle showroom in Sunnyvale, California.",
-        longDescription: <p>While attending San Jose State, I had some spare time and a heavy interest in Tesla as a company and the products they were building. I got an interview from a 
+        longDescription: <p>While attending San Jose State University, a heavy interest in Tesla as a company and the products they were building. I got an interview from a 
             college friend of mine, <a href="https://www.linkedin.com/in/vybhav-a-kandadai-%E2%98%81-8525244a/" rel="noopener noreferrer" target="_blank">Vybhav Kandadai</a>, another car salesman 
             at the Santana Row show room in San Jose. I nailed the interview after expressing my knowledge for Elon's vision for Tesla and his other companies. I made quick friends
             with my co-workers, and have lasting relationships with many of them from my experience there. The Santana Row location was the flagship store for Tesla, so we got many affluent visitors, 
-            such as business men and women, sports players, actors/actresses, and Elon himself occasionally. In this high stakes environment, I perfected how to present myself as a professional. 
+            such as business men and women, sports players, actors/actresses, Steve Wozniak and even Elon himself. In this high stakes environment, I perfected how to present myself as a professional. 
             Ultimately, I left the job because I quickly found that moving from selling cars to an engineering position was difficult due to the size of the company. I felt I had also
-            reached the limit on the challenges I was being presented, and wanted to move to a more challenging engineering job that took advantage of what I was studying in school.
+            reached the limit on the challenges I was being presented, and wanted to move to a more challenging yechnical job that took advantage of what I was studying in school.
             I am grateful for the opportunity I had at Tesla and the valuable lessons I learned along the way.</p>,
         logoUrl: require("../assets/images/jobs/tesla/logo.png"),
         logoSize: SIZE.MEDIUM,
@@ -442,8 +448,8 @@ export const jobs = [
             by setting up desks. While not setting up desks, I was busy re-imaging old laptops to be recirculated into the company. This doesn't sound that glamorous, but to me I loved it; 
             I always enjoyed tearing my computer setup apart at home and putting it back together in a more organized or optimal way. My main project was for hardware reconciliation, 
             where I had to account for all hardware under the hood of the headquarters in Sunnyvale, which was more than a million dollars in assets. I needed to sift through hundreds 
-            of separate spreadsheets and cross reference them into one consolidated list to reference. I was able to finish the project, but it was more difficult than my manager or 
-            I had anticipated because many assets were either unaccounted for or unaccessible.  Through this, I learned the bureaucracy of a large, publicly traded, network security corporation.         </p>,
+            of separate spreadsheets and cross reference them with the phyisical hardware into one consolidated list to reference. I was able to finish the project, but it was more difficult than my manager or 
+            I had anticipated because many assets were either unaccounted for or unaccessible.  Through this, I learned the bureaucracy of a large, publicly traded, network security corporation.</p>,
         logoUrl: require("../assets/images/jobs/palo-alto-networks/logo.png"),
         logoSize: SIZE.LARGE,
         period: "May, 2015 - August, 2015",
@@ -451,7 +457,7 @@ export const jobs = [
         link: "https://www.paloaltonetworks.com/",
         skills: {
             other: [
-                SKILLS.TECHNICAL_SUPPORT, SKILLS.CUSTOMER_SERVICE
+                SKILLS.TECHNICAL_SUPPORT, SKILLS.CUSTOMER_SERVICE, SKILLS.TEAMWORK
             ]
         },
         headerUrl: require("../assets/images/jobs/palo-alto-networks/header.png"),
@@ -466,10 +472,9 @@ export const jobs = [
         longDescription: <p>ACFN is an ATM company with 2500+ machines worldwide that operates on a franchise business model.
             ACFN provides market research on the best placement of the ATM and follow up support for the ATM front and back end.
             The franchisee buys an ACFN supported ATM, usually <a href="https://www.tritonatm.com/" target="_blank" rel="noopener noreferrer">Triton</a> branded,  
-            then "buys" the cash that goes into the ATM, and ACFN as a business takes a percentage off every transaction. I sat in an office in downtown
+            then uses their own cash to place inside the ATM, and ACFN as a business takes a percentage off every transaction. I sat in an office in downtown
             San Jose answering phone calls from franchisees dialing in from around the world when trying to setup, service, or troubleshoot the machines (or customers calling with issues, which rarely happened.)
-            In this position, I learned how to remotely troubleshoot with clients with semi-high level hardware and software. The troubleshooting patterns I learned
-            at this job directly applied to the inception of <Link to="/work/minute.tech-llc">Minute.tech</Link>. </p>,
+            In this position, I learned how to remotely troubleshoot with clients with high level hardware and software.</p>,
         logoUrl: require("../assets/images/jobs/acfn/logo.png"),
         logoSize: SIZE.LARGE,
         period: "February, 2015 - June, 2015",
@@ -500,7 +505,6 @@ export const jobs = [
             primary: [
                 SKILLS.GITHUB, SKILLS.SWIFT, SKILLS.PYTHON, SKILLS.FLASK, SKILLS.MYSQL
             ],
-            // TODO: split this up better visually, hard to read all these. maybe just get rid of em?
             other: [
                 SKILLS.BUSINESS_DEV, 
                 SKILLS.ACCOUNTING,
@@ -538,7 +542,7 @@ export const jobs = [
             iHealPhones was my first business I built at the age of 15 that was focused on repairing smartphone, laptop, and device hardware in the local area of El Dorado Hills, California. 
             80% of work done was fixing iPhone screens at a time when iPhones were hitting the market. iHealPhones gave me the reputation at my high school as the "phone guy", which caused many jobless high schoolers asking for a free phone fix. 
             These requests got so bad, that I "had" to make a shirt that said "No, I will not fix your phone for free." (I know, pretty cringey.) 
-            The Flash website I built for this business was my first website and introduced me to the coding world for the first time.
+            The HTML, CSS, PHP, and Flash website I built for this business was my first website and introduced me to the coding world for the first time.
             The tech repair/support business and troubleshooting knowledge I learned at this job directly applied to the inception of <Link to="/work/minute.tech-llc">Minute.tech</Link>. 
         </p>,
         logoUrl: require("../assets/images/jobs/ihealphones/logo-v2.png"),
@@ -551,6 +555,7 @@ export const jobs = [
                 SKILLS.WEB_FUNDAMENTALS,
                 SKILLS.HTML,
                 SKILLS.CSS,
+                SKILLS.PHP,
                 SKILLS.ADOBE_PRODUCTS, 
             ],
             other: [
@@ -575,7 +580,7 @@ export const jobs = [
             &nbsp;<a href="https://www.deca.org" target="_blank" rel="noopener noreferrer">DECA</a>, a young business leader club at school which is normally 
             reserved for 3rd and 4th year students, invited me to join the club as a 2nd year because of iHealPhones. I also became 1 of the 3 web developer students that 
             managed the school website. Through this early opportunity, I was given a free subscription to Adobe Creative Suite (Photoshop, Dreamweaver, etc) 
-            and to <a href="https://www.lynda.com" target="_blank" rel="noopener noreferrer">Lyndia.com</a> where I learned the basics of web development and design with hours of online tutorials. 
+            and to <a href="https://www.lynda.com" target="_blank" rel="noopener noreferrer">Lyndia.com</a> (now owned by LinkedIn) where I learned the basics of web development and design with hours of online tutorials. 
             Despite my "techie" persona, I managed to still be a sporty dude, playing soccer and lacrosse, but ultimately, I knew my calling was technology, 
             so I applied to colleges to pursue a computer engineering degree at <Link to="/work/san-jose-state-university">San Jose State University</Link>.
         </p>,
@@ -587,6 +592,9 @@ export const jobs = [
         skills: {
             primary: [
                 SKILLS.WEB_FUNDAMENTALS,
+                SKILLS.HTML,
+                SKILLS.CSS,
+                SKILLS.JS,
                 SKILLS.ADOBE_PRODUCTS,
             ],
             other: [

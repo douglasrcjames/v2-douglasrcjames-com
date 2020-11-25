@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { CAPSV1, CAPSV2 } from "../../../../utils/photos"
+import { CAPSV1, CAPSV2 } from "../../../../utils/screens"
 import ScreensGallery from '../../../misc/ScreensGallery'
 
 export default class CAPS extends Component {

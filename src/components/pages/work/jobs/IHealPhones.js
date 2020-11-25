@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
+import { ihealphones } from '../../../../utils/photos'
+import PhotoGallery from '../../../misc/PhotoGallery'
 
 export default class IHealPhones extends Component {
     render() {
         return (
             
             <div>
-                Will add previous website screenshots, other photos
                 <div className="center-text">
                     <iframe
                         title="iHealPhones video"
@@ -20,6 +21,8 @@ export default class IHealPhones extends Component {
                         webkitallowfullscreen="webkitallowfullscreen"
                     />
                 </div> 
+                <br/>
+                <PhotoGallery photos={ihealphones} />
             </div>
         )
     }

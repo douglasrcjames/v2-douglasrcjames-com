@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import { mtMobileSwift, mtMobileWireframe, mtWebLive, mtMobileNative, mtWebWireframe, mtMisc } from '../../../../utils/photos'
+import { mtMobileSwift, mtMobileWireframe, mtWebLive, mtMobileNative, mtWebWireframe } from '../../../../utils/screens'
+import { mtMisc } from '../../../../utils/photos'
 import PhotoGallery from '../../../misc/PhotoGallery'
 import ScreensGallery from '../../../misc/ScreensGallery'
 
@@ -71,9 +72,17 @@ export default class MinuteTech extends Component {
                 <div className="horiz-rule" />
                 <br/>
 
-                <div className="md-width center">
-                    <PhotoGallery photos={mtMisc} />
+                <div className="lg-container">
+                    <h2>Business Development</h2>
+                    <p>
+                        Written two businnes plans, led teams, etc... explain the version I built and whyI built them that way. magna vel placerat. Vestibulum sem lacus, iaculis in porttitor eget, commodo varius odio. 
+                        Suspendisse a laoreet justo. Cras a libero  sed mauris fringilla laoreet a at diam. Sed at finibus nulla. Maecenas vel nulla lobortis, aliquam arcu et, blandit enim. Pellentesque orci rhoncus, orci rhoncus,
+                        suscipit finibus dui, nec accumsan elit blandit id. Curabitur vestibulum vehicula viverra. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam varius elit a orci rhoncus, non pulvinar 
+                        turpis posuere. Duis dapibus tellus posuere, ultricies neque at, commodo dui. Ut viverra orci nisl. Nunc aliquet pellentesque sollicitudin.
+                    </p>
                 </div>
+                
+                <PhotoGallery photos={mtMisc} />
             </div>
         )
     }

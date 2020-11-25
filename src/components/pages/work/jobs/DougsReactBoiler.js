@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { dougsReactBoilerV1 } from "../../../../utils/photos"
+import { dougsReactBoilerV1 } from "../../../../utils/screens"
 import ScreensGallery from '../../../misc/ScreensGallery'
 
 export default class DougsReactBoiler extends Component {

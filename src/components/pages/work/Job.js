@@ -48,7 +48,7 @@ export default class Job extends Component {
                                 <Col style={{margin: "20px 0"}} xs={12} md={4}>
                                     { this.props.previousJob && (
                                         <Link to={`/work/${this.props.previousJob.title.split(" ").join("-").toLowerCase()}`} className="md-blue-btn">
-                                            <i className="fas fa-chevron-left" />&nbsp; Previous job
+                                            <i className="fas fa-chevron-left" />&nbsp; Next job
                                         </Link>
                                     )}
                                 </Col>
@@ -60,7 +60,7 @@ export default class Job extends Component {
                                 <Col style={{margin: "20px 0"}} xs={12} md={4}>
                                     { this.props.nextJob && (
                                         <Link to={`/work/${this.props.nextJob.title.split(" ").join("-").toLowerCase()}`} className="md-blue-btn">
-                                            Next job &nbsp;<i className="fas fa-chevron-right" />
+                                            Previous job &nbsp;<i className="fas fa-chevron-right" />
                                         </Link>
                                     )}
                                 </Col>
@@ -167,7 +167,7 @@ export default class Job extends Component {
                         </Grid>
                         <br/>
                     </div>
-                    <div className="horiz-rule" />
+                    <div className="horiz-rule sm-margin-b" />
                     <div className="md-margin-b">
                         {this.props.job.extraContent}
                     </div>

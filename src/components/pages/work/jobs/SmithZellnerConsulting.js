@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { smithzellnerV1, smithzellnerV2 } from "../../../../utils/photos"
+import { smithzellnerV1, smithzellnerV2 } from "../../../../utils/screens"
 import ScreensGallery from '../../../misc/ScreensGallery'
 
 export default class SmithZellnerConsulting extends Component {

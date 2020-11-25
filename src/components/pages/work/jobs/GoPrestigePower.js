@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { goprestigepowerV1, goprestigepowerV2 } from "../../../../utils/photos"
+import { goprestigepowerV1, goprestigepowerV2 } from "../../../../utils/screens"
 import ScreensGallery from '../../../misc/ScreensGallery'
 
 export default class GoPrestigePower extends Component {

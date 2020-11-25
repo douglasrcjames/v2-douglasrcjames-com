@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
+import { acfn } from '../../../../utils/photos'
+import PhotoGallery from '../../../misc/PhotoGallery'
 
 export default class ACFN extends Component {
     render() {
         return (
             <div>
-                Include 1 image?
+                <PhotoGallery photos={acfn} />
             </div>
         )
     }

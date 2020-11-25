@@ -139,6 +139,10 @@ body {
 * Responsive Width
 */
 @media screen and (min-width: 901px) {
+    .xs-width {
+        width: 35% !important;
+    }
+
     .sm-width {
         width: 50% !important;
     }
@@ -153,6 +157,10 @@ body {
 }
 
 @media screen and (max-width: 900px) {
+    .xs-width {
+        width: 60% !important;
+    }
+
     .sm-width {
         width: 70% !important;
     }

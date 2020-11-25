@@ -1,8 +1,6 @@
 import React, { Component } from "react"
 import SimpleBar from 'simplebar-react';
-import 'simplebar/dist/simplebar.min.css';
 import Lightbox from 'react-image-lightbox';
-import 'react-image-lightbox/style.css'; // This only needs to be imported once in your app
 
 export default class ScreensGallery extends Component {
     constructor(props) {
@@ -32,8 +30,6 @@ export default class ScreensGallery extends Component {
                 return (
                     <span key={i}>
                     <img src={photo.src} alt={photo.caption} className="slider-img" onClick={() => this.openLightBox(i)}/>
-                    {/* TODO: get the caption on a new line from image, but not have every image on a new line... might have to this be overlayed on the image or only shown in the lightbox */}
-                    {/* TODO: add buttons for more obvious side to side scrolling */}
                     {/* <span>{photo.caption}</span> */}
                     </span>
                 )

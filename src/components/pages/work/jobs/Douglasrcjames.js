@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { douglasrcjamesV1, douglasrcjamesV2, douglasrcjamesWireframe } from "../../../../utils/photos"
+import { douglasrcjamesV1, douglasrcjamesV2, douglasrcjamesWireframe } from "../../../../utils/screens"
 import ScreensGallery from '../../../misc/ScreensGallery'
 
 export default class Douglasrcjames extends Component {

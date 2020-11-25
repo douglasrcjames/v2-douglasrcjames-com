@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { sjsu } from '../../../../utils/photos'
+import PhotoGallery from '../../../misc/PhotoGallery'
 
 export default class SJSU extends Component {
     render() {
@@ -112,8 +114,9 @@ export default class SJSU extends Component {
                         <li><a href="http://info.sjsu.edu/web-dbgen/catalog/courses/CMPE195F.html" target="_blank" rel="noopener noreferrer">CMPE 195F - Senior Design II</a></li>
                         <li><a href="http://info.sjsu.edu/web-dbgen/catalog/courses/CMPE146.html" target="_blank" rel="noopener noreferrer">CMPE 146 - Real-Time Embedded System Co-Design</a></li>
                     </ul>
-                    
                 </ul>
+
+                <PhotoGallery photos={sjsu} />
             </div>
         )
     }
