@@ -69,3 +69,14 @@ export const SKILLS = {
     OPERATING_SYSTEMS_DESIGN: "operating systems design",
     COMPILER_DESIGN: "compiler design"
 }
+
+export const METRICS = {
+    LOC: "lines of source code",
+    COMMITS: "commits",
+    FILES: "source files",
+    SCREENS: "screens", 
+
+    VISITORS: "unique visitors",
+    PAGE_VIEWS: "page views",
+    SESSION_DURATION: "session duration"
+ }

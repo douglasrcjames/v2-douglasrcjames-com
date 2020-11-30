@@ -3,7 +3,7 @@ import { MdWork, MdSchool } from "react-icons/md";
 import { BiCodeAlt, BiRocket } from "react-icons/bi"
 import { Link } from 'react-router-dom';
 
-import { STATUS, SKILLS, SIZE } from "./constants";
+import { STATUS, SKILLS, SIZE, METRICS } from "./constants";
 
 import MinuteTech from "../components/pages/work/jobs/MinuteTech";
 import SJSU from '../components/pages/work/jobs/SJSU';
@@ -35,9 +35,10 @@ export const jobs = [
             Minim enim aliquip consectetur est ipsum incididunt labore aliquip. Magna consequat sint laboris velit 
             do tempor irure. Ullamco nulla excepteur in ea enim ipsum minim ullamco aliqua. Ullamco qui excepteur do 
             nostrud non.</p>,
+        githubLink: "https://github.com/douglasrcjames/smithzellner.consulting",
         logoUrl: require("../assets/images/jobs/smithzellner/logo.png"),
         logoSize: SIZE.LARGE,
-        period: "August, 2020 - September, 2020",
+        period: "July, 2020 - September, 2020",
         status: STATUS.COMPLETE,
         link: "https://www.smithzellner.consulting",
         skills: {
@@ -45,6 +46,28 @@ export const jobs = [
                 SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.NODE, SKILLS.REACT, SKILLS.GITHUB, SKILLS.FIREBASE
             ]
         },
+        metrics: [
+            {
+                name: METRICS.VISITORS,
+                value: 176
+            },
+            {
+                name: METRICS.PAGE_VIEWS,
+                value: "1,889"
+            },
+            {
+                name: METRICS.COMMITS,
+                value: 34
+            },
+            {
+                name: METRICS.LOC,
+                value: "~2200"
+            },
+            {
+                name: METRICS.FILES,
+                value: "~80"
+            }
+        ],
         headerUrl: require("../assets/images/jobs/smithzellner/header.png"),
         headerPosition: "50% 50%",
         icon: <BiCodeAlt />,
@@ -86,6 +109,7 @@ export const jobs = [
             Minim enim aliquip consectetur est ipsum incididunt labore aliquip. Magna consequat sint laboris velit 
             do tempor irure. Ullamco nulla excepteur in ea enim ipsum minim ullamco aliqua. Ullamco qui excepteur do 
             nostrud non.</p>,
+        githubLink: "https://github.com/douglasrcjames/goprestigepower.com",
         logoUrl: require("../assets/images/jobs/goprestigepower/logo.png"),
         logoSize: SIZE.LARGE,
         period: "July, 2020 - August, 2020",
@@ -96,6 +120,28 @@ export const jobs = [
                 SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.NODE, SKILLS.REACT, SKILLS.GITHUB, SKILLS.FIREBASE
             ]
         },
+        metrics: [
+            {
+                name: METRICS.VISITORS,
+                value: 698
+            },
+            {
+                name: METRICS.PAGE_VIEWS,
+                value: "4,361"
+            },
+            {
+                name: METRICS.COMMITS,
+                value: 62
+            },
+            {
+                name: METRICS.LOC,
+                value: "~8000"
+            },
+            {
+                name: METRICS.FILES,
+                value: "~85"
+            }
+        ],
         headerUrl: require("../assets/images/jobs/goprestigepower/header.png"),
         headerPosition: "50% 50%",
         icon: <BiCodeAlt />,
@@ -111,6 +157,7 @@ export const jobs = [
             Minim enim aliquip consectetur est ipsum incididunt labore aliquip. Magna consequat sint laboris velit 
             do tempor irure. Ullamco nulla excepteur in ea enim ipsum minim ullamco aliqua. Ullamco qui excepteur do 
             nostrud non.</p>,
+        githubLink: "https://github.com/douglasrcjames/vectorpsi.com",
         logoUrl: require("../assets/images/jobs/vectorpsi/logo.png"),
         logoSize: SIZE.LARGE,
         period: "June, 2020 - October, 2020",
@@ -121,6 +168,28 @@ export const jobs = [
                 SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.NODE, SKILLS.REACT, SKILLS.GITHUB, SKILLS.FIREBASE
             ]
         },
+        metrics: [
+            {
+                name: METRICS.VISITORS,
+                value: 361
+            },
+            {
+                name: METRICS.PAGE_VIEWS,
+                value: "1,889"
+            },
+            {
+                name: METRICS.COMMITS,
+                value: 33
+            },
+            {
+                name: METRICS.LOC,
+                value: "~3700"
+            },
+            {
+                name: METRICS.FILES,
+                value: "~240"
+            }
+        ],
         headerUrl: require("../assets/images/jobs/vectorpsi/header.png"),
         headerPosition: "50% 50%",
         icon: <BiCodeAlt />,
@@ -136,7 +205,7 @@ export const jobs = [
             Minim enim aliquip consectetur est ipsum incididunt labore aliquip. Magna consequat sint laboris velit 
             do tempor irure. Ullamco nulla excepteur in ea enim ipsum minim ullamco aliqua. Ullamco qui excepteur do 
             nostrud non.</p>,
-        // TODO: give me a proper logo!
+        githubLink: "https://github.com/douglasrcjames/dougs-react-boiler",
         logoUrl: require("../assets/images/jobs/dougs-react-boiler/logo.png"),
         logoSize: SIZE.LARGE,
         period: "June, 2020 - November, 2020",
@@ -147,6 +216,20 @@ export const jobs = [
                 SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.NODE, SKILLS.REACT, SKILLS.GITHUB, SKILLS.FIREBASE
             ]
         },
+        metrics: [
+            {
+                name: METRICS.LOC,
+                value: "~1200"
+            },
+            {
+                name: METRICS.COMMITS,
+                value: 34
+            },
+            {
+                name: METRICS.FILES,
+                value: "~35"
+            }
+        ],
         headerUrl: require("../assets/images/jobs/dougs-react-boiler/header.png"),
         headerPosition: "50% 50%",
         icon: <BiCodeAlt />,
@@ -156,12 +239,14 @@ export const jobs = [
         title: "blairfamily.foundation",
         role: "Web developer",
         shortDescription: "Built a front end website for a philanthropy foundation in Montgomery, Maryland.",
-        longDescription: <p>Ullamco excepteur adipisicing sit nisi duis sint ex aliquip excepteur ut eiusmod. 
-            Pariatur nostrud est cupidatat commodo labore eiusmod quis aliquip quis nulla consequat. 
-            Ad nostrud Lorem nulla ut esse consequat Lorem exercitation nisi ipsum ex adipisicing aliqua magna. 
-            Minim enim aliquip consectetur est ipsum incididunt labore aliquip. Magna consequat sint laboris velit 
-            do tempor irure. Ullamco nulla excepteur in ea enim ipsum minim ullamco aliqua. Ullamco qui excepteur do 
-            nostrud non.</p>,
+        longDescription: <p>
+            The David and Mikel Blair Family Foundation is dedicated to purposeful giving and 
+            is rooted in improving the quality of life for individuals around Maryland. From literacy and 
+            equity in education, to at-risk youth programs and mental health access, the foundation believes 
+            and sees value in individuals, and their impact on the world, when they are given access to opportunity. 
+            This site was built using React on the front end and Firebase on the back end.
+        </p>,
+        githubLink: "https://github.com/douglasrcjames/blairfamily.foundation",
         logoUrl: require("../assets/images/jobs/blairfamily/logo.png"),
         logoSize: SIZE.LARGE,
         period: "April, 2020 - September, 2020",
@@ -172,6 +257,28 @@ export const jobs = [
                 SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.NODE, SKILLS.REACT, SKILLS.GITHUB, SKILLS.FIREBASE, SKILLS.WIREFRAMING
             ]
         },
+        metrics: [
+            {
+                name: METRICS.VISITORS,
+                value: 1141
+            },
+            {
+                name: METRICS.PAGE_VIEWS,
+                value: "4,147"
+            },
+            {
+                name: METRICS.COMMITS,
+                value: 43
+            },
+            {
+                name: METRICS.LOC,
+                value: "~3400"
+            },
+            {
+                name: METRICS.FILES,
+                value: "~150"
+            }
+        ],
         headerUrl: require("../assets/images/jobs/blairfamily/header.png"),
         headerPosition: "50% 50%",
         icon: <BiCodeAlt />,
@@ -195,6 +302,7 @@ export const jobs = [
                 I also worked with a videographer and photographer to fit their content captured into the site. 
             </p>
         </>,
+        githubLink: "https://github.com/douglasrcjames/retreatonnichols.com",
         logoUrl: require("../assets/images/jobs/retreatonnichols/logo.png"),
         logoSize: SIZE.LARGE,
         period: "August, 2019 - March 2020",
@@ -205,6 +313,28 @@ export const jobs = [
                 SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.NODE, SKILLS.REACT, SKILLS.GITHUB, SKILLS.FIREBASE
             ]
         },
+        metrics: [
+            {
+                name: METRICS.VISITORS,
+                value: 1302
+            },
+            {
+                name: METRICS.PAGE_VIEWS,
+                value: "4,953"
+            },
+            {
+                name: METRICS.COMMITS,
+                value: 59
+            },
+            {
+                name: METRICS.LOC,
+                value: "~2000"
+            },
+            {
+                name: METRICS.FILES,
+                value: "~150"
+            }
+        ],
         headerUrl: require("../assets/images/jobs/retreatonnichols/header.png"),
         headerPosition: "50% 50%",
         icon: <BiCodeAlt />,
@@ -220,6 +350,7 @@ export const jobs = [
             Minim enim aliquip consectetur est ipsum incididunt labore aliquip. Magna consequat sint laboris velit 
             do tempor irure. Ullamco nulla excepteur in ea enim ipsum minim ullamco aliqua. Ullamco qui excepteur do 
             nostrud non.</p>,
+        githubLink: "https://github.com/douglasrcjames/douglasrcjames.com",
         logoUrl: require("../assets/images/logos/logo512.png"),
         logoSize: SIZE.LARGE,
         period: "August, 2019 - Today",
@@ -230,6 +361,28 @@ export const jobs = [
                 SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.NODE, SKILLS.REACT, SKILLS.GITHUB, SKILLS.FIREBASE, SKILLS.WIREFRAMING
             ]
         },
+        metrics: [
+            {
+                name: METRICS.VISITORS,
+                value: 245
+            },
+            {
+                name: METRICS.PAGE_VIEWS,
+                value: "2,226"
+            },
+            {
+                name: METRICS.COMMITS,
+                value: 77
+            },
+            {
+                name: METRICS.LOC,
+                value: "~4600"
+            },
+            {
+                name: METRICS.FILES,
+                value: "~350"
+            }
+        ],
         headerUrl: require("../assets/images/jobs/douglasrcjames/header.png"),
         headerPosition: "50% 40%",
         icon: <BiCodeAlt />,
@@ -271,6 +424,7 @@ export const jobs = [
                 Discuss that I still occasionally help them out, they are one of my more active clients.
             </p>
         </div>,
+        githubLink: "https://github.com/douglasrcjames/capsmd.org",
         logoUrl: require("../assets/images/jobs/caps/logo.png"),
         logoSize: SIZE.LARGE,
         period: "May, 2019 - November, 2020",
@@ -281,6 +435,28 @@ export const jobs = [
                 SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.NODE, SKILLS.REACT, SKILLS.GITHUB, SKILLS.FIREBASE
             ]
         },
+        metrics: [
+            {
+                name: METRICS.VISITORS,
+                value: 3668
+            },
+            {
+                name: METRICS.PAGE_VIEWS,
+                value: "16,964"
+            },
+            {
+                name: METRICS.COMMITS,
+                value: 177
+            },
+            {
+                name: METRICS.LOC,
+                value: "~15,000"
+            },
+            {
+                name: METRICS.FILES,
+                value: "~250"
+            }
+        ],
         headerUrl: require("../assets/images/jobs/caps/header.png"),
         headerPosition: "50% 50%",
         icon: <BiCodeAlt />,
@@ -299,6 +475,7 @@ export const jobs = [
             of what we were able to design as a 3 man team. My favorite part of the site is the background image of her and how it that moves a bit as the viewer scrolls down the page.
             Yamato has recently decided to step away from her personal training business and the site is no longer live. 
         </p>,
+        githubLink: "https://github.com/douglasrcjames/bodybyyama.com",
         logoUrl: require("../assets/images/jobs/bodybyyama/logo.png"),
         logoSize: SIZE.LARGE,
         period: "June, 2018 - August, 2018",
@@ -309,6 +486,20 @@ export const jobs = [
                 SKILLS.HTML, SKILLS.CSS, SKILLS.PHP, SKILLS.MYSQL, SKILLS.WIREFRAMING
             ]
         },
+        metrics: [
+            {
+                name: METRICS.COMMITS,
+                value: 6
+            },
+            {
+                name: METRICS.LOC,
+                value: "~600"
+            },
+            {
+                name: METRICS.FILES,
+                value: "~50"
+            }
+        ],
         headerUrl: require("../assets/images/jobs/bodybyyama/header.png"),
         headerPosition: "50% 70%",
         icon: <BiCodeAlt />,
@@ -319,18 +510,19 @@ export const jobs = [
         role: "Web developer",
         shortDescription: "Built a front end website a hydroponic growing facility in Ithaca, New York.",
         longDescription: <>
-        <p>
-            Glass House Farms LLC is a hydroponic growing faculty based out of Ithaca, New York. They grow veggies like lettuce, basil, pac choi, and arugula in hydroponic glasshouse farms (hence the name) and are sold in local grocery stores.
-            The business wanted a central website where they could educate potential buyers and consumers on their tasty, healthy, and trusted products, as well as a contact channel. 
-        </p>
-        <p>
-            I worked with a graphic designer <a href="https://www.linkedin.com/in/ryan-wall-287837132/" target="_blank" rel="noopener noreferrer">Ryan Wall</a>&nbsp;
-            to create a logo, branding (colors, fonts, etc), and website wireframe that fit the client's needs. Ryan was able to create the wireframe mock and I was able to code 
-            the site in under a week! Both Ryan and I, as well as the client are stoked with the outcome of the website. I was particularly excited because this was my first experience with
-            translating a wireframe to a working website. There was only one style I wasn't able to figure out, which was the green or white stripe that went from the headers
-            to the edge of the screen. Perhaps with more time on the project, I would have found a solution to this, but it was not vital to the design so I scrapped it in the final design.
-        </p>
+            <p>
+                Glass House Farms LLC is a hydroponic growing faculty based out of Ithaca, New York. They grow veggies like lettuce, basil, pac choi, and arugula in hydroponic glasshouse farms (hence the name) and are sold in local grocery stores.
+                The business wanted a central website where they could educate potential buyers and consumers on their tasty, healthy, and trusted products, as well as a contact channel. 
+            </p>
+            <p>
+                I worked with a graphic designer <a href="https://www.linkedin.com/in/ryan-wall-287837132/" target="_blank" rel="noopener noreferrer">Ryan Wall</a>&nbsp;
+                to create a logo, branding (colors, fonts, etc), and website wireframe that fit the client's needs. Ryan was able to create the wireframe mock and I was able to code 
+                the site in under a week! Both Ryan and I, as well as the client are stoked with the outcome of the website. I was particularly excited because this was my first experience with
+                translating a wireframe to a working website. There was only one style I wasn't able to figure out, which was the green or white stripe that went from the headers
+                to the edge of the screen. Perhaps with more time on the project, I would have found a solution to this, but it was not vital to the design so I scrapped it in the final design.
+            </p>
         </>,
+        githubLink: "https://github.com/douglasrcjames/glasshousefarms",
         logoUrl: require("../assets/images/jobs/glasshousefarms/logo.png"),
         logoSize: SIZE.LARGE,
         period: "March, 2018 - April, 2018",
@@ -341,6 +533,28 @@ export const jobs = [
                 SKILLS.HTML, SKILLS.CSS, SKILLS.PHP, SKILLS.MYSQL, SKILLS.WIREFRAMING
             ]
         },
+        metrics: [
+            {
+                name: METRICS.VISITORS,
+                value: 5009
+            },
+            {
+                name: METRICS.PAGE_VIEWS,
+                value: "15,986"
+            },
+            {
+                name: METRICS.COMMITS,
+                value: 5
+            },
+            {
+                name: METRICS.LOC,
+                value: "~1000"
+            },
+            {
+                name: METRICS.FILES,
+                value: "~70"
+            }
+        ],
         headerUrl: require("../assets/images/jobs/glasshousefarms/header.png"),
         headerPosition: "50% 60%",
         icon: <BiCodeAlt />,
@@ -408,7 +622,7 @@ export const jobs = [
         title: "Minute.tech LLC",
         role: "Founder & Software Engineer",
         shortDescription: "Web and mobile applications connecting non-techies to techies for technical support.",
-        longDescription: <p>Minute.tech plans to be a web, iOS, Android, and desktop app that provides consumer grade 
+        longDescription: <p>Mention that source code is proprititary. Minute.tech plans to be a web, iOS, Android, and desktop app that provides consumer grade 
             tech support by connecting clients who have tech questions with qualified technicians. 
             The system will facilitate communication with technicians over messenger, voice/video calls, 
             remote connection, and in-person scheduling, and a payment solution all under the application's hood. 
@@ -430,6 +644,28 @@ export const jobs = [
                 SKILLS.COMPUTER_HARDWARE, SKILLS.BUSINESS_DEV, SKILLS.LEADERSHIP, SKILLS.TEAMWORK, SKILLS.TECHNICAL_SUPPORT, SKILLS.CUSTOMER_SERVICE
             ]
         },
+        metrics: [
+            {
+                name: METRICS.VISITORS,
+                value: 1277
+            },
+            {
+                name: METRICS.PAGE_VIEWS,
+                value: "66,505"
+            },
+            {
+                name: METRICS.COMMITS,
+                value: 431
+            },
+            {
+                name: METRICS.LOC,
+                value: "~20,000"
+            },
+            {
+                name: METRICS.FILES,
+                value: "~500"
+            }
+        ],
         headerUrl: require("../assets/images/jobs/minutetech/header.png"),
         headerPosition: "50% 50%",
         icon: <BiRocket />,

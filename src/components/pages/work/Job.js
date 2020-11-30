@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import { Link } from 'react-router-dom';
+import { STATUS } from '../../../utils/constants';
 import { ucFirst } from '../../../utils/misc';
+import Metrics from '../../misc/Metrics';
 
 const WithSeparator = require("react-with-separator");
 
@@ -71,8 +73,53 @@ export default class Job extends Component {
                         <Grid fluid>
                             <Row>
                                 <Col md={12} lg={10}>
-                                    <h1>{this.props.job.title}</h1>
+                                    <Row middle="xs">
+                                        <Col xs={12} sm={8} className="sm-margin-t-b">
+                                        <a href={this.props.job.link} rel="noopener noreferrer" target="_blank" className="text-hover-light-blue"><h1 className="no-margin">{this.props.job.title}</h1></a>
+                                            <h3 className="roboto-bold sm-margin-t">{this.props.job.role}</h3>
+                                        </Col>
+                                        <Col xs={12} sm={4} className="sm-margin-t-b">
+                                            <Row end="sm">
+                                                <Col xs={12}>
+                                                    <h3>
+                                                        {this.props.job.period}
+                                                    </h3>
+                                                    <h4 className={`roboto-light md-text no-margin ${this.props.job.status === STATUS.COMPLETE ? 'green' : 'yellow'}`}>
+                                                        {this.props.job.status === STATUS.COMPLETE ? 
+                                                            <i className="fas fa-check"/> : 
+                                                            <i className="fas fa-clock"/>
+                                                        } 
+                                                        &nbsp;
+                                                        {ucFirst(this.props.job.status)}
+                                                    </h4>
+                                                </Col>
+                                            </Row>
+                                        </Col>
+                                    </Row>
+                                    
+
+                                    {/* DESCRIPTION */}
                                     {this.props.job.longDescription}
+                                    <Row center="xs">
+                                        <Col xs={12} sm={6} className="sm-padding-t-b">
+                                            <a href={this.props.job.link} rel="noopener noreferrer" target="_blank">
+                                                <button className="md-blue-btn">
+                                                    <i className="fas fa-globe-africa" /> Visit site
+                                                </button>
+                                            </a>  
+                                        </Col>
+                                        { this.props.job.githubLink && (
+                                            <Col xs={12} sm={6} className="sm-padding-t-b">
+                                                <a href={this.props.job.githubLink} rel="noopener noreferrer" target="_blank">
+                                                    <button className="md-blue-btn">
+                                                    <i className="fab fa-github" /> View source code
+                                                    </button>
+                                                </a>  
+                                            </Col>
+                                        )}
+                                    </Row>
+                                  
+                                   
                                 </Col>
                                 <Col md={12} lg={2}>
                                     <Row center="xs">
@@ -82,20 +129,6 @@ export default class Job extends Component {
                                             </Col>
                                         </a>
                                     </Row>
-                                </Col>
-                            </Row>
-                            <Row className="sm-margin-t-b">
-                                <Col className="sm-margin-t-b" md={12} lg={6}>
-                                    <h3>Role: <span className="roboto-light">{this.props.job.role}</span></h3>
-                                </Col>
-                                <Col className="sm-margin-t-b" md={12} lg={6}>
-                                    <h3>Status: <span className="roboto-light">{ucFirst(this.props.job.status)}</span></h3>
-                                </Col>
-                                <Col className="sm-margin-t-b" md={12} lg={6}>
-                                    <h3>Period: <span className="roboto-light">{this.props.job.period}</span></h3>
-                                </Col>
-                                <Col className="sm-margin-t-b" md={12} lg={6}>
-                                    <h3>Link: <span className="roboto-light"><a href={this.props.job.link} target="_blank" className="light-blue text-hover" rel="noopener noreferrer">{this.props.job.link}</a></span></h3>
                                 </Col>
                             </Row>
                             <Row>
@@ -165,6 +198,9 @@ export default class Job extends Component {
                                 </Col>
                             </Row>
                         </Grid>
+                        {this.props.job.metrics && (
+                            <Metrics metrics={this.props.job.metrics} />
+                        )}
                         <br/>
                     </div>
                     <div className="horiz-rule sm-margin-b" />

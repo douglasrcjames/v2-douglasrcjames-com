@@ -59,7 +59,7 @@ export default class Work extends Component {
                                         <h4 className="vertical-timeline-element-subtitle no-margin">{job.role}</h4>
                                         <p>{job.shortDescription}</p>
                                         <span className="view-btn">View</span>
-                                        <span className="status-icon">{job.status === STATUS.COMPLETE ? <i className="fas fa-check"/> : <i className="fas fa-clock"/>}</span>
+                                        <span className={`status-icon ${job.status === STATUS.COMPLETE ? 'green' : 'yellow'}`}>{job.status === STATUS.COMPLETE ? <i className="fas fa-check"/> : <i className="fas fa-clock"/>}</span>
                                     </VerticalTimelineElement>
                                 )
                             })

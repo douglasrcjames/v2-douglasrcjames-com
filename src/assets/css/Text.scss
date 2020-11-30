@@ -235,27 +235,32 @@ span {
 
 /* Hover color */
 .text-hover:hover {
-    color: $blue  !important;
+    color: $blue !important;
+    cursor: pointer;
+}
+
+.text-hover-light-blue:hover {
+    color: $light-blue !important;
     cursor: pointer;
 }
 
 .text-hover-red:hover {
-    color: $red  !important;
+    color: $red !important;
     cursor: pointer;
 }
 
 .text-hover-green:hover {
-    color: $green  !important;
+    color: $green !important;
     cursor: pointer;
 }
 
 .text-hover-dark-green:hover {
-    color: $dark-green  !important;
+    color: $dark-green !important;
     cursor: pointer;
 }
 
 .text-hover-yellow:hover {
-    color: $yellow  !important;
+    color: $yellow !important;
     cursor: pointer;
 }
 
