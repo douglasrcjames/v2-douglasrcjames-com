@@ -80,8 +80,8 @@ export default class Footer extends Component {
                     </Grid>
                 </div>
                 <div className={this.state.deviceWidth < 1400 ? "f-container" : "hide"}>
-                    <Grid>
-                        <Row middle="xs">
+                    <Grid fluid>
+                        <Row middle="xs" center="xs">
                             <Col xs={12} className="center-text">
                                 <span className="xl-text cursor-pointer" onClick={() => this.scrollTop()}><i className="fas fa-chevron-up"/> back to top</span>
                             </Col>

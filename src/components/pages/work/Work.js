@@ -13,7 +13,7 @@ export default class Work extends Component {
         return (
             <div>
                 <div className="full-width bg-blue">
-                    <div className="wrapper white no-padding">
+                    <div className="wrapper white">
                         <Grid fluid>
                             <Row middle="xs">
                                 <Col md={12} lg={8}>
@@ -67,10 +67,10 @@ export default class Work extends Component {
                     </VerticalTimeline> 
                 </div>
                
-                <div className="full-width bg-blue md-margin-b">
-                    <div className="wrapper white no-padding center-text">
+                <div className="full-width bg-blue">
+                    <div className="wrapper white center-text">
                         <h3><FaBabyCarriage color="white" /> &nbsp;Douglas R.C. James was born!</h3>
-                        <p>December 21, 1994</p>
+                        <div className="sm-margin-t">December 21, 1994</div>
                     </div>
                 </div>
             </div>

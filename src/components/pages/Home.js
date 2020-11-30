@@ -33,8 +33,12 @@ export default class Home extends Component {
            
             <div className="full-width bg-blue">
                 <div className="wrapper white">
-                    <h1 className="white">Why work with me?</h1>
-                    <Grid fluid>
+                    <Grid fluid className="sm-margin-t-b">
+                        <Row>
+                            <Col>
+                                <h1 className="white">Why work with me?</h1>
+                            </Col>
+                        </Row>
                         <Row center="xs">
                             <Col md={12} lg={4}>
                                 <img className="home-icon" alt="detective" src={require('../../assets/images/icons/private-detective.png')} />
