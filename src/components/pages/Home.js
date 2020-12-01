@@ -141,9 +141,9 @@ export default class Home extends Component {
                         I solve tech problems.
                     </h1>
                     <p className="sm-padding-l">
-                        + I'm trained as a computer engineer in Silicon Valley, California.<br/>
-                        + I'm a freelance full-stack software developer working with React.js/Native to build great user experiences.<br/>
-                        + I'm working on <Link to="/work">Minute.tech</Link> to connect non-techies to techies for tech support.
+                        <b>+</b> I'm a freelance full-stack software developer working with React.js/Native to build great user experiences.<br/>
+                        <b>+</b> I'm trained as a computer engineer in Silicon Valley, California.<br/>
+                        <b>+</b> I'm working on <Link to="/work/minute.tech-llc">Minute.tech</Link> to connect non-techies to techies for tech support.
                     </p>
                     <Link to="/work">
                         <button className="md-blue-btn">
@@ -252,6 +252,32 @@ export default class Home extends Component {
                     <div className="horiz-rule" />
                     <br/>
                     <Row center="xs">
+                        {/* TODO: Update these gifs */}
+                        <Col xs={12} sm={6}>
+                            <img 
+                                className="responsive"
+                                style={{width: "60%", border: "3px lightgrey solid"}}
+                                alt="finished product"
+                                src={require("../../assets/images/jobs/bodybyyama/finished-product.gif")}
+                                />
+                            <label style={{display: "block"}}>Custom CMS (Content Management System) built</label>
+                            <Link to="/work/capsmd.org">See <b>caps.org</b> project</Link>
+                        </Col>  
+                        <Col xs={12} sm={6}>
+                            <img 
+                                className="responsive"
+                                style={{width: "60%", border: "3px lightgrey solid"}}
+                                alt="finished product"
+                                src={require("../../assets/images/jobs/bodybyyama/finished-product.gif")}
+                                />
+                            <label style={{display: "block"}}>Custom CRM (Customer Relations Management) system built</label>
+                            <Link to="/work/goprestigepower.com">See <b>goprestigepower.com</b> project</Link>
+                        </Col>
+                    </Row>
+                    <br/>
+                    <div className="horiz-rule" />
+                    <br/>
+                    <Row center="xs">
                         <Col>
                             <label style={{display: "block", fontSize: "18px"}}>Websites built: <span className="roboto-regular">{this.state.websites}</span></label>
                         </Col>
@@ -274,32 +300,6 @@ export default class Home extends Component {
                         </Col>
                         <Col sm={6} md={4}>
                             <label style={{display: "block", fontSize: "18px"}}>{ucFirst(METRICS.SCREENS)}: <span className="roboto-regular">{numberWithCommas(this.state.screens)}</span></label>
-                        </Col>
-                    </Row>
-                    <br/>
-                    <div className="horiz-rule" />
-                    <br/>
-                    <Row center="xs">
-                        {/* Update these gifs */}
-                        <Col xs={12} sm={6}>
-                            <img 
-                                className="responsive"
-                                style={{width: "60%", border: "3px lightgrey solid"}}
-                                alt="finished product"
-                                src={require("../../assets/images/jobs/bodybyyama/finished-product.gif")}
-                                />
-                            <label style={{display: "block"}}>Custom CMS (Content Management System) built</label>
-                            <Link to="/work/capsmd.org">See <b>caps.org</b> project</Link>
-                        </Col>  
-                        <Col xs={12} sm={6}>
-                            <img 
-                                className="responsive"
-                                style={{width: "60%", border: "3px lightgrey solid"}}
-                                alt="finished product"
-                                src={require("../../assets/images/jobs/bodybyyama/finished-product.gif")}
-                                />
-                            <label style={{display: "block"}}>Custom CRM (Customer Relations Management) system built</label>
-                            <Link to="/work/goprestigepower.com">See <b>goprestigepower.com</b> project</Link>
                         </Col>
                     </Row>
                 </Grid>

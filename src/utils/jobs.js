@@ -38,7 +38,7 @@ export const jobs = [
         githubLink: "https://github.com/douglasrcjames/smithzellner.consulting",
         logoUrl: require("../assets/images/jobs/smithzellner/logo.png"),
         logoSize: SIZE.LARGE,
-        period: "July, 2020 - September, 2020",
+        period: "Jul. 2020 - Sep. 2020",
         status: STATUS.COMPLETE,
         link: "https://www.smithzellner.consulting",
         skills: {
@@ -116,7 +116,7 @@ export const jobs = [
         githubLink: "https://github.com/douglasrcjames/goprestigepower.com",
         logoUrl: require("../assets/images/jobs/goprestigepower/logo.png"),
         logoSize: SIZE.LARGE,
-        period: "July, 2020 - August, 2020",
+        period: "Jul. 2020 - Aug. 2020",
         status: STATUS.COMPLETE,
         link: "https://www.goprestigepower.com",
         skills: {
@@ -168,7 +168,7 @@ export const jobs = [
         githubLink: "https://github.com/douglasrcjames/vectorpsi.com",
         logoUrl: require("../assets/images/jobs/vectorpsi/logo.png"),
         logoSize: SIZE.LARGE,
-        period: "June, 2020 - October, 2020",
+        period: "Jun. 2020 - Oct. 2020",
         status: STATUS.COMPLETE,
         link: "https://www.vectorpsi.com",
         skills: {
@@ -220,7 +220,7 @@ export const jobs = [
         githubLink: "https://github.com/douglasrcjames/dougs-react-boiler",
         logoUrl: require("../assets/images/jobs/dougs-react-boiler/logo.png"),
         logoSize: SIZE.LARGE,
-        period: "June, 2020 - November, 2020",
+        period: "Jun. 2020 - Nov. 2020",
         status: STATUS.COMPLETE,
         link: "https://dougs-react-boiler.web.app/",
         skills: {
@@ -265,7 +265,7 @@ export const jobs = [
         githubLink: "https://github.com/douglasrcjames/blairfamily.foundation",
         logoUrl: require("../assets/images/jobs/blairfamily/logo.png"),
         logoSize: SIZE.LARGE,
-        period: "April, 2020 - September, 2020",
+        period: "Apr. 2020 - Sep. 2020",
         status: STATUS.COMPLETE,
         link: "https://www.blairfamily.foundation",
         skills: {
@@ -325,7 +325,7 @@ export const jobs = [
         githubLink: "https://github.com/douglasrcjames/retreatonnichols.com",
         logoUrl: require("../assets/images/jobs/retreatonnichols/logo.png"),
         logoSize: SIZE.LARGE,
-        period: "August, 2019 - March 2020",
+        period: "Aug. 2019 - Mar. 2020",
         status: STATUS.COMPLETE,
         link: "https://www.retreatonnichols.com",
         skills: {
@@ -377,7 +377,7 @@ export const jobs = [
         githubLink: "https://github.com/douglasrcjames/douglasrcjames.com",
         logoUrl: require("../assets/images/logos/logo512.png"),
         logoSize: SIZE.LARGE,
-        period: "August, 2019 - Today",
+        period: "Aug. 2019 - Today",
         status: STATUS.WORKING,
         link: "https://www.douglasrcjames.com",
         skills: {
@@ -455,7 +455,7 @@ export const jobs = [
         githubLink: "https://github.com/douglasrcjames/capsmd.org",
         logoUrl: require("../assets/images/jobs/caps/logo.png"),
         logoSize: SIZE.LARGE,
-        period: "May, 2019 - November, 2020",
+        period: "May. 2019 - Nov. 2020",
         status: STATUS.COMPLETE,
         link: "https://www.capsmd.org",
         skills: {
@@ -510,7 +510,7 @@ export const jobs = [
         githubLink: "https://github.com/douglasrcjames/bodybyyama.com",
         logoUrl: require("../assets/images/jobs/bodybyyama/logo.png"),
         logoSize: SIZE.LARGE,
-        period: "June, 2018 - August, 2018",
+        period: "Jun. 2018 - Aug. 2018",
         status: STATUS.COMPLETE,
         link: "https://www.bodybyyama.com",
         skills: {
@@ -561,7 +561,7 @@ export const jobs = [
         githubLink: "https://github.com/douglasrcjames/glasshousefarms",
         logoUrl: require("../assets/images/jobs/glasshousefarms/logo.png"),
         logoSize: SIZE.LARGE,
-        period: "March, 2018 - April, 2018",
+        period: "Mar. 2018 - Apr. 2018",
         status: STATUS.COMPLETE,
         link: "https://www.glasshousefarms.co",
         skills: {
@@ -615,7 +615,7 @@ export const jobs = [
             the team because I was working with technology too far up the stack (WordPress) and wanted to work with less abstracted technologies, like Node and Python.</p>,
         logoUrl: require("../assets/images/jobs/coldbrewcreative/logo.png"),
         logoSize: SIZE.LARGE,
-        period: "October, 2017 - January, 2018",
+        period: "Oct. 2017 - Jan. 2018",
         status: STATUS.COMPLETE,
         link: "https://mntcre.com/",
         skills: {
@@ -645,7 +645,7 @@ export const jobs = [
             I am grateful for the opportunity I had at Tesla and the valuable lessons I learned along the way.</p>,
         logoUrl: require("../assets/images/jobs/tesla/logo.png"),
         logoSize: SIZE.MEDIUM,
-        period: "August, 2016 - December, 2016",
+        period: "Aug. 2016 - Dec. 2016",
         status: STATUS.COMPLETE,
         link: "https://www.tesla.com",
         skills: {
@@ -670,7 +670,7 @@ export const jobs = [
             but I do believe the opportunity is worth the effort based on my personal experience and extensive research.</p>,
         logoUrl: require("../assets/images/jobs/minutetech/logo.png"),
         logoSize: SIZE.LARGE,
-        period: "May, 2016 - Today",
+        period: "May. 2016 - Today",
         status: STATUS.WORKING,
         link: "https://www.minute.tech",
         skills: {
@@ -732,7 +732,7 @@ export const jobs = [
             I had anticipated because many assets were either unaccounted for or unaccessible.  Through this, I learned the bureaucracy of a large, publicly traded, network security corporation.</p>,
         logoUrl: require("../assets/images/jobs/palo-alto-networks/logo.png"),
         logoSize: SIZE.LARGE,
-        period: "May, 2015 - August, 2015",
+        period: "May. 2015 - Aug. 2015",
         status: STATUS.COMPLETE,
         link: "https://www.paloaltonetworks.com/",
         skills: {
@@ -757,7 +757,7 @@ export const jobs = [
             In this position, I learned how to remotely troubleshoot with clients with high level hardware and software.</p>,
         logoUrl: require("../assets/images/jobs/acfn/logo.png"),
         logoSize: SIZE.LARGE,
-        period: "February, 2015 - June, 2015",
+        period: "Feb. 2015 - Jun. 2015",
         status: STATUS.COMPLETE,
         link: "https://www.atmfranchise.com",
         skills: {
@@ -778,7 +778,7 @@ export const jobs = [
             Member of the Pi Kappa Alpha fraternity. Earned the confidence and paperwork to work professionally as an engineer solving problems around the world!</p>,
         logoUrl: require("../assets/images/jobs/sjsu/logo.png"),
         logoSize: SIZE.LARGE,
-        period: "August, 2013 - December, 2019",
+        period: "Aug. 2013 - Dec. 2019",
         status: STATUS.COMPLETE,
         link: "https://www.sjsu.edu",
         skills: {
@@ -827,7 +827,7 @@ export const jobs = [
         </p>,
         logoUrl: require("../assets/images/jobs/ihealphones/logo-v2.png"),
         logoSize: SIZE.XLARGE,
-        period: "December, 2010 - February, 2014",
+        period: "Dec. 2010 - Feb. 2014",
         status: STATUS.COMPLETE,
         link: "https://www.ihealphones.com",
         skills: {
@@ -866,7 +866,7 @@ export const jobs = [
         </p>,
         logoUrl: require("../assets/images/jobs/orhs/logo.png"),
         logoSize: SIZE.LARGE,
-        period: "August, 2009 - May, 2013",
+        period: "Aug. 2009 - May. 2013",
         status: STATUS.COMPLETE,
         link: "http://orhs.eduhsd.k12.ca.us/",
         skills: {
