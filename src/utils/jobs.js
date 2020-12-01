@@ -53,7 +53,7 @@ export const jobs = [
             },
             {
                 name: METRICS.PAGE_VIEWS,
-                value: "1,889"
+                value: 1889
             },
             {
                 name: METRICS.COMMITS,
@@ -61,11 +61,15 @@ export const jobs = [
             },
             {
                 name: METRICS.LOC,
-                value: "~2200"
+                value: 2200
             },
             {
                 name: METRICS.FILES,
-                value: "~80"
+                value: 80
+            },
+            {
+                name: METRICS.SCREENS,
+                value: 5
             }
         ],
         headerUrl: require("../assets/images/jobs/smithzellner/header.png"),
@@ -127,7 +131,7 @@ export const jobs = [
             },
             {
                 name: METRICS.PAGE_VIEWS,
-                value: "4,361"
+                value: 4361
             },
             {
                 name: METRICS.COMMITS,
@@ -135,11 +139,15 @@ export const jobs = [
             },
             {
                 name: METRICS.LOC,
-                value: "~8000"
+                value: 8000
             },
             {
                 name: METRICS.FILES,
-                value: "~85"
+                value: 85
+            },
+            {
+                name: METRICS.SCREENS,
+                value: 15
             }
         ],
         headerUrl: require("../assets/images/jobs/goprestigepower/header.png"),
@@ -175,7 +183,7 @@ export const jobs = [
             },
             {
                 name: METRICS.PAGE_VIEWS,
-                value: "1,889"
+                value: 1889
             },
             {
                 name: METRICS.COMMITS,
@@ -183,11 +191,15 @@ export const jobs = [
             },
             {
                 name: METRICS.LOC,
-                value: "~3700"
+                value: 3700
             },
             {
                 name: METRICS.FILES,
-                value: "~240"
+                value: 240
+            },
+            {
+                name: METRICS.SCREENS,
+                value: 6
             }
         ],
         headerUrl: require("../assets/images/jobs/vectorpsi/header.png"),
@@ -219,7 +231,7 @@ export const jobs = [
         metrics: [
             {
                 name: METRICS.LOC,
-                value: "~1200"
+                value: 1200
             },
             {
                 name: METRICS.COMMITS,
@@ -227,7 +239,11 @@ export const jobs = [
             },
             {
                 name: METRICS.FILES,
-                value: "~35"
+                value: 35
+            },
+            {
+                name: METRICS.SCREENS,
+                value: 3
             }
         ],
         headerUrl: require("../assets/images/jobs/dougs-react-boiler/header.png"),
@@ -264,7 +280,7 @@ export const jobs = [
             },
             {
                 name: METRICS.PAGE_VIEWS,
-                value: "4,147"
+                value: 4147
             },
             {
                 name: METRICS.COMMITS,
@@ -272,11 +288,15 @@ export const jobs = [
             },
             {
                 name: METRICS.LOC,
-                value: "~3400"
+                value: 3400
             },
             {
                 name: METRICS.FILES,
-                value: "~150"
+                value: 150
+            },
+            {
+                name: METRICS.SCREENS,
+                value: 5
             }
         ],
         headerUrl: require("../assets/images/jobs/blairfamily/header.png"),
@@ -320,7 +340,7 @@ export const jobs = [
             },
             {
                 name: METRICS.PAGE_VIEWS,
-                value: "4,953"
+                value: 4953
             },
             {
                 name: METRICS.COMMITS,
@@ -328,11 +348,15 @@ export const jobs = [
             },
             {
                 name: METRICS.LOC,
-                value: "~2000"
+                value: 2000
             },
             {
                 name: METRICS.FILES,
-                value: "~150"
+                value: 150
+            },
+            {
+                name: METRICS.SCREENS,
+                value: 5
             }
         ],
         headerUrl: require("../assets/images/jobs/retreatonnichols/header.png"),
@@ -368,7 +392,7 @@ export const jobs = [
             },
             {
                 name: METRICS.PAGE_VIEWS,
-                value: "2,226"
+                value: 2226
             },
             {
                 name: METRICS.COMMITS,
@@ -376,11 +400,15 @@ export const jobs = [
             },
             {
                 name: METRICS.LOC,
-                value: "~4600"
+                value: 4600
             },
             {
                 name: METRICS.FILES,
-                value: "~350"
+                value: 350
+            },
+            {
+                name: METRICS.SCREENS,
+                value: 5
             }
         ],
         headerUrl: require("../assets/images/jobs/douglasrcjames/header.png"),
@@ -442,7 +470,7 @@ export const jobs = [
             },
             {
                 name: METRICS.PAGE_VIEWS,
-                value: "16,964"
+                value: 16964
             },
             {
                 name: METRICS.COMMITS,
@@ -450,11 +478,15 @@ export const jobs = [
             },
             {
                 name: METRICS.LOC,
-                value: "~15,000"
+                value: 15000
             },
             {
                 name: METRICS.FILES,
-                value: "~250"
+                value: 250
+            },
+            {
+                name: METRICS.SCREENS,
+                value: 15
             }
         ],
         headerUrl: require("../assets/images/jobs/caps/header.png"),
@@ -493,11 +525,15 @@ export const jobs = [
             },
             {
                 name: METRICS.LOC,
-                value: "~600"
+                value: 600
             },
             {
                 name: METRICS.FILES,
-                value: "~50"
+                value: 50
+            },
+            {
+                name: METRICS.SCREENS,
+                value: 1
             }
         ],
         headerUrl: require("../assets/images/jobs/bodybyyama/header.png"),
@@ -540,7 +576,7 @@ export const jobs = [
             },
             {
                 name: METRICS.PAGE_VIEWS,
-                value: "15,986"
+                value: 15986
             },
             {
                 name: METRICS.COMMITS,
@@ -548,11 +584,15 @@ export const jobs = [
             },
             {
                 name: METRICS.LOC,
-                value: "~1000"
+                value: 1000
             },
             {
                 name: METRICS.FILES,
-                value: "~70"
+                value: 70
+            },
+            {
+                name: METRICS.SCREENS,
+                value: 1
             }
         ],
         headerUrl: require("../assets/images/jobs/glasshousefarms/header.png"),
@@ -651,7 +691,7 @@ export const jobs = [
             },
             {
                 name: METRICS.PAGE_VIEWS,
-                value: "66,505"
+                value: 66505
             },
             {
                 name: METRICS.COMMITS,
@@ -659,11 +699,15 @@ export const jobs = [
             },
             {
                 name: METRICS.LOC,
-                value: "~20,000"
+                value: 20000
             },
             {
                 name: METRICS.FILES,
-                value: "~500"
+                value: 500
+            },
+            {
+                name: METRICS.SCREENS,
+                value: 45
             }
         ],
         headerUrl: require("../assets/images/jobs/minutetech/header.png"),

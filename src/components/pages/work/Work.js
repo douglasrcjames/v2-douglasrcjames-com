@@ -6,7 +6,7 @@ import 'react-vertical-timeline-component/style.min.css';
 
 import resume from '../../../assets/pdfs/DouglasJames-Resume-4.22.2020.pdf'
 import { jobs } from '../../../utils/jobs';
-import { STATUS } from '../../../utils/constants';
+import { SITE_UPDATED, STATUS } from '../../../utils/constants';
 
 export default class Work extends Component {
     render() {
@@ -23,7 +23,7 @@ export default class Work extends Component {
                                         I have broken down my relevant work into chronological order below, with a detailed view for each job on tap. 
                                     </p>
                                     <p>
-                                        <b>Note: My work in this section was last updated: 11/15/2020</b>
+                                        <b>My work in this section was last updated: {SITE_UPDATED.LONG}</b>
                                     </p>
                                 </Col>
                                 <Col md={12} lg={4}>
@@ -31,7 +31,7 @@ export default class Work extends Component {
                                         <a href={resume} download className="big-icon-btn">
                                             <Col>
                                                 <img alt="download file" src={require('../../../assets/images/icons/file.png')} />
-                                                <p>Download Resume<br/>(4/22/2020)</p>
+                                                <p>Download Resume<br/> ({SITE_UPDATED.SHORT})</p>
                                             </Col>
                                         </a>
                                     </Row>

@@ -1,4 +1,8 @@
 
+export const SITE_UPDATED = {
+    SHORT: "11/30/2020",
+    LONG: "Nov. 30th, 2020"
+}
 
 export const STATUS = {
     WORKING: "working",
@@ -71,12 +75,12 @@ export const SKILLS = {
 }
 
 export const METRICS = {
-    LOC: "lines of source code",
-    COMMITS: "commits",
-    FILES: "source files",
-    SCREENS: "screens", 
+    LOC: "lines of source code created",
+    COMMITS: "commits made",
+    FILES: "source files created",
+    SCREENS: "screens created", 
 
-    VISITORS: "unique visitors",
-    PAGE_VIEWS: "page views",
-    SESSION_DURATION: "session duration"
+    VISITORS: "unique visitors accrued",
+    PAGE_VIEWS: "page views accrued",
+    // SESSION_DURATION: "session duration"
  }

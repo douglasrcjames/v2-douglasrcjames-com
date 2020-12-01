@@ -141,7 +141,7 @@ export default class Job extends Component {
                                             this.props.job.skills.primary.map((skill, i) => {
                                                 return (
                                                     <span key={i}>
-                                                         <img className="xsmall-fit sm-padding  " alt="skill logo" src={require(`../../../assets/images/icons/skills/${skill.split(" ").join("-").toLowerCase()}.png`)} /> 
+                                                         <img className="xsmall-fit sm-padding" alt="skill logo" src={require(`../../../assets/images/icons/skills/${skill.split(" ").join("-").toLowerCase()}.png`)} /> 
                                                     </span>
                                                 )
                                             }) 

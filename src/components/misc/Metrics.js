@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Col, Grid, Row } from 'react-flexbox-grid'
-import { ucFirst } from '../../utils/misc'
+import { METRICS } from '../../utils/constants'
+import { numberWithCommas, ucFirst } from '../../utils/misc'
 
 export default class Metrics extends Component {
     render() {
@@ -14,13 +15,13 @@ export default class Metrics extends Component {
                 <Row>  
                     { 
                         this.props.metrics.map((metric, i) => {
-                            return (
-                                <Col key={i} xs={12} md={6} lg={3}>
-                                    <h4 className="display-inline">{ucFirst(metric.name)}: </h4>
-                                    {metric.value}
-                                </Col>
-                            )
-                        }) 
+                                return (
+                                    <Col key={i} xs={12} md={6} lg={3}>
+                                        <label style={{fontSize: "18px"}}>{ucFirst(metric.name)}: </label>
+                                        {metric.name === METRICS.FILES || metric.name === METRICS.LOC ? "~" : ""}{numberWithCommas(metric.value)}
+                                    </Col>
+                                )
+                        })
                     }
                 </Row>
             </Grid>
