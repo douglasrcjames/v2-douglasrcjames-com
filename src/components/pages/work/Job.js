@@ -140,9 +140,9 @@ export default class Job extends Component {
                                         { 
                                             this.props.job.skills.primary.map((skill, i) => {
                                                 return (
-                                                    <span key={i}>
-                                                         <img className="xsmall-fit sm-padding" alt="skill logo" src={require(`../../../assets/images/icons/skills/${skill.split(" ").join("-").toLowerCase()}.png`)} /> 
-                                                    </span>
+                                                    <a key={i} href={skill.link} target="_blank" rel="noopener noreferrer">
+                                                        <img className="xsmall-fit sm-padding" alt="skill logo" src={skill.src} /> 
+                                                    </a>
                                                 )
                                             }) 
                                         }
@@ -154,9 +154,9 @@ export default class Job extends Component {
                                         { 
                                             this.props.job.skills.secondary.map((skill, i) => {
                                                 return (
-                                                    <span key={i}>
-                                                         <img className="xsmall-fit sm-padding  " alt="skill logo" src={require(`../../../assets/images/icons/skills/${skill.split(" ").join("-").toLowerCase()}.png`)} /> 
-                                                    </span>
+                                                    <a key={i} href={skill.link} target="_blank" rel="noopener noreferrer">
+                                                        <img className="xsmall-fit sm-padding" alt="skill logo" src={skill.src} /> 
+                                                    </a>
                                                 )
                                             }) 
                                         }

@@ -675,7 +675,7 @@ export const jobs = [
         link: "https://www.minute.tech",
         skills: {
             primary: [
-                SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.NODE, SKILLS.REACT, SKILLS.GITHUB, SKILLS.FIREBASE, SKILLS.WIREFRAMING
+                SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.NODE, SKILLS.REACT, SKILLS.STRIPE, SKILLS.TWILIO, SKILLS.GITHUB, SKILLS.FIREBASE, SKILLS.WIREFRAMING
             ],
             secondary: [
                 SKILLS.SWIFT, SKILLS.PYTHON, SKILLS.MYSQL, SKILLS.FLASK
@@ -783,7 +783,7 @@ export const jobs = [
         link: "https://www.sjsu.edu",
         skills: {
             primary: [
-                SKILLS.GITHUB, SKILLS.SWIFT, SKILLS.PYTHON, SKILLS.FLASK, SKILLS.MYSQL
+                SKILLS.CPP, SKILLS.GITHUB, SKILLS.SWIFT, SKILLS.PYTHON, SKILLS.FLASK, SKILLS.MYSQL, SKILLS.VERILOG, SKILLS.ASM,
             ],
             other: [
                 SKILLS.BUSINESS_DEV, 
