@@ -20,12 +20,17 @@ export default function PhotoGallery(props) {
     };
 
     useEffect(() => {
-      if(props.photos.length < 3){
-        setGalleryWidth("xs")
-      } else if(props.photos.length > 3){
-        setGalleryWidth("md")
+      if(props.isWide){
+        setGalleryWidth("xl")
+      } else {
+        if(props.photos.length < 3){
+          setGalleryWidth("xs")
+        } else if(props.photos.length > 3){
+          setGalleryWidth("md")
+        }
       }
-    }, [props.photos]);
+      
+    }, [props.photos, props.isWide]);
   
     return (
       <div className={`${galleryWidth}-width center`}>

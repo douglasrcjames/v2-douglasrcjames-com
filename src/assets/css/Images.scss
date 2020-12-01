@@ -97,6 +97,73 @@ img.xl-em {
     height: 2em;
 }
 
+// Hero //
+.hero-container { 
+    margin: 0 auto;
+    width: 75%;
+    padding: 5% 0 10% 0;
+}
+
+.headshot-bg {
+    /* The image used */
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/douglasrcjamescom.appspot.com/o/professional-bg.png?alt=media&token=35293e4d-9bf7-4c74-af77-442c1768a1ef");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width: 1400px) {
+    .headshot-bg {
+        background-image: none;
+      }
+}
+
+@media screen and (max-width: 900px) {
+    .hero-container { 
+        width: 75%;
+        padding: 10% 0;
+        h1 {
+            margin: 0 !important
+        }
+    }
+}
+
+// Social Hero //
+.shero-container { 
+    margin: 0 auto;
+    width: 75%;
+    min-height: 100vh;
+    padding: 5% 0 10% 0;
+}
+
+.social-bg {
+    /* The image used */
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/douglasrcjamescom.appspot.com/o/cloudtrees-transition.png?alt=media&token=45460186-b22f-4303-98fc-e2b1e471baeb");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width: 900px) {
+    .shero-container { 
+        width: 75%;
+        padding: 10% 0;
+        h1 {
+            margin: 0 !important
+        }
+    }
+}
+
 /* 
 * Misc 
 */

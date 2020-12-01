@@ -218,6 +218,148 @@ export const coldbrewCreative = [
       width: 2,
       height: 1.3
     },
-    
+  ];
+
+  export const socialGallery = [
+    {
+      src: require("../assets/images/social/ana-doug-7.jpg"),
+      width: 3.1,
+      height: 2.3
+    },
+    {
+      src: require("../assets/images/social/space-2.jpg"),
+      width: 2,
+      height: 2
+    },
+    {
+      src: require("../assets/images/social/doug-4.jpg"),
+      width: 2.2,
+      height: 3
+    },
+    {
+      src: require("../assets/images/social/family-4.jpg"),
+      width: 1.9,
+      height: 1.7
+    },
+    {
+      src: require("../assets/images/social/link-2.jpg"),
+      width: 1.5,
+      height: 2
+    },
+    {
+      src: require("../assets/images/social/georgie-3.jpg"),
+      width: 2.5,
+      height: 3
+    },
+    {
+      src: require("../assets/images/social/ana-doug-2.jpg"),
+      width: 6,
+      height: 4
+    },
+    {
+      src: require("../assets/images/social/ana-doug.jpg"),
+      width: 3,
+      height: 4
+    },
+    {
+      src: require("../assets/images/social/ana-doug-1.jpg"),
+      width: 4,
+      height: 3
+    },
+    {
+      src: require("../assets/images/social/ana-doug-3.jpg"),
+      width: 3,
+      height: 2
+    },
+    {
+      src: require("../assets/images/social/ana-doug-4.jpg"),
+      width: 3,
+      height: 2.2
+    },
+    {
+      src: require("../assets/images/social/ana-doug-6.jpg"),
+      width: 3,
+      height: 4
+    },
+    {
+      src: require("../assets/images/social/ana-doug-8.jpg"),
+      width: 2,
+      height: 1.5
+    },
+    {
+      src: require("../assets/images/social/doug.jpg"),
+      width: 3,
+      height: 2.2
+    },
+    {
+      src: require("../assets/images/social/doug-cenzo.jpg"),
+      width: 1.5,
+      height: 2
+    },
+    {
+      src: require("../assets/images/social/family-1.jpg"),
+      width: 2.2,
+      height: 3.7
+    },
+    {
+      src: require("../assets/images/social/family-2.jpg"),
+      width: 2.3,
+      height: 1.5
+    },
+    {
+      src: require("../assets/images/social/georgie.jpg"),
+      width: 1.5,
+      height: 2
+    },
+    {
+      src: require("../assets/images/social/georgie-2.jpg"),
+      width: 2,
+      height: 1.5
+    },
+    {
+      src: require("../assets/images/social/georgie-5.jpg"),
+      width: 1.5,
+      height: 2
+    },
+    {
+      src: require("../assets/images/social/link-1.jpg"),
+      width: 1.5,
+      height: 2
+    },
+    {
+      src: require("../assets/images/social/link-georgie.jpg"),
+      width: 2,
+      height: 1.5
+    },
+    {
+      src: require("../assets/images/social/georgie-1.jpg"),
+      width: 1.5,
+      height: 2
+    },
+    {
+      src: require("../assets/images/social/link-georgie-1.jpg"),
+      width: 1.5,
+      height: 2
+    },
+    {
+      src: require("../assets/images/social/paradiso.jpg"),
+      width: 2,
+      height: 2
+    },
+    {
+      src: require("../assets/images/social/link.jpg"),
+      width: 1.5,
+      height: 2
+    },
+    {
+      src: require("../assets/images/social/space-1.jpg"),
+      width: 2,
+      height: 1.5
+    },
+    {
+      src: require("../assets/images/social/nature.jpg"),
+      width: 2,
+      height: 1.3
+    },
   
   ];

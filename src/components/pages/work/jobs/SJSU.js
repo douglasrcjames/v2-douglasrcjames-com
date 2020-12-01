@@ -5,7 +5,7 @@ import PhotoGallery from '../../../misc/PhotoGallery'
 export default class SJSU extends Component {
     render() {
         return (
-            <div>
+            <div className="lg-container">
                 <h2>Courses: </h2>
                 <ul>
                     <li className="roboto-bold">Initial Credits:</li>
