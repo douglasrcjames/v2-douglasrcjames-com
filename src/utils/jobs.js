@@ -23,18 +23,37 @@ import ACFN from '../components/pages/work/jobs/ACFN';
 import PaloAltoNetworks from '../components/pages/work/jobs/PaloAltoNetworks';
 import BodyByYama from '../components/pages/work/jobs/BodyByYama';
 import VectorPSI from '../components/pages/work/jobs/VectorPSI';
+import PhotoGallery from '../components/misc/PhotoGallery';
 
 export const jobs = [
     {
         title: "smithzellner.consulting",
         role: "Web developer",
         shortDescription: "Built a front end website for a civil rights consulting firm in Fairhope, Alabama.",
-        longDescription: <p>Explain Bob Zellner being a author. Ullamco excepteur adipisicing sit nisi duis sint ex aliquip excepteur ut eiusmod. 
-            Pariatur nostrud est cupidatat commodo labore eiusmod quis aliquip quis nulla consequat. 
-            Ad nostrud Lorem nulla ut esse consequat Lorem exercitation nisi ipsum ex adipisicing aliqua magna. 
-            Minim enim aliquip consectetur est ipsum incididunt labore aliquip. Magna consequat sint laboris velit 
-            do tempor irure. Ullamco nulla excepteur in ea enim ipsum minim ullamco aliqua. Ullamco qui excepteur do 
-            nostrud non.</p>,
+        longDescription: <div>
+            <p>
+                Bob Zellner and Pamela Smith are partners that form Smith-Zellner Consulting, a civil rights consulting firm out of Fairhope, Alabama. 
+                Bob Zellner is the author of <i>The Wrong Side of Murder Creek: A White Southerner in the Freedom Movement</i>, a story detailing how - as a teenage, white, 
+                Alabama son and grandson of Ku Klux Klansmen – he changed his point of view and joined ranks with the black students who were sitting-in, marching, fighting 
+                and sometimes dying to challenge the “Southern way of life”. <a href="https://www.imdb.com/title/tt2235372/" target="_blank" rel="noopener noreferrer"><i>Son of the South</i></a>, 
+                a major motion picture adaptation of his book, <i>The Wrong Side of Murder Creek</i>, was released on August 26th, 2020. A trend that was clearly visible on the Google Analytics graph of users! See below:
+            </p>
+            <PhotoGallery 
+                photos={
+                    [{
+                        src: require(`../assets/images/jobs/smithzellner/misc/ga-graph.png`), 
+                        caption: "Google Analytics graph of movie release surge",
+                        width: 2.2,
+                        height: 0.3
+                    }]
+                } 
+                setWidth={"lg"} />
+            <p>
+                I built this site using React.js as the front end, and Firebase for the database backend to store contact info then send that contact info to the client's email via 
+                nodemailer with server side functions, and free SSL hosting. The site also features traffic tracking for the client with Google Analytics, as shown in the figure above!
+            </p>
+        </div>
+        ,
         githubLink: "https://github.com/douglasrcjames/smithzellner.consulting",
         logoUrl: require("../assets/images/jobs/smithzellner/logo.png"),
         logoSize: SIZE.LARGE,
@@ -107,12 +126,14 @@ export const jobs = [
         title: "goprestigepower.com",
         role: "Web developer",
         shortDescription: "Built a custom CRM web app and front end site for solar sales company out of Orange County, California.",
-        longDescription: <p>Ullamco excepteur adipisicing sit nisi duis sint ex aliquip excepteur ut eiusmod. 
-            Pariatur nostrud est cupidatat commodo labore eiusmod quis aliquip quis nulla consequat. 
-            Ad nostrud Lorem nulla ut esse consequat Lorem exercitation nisi ipsum ex adipisicing aliqua magna. 
-            Minim enim aliquip consectetur est ipsum incididunt labore aliquip. Magna consequat sint laboris velit 
-            do tempor irure. Ullamco nulla excepteur in ea enim ipsum minim ullamco aliqua. Ullamco qui excepteur do 
-            nostrud non.</p>,
+        longDescription: <p>
+            Prestige Power is a solar sales company out of Orange County, California that came to me looking to replace their current CRM provider charging monthly and wasn't a perfect fit for their use case. 
+            They also were looking to create a front end website to help drive traffic to their business. I was able to build them a beautiful front end experience that included forms to capture leads that directly fed into 
+            the custom CRM (Customer Relationship Management) backend. The front end experience was built with HTML/CSS/React.js and backend services like hosting with SSL, server side functions, file storage, authentication, and databases 
+            were built with Firebase. The site also features traffic tracking for the client with Google Analytics. I also had the pleasure of collaborating with my design partner <a href="https://www.linkedin.com/in/anamariecampos/" target="_blank" rel="noopener noreferrer">Ana Campos</a> to build the client 
+            branding guidelines (font, colors, logo, and usage) for their business.
+            {/* TODO: include? <a href="https://www.linkedin.com/in/reed-reilly-8844251ab/" target="_blank" rel="noopener noreferrer">Reed Reilly</a>&nbsp; */}
+        </p>,
         githubLink: "https://github.com/douglasrcjames/goprestigepower.com",
         logoUrl: require("../assets/images/jobs/goprestigepower/logo.png"),
         logoSize: SIZE.LARGE,
@@ -158,13 +179,14 @@ export const jobs = [
     {
         title: "vectorpsi.com",
         role: "Web developer",
-        shortDescription: "Built a front end website for a industrial manufacturing sales company in Danville, California.",
-        longDescription: <p>Discuss collabing wtih Ana to create branding guidelines. Ullamco excepteur adipisicing sit nisi duis sint ex aliquip excepteur ut eiusmod. 
-            Pariatur nostrud est cupidatat commodo labore eiusmod quis aliquip quis nulla consequat. 
-            Ad nostrud Lorem nulla ut esse consequat Lorem exercitation nisi ipsum ex adipisicing aliqua magna. 
-            Minim enim aliquip consectetur est ipsum incididunt labore aliquip. Magna consequat sint laboris velit 
-            do tempor irure. Ullamco nulla excepteur in ea enim ipsum minim ullamco aliqua. Ullamco qui excepteur do 
-            nostrud non.</p>,
+        shortDescription: "Built a front end website for an industrial manufacturing sales company in Danville, California.",
+        longDescription: <p>
+            Vector Process Solutions, Inc is an industrial manufacturing sales company in Danville, California that was looking to showcase their supported manufacturing partners and products. 
+            I built this site using React.js as the front end, and Firebase for the database backend to store contact info then send that contact info to the client's email via 
+            nodemailer with server side functions, and free SSL hosting. The site also features traffic tracking with Google Analytics, as well as over 70 manufacturing product lines. 
+            I also had the pleasure of collaborating with my design partner <a href="https://www.linkedin.com/in/anamariecampos/" target="_blank" rel="noopener noreferrer">Ana Campos</a> to build the client 
+            branding guidelines (font, colors, logo, and usage) for their business.
+        </p>,
         githubLink: "https://github.com/douglasrcjames/vectorpsi.com",
         logoUrl: require("../assets/images/jobs/vectorpsi/logo.png"),
         logoSize: SIZE.LARGE,
@@ -211,12 +233,12 @@ export const jobs = [
         title: "Doug's React Boiler",
         role: "Web developer",
         shortDescription: "Built myself a boilerplate template for building my React.js/Firebase web applications.",
-        longDescription: <p>Discuss motivations and that I will always be adding and evolving this. Ullamco excepteur adipisicing sit nisi duis sint ex aliquip excepteur ut eiusmod. 
-            Pariatur nostrud est cupidatat commodo labore eiusmod quis aliquip quis nulla consequat. 
-            Ad nostrud Lorem nulla ut esse consequat Lorem exercitation nisi ipsum ex adipisicing aliqua magna. 
-            Minim enim aliquip consectetur est ipsum incididunt labore aliquip. Magna consequat sint laboris velit 
-            do tempor irure. Ullamco nulla excepteur in ea enim ipsum minim ullamco aliqua. Ullamco qui excepteur do 
-            nostrud non.</p>,
+        longDescription: <p>
+            This template project features my CSS library I created, base React components like a Header &amp; Footer, directories properly structures, React Router, Google Analytics, .env file, sitemap, and more! 
+            I built this template project because I was finding myself recreating the same portions of code for my React web projects. 
+            I figured a boilerplate for me to start from would reduce any mistakes made by repeating the same process, but most importantly speed up the creation of the baseline project.
+            This repository will be evolving as a learn new tricks and such for my web projects. For example, I recently added SCSS to my baseline styles for ease of use when changing the colors and fonts per project!
+        </p>,
         githubLink: "https://github.com/douglasrcjames/dougs-react-boiler",
         logoUrl: require("../assets/images/jobs/dougs-react-boiler/logo.png"),
         logoSize: SIZE.LARGE,
@@ -257,10 +279,11 @@ export const jobs = [
         shortDescription: "Built a front end website for a philanthropy foundation in Montgomery, Maryland.",
         longDescription: <p>
             The David and Mikel Blair Family Foundation is dedicated to purposeful giving and 
-            is rooted in improving the quality of life for individuals around Maryland. From literacy and 
-            equity in education, to at-risk youth programs and mental health access, the foundation believes 
-            and sees value in individuals, and their impact on the world, when they are given access to opportunity. 
-            This site was built using React on the front end and Firebase on the back end.
+            is rooted in improving the quality of life for individuals around Maryland. The foundation connected with me after a partner worked with me at <Link to="/work/capsmd.org">capsmd.org</Link>. 
+            They were looking to develop a simple front end website with a contact form and subscribe form, much like my work at capsmd.org. I was able to work with a designer on their team to take their 
+            wireframe design and turn it into a living website. The wireframe was one of the more difficult designs I have had to emulate, but I was able to tackle the challenge with relative ease. 
+            I built this site using React.js as the front end, and Firebase for the database backend to store contact info then send that contact info to the client's email via 
+            nodemailer with server side functions, and free SSL hosting. The site also features traffic tracking for the client with Google Analytics.
         </p>,
         githubLink: "https://github.com/douglasrcjames/blairfamily.foundation",
         logoUrl: require("../assets/images/jobs/blairfamily/logo.png"),
@@ -315,8 +338,8 @@ export const jobs = [
                 manage SEO because the property owners were looking to increase the traffic to the rental via Airbnb and VRBO booking sites.
             </p>
             <p>
-                I built this site using React.js as the front end, and Firebase for the database backend to store contact info, and send that contact info to the client's email via 
-                node-mailer. Firebase was also used for free SSL hosting and server side functions. The site took me about a month to plan, design, and build, but I continue to this day updating various media and wording content for the clients. 
+                I built this site using React.js as the front end, and Firebase for the database backend to store contact info then send that contact info to the client's email via 
+                nodemailer with server side functions, and free SSL hosting. The site also features traffic tracking for the client with Google Analytics. The site took me about a month to plan, design, and build, but I continue to this day updating various media and wording content for the clients. 
                 The design phase was fairly quick, because I had previously built a SquareSpace site for the client, so I based much of my design off that template. 
                 I had to do a quick rework of the logo with my Photoshop skills because the client did not have the original image for the logo. 
                 I also worked with a videographer and photographer to fit their content captured into the site. 
@@ -368,12 +391,13 @@ export const jobs = [
         title: "douglasrcjames.com",
         role: "Web developer",
         shortDescription: "Built a front end portfolio website for myself demonstrating and showcasing my skills.",
-        longDescription: <p>Display link to V1 @ live address on firebase hosting. Have V2 at live address. Talk about how meta this is. Ullamco excepteur adipisicing sit nisi duis sint ex aliquip excepteur ut eiusmod. 
-            Pariatur nostrud est cupidatat commodo labore eiusmod quis aliquip quis nulla consequat. 
-            Ad nostrud Lorem nulla ut esse consequat Lorem exercitation nisi ipsum ex adipisicing aliqua magna. 
-            Minim enim aliquip consectetur est ipsum incididunt labore aliquip. Magna consequat sint laboris velit 
-            do tempor irure. Ullamco nulla excepteur in ea enim ipsum minim ullamco aliqua. Ullamco qui excepteur do 
-            nostrud non.</p>,
+        longDescription: <p>
+            This is my second and hopefully final build of my personal portfolio website to showcase my work, skills, and more. 
+            At the time I am writing this, I feel that this site design and build is my best yet, and I am proud to show how far my skills have evolved from version 1 to version 2 (granted version 1 was a quick build).
+            <br/>
+            Ps. also how meta this is? Here I am creating a project web page about the website you are on!
+            {/* Display link to V1 @ live address on firebase hosting. Have V2 at live address.*/}
+            </p>,
         githubLink: "https://github.com/douglasrcjames/douglasrcjames.com",
         logoUrl: require("../assets/images/logos/logo512.png"),
         logoSize: SIZE.LARGE,
@@ -424,7 +448,8 @@ export const jobs = [
             <p>
                 CAPS (Council for Advocacy and Policy Solutions) is a non-profit political publication group with the goal to educate constituents in 
                 Montgomery County, Maryland about legislation that effects them. The group came to me in May, 2019 during my finals week for school because their previous web developer had dropped
-                the ball building a site with Webflow.com. <a href="https://capswebsite.webflow.io/" target="_blank" rel="noopener noreferrer">(See previous webflow site here</a> and screenshots below.) They were launching their CAPS program in a few weeks and were in a mad rush to get the site up and operational. 
+                the ball building a site with Webflow.com. <a href="https://capswebsite.webflow.io/" target="_blank" rel="noopener noreferrer">(See previous webflow site here</a> and screenshots below.) 
+                They were launching their CAPS program in a few weeks and were in a mad rush to get the site up and operational. 
                 I agreed, excited to use my new React and Firebase skills and was able to crank out a website for them in a week. (and still pass 4 of my engineering classes!)
                 There was one hiccup the night before they were launching, I was making a few final (vital) touches to the site, and suddenly my computer crashed. I spent hours 
                 troubleshooting to get back hours of un-pushed changes, but unfortunately, my hard drive was bust. 
@@ -445,12 +470,44 @@ export const jobs = [
             </ol>
 
             <p>
-                I am very proud of the website I developed and the client was very pleased with the finished product as well. I recently developed a custom CMS 
-                solution for them to be able to post their own articles within my intervention. In hindsight, I definitely should have started this project by building the CMS, 
-                but along the way I learned the true difference between WordPress/SquareSpace/other CMS use case and my CMS solution. 
-
-                Discuss that I still occasionally help them out, they are one of my more active clients.
+                The final front end experience was built with HTML/CSS/React.js and backend services like hosting with SSL, server side functions, file storage, authentication, and databases 
+                were built with Firebase. The initial build required me to go into the backend to create a React.js component file for every article they wanted to post to the system, which quickly showed was not going to work 
+                efficiently for their use case with short deadlines, differing time zones, etc. So I built them out a custom Content Management System (CMS) so they could login as an admin, and post custom articles at their leisure.
+                Building the system raised a few challenges such as:
             </p>
+            <ol>
+                <li>How could I dynamically post articles?</li>
+                <li>How to allow CAPS employees to publish formatted articles with images, graphs, etc?</li>
+            </ol>
+            <p>I tackled these challenges as follows:</p>
+            <ol>
+                <li>
+                    Previously to solving this, I didn't know how I would render a web page route with React Router without creating a React component file for that web page.
+                    After a bit of messing around in a test project, I figured out that I could render routes by pulling data from the database then pass that data to an "Article" component which would then render that data accordingly.
+                    Here was the most important section of code that made that dynamic render possible:
+                    <PhotoGallery 
+                        photos={
+                            [{
+                                src: require(`../assets/images/jobs/caps/misc/cms-code.png`), 
+                                caption: "CMS dynamic React routing snip",
+                                width: 1.1,
+                                height: 0.2
+                            }]
+                        } 
+                        setWidth={"lg"} 
+                    />
+                </li>
+                <li>
+                    Previously to creating the CMS, articles would obviously take longer to make, but each page would be quality assured to be beautiful, for example these custom graphs I used the 
+                    &nbsp;<a href="https://github.com/recharts/recharts" target="_blank" rel="noopener noreferrer">recharts</a> library for some articles:&nbsp;
+                    <a href="https://capsmd.org/issues/education/stories-opinions/do-better-kirwan-funding" target="_blank" rel="noopener noreferrer">here</a>,&nbsp;
+                    <a href="https://capsmd.org/issues/economic-development/facts/slow-growth-budget" target="_blank" rel="noopener noreferrer">here</a>,&nbsp;
+                    and <a href="https://capsmd.org/issues/economic-development/stories-opinions/how-did-the-county-spend-your-money-this-year" target="_blank" rel="noopener noreferrer">here</a>. I unfortunately had to sacrifice these 
+                    beautiful graphs to trade off for a viable solution that would be simple for the client in this use case. That solution was to use the
+                    &nbsp;<a href="https://github.com/zenoamaro/react-quill" target="_blank" rel="noopener noreferrer">react-quill</a> library to allow user to create "Rich Text" articles that have formatted text for the article with image inserts and links. 
+                    I also created an option for the user to upload a PDF that would be viewable in a clean interface with the <a href="https://github.com/wojtekmaj/react-pdf" target="_blank" rel="noopener noreferrer">react-pdf</a> library.
+                </li>
+            </ol>
         </div>,
         githubLink: "https://github.com/douglasrcjames/capsmd.org",
         logoUrl: require("../assets/images/jobs/caps/logo.png"),
@@ -608,7 +665,7 @@ export const jobs = [
             <a href="https://www.linkedin.com/in/mikeejlee/" target="_blank" rel="noopener noreferrer">&nbsp;Mike Lee</a>,&nbsp; was a classmate of mine at San Jose State,
             and I caught wind that he was looking for a web designer to help with client demand. I joined his Slack team, Trello workspace, and Github repositories
             so I could jump in to help with various web maintenance tasks. There was an even mix between fixing and updating WordPress, SquareSpace, and HTML/CSS/JS/PHP bugs and content. 
-            As my position ramped up I started to attend Zoom and in-person meetings, as well as visiting clients in person to get a better idea on the brand
+            As my position ramped up I started to attend Zoom and in-person meetings, as well as visiting clients in person to get a better idea of the brand
             they wanted to build on the site. Overall, this was a great job and with a motivated team around me that I gained a plethora of knowledge from. Mike motivated me
             as a leader, <a href="https://github.com/andyhqtran" target="_blank" rel="noopener noreferrer">Andy Tran</a> motivated me as a software engineer, and&nbsp;
             <a href="https://www.linkedin.com/in/ryan-wall-287837132/" target="_blank" rel="noopener noreferrer">Ryan Wall</a> motivated me as a designer. Ultimately, I left
@@ -635,14 +692,29 @@ export const jobs = [
         title: "Tesla",
         role: "Product Specialist",
         shortDescription: "Car salesman at the flagship Tesla electric vehicle showroom in Sunnyvale, California.",
-        longDescription: <p>While attending San Jose State University, a heavy interest in Tesla as a company and the products they were building. I got an interview from a 
-            college friend of mine, <a href="https://www.linkedin.com/in/vybhav-a-kandadai-%E2%98%81-8525244a/" rel="noopener noreferrer" target="_blank">Vybhav Kandadai</a>, another car salesman 
-            at the Santana Row show room in San Jose. I nailed the interview after expressing my knowledge for Elon's vision for Tesla and his other companies. I made quick friends
-            with my co-workers, and have lasting relationships with many of them from my experience there. The Santana Row location was the flagship store for Tesla, so we got many affluent visitors, 
-            such as business men and women, sports players, actors/actresses, Steve Wozniak and even Elon himself. In this high stakes environment, I perfected how to present myself as a professional. 
-            Ultimately, I left the job because I quickly found that moving from selling cars to an engineering position was difficult due to the size of the company. I felt I had also
-            reached the limit on the challenges I was being presented, and wanted to move to a more challenging yechnical job that took advantage of what I was studying in school.
-            I am grateful for the opportunity I had at Tesla and the valuable lessons I learned along the way.</p>,
+        longDescription: <div>
+            <p>
+                While attending San Jose State University, a heavy interest in Tesla as a company and the products they were building. I got an interview from a 
+                college friend of mine, <a href="https://www.linkedin.com/in/vybhav-a-kandadai-%E2%98%81-8525244a/" rel="noopener noreferrer" target="_blank">Vybhav Kandadai</a>, another car salesman 
+                at the Santana Row show room in San Jose. I nailed the interview after expressing my knowledge for Elon's vision for Tesla and his other companies. I made quick friends
+                with my co-workers, and have lasting relationships with many of them from my experience there. The Santana Row location was the flagship store for Tesla, so we got many affluent visitors, 
+                such as business men and women, sports players, actors/actresses, Steve Wozniak and even Elon himself. This high stakes environment allowed me to perfect presenting myself professionally.
+            </p>
+
+            <p>
+                In this position, I represented Tesla as a showroom guru educating walk-in clients on Tesla's line of innovative electric vehicles, such as the Model S, 
+                Model X, and upcoming Model 3. Interested clients would be invited to setup a test drive, where I would copilot the client while they test out our 
+                vehicle's features (ie Autopilot) on the freeway. I would then guide them through our online Design Studio to personalize a vehicle to their needs. 
+                If the client was in the direct market and satisfied with the vehicle, we would go over payment options (ie cash, lease, or financing) 
+                to begin the car building process.
+            </p>
+
+            <p>
+                Ultimately, I left the job because I quickly found that moving from selling cars to an engineering position was difficult due to the size of the company. I felt I had also
+                reached the limit on the challenges I was being presented, and wanted to move to a more challenging technical job that took advantage of what I was studying in school.
+                I am grateful for the opportunity I had at Tesla and the valuable lessons I learned along the way.
+            </p>
+            </div>,
         logoUrl: require("../assets/images/jobs/tesla/logo.png"),
         logoSize: SIZE.MEDIUM,
         period: "Aug. 2016 - Dec. 2016",
@@ -662,12 +734,14 @@ export const jobs = [
         title: "Minute.tech LLC",
         role: "Founder & Software Engineer",
         shortDescription: "Web and mobile applications connecting non-techies to techies for technical support.",
-        longDescription: <p>Mention that source code is proprititary. Minute.tech plans to be a web, iOS, Android, and desktop app that provides consumer grade 
+        longDescription: <p>Minute.tech plans to be a web, iOS, Android, and desktop app that provides consumer grade 
             tech support by connecting clients who have tech questions with qualified technicians. 
             The system will facilitate communication with technicians over messenger, voice/video calls, 
             remote connection, and in-person scheduling, and a payment solution all under the application's hood. 
             I recognize this project is ambitious, and has taken me many years, team members, advisors, and prototypes, 
-            but I do believe the opportunity is worth the effort based on my personal experience and extensive research.</p>,
+            but I do believe the opportunity is worth the effort based on my personal experience and extensive research.
+            {/* Mention that source code is proprietary.  */}
+            </p>,
         logoUrl: require("../assets/images/jobs/minutetech/logo.png"),
         logoSize: SIZE.LARGE,
         period: "May. 2016 - Today",
@@ -708,6 +782,15 @@ export const jobs = [
             {
                 name: METRICS.SCREENS,
                 value: 45
+            },
+            {
+                name: METRICS.TWILIO_MINS,
+                value: 9879
+            },
+            {
+                name: METRICS.STRIPE_DOLLARS,
+                value: 3892
+
             }
         ],
         headerUrl: require("../assets/images/jobs/minutetech/header.png"),
@@ -727,8 +810,8 @@ export const jobs = [
             desk, and set all the hardware and software up. Palo Alto Networks was growing rapidly at the time and thus new hires were coming in daily, so a good chunk of my time was occupied
             by setting up desks. While not setting up desks, I was busy re-imaging old laptops to be recirculated into the company. This doesn't sound that glamorous, but to me I loved it; 
             I always enjoyed tearing my computer setup apart at home and putting it back together in a more organized or optimal way. My main project was for hardware reconciliation, 
-            where I had to account for all hardware under the hood of the headquarters in Sunnyvale, which was more than a million dollars in assets. I needed to sift through hundreds 
-            of separate spreadsheets and cross reference them with the phyisical hardware into one consolidated list to reference. I was able to finish the project, but it was more difficult than my manager or 
+            where I had to account for all hardware under the hood of the headquarters in Sunnyvale, which was more than 700,000 computers and over a $350 million in assets. I needed to sift through hundreds 
+            of separate spreadsheets and cross reference them with the physical hardware into one consolidated list to reference. I was able to finish the project, but it was more difficult than my manager or 
             I had anticipated because many assets were either unaccounted for or unaccessible.  Through this, I learned the bureaucracy of a large, publicly traded, network security corporation.</p>,
         logoUrl: require("../assets/images/jobs/palo-alto-networks/logo.png"),
         logoSize: SIZE.LARGE,
@@ -747,7 +830,7 @@ export const jobs = [
     },
     {
         title: "ACFN Franchise",
-        role: "ATM Technician",
+        role: "IT Technician",
         shortDescription: "Worked as a remote ATM technician at an ATM franchising company in San Jose, California",
         longDescription: <p>ACFN is an ATM company with 2500+ machines worldwide that operates on a franchise business model.
             ACFN provides market research on the best placement of the ATM and follow up support for the ATM front and back end.
@@ -774,8 +857,12 @@ export const jobs = [
         title: "San Jose State University",
         role: "Computer Engineering & Business Student",
         shortDescription: "Earned a computer engineering major and business & math minors in the heart of Silicon Valley.",
-        longDescription: <p>Earned computer engineering major with business &amp; math minors in the heart of Silicon Valley. Member of Computer &amp; Software Engineering Society. 
-            Member of the Pi Kappa Alpha fraternity. Earned the confidence and paperwork to work professionally as an engineer solving problems around the world!</p>,
+        longDescription: <p>
+            Earned computer engineering major with business &amp; math minors in the heart of Silicon Valley. Active member of the Computer &amp; Software Engineering Society (SCE) and Pi Kappa Alpha fraternity. 
+            Earned the confidence and paperwork to work professionally as an engineer solving problems around the world! 
+            From the technical courses I took in my higher level courses, I learned how computers are structured and abstracted at all levels of the stack, from machine code to web coding.
+            I learned where I wanted to work on that stack, which I have currently landed at around the top, with web based coding languages because I love to see everyday consumers seeing and using my products.
+        </p>,
         logoUrl: require("../assets/images/jobs/sjsu/logo.png"),
         logoSize: SIZE.LARGE,
         period: "Aug. 2013 - Dec. 2019",
@@ -819,11 +906,13 @@ export const jobs = [
         role: "Founder",
         shortDescription: "Founded a local device repair business in El Dorado Hills, California.",
         longDescription: <p>
-            iHealPhones was my first business I built at the age of 15 that was focused on repairing smartphone, laptop, and device hardware in the local area of El Dorado Hills, California. 
-            80% of work done was fixing iPhone screens at a time when iPhones were hitting the market. iHealPhones gave me the reputation at my high school as the "phone guy", which caused many jobless high schoolers asking for a free phone fix. 
+            iHealPhones was a phone repair and computer servicing business that was born out of my garage in the sunny hills to the east of Sacramento in El Dorado Hills, California when I was a ripe age of 15.
+            80% of work done was fixing iPhone screens at a time when iPhones were hitting the market. 
+            iHealPhones gave me the reputation at my high school as the "phone guy", which caused many jobless high schoolers asking for a free phone fix. 
             These requests got so bad, that I "had" to make a shirt that said "No, I will not fix your phone for free." (I know, pretty cringey.) 
             The HTML, CSS, PHP, and Flash website I built for this business was my first website and introduced me to the coding world for the first time.
             The tech repair/support business and troubleshooting knowledge I learned at this job directly applied to the inception of <Link to="/work/minute.tech-llc">Minute.tech</Link>. 
+            The business was a great opportunity for me to learn from my (many) mistakes, and gave me the confidence and passion for computer engineering and entrepreneurship.
         </p>,
         logoUrl: require("../assets/images/jobs/ihealphones/logo-v2.png"),
         logoSize: SIZE.XLARGE,

@@ -20,17 +20,19 @@ export default function PhotoGallery(props) {
     };
 
     useEffect(() => {
-      if(props.isWide){
+      if(props.setWidth === "xl"){
         setGalleryWidth("xl")
+      } else if(props.setWidth === "lg") {
+        setGalleryWidth("lg")
       } else {
         if(props.photos.length < 3){
           setGalleryWidth("xs")
-        } else if(props.photos.length > 3){
+        } else if(props.photos.length > 3 || props.setWidth === "md"){
           setGalleryWidth("md")
         }
       }
       
-    }, [props.photos, props.isWide]);
+    }, [props.photos, props.setWidth]);
   
     return (
       <div className={`${galleryWidth}-width center`}>
@@ -41,7 +43,7 @@ export default function PhotoGallery(props) {
                 nextSrc={props.photos[(currentImage + 1) % props.photos.length].src}
                 prevSrc={props.photos[(currentImage + props.photos.length - 1) % props.photos.length].src}
                 onCloseRequest={closeLightbox}
-                imageTitle={props.photos[currentImage].caption}
+                imageCaption={props.photos[currentImage].caption}
                 onMovePrevRequest={() =>
                   setCurrentImage((currentImage + props.photos.length - 1) % props.photos.length)
                 }

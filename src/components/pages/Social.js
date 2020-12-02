@@ -9,7 +9,7 @@ export default class Social extends Component {
                     <div className="shero-container">
                         <h1 className="no-margin">Social</h1>
                         <p>More content coming soon...</p>
-                        <PhotoGallery photos={socialGallery} isWide={true} />
+                        <PhotoGallery photos={socialGallery} setWidth={"lg"} />
                     </div>
                 </div>
                 

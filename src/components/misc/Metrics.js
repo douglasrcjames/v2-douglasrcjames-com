@@ -18,7 +18,7 @@ export default class Metrics extends Component {
                                 return (
                                     <Col key={i} xs={12} md={6} lg={3}>
                                         <label style={{fontSize: "18px"}}>{ucFirst(metric.name)}: </label>
-                                        {metric.name === METRICS.FILES || metric.name === METRICS.LOC ? "~" : ""}{numberWithCommas(metric.value)}
+                                        {metric.name === METRICS.FILES || metric.name === METRICS.LOC ? "~" : ""}{metric.name === METRICS.STRIPE_DOLLARS ? "$" : ""}{numberWithCommas(metric.value)}
                                     </Col>
                                 )
                         })

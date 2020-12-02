@@ -148,12 +148,17 @@ body {
     }
 
     .md-width {
-        width: 75% !important;
+        width: 65% !important;
     }
 
     .lg-width {
+        width: 80% !important;
+    }
+
+    .xl-width {
         width: 90% !important;
     }
+    
 }
 
 @media screen and (max-width: 900px) {
@@ -170,6 +175,10 @@ body {
     }
 
     .lg-width {
+        width: 90% !important;
+    }
+
+    .xl-width {
         width: 90% !important;
     }
 }

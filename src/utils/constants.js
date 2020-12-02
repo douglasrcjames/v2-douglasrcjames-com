@@ -1,7 +1,7 @@
 
 export const SITE_UPDATED = {
-    SHORT: "11/30/2020",
-    LONG: "Nov. 30th, 2020"
+    SHORT: "12/01/2020",
+    LONG: "Dec. 1st, 2020"
 }
 
 export const STATUS = {
@@ -174,5 +174,7 @@ export const METRICS = {
 
     VISITORS: "unique visitors accrued",
     PAGE_VIEWS: "page views accrued",
-    // SESSION_DURATION: "session duration"
+    // SESSION_DURATION: "session duration",
+    TWILIO_MINS: "Twilio API call minutes accrued",
+    STRIPE_DOLLARS: "Stripe API dollars transacted"
  }

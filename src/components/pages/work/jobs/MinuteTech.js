@@ -10,58 +10,68 @@ export default class MinuteTech extends Component {
             <div>
                 <div className="lg-container">
                     <h2>Web Application</h2>
-                    <p>
+                    {/* <p>
                         The web application was built with React.js, Firebase, …. List off all version developed through various classes. Mention that some stuff might have changed like video calling UI.
                         magna vel placerat. Vestibulum sem lacus, iaculis in porttitor eget, commodo varius odio. Suspendisse a laoreet justo. Cras a libero 
                         sed mauris fringilla laoreet a at diam. Sed at finibus nulla. Maecenas vel nulla lobortis, aliquam arcu et, blandit enim. Pellentesque 
                         suscipit finibus dui, nec accumsan elit blandit id. Curabitur vestibulum vehicula viverra. Interdum et malesuada fames ac ante ipsum
                         primis in faucibus. Aliquam varius elit a orci rhoncus, non pulvinar turpis posuere. Duis dapibus tellus posuere, ultricies neque at, 
                         commodo dui. Ut viverra orci nisl. Nunc aliquet pellentesque sollicitudin.
-                    </p>
+                    </p> */}
                 </div>
 
                 <div className="center-text">
                     <h3 style={{fontSize: "30px", verticalAlign: "middle"}}><u>Demo</u></h3>
-                    <iframe
-                        title="Minute.tech web app demo video"
-                        width="560" height="315"
-                        src="https://www.youtube.com/embed/qeaLJ-Jw2SE"
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen="allowfullscreen"
-                        mozallowfullscreen="mozallowfullscreen" 
-                        msallowfullscreen="msallowfullscreen" 
-                        oallowfullscreen="oallowfullscreen" 
-                        webkitallowfullscreen="webkitallowfullscreen"
-                    />
+                        <div className="sm-video-container">
+                            <div className="video-responsive">
+                                <iframe
+                                    title="Minute.tech web app demo video"
+                                    width="560" height="315"
+                                    src="https://www.youtube.com/embed/qeaLJ-Jw2SE"
+                                    frameBorder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowFullScreen="allowfullscreen"
+                                    mozallowfullscreen="mozallowfullscreen" 
+                                    msallowfullscreen="msallowfullscreen" 
+                                    oallowfullscreen="oallowfullscreen" 
+                                    webkitallowfullscreen="webkitallowfullscreen"
+                                />
+                            </div>
+                        </div>
+                    
                 </div>
                 <ScreensGallery photos={mtWebWireframe} title={"Wireframe screens"} />
                 <ScreensGallery photos={mtWebLive} title={"Live screens"} />
 
                 <div className="lg-container">
                     <h2>Mobile Application</h2>
-                    <p>
+                    {/* <p>
                         The mobile applications were built with React Native, Swift,... explain the version I built and whyI built them that way. magna vel placerat. Vestibulum sem lacus, iaculis in porttitor eget, commodo varius odio. 
                         Suspendisse a laoreet justo. Cras a libero  sed mauris fringilla laoreet a at diam. Sed at finibus nulla. Maecenas vel nulla lobortis, aliquam arcu et, blandit enim. Pellentesque orci rhoncus, orci rhoncus,
                         suscipit finibus dui, nec accumsan elit blandit id. Curabitur vestibulum vehicula viverra. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam varius elit a orci rhoncus, non pulvinar 
                         turpis posuere. Duis dapibus tellus posuere, ultricies neque at, commodo dui. Ut viverra orci nisl. Nunc aliquet pellentesque sollicitudin.
-                    </p>
+                    </p> */}
                 </div>
                
                 <div className="center-text">
                     <h3 style={{fontSize: "30px", verticalAlign: "middle"}}><u>Swift Demo</u></h3>
-                    <iframe
-                        title="Minute.tech swift demo video"
-                        width="560" height="315"
-                        src="https://www.youtube.com/embed/ZivovCZzyYk"
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen="allowfullscreen"
-                        mozallowfullscreen="mozallowfullscreen" 
-                        msallowfullscreen="msallowfullscreen" 
-                        oallowfullscreen="oallowfullscreen" 
-                        webkitallowfullscreen="webkitallowfullscreen"
-                    />
+                    <div className="sm-video-container">
+                        <div className="video-responsive">
+                            <iframe
+                                title="Minute.tech mobile swift app demo video"
+                                width="560" height="315"
+                                src="https://www.youtube.com/embed/ZivovCZzyYk"
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen="allowfullscreen"
+                                mozallowfullscreen="mozallowfullscreen" 
+                                msallowfullscreen="msallowfullscreen" 
+                                oallowfullscreen="oallowfullscreen" 
+                                webkitallowfullscreen="webkitallowfullscreen"
+                            />
+                            
+                        </div>
+                    </div>
                 </div>
 
                 <ScreensGallery photos={mtMobileWireframe} title={"Wireframe screens"} />
@@ -72,7 +82,7 @@ export default class MinuteTech extends Component {
                 <div className="horiz-rule" />
                 <br/>
 
-                <div className="lg-container">
+                {/* <div className="lg-container">
                     <h2>Business Development</h2>
                     <p>
                         Written two businnes plans, led teams, etc... explain the version I built and whyI built them that way. magna vel placerat. Vestibulum sem lacus, iaculis in porttitor eget, commodo varius odio. 
@@ -80,7 +90,7 @@ export default class MinuteTech extends Component {
                         suscipit finibus dui, nec accumsan elit blandit id. Curabitur vestibulum vehicula viverra. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam varius elit a orci rhoncus, non pulvinar 
                         turpis posuere. Duis dapibus tellus posuere, ultricies neque at, commodo dui. Ut viverra orci nisl. Nunc aliquet pellentesque sollicitudin.
                     </p>
-                </div>
+                </div> */}
                 
                 <PhotoGallery photos={mtMisc} />
             </div>

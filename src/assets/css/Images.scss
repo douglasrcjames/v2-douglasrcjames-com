@@ -41,7 +41,6 @@ img.xlarge {
     width: 100%;
     height: auto;
     max-width: 450px;
-    padding: 5px;
 }
 
 img.xxlarge {
@@ -106,7 +105,7 @@ img.xl-em {
 
 .headshot-bg {
     /* The image used */
-    background-image: url("https://firebasestorage.googleapis.com/v0/b/douglasrcjamescom.appspot.com/o/professional-bg.png?alt=media&token=35293e4d-9bf7-4c74-af77-442c1768a1ef");
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/douglasrcjamescom.appspot.com/o/professional-bg.png?alt=media&token=65a5b4c9-d978-4e41-b8f4-00e6901fd62a");
 
     /* Full height */
     height: 100%; 
@@ -117,10 +116,18 @@ img.xl-em {
     background-size: cover;
 }
 
+.headshot-block {
+    display: none;
+}
+
 @media screen and (max-width: 1400px) {
     .headshot-bg {
         background-image: none;
       }
+    
+    .headshot-block {
+        display: block;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -165,9 +172,51 @@ img.xl-em {
     }
 }
 
+// Video containers
+.sm-video-container {
+    width: 30% !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: center;
+}
+
+.md-video-container {
+    width: 60% !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: center;
+}
+
+@media screen and (max-width: 900px) {
+    .sm-video-container {
+        width: 80% !important;
+    }
+
+    .md-video-container {
+        width: 90% !important;
+    }
+}
+
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
 /* 
 * Misc 
 */
+
 .responsive {
     max-width: 100%;
     height: auto;

@@ -20,6 +20,8 @@ export default class Home extends Component {
             sourceFiles: 0,
             screens: 0,
             websites: -3, // i know the coldbrew, sjsu, and orhs produce html skills, but didnt build sites from scratch
+            stripeDollars: 0,
+            twilioMins: 0,
 
             // skills
             html: 0,
@@ -120,6 +122,14 @@ export default class Home extends Component {
                             this.setState((prevState, props) => ({
                                 screens: prevState.screens + metric.value
                             })); 
+                        } else if(metric.name === METRICS.TWILIO_MINS){
+                            this.setState((prevState, props) => ({
+                                twilioMins: prevState.twilioMins + metric.value
+                            })); 
+                        } else if(metric.name === METRICS.STRIPE_DOLLARS){
+                            this.setState((prevState, props) => ({
+                                stripeDollars: prevState.stripeDollars + metric.value
+                            })); 
                         } 
                     });
                 }
@@ -150,7 +160,9 @@ export default class Home extends Component {
                             View my work
                         </button>
                     </Link>
-                    
+                </div>
+                <div className="headshot-block">
+                    <img className="xlarge center" alt="headshot" src={require('../../assets/images/misc/professional.png')} />
                 </div>
             </div>
            
@@ -183,7 +195,7 @@ export default class Home extends Component {
                             <Col md={12} lg={4}>
                                 <img className="home-icon" alt="mushroom" src={require('../../assets/images/icons/mushroom.png')} />
                                 <h3>Fun Guy</h3>
-                                <p>Unlike many engineers, I am actually easy to get along with, just ask my past clients! </p>
+                                <p>I am patient, down-to-earth, and pleasant to work with, just ask my past clients!</p>
                             </Col>
                         </Row>
                     </Grid>
@@ -252,26 +264,68 @@ export default class Home extends Component {
                     <div className="horiz-rule" />
                     <br/>
                     <Row center="xs">
-                        {/* TODO: Update these gifs */}
-                        <Col xs={12} sm={6}>
-                            <img 
-                                className="responsive"
-                                style={{width: "60%", border: "3px lightgrey solid"}}
-                                alt="finished product"
-                                src={require("../../assets/images/jobs/bodybyyama/finished-product.gif")}
-                                />
-                            <label style={{display: "block"}}>Custom CMS (Content Management System) built</label>
-                            <Link to="/work/capsmd.org">See <b>caps.org</b> project</Link>
+                        <Col xs={12} sm={6} className="sm-margin-t-b">
+                            <div className="md-video-container">
+                                <div className="video-responsive">
+                                    <iframe
+                                        title="capsmd.org web app demo video"
+                                        width="560" height="315"
+                                        src="https://www.youtube.com/embed/Ke1DP5UzHZQ"
+                                        frameBorder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowFullScreen="allowfullscreen"
+                                        mozallowfullscreen="mozallowfullscreen" 
+                                        msallowfullscreen="msallowfullscreen" 
+                                        oallowfullscreen="oallowfullscreen" 
+                                        webkitallowfullscreen="webkitallowfullscreen"
+                                    />
+                                </div>
+                            </div>
+                            
+                            <label style={{display: "block"}}>Built custom CMS (Content Management System)</label>
+                            <Link to="/work/capsmd.org" className="text-hover-yellow sm-text">See <b>caps.org</b> project</Link>
                         </Col>  
-                        <Col xs={12} sm={6}>
-                            <img 
-                                className="responsive"
-                                style={{width: "60%", border: "3px lightgrey solid"}}
-                                alt="finished product"
-                                src={require("../../assets/images/jobs/bodybyyama/finished-product.gif")}
-                                />
-                            <label style={{display: "block"}}>Custom CRM (Customer Relations Management) system built</label>
-                            <Link to="/work/goprestigepower.com">See <b>goprestigepower.com</b> project</Link>
+                        <Col xs={12} sm={6} className="sm-margin-t-b">
+                            <div className="md-video-container">
+                                <div className="video-responsive">
+                                    <iframe
+                                        title="goprestigepower.com web app demo video"
+                                        width="560" height="315"
+                                        src="https://www.youtube.com/embed/wad3TnxJgMQ"
+                                        frameBorder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowFullScreen="allowfullscreen"
+                                        mozallowfullscreen="mozallowfullscreen" 
+                                        msallowfullscreen="msallowfullscreen" 
+                                        oallowfullscreen="oallowfullscreen" 
+                                        webkitallowfullscreen="webkitallowfullscreen"
+                                    />
+                                </div>
+                            </div>
+                            
+                            <label style={{display: "block"}}>Built custom CRM (Customer Relationship Management) system</label>
+                            <Link to="/work/goprestigepower.com" className="text-hover-yellow sm-text">See <b>goprestigepower.com</b> project</Link>
+                        </Col>
+                        <Col xs={12} sm={6} className="sm-margin-t-b">
+                            <div className="md-video-container">
+                                <div className="video-responsive">
+                                    <iframe
+                                        title="goprestigepower.com web app demo video"
+                                        width="560" height="315"
+                                        src="https://www.youtube.com/embed/qeaLJ-Jw2SE"
+                                        frameBorder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowFullScreen="allowfullscreen"
+                                        mozallowfullscreen="mozallowfullscreen" 
+                                        msallowfullscreen="msallowfullscreen" 
+                                        oallowfullscreen="oallowfullscreen" 
+                                        webkitallowfullscreen="webkitallowfullscreen"
+                                    />
+                                </div>
+                            </div>
+                            
+                            <label style={{display: "block"}}>Built tech support system with messenger, video calling, screen sharing, and payment</label>
+                            <Link to="/work/minute.tech-llc" className="text-hover-yellow sm-text">See <b>Minute.tech</b> project</Link>
                         </Col>
                     </Row>
                     <br/>
@@ -300,6 +354,12 @@ export default class Home extends Component {
                         </Col>
                         <Col sm={6} md={4}>
                             <label style={{display: "block", fontSize: "18px"}}>{ucFirst(METRICS.SCREENS)}: <span className="roboto-regular">{numberWithCommas(this.state.screens)}</span></label>
+                        </Col>
+                        <Col sm={6} md={4}>
+                            <label style={{display: "block", fontSize: "18px"}}>{ucFirst(METRICS.TWILIO_MINS)}: <span className="roboto-regular">{numberWithCommas(this.state.twilioMins)}</span></label>
+                        </Col>
+                        <Col sm={6} md={4}>
+                            <label style={{display: "block", fontSize: "18px"}}>{ucFirst(METRICS.STRIPE_DOLLARS)}: <span className="roboto-regular">${numberWithCommas(this.state.stripeDollars)}</span></label>
                         </Col>
                     </Row>
                 </Grid>

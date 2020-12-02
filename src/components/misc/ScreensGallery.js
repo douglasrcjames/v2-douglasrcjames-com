@@ -36,14 +36,13 @@ export default class ScreensGallery extends Component {
                 })}
             </SimpleBar>
           
-          
             {isOpen && (
                 <Lightbox
                     mainSrc={this.props.photos[photoIndex].src}
                     nextSrc={this.props.photos[(photoIndex + 1) % this.props.photos.length].src}
                     prevSrc={this.props.photos[(photoIndex + this.props.photos.length - 1) % this.props.photos.length].src}
                     onCloseRequest={() => this.setState({ isOpen: false })}
-                    imageTitle={this.props.photos[photoIndex].caption}
+                    imageCaption={this.props.photos[photoIndex].caption}
                     onMovePrevRequest={() =>
                         this.setState({
                         photoIndex: (photoIndex + this.props.photos.length - 1) % this.props.photos.length,
