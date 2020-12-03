@@ -4,8 +4,9 @@ import { Formik, Field } from 'formik';
 
 import { contactFormSchema } from '../../utils/formSchemas'
 import { firestore } from "../../Fire.js";
+import { withToast } from '../misc/AlertHOC'
 
-export default class ContactForm extends Component {
+class ContactForm extends Component {
     constructor(props) {
         super(props);
         this.addMessage = this.addMessage.bind(this);
@@ -18,7 +19,7 @@ export default class ContactForm extends Component {
             message: values.message,
             timestamp: Date.now(),
         }).then(
-            alert("Message submitted successfully.")
+            this.props.addToast('Message submitted successfully, I will get back to you ASAP!', { appearance: 'success' })
         );
       }
       
@@ -120,3 +121,5 @@ export default class ContactForm extends Component {
         )
     }
 }
+
+export default withToast(ContactForm);

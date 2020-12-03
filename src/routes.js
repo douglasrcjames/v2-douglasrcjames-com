@@ -10,6 +10,7 @@ import Home from './components/pages/Home'
 import Social from './components/pages/Social'
 import Work from './components/pages/work/Work'
 import Job from './components/pages/work/Job';
+import Credits from './components/pages/Credits';
 
 
 class Routes extends Component {
@@ -19,6 +20,7 @@ class Routes extends Component {
                 <Route exact path="/" component={withTracker(Home)} />
                 <Route exact path="/social" component={withTracker(Social)} />
                 <Route exact path="/work" component={withTracker(Work)} />
+                <Route exact path="/credits" component={withTracker(Credits)} />
                 {  
                     jobs.map((job, i) => {
                         return (

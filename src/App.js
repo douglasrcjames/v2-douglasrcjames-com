@@ -1,5 +1,6 @@
 import React from 'react';
 import { Router } from 'react-router-dom';
+import { ToastProvider } from 'react-toast-notifications'
 
 import history from './history';
 import Routes from "./routes";
@@ -13,6 +14,7 @@ import "./assets/css/Text.scss";
 import "./assets/css/Align.scss";
 import "./assets/css/Images.scss";
 import "./assets/css/Forms.scss";
+import "./assets/css/PricingTable.scss";
 import "./assets/css/Misc.scss";
 import 'simplebar/dist/simplebar.min.css';
 import 'react-image-lightbox/style.css';
@@ -22,13 +24,15 @@ import ScrollToTop from "./components/misc/ScrollToTop";
 
 function App() {
   return (
-    <Router history={history}>
-      <ScrollToTop>
-        <Header />
-        <Routes />
-        <Footer />
-      </ScrollToTop>
-    </Router>
+    <ToastProvider placement="top-center" autoDismiss={true}>
+      <Router history={history}>
+        <ScrollToTop>
+          <Header />
+          <Routes />
+          <Footer />
+        </ScrollToTop>
+      </Router>
+    </ToastProvider>
   );
 }
 

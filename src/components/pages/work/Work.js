@@ -82,7 +82,7 @@ export default class Work extends Component {
                
                 <div className="full-width bg-blue">
                     <div className="wrapper white center-text">
-                        <h3><FaBabyCarriage color="white" /> &nbsp;Douglas R.C. James was born!</h3>
+                        <h3><FaBabyCarriage color="white" /> &#8239;Douglas R.C. James was born!</h3>
                         <div className="sm-margin-t">December 21, 1994</div>
                     </div>
                 </div>

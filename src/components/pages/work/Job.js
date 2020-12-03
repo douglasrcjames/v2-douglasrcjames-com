@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import { Link } from 'react-router-dom';
 import { STATUS } from '../../../utils/constants';
-import { ucFirst } from '../../../utils/misc';
+import { Accolade, ucFirst } from '../../../utils/misc';
 import Metrics from '../../misc/Metrics';
 
 const WithSeparator = require("react-with-separator");
@@ -50,19 +50,19 @@ export default class Job extends Component {
                                 <Col style={{margin: "20px 0"}} xs={12} md={4}>
                                     { this.props.previousJob && (
                                         <Link to={`/work/${this.props.previousJob.title.split(" ").join("-").toLowerCase()}`} className="md-blue-btn">
-                                            <i className="fas fa-chevron-left" />&nbsp; Next job
+                                            <i className="fas fa-chevron-left" />&#8239; Next job
                                         </Link>
                                     )}
                                 </Col>
                                 <Col style={{margin: "20px 0"}} xs={12} md={4}>
                                     <Link to="/work" className="md-blue-btn">
-                                        <i className="fas fa-chevron-up" />&nbsp; Back to all work
+                                        <i className="fas fa-chevron-up" />&#8239; Back to all work
                                     </Link>
                                 </Col>
                                 <Col style={{margin: "20px 0"}} xs={12} md={4}>
                                     { this.props.nextJob && (
                                         <Link to={`/work/${this.props.nextJob.title.split(" ").join("-").toLowerCase()}`} className="md-blue-btn">
-                                            Previous job &nbsp;<i className="fas fa-chevron-right" />
+                                            Previous job &#8239;<i className="fas fa-chevron-right" />
                                         </Link>
                                     )}
                                 </Col>
@@ -89,7 +89,7 @@ export default class Job extends Component {
                                                             <i className="fas fa-check"/> : 
                                                             <i className="fas fa-clock"/>
                                                         } 
-                                                        &nbsp;
+                                                        &#8239;
                                                         {ucFirst(this.props.job.status)}
                                                     </h4>
                                                 </Col>
@@ -137,15 +137,16 @@ export default class Job extends Component {
                                     {this.props.job.skills.primary && (
                                         <>
                                         <h4>Primary:</h4>
-                                        { 
-                                            this.props.job.skills.primary.map((skill, i) => {
-                                                return (
-                                                    <a key={i} href={skill.link} target="_blank" rel="noopener noreferrer">
-                                                        <img className="xsmall-fit sm-padding" alt="skill logo" src={skill.src} /> 
-                                                    </a>
-                                                )
-                                            }) 
-                                        }
+                                        <Row between="xs">
+                                            { 
+                                                this.props.job.skills.primary.map((skill, i) => {
+                                                    return (
+                                                        <Accolade key={i} link={skill.link} name={skill.name} value={""} />
+                                                    )
+                                                }) 
+                                            }
+                                        </Row>
+                                        
                                         </>
                                     )}
                                     {this.props.job.skills.secondary && (
@@ -154,9 +155,7 @@ export default class Job extends Component {
                                         { 
                                             this.props.job.skills.secondary.map((skill, i) => {
                                                 return (
-                                                    <a key={i} href={skill.link} target="_blank" rel="noopener noreferrer">
-                                                        <img className="xsmall-fit sm-padding" alt="skill logo" src={skill.src} /> 
-                                                    </a>
+                                                    <Accolade key={i} link={skill.link} name={skill.name} value={""} />
                                                 )
                                             }) 
                                         }

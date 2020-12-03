@@ -132,7 +132,7 @@ export const jobs = [
             the custom CRM (Customer Relationship Management) backend. The front end experience was built with HTML/CSS/React.js and backend services like hosting with SSL, server side functions, file storage, authentication, and databases 
             were built with Firebase. The site also features traffic tracking for the client with Google Analytics. I also had the pleasure of collaborating with my design partner <a href="https://www.linkedin.com/in/anamariecampos/" target="_blank" rel="noopener noreferrer">Ana Campos</a> to build the client 
             branding guidelines (font, colors, logo, and usage) for their business.
-            {/* TODO: include? <a href="https://www.linkedin.com/in/reed-reilly-8844251ab/" target="_blank" rel="noopener noreferrer">Reed Reilly</a>&nbsp; */}
+            {/* TODO: include? <a href="https://www.linkedin.com/in/reed-reilly-8844251ab/" target="_blank" rel="noopener noreferrer">Reed Reilly</a>&#8239; */}
         </p>,
         githubLink: "https://github.com/douglasrcjames/goprestigepower.com",
         logoUrl: require("../assets/images/jobs/goprestigepower/logo.png"),
@@ -499,12 +499,12 @@ export const jobs = [
                 </li>
                 <li>
                     Previously to creating the CMS, articles would obviously take longer to make, but each page would be quality assured to be beautiful, for example these custom graphs I used the 
-                    &nbsp;<a href="https://github.com/recharts/recharts" target="_blank" rel="noopener noreferrer">recharts</a> library for some articles:&nbsp;
-                    <a href="https://capsmd.org/issues/education/stories-opinions/do-better-kirwan-funding" target="_blank" rel="noopener noreferrer">here</a>,&nbsp;
-                    <a href="https://capsmd.org/issues/economic-development/facts/slow-growth-budget" target="_blank" rel="noopener noreferrer">here</a>,&nbsp;
+                    &#8239;<a href="https://github.com/recharts/recharts" target="_blank" rel="noopener noreferrer">recharts</a> library for some articles:&#8239;
+                    <a href="https://capsmd.org/issues/education/stories-opinions/do-better-kirwan-funding" target="_blank" rel="noopener noreferrer">here</a>,&#8239;
+                    <a href="https://capsmd.org/issues/economic-development/facts/slow-growth-budget" target="_blank" rel="noopener noreferrer">here</a>,&#8239;
                     and <a href="https://capsmd.org/issues/economic-development/stories-opinions/how-did-the-county-spend-your-money-this-year" target="_blank" rel="noopener noreferrer">here</a>. I unfortunately had to sacrifice these 
                     beautiful graphs to trade off for a viable solution that would be simple for the client in this use case. That solution was to use the
-                    &nbsp;<a href="https://github.com/zenoamaro/react-quill" target="_blank" rel="noopener noreferrer">react-quill</a> library to allow user to create "Rich Text" articles that have formatted text for the article with image inserts and links. 
+                    &#8239;<a href="https://github.com/zenoamaro/react-quill" target="_blank" rel="noopener noreferrer">react-quill</a> library to allow user to create "Rich Text" articles that have formatted text for the article with image inserts and links. 
                     I also created an option for the user to upload a PDF that would be viewable in a clean interface with the <a href="https://github.com/wojtekmaj/react-pdf" target="_blank" rel="noopener noreferrer">react-pdf</a> library.
                 </li>
             </ol>
@@ -558,7 +558,7 @@ export const jobs = [
         longDescription: <p>
             Yamato Nishino was a friend and personal fitness trainer in the San Fransisco Bay Area. She wanted a website to 
             centralize her personal training business, where potential clients could read and watch more about what she had to offer. 
-            I worked with two other graphic designers, <a href="https://www.linkedin.com/in/ryan-wall-287837132/" target="_blank" rel="noopener noreferrer">Ryan Wall</a>&nbsp;
+            I worked with two other graphic designers, <a href="https://www.linkedin.com/in/ryan-wall-287837132/" target="_blank" rel="noopener noreferrer">Ryan Wall</a>&#8239;
             and <a href="https://www.linkedin.com/in/mitchell-licata/" target="_blank" rel="noopener noreferrer">Mitch Licata</a> to create logo, branding (colors, fonts, etc), and 
             website wireframe. I developed her one-page site with PHP for the contact form and UIkit3 for the front end work. This site turned out simply beautiful, I was so proud 
             of what we were able to design as a 3 man team. My favorite part of the site is the background image of her and how it that moves a bit as the viewer scrolls down the page.
@@ -608,7 +608,7 @@ export const jobs = [
                 The business wanted a central website where they could educate potential buyers and consumers on their tasty, healthy, and trusted products, as well as a contact channel. 
             </p>
             <p>
-                I worked with a graphic designer <a href="https://www.linkedin.com/in/ryan-wall-287837132/" target="_blank" rel="noopener noreferrer">Ryan Wall</a>&nbsp;
+                I worked with a graphic designer <a href="https://www.linkedin.com/in/ryan-wall-287837132/" target="_blank" rel="noopener noreferrer">Ryan Wall</a>&#8239;
                 to create a logo, branding (colors, fonts, etc), and website wireframe that fit the client's needs. Ryan was able to create the wireframe mock and I was able to code 
                 the site in under a week! Both Ryan and I, as well as the client are stoked with the outcome of the website. I was particularly excited because this was my first experience with
                 translating a wireframe to a working website. There was only one style I wasn't able to figure out, which was the green or white stripe that went from the headers
@@ -662,12 +662,12 @@ export const jobs = [
         role: "Web developer",
         shortDescription: "Built, updated, and managed websites for a small digital marketing team in San Jose, California.",
         longDescription: <p>Coldbrew Creative (now Manticore) is a small digital marketing firm based in San Jose, California. The CEO, 
-            <a href="https://www.linkedin.com/in/mikeejlee/" target="_blank" rel="noopener noreferrer">&nbsp;Mike Lee</a>,&nbsp; was a classmate of mine at San Jose State,
+            <a href="https://www.linkedin.com/in/mikeejlee/" target="_blank" rel="noopener noreferrer">&#8239;Mike Lee</a>,&#8239; was a classmate of mine at San Jose State,
             and I caught wind that he was looking for a web designer to help with client demand. I joined his Slack team, Trello workspace, and Github repositories
             so I could jump in to help with various web maintenance tasks. There was an even mix between fixing and updating WordPress, SquareSpace, and HTML/CSS/JS/PHP bugs and content. 
             As my position ramped up I started to attend Zoom and in-person meetings, as well as visiting clients in person to get a better idea of the brand
             they wanted to build on the site. Overall, this was a great job and with a motivated team around me that I gained a plethora of knowledge from. Mike motivated me
-            as a leader, <a href="https://github.com/andyhqtran" target="_blank" rel="noopener noreferrer">Andy Tran</a> motivated me as a software engineer, and&nbsp;
+            as a leader, <a href="https://github.com/andyhqtran" target="_blank" rel="noopener noreferrer">Andy Tran</a> motivated me as a software engineer, and&#8239;
             <a href="https://www.linkedin.com/in/ryan-wall-287837132/" target="_blank" rel="noopener noreferrer">Ryan Wall</a> motivated me as a designer. Ultimately, I left
             the team because I was working with technology too far up the stack (WordPress) and wanted to work with less abstracted technologies, like Node and Python.</p>,
         logoUrl: require("../assets/images/jobs/coldbrewcreative/logo.png"),
@@ -802,7 +802,7 @@ export const jobs = [
         title: "Palo Alto Networks",
         role: "IT Specialist",
         shortDescription: "Provided on-site technical support at the previous Palo Alto Networks headquarters in Sunnyvale, California",
-        longDescription: <p>While attending San Jose State, I got into a deep conversation at a party with <a href="https://www.linkedin.com/in/matthew-elliott11/" target="_blank" rel="noopener noreferrer">Matt Elliott,</a>&nbsp;
+        longDescription: <p>While attending San Jose State, I got into a deep conversation at a party with <a href="https://www.linkedin.com/in/matthew-elliott11/" target="_blank" rel="noopener noreferrer">Matt Elliott,</a>&#8239;
             an MIS student and employee at Palo Alto Networks at the time. After discussion on my interest in all things technology, he advised that I send him my 
             resume to forward to his hiring manager. After a few phone interviews, and one in-person interview, I got the job! The job fit me perfectly, 
             I was stationed in the room where all the tech hardware like monitors, cables, and computers were kept and organized.
@@ -946,7 +946,7 @@ export const jobs = [
         longDescription: <p>
             I earned my high school diploma at Oak Ridge High School, a great public school east of Sacramento in the golden hills of El Dorado Hills, California. 
             My business <Link to="/work/ihealphones">iHealPhones</Link> earned me a reputation as the techie guy on campus, which lead me on a path of many opportunities in the tech field. 
-            &nbsp;<a href="https://www.deca.org" target="_blank" rel="noopener noreferrer">DECA</a>, a young business leader club at school which is normally 
+            &#8239;<a href="https://www.deca.org" target="_blank" rel="noopener noreferrer">DECA</a>, a young business leader club at school which is normally 
             reserved for 3rd and 4th year students, invited me to join the club as a 2nd year because of iHealPhones. I also became 1 of the 3 web developer students that 
             managed the school website. Through this early opportunity, I was given a free subscription to Adobe Creative Suite (Photoshop, Dreamweaver, etc) 
             and to <a href="https://www.lynda.com" target="_blank" rel="noopener noreferrer">Lyndia.com</a> (now owned by LinkedIn) where I learned the basics of web development and design with hours of online tutorials. 

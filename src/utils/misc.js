@@ -2,6 +2,7 @@
 // Some random handy functions! 
 //
 import React from "react"
+import { Col } from "react-flexbox-grid";
 
 // First letter is uppercase
 export function ucFirst(string) {
@@ -58,6 +59,16 @@ export const SocialLink = ({ label, link }) =>
         src={require(`../assets/images/icons/social/${label}.png`)}
         />
   </a>
+
+export const Accolade = ({ name, link, value }) =>
+  <Col xs={6} sm={4} md={3} lg={2} className="accolade">
+    <div>
+      <a href={link} target="_blank" rel="noopener noreferrer">
+          <img alt="skill logo" src={require(`../assets/images/icons/skills/${name}.png`)} /> 
+      </a>
+      <label>{value}</label>
+    </div>
+  </Col>
 
 export function numberWithCommas(x) {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");

@@ -39,6 +39,22 @@ textarea {
 }
 
 // Buttons
+.lg-blue-btn {
+  background-color: $blue;
+  font-family: $roboto-bold;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 4px;
+  padding: 14px 50px;
+  border: $dark-grey solid 1px; 
+  color: $white !important;
+  text-decoration: none !important;
+}
+
+.lg-blue-btn:hover {
+  background-color: $light-blue;
+}
+
 .md-blue-btn {
   background-color: $blue;
   font-family: $roboto-bold;

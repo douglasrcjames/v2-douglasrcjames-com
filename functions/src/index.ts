@@ -42,7 +42,7 @@ export const onMessageCreated = functions.firestore.document('messages/{messageI
         // Pack it
         const mailOptions = {
             from: `drcj.dev@gmail.com`,
-            to: 'drcj.dev@gmail.com',
+            to: 'drcj.dev@gmail.com, douglasrcjames@gmail.com',
             replyTo: `${newValue.email}`,
             subject: `New douglasrcjames.com contact from ${newValue.name}`,
             text: newValue.message,
@@ -50,14 +50,9 @@ export const onMessageCreated = functions.firestore.document('messages/{messageI
         }
 
         // Send it
-        transporter.sendMail(mailOptions, (err: any) => {
-            if(err) {
-                console.error(err);
-            } else {
-                console.log("Successfully sent mail with sendMail()!");
-            }
-        })
+        return transporter.sendMail(mailOptions)
     } catch (error) {
         console.error(error)
+        return;
     }
   });

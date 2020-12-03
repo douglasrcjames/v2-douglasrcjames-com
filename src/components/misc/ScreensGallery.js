@@ -29,7 +29,7 @@ export default class ScreensGallery extends Component {
                 { this.props.photos.map((photo, i) => {
                 return (
                     <span key={i}>
-                    <img src={photo.src} alt={photo.caption} className="slider-img" onClick={() => this.openLightBox(i)}/>
+                    <img src={photo.src} alt={photo.caption} onClick={() => this.openLightBox(i)}/>
                     {/* <span>{photo.caption}</span> */}
                     </span>
                 )

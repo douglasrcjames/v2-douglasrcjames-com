@@ -3,7 +3,7 @@ import { Grid, Row, Col } from 'react-flexbox-grid';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { METRICS, SITE_UPDATED, SKILLS } from '../../utils/constants';
-import { numberWithCommas, ucFirst } from '../../utils/misc';
+import { Accolade, numberWithCommas, ucFirst } from '../../utils/misc';
 import { jobs } from '../../utils/jobs';
 import ContactForm from '../misc/ContactForm';
 
@@ -34,7 +34,8 @@ export default class Home extends Component {
             mysql: 0,
             github: 0,
             wireframing: 0,
-            firebase: 0
+            firebase: 0,
+            swift: 0
 
         }
     }
@@ -44,7 +45,8 @@ export default class Home extends Component {
             jobs.forEach((job, i) => { 
                 if(job.skills){
                     if(job.skills.primary || job.skills.secondary){
-                        job.skills.primary.forEach((skill, i) => {
+                        const allSkills = job.skills.primary.concat(job.skills.secondary);
+                        allSkills.forEach((skill, i) => {
                             if(skill === SKILLS.HTML){
                                 console.log("html!")
                                 this.setState((prevState, props) => ({
@@ -90,6 +92,10 @@ export default class Home extends Component {
                             } else if(skill === SKILLS.FIREBASE){
                                 this.setState((prevState, props) => ({
                                     firebase: prevState.firebase + 1
+                                })); 
+                            } else if(skill === SKILLS.SWIFT){
+                                this.setState((prevState, props) => ({
+                                    swift: prevState.swift + 1
                                 })); 
                             } 
                         });
@@ -178,195 +184,301 @@ export default class Home extends Component {
                             <Col md={12} lg={4}>
                                 <img className="home-icon" alt="detective" src={require('../../assets/images/icons/private-detective.png')} />
                                 <h3>Detail-oriented Dude</h3>
-                                <p>I take extra time to customize my client's sites down to the smallest details because I truly enjoy the process and treat your project like my own.</p>
+                                <p>
+                                    I truly enjoy the process and treat your project like my own, customizing my client's sites down to the smallest details. 
+                                    No two sites I create are exactly the same because I take the extra step to build unique designs for every new project.
+                                </p>
                             </Col>
                             <Col md={12} lg={4}>
                                 <img className="home-icon" alt="schedule" src={require('../../assets/images/icons/schedule.png')} />
                                 <h3>Always On Time</h3>
-                                <p>The projects I complete are always on time, if not earlier. I start planning my projects in the first meeting and for forever in the future.</p>
+                                <p>
+                                    The projects I complete are always delivered to on time, if not earlier. Weekly (if not daily) updates are posted for my projects on
+                                    &#8239;<a href="https://github.com" target="_blank" rel="noopener noreferrer" className="white">GitHub</a> so my clients can track the progress of development.
+                                </p>
                             </Col>
                             <Col md={12} lg={4}>
                                 <img className="home-icon" alt="business climb" src={require('../../assets/images/icons/business.png')} />
                                 <h3>Ambitious, but Realistic</h3>
-                                <p>I like to think big, but not too big, right in the goldilocks zone. Early on in planning projects, I will take a bird's eye view to ensure the route we are taking  is what will fit best for the client in the long term.</p>
+                                <p>
+                                    I like to think big, but not too big, right in the goldilocks zone. Early on in planning projects, 
+                                    I will take a bird's eye view to ensure the route we are taking is the best fit for the client in the long term.
+                                </p>
                             </Col>
                         </Row>
                         <Row center="xs">
                             <Col md={12} lg={4}>
+                                <img className="home-icon" alt="spaceship" src={require('../../assets/images/icons/spaceship.png')} />
+                                <h3>Cutting Edge</h3>
+                                <p>
+                                    The software I create is built on industry leading technologies like Node.js and React.js, 
+                                    the same modern bones that large corporations like Twitter and Instagram use for their applications.
+                                </p>
+                            </Col>
+                            <Col md={12} lg={4}>
                                 <img className="home-icon" alt="mushroom" src={require('../../assets/images/icons/mushroom.png')} />
                                 <h3>Fun Guy</h3>
-                                <p>I am patient, down-to-earth, and pleasant to work with, just ask my past clients!</p>
+                                <p>
+                                    My roots are deep in the customer service forest through my work work as a showroom 
+                                    guru at <Link to="/work/tesla" className="white">Tesla</Link> and in my many <Link to="/work/minute.tech-llc" className="white">tech support</Link> roles. 
+                                    This has I am adept at being patient, down-to-earth, and pleasant to work with. 
+                                </p>
                             </Col>
                         </Row>
                     </Grid>
                 </div>
             </div>
+            <div className="pricing-section">
+                <div className="overlap-background">
+                    <div className="overlap-container">
+                        <div className="pricing-panel">
+                            <h1 className="center-text">Development Packages</h1>
+                            <div className="pricing-table">
+                                <div className="pricing-plan">
+                                    <img src={require("../../assets/images/icons/web-basic.png")} alt="basic website" />
+                                    <h3>Basic</h3>
+                                    <ul>
+                                        <li>
+                                            <div>5 web pages</div>
+                                            <span>
+                                                We will design your project up to 5 custom web screens. These pages are often Home, About Us, What We Do, F.A.Q., Products, etc.
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <div>Contact form</div>
+                                            <span>
+                                                Form that collects visitor name, email, message, and automatically sends you an email with this info. 
+                                                Lowers the barrier for potential visitors to effectively contact you with a personal message or question.
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <div>Google Analytics</div>
+                                            <span>
+                                                Google Analytics will allow you analyze the traffic that visits your website. 
+                                                Collects metrics such as unique visitors, page views, session duration, and more! 
+                                                An example of this being helpful is if you are trying to understand if your advertisements are properly driving visitors to your website.
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <div>SEO</div>
+                                            <span>
+                                                Search Engine Optimization (SEO) increases your business relevance ranking on any search engine (Google, Bing, etc). 
+                                                So if someone searches on Google for your business name or related keywords, you will appear at the top. 
+                                                Results can differ greatly depending on your market, business name, competitors, and more.
+                                            </span>
+                                        </li>
+                                    </ul>
+                                    <span className="price">$500-$1000</span>
+                                </div>
+                                
+                                <div className="pricing-plan">
+                                    <img src={require("../../assets/images/icons/web-design.png")} alt="website designed" />
+                                    <h3>Basic + Design</h3>
+                                    <ul>
+                                        <li>
+                                            <div>All Basic offerings</div>
+                                        </li>
+                                        <li>
+                                            <div>Unlimited web pages</div>
+                                        </li>
+                                        <li>
+                                            <div>Wireframing</div>
+                                            <span>
+                                                Websites wireframes are a "hand-drawn" draft of what the website will 
+                                                look like before we begin coding the website. Building a wireframe for a site first is always more efficient, 
+                                                because it can be made quickly, iterate ideas with the client faster, and almost always produces a higher quality 
+                                                end product website.
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <div>Branding Guidelines</div>
+                                            <span>
+                                                I work with other in-house freelance designers to find the perfect brand name, logo, colors, 
+                                                and fonts that will make your brand and assets stand out. If you already have brand assets, 
+                                                we will be glad to build you a formal branding guidelines template that work around your existing assets.
+                                            </span>
+                                        </li>
+                                    </ul>
+                                    <span className="price">$1000-$2000</span>
+                                </div>
+                                
+                                <div className="pricing-plan">
+                                    <img src={require("../../assets/images/icons/app.png")} alt="mobile app" />
+                                    <h3>Web/Mobile Application</h3>
+                                    <ul>
+                                        <li><div>All Basic + Design offerings</div></li>
+                                        <li>
+                                            <div>All sizes</div>
+                                            <span>
+                                                Apps are often large systems that have many functionalities, such as an iPhone chat app or custom CRM web app (Customer Relations Management). 
+                                                A few examples of past projects are:&#8239;
+                                                <Link to="/work/capsmd.org">capsmd.org</Link>,&#8239; 
+                                                <Link to="/work/goprestigepower.com">goprestigepower.com</Link>, and&#8239;
+                                                <Link to="/work/minute.tech-llc">minute.tech</Link>. 
+                                                These price points can differ wildly depending on how ambitious the requirements 
+                                                are so please send me a message and we can discuss the details to get a better estimation.
+                                            </span>
+                                        </li>
+                                    </ul>
+                                    <span className="price">$2000+</span>
+                                </div>
+                            </div>
+
+                            <div className="center-text md-margin-t">
+                                <a 
+                                    href="/#Contact" 
+                                    className="lg-blue-btn">
+                                    Contact me
+                                </a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
             <div className="wrapper">
                <h1 className="no-margin">Accolades</h1>
                <p>
-                   An accolades are automatically awarded for any job that used a skill, produced said metric, or built said system. 
-                   <br/>
-                   For example, I used React.js when I built <Link to="/work/smithzellner.consulting">smithzellner.consulting</Link> 
+                   Accolades are automatically awarded to me for any job that I used a skill, produced said metric, or built said system. 
+                   For example, I used React.js when I built <Link to="/work/smithzellner.consulting">smithzellner.consulting</Link>&#8239;
                    and has thus far accumulated 1,889 page views (among much more). So, 1 React.js accolade and 1,889 page view accolades awarded. 
                 </p>
                 <b>Last updated: {SITE_UPDATED.LONG}</b>
-               {/* Add up metrics, screens built, websites built, CMS and CRM built, etc */}
 
-               <Grid fluid className="sm-margin-t-b">
+                <Grid fluid className="sm-margin-t-b">
                     <Row center="xs">
-                        <Col xs={6} sm={4} md={3} lg={2}>
-                            <img className="xsmall-fit sm-padding" alt="skill logo" src={require(`../../assets/images/icons/skills/html.png`)} /> 
-                            <label style={{display: "block", fontSize: "18px"}}>{this.state.html}</label>
-                        </Col>
-                        <Col xs={6} sm={4} md={3} lg={2}>
-                            <img className="xsmall-fit sm-padding" alt="skill logo" src={require(`../../assets/images/icons/skills/css.png`)} /> 
-                            <label style={{display: "block", fontSize: "18px"}}>{this.state.css}</label>
-                        </Col>
-                        <Col xs={6} sm={4} md={3} lg={2}>
-                            <img className="xsmall-fit sm-padding" alt="skill logo" src={require(`../../assets/images/icons/skills/javascript.png`)} /> 
-                            {/* eslint-disable-next-line  */}
-                            <label style={{display: "block", fontSize: "18px"}}>{this.state.js}</label>
-                        </Col>
-                        <Col xs={6} sm={4} md={3} lg={2}>
-                            <img className="xsmall-fit sm-padding" alt="skill logo" src={require(`../../assets/images/icons/skills/node.png`)} /> 
-                            <label style={{display: "block", fontSize: "18px"}}>{this.state.node}</label>
-                        </Col>
-                        <Col xs={6} sm={4} md={3} lg={2}>
-                            <img className="xsmall-fit sm-padding" alt="skill logo" src={require(`../../assets/images/icons/skills/react.png`)} /> 
-                            <label style={{display: "block", fontSize: "18px"}}>{this.state.react}</label>
-                        </Col>
-                        <Col xs={6} sm={4} md={3} lg={2}>
-                            <img className="xsmall-fit sm-padding" alt="skill logo" src={require(`../../assets/images/icons/skills/firebase.png`)} /> 
-                            <label style={{display: "block", fontSize: "18px"}}>{this.state.firebase}</label>
-                        </Col>
-                        <Col xs={6} sm={4} md={3} lg={2}>
-                            <img className="xsmall-fit sm-padding" alt="skill logo" src={require(`../../assets/images/icons/skills/github.png`)} /> 
-                            <label style={{display: "block", fontSize: "18px"}}>{this.state.github}</label>
-                        </Col>
-                        <Col xs={6} sm={4} md={3} lg={2}>
-                            <img className="xsmall-fit sm-padding" alt="skill logo" src={require(`../../assets/images/icons/skills/wireframing.png`)} /> 
-                            <label style={{display: "block", fontSize: "18px"}}>{this.state.wireframing}</label>
-                        </Col>
-                        <Col xs={6} sm={4} md={3} lg={2}>
-                            <img className="xsmall-fit sm-padding" alt="skill logo" src={require(`../../assets/images/icons/skills/python.png`)} /> 
-                            <label style={{display: "block", fontSize: "18px"}}>{this.state.python}</label>
-                        </Col>
-                        <Col xs={6} sm={4} md={3} lg={2}>
-                            <img className="xsmall-fit sm-padding" alt="skill logo" src={require(`../../assets/images/icons/skills/mysql.png`)} /> 
-                            <label style={{display: "block", fontSize: "18px"}}>{this.state.mysql}</label>
-                        </Col>
-                        <Col xs={6} sm={4} md={3} lg={2}>
-                            <img className="xsmall-fit sm-padding" alt="skill logo" src={require(`../../assets/images/icons/plus.png`)} /> 
-                            <label style={{display: "block", fontSize: "18px"}}>and more!</label>
-                        </Col>
+                        <Accolade link={SKILLS.HTML.link} name={SKILLS.HTML.name} value={this.state.html} />
+                        <Accolade link={SKILLS.CSS.link} name={SKILLS.CSS.name} value={this.state.css} />
+                        <Accolade link={SKILLS.JS.link} name={SKILLS.JS.name} value={this.state.js} />
+                        <Accolade link={SKILLS.REACT.link} name={SKILLS.REACT.name} value={this.state.react} />
+                        <Accolade link={SKILLS.NODE.link} name={SKILLS.NODE.name} value={this.state.node} />
+                        <Accolade link={SKILLS.FIREBASE.link} name={SKILLS.FIREBASE.name} value={this.state.firebase} />
+                        <Accolade link={SKILLS.GITHUB.link} name={SKILLS.GITHUB.name} value={this.state.github} />
+                        <Accolade link={SKILLS.WIREFRAMING.link} name={SKILLS.WIREFRAMING.name} value={this.state.wireframing} />
+                        <Accolade link={SKILLS.SWIFT.link} name={SKILLS.SWIFT.name} value={this.state.swift} />
+                        <Accolade link={SKILLS.PHP.link} name={SKILLS.PHP.name} value={this.state.php} />
+                        <Accolade link={SKILLS.PYTHON.link} name={SKILLS.PYTHON.name} value={this.state.python} />
+                        <Accolade link={SKILLS.MYSQL.link} name={SKILLS.MYSQL.name} value={this.state.mysql} />
+                        <Accolade link={"https://douglasrcjames.com/work"} name={"plus"} value={"and more!"} />
                     </Row>
                     <br/>
                     <div className="horiz-rule" />
                     <br/>
                     <Row center="xs">
-                        <Col xs={12} sm={6} className="sm-margin-t-b">
-                            <div className="md-video-container">
-                                <div className="video-responsive">
-                                    <iframe
-                                        title="capsmd.org web app demo video"
-                                        width="560" height="315"
-                                        src="https://www.youtube.com/embed/Ke1DP5UzHZQ"
-                                        frameBorder="0"
-                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                        allowFullScreen="allowfullscreen"
-                                        mozallowfullscreen="mozallowfullscreen" 
-                                        msallowfullscreen="msallowfullscreen" 
-                                        oallowfullscreen="oallowfullscreen" 
-                                        webkitallowfullscreen="webkitallowfullscreen"
-                                    />
+                        <Col sm={12} md={6} className="sm-margin-t-b">
+                            <div className="doug-card">
+                                <div className="md-video-container">
+                                    <div className="video-responsive">
+                                        <iframe
+                                            title="capsmd.org web app demo video"
+                                            width="560" height="315"
+                                            src="https://www.youtube.com/embed/Ke1DP5UzHZQ"
+                                            frameBorder="0"
+                                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                            allowFullScreen="allowfullscreen"
+                                            mozallowfullscreen="mozallowfullscreen" 
+                                            msallowfullscreen="msallowfullscreen" 
+                                            oallowfullscreen="oallowfullscreen" 
+                                            webkitallowfullscreen="webkitallowfullscreen"
+                                        />
+                                    </div>
                                 </div>
+                                
+                                <label style={{display: "block"}}>Built custom CMS (Content Management System)</label>
+                                <Link to="/work/capsmd.org" className="text-hover-yellow sm-text">See <b>caps.org</b> project</Link>
                             </div>
-                            
-                            <label style={{display: "block"}}>Built custom CMS (Content Management System)</label>
-                            <Link to="/work/capsmd.org" className="text-hover-yellow sm-text">See <b>caps.org</b> project</Link>
+
                         </Col>  
-                        <Col xs={12} sm={6} className="sm-margin-t-b">
-                            <div className="md-video-container">
-                                <div className="video-responsive">
-                                    <iframe
-                                        title="goprestigepower.com web app demo video"
-                                        width="560" height="315"
-                                        src="https://www.youtube.com/embed/wad3TnxJgMQ"
-                                        frameBorder="0"
-                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                        allowFullScreen="allowfullscreen"
-                                        mozallowfullscreen="mozallowfullscreen" 
-                                        msallowfullscreen="msallowfullscreen" 
-                                        oallowfullscreen="oallowfullscreen" 
-                                        webkitallowfullscreen="webkitallowfullscreen"
-                                    />
+                        <Col sm={12} md={6} className="sm-margin-t-b">
+                            <div className="doug-card">
+                                <div className="md-video-container">
+                                    <div className="video-responsive">
+                                        <iframe
+                                            title="goprestigepower.com web app demo video"
+                                            width="560" height="315"
+                                            src="https://www.youtube.com/embed/wad3TnxJgMQ"
+                                            frameBorder="0"
+                                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                            allowFullScreen="allowfullscreen"
+                                            mozallowfullscreen="mozallowfullscreen" 
+                                            msallowfullscreen="msallowfullscreen" 
+                                            oallowfullscreen="oallowfullscreen" 
+                                            webkitallowfullscreen="webkitallowfullscreen"
+                                        />
+                                    </div>
                                 </div>
+                                
+                                <label style={{display: "block"}}>Built custom CRM (Customer Relationship Management) system</label>
+                                <Link to="/work/goprestigepower.com" className="text-hover-yellow sm-text">See <b>goprestigepower.com</b> project</Link>
                             </div>
-                            
-                            <label style={{display: "block"}}>Built custom CRM (Customer Relationship Management) system</label>
-                            <Link to="/work/goprestigepower.com" className="text-hover-yellow sm-text">See <b>goprestigepower.com</b> project</Link>
                         </Col>
-                        <Col xs={12} sm={6} className="sm-margin-t-b">
-                            <div className="md-video-container">
-                                <div className="video-responsive">
-                                    <iframe
-                                        title="goprestigepower.com web app demo video"
-                                        width="560" height="315"
-                                        src="https://www.youtube.com/embed/qeaLJ-Jw2SE"
-                                        frameBorder="0"
-                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                        allowFullScreen="allowfullscreen"
-                                        mozallowfullscreen="mozallowfullscreen" 
-                                        msallowfullscreen="msallowfullscreen" 
-                                        oallowfullscreen="oallowfullscreen" 
-                                        webkitallowfullscreen="webkitallowfullscreen"
-                                    />
+                        <Col sm={12} md={6} className="sm-margin-t-b">
+                            <div className="doug-card">
+                                <div className="md-video-container">
+                                    <div className="video-responsive">
+                                        <iframe
+                                            title="goprestigepower.com web app demo video"
+                                            width="560" height="315"
+                                            src="https://www.youtube.com/embed/qeaLJ-Jw2SE"
+                                            frameBorder="0"
+                                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                            allowFullScreen="allowfullscreen"
+                                            mozallowfullscreen="mozallowfullscreen" 
+                                            msallowfullscreen="msallowfullscreen" 
+                                            oallowfullscreen="oallowfullscreen" 
+                                            webkitallowfullscreen="webkitallowfullscreen"
+                                        />
+                                    </div>
                                 </div>
+                                
+                                <label style={{display: "block"}}>Built tech support system with messenger, video calling, screen sharing, and payment</label>
+                                <Link to="/work/minute.tech-llc" className="text-hover-yellow sm-text">See <b>Minute.tech</b> project</Link>
                             </div>
-                            
-                            <label style={{display: "block"}}>Built tech support system with messenger, video calling, screen sharing, and payment</label>
-                            <Link to="/work/minute.tech-llc" className="text-hover-yellow sm-text">See <b>Minute.tech</b> project</Link>
                         </Col>
                     </Row>
                     <br/>
                     <div className="horiz-rule" />
                     <br/>
-                    <Row center="xs">
-                        <Col>
-                            <label style={{display: "block", fontSize: "18px"}}>Websites built: <span className="roboto-regular">{this.state.websites}</span></label>
-                        </Col>
-                    </Row>
-                    <Row center="xs">
-                        <Col sm={6} md={4}>
-                            <label style={{display: "block", fontSize: "18px"}}>{ucFirst(METRICS.VISITORS)}: <span className="roboto-regular">{numberWithCommas(this.state.visitors)}</span></label>
-                        </Col>
-                        <Col sm={6} md={4}>
-                            <label style={{display: "block", fontSize: "18px"}}>{ucFirst(METRICS.PAGE_VIEWS)}: <span className="roboto-regular">{numberWithCommas(this.state.pageViews)}</span></label>
-                        </Col>
-                        <Col sm={6} md={4}>
-                            <label style={{display: "block", fontSize: "18px"}}>{ucFirst(METRICS.COMMITS)}: <span className="roboto-regular">{numberWithCommas(this.state.commits)}</span></label>
-                        </Col>
-                        <Col sm={6} md={4}>
-                            <label style={{display: "block", fontSize: "18px"}}>{ucFirst(METRICS.LOC)}: <span className="roboto-regular">{numberWithCommas(this.state.loc)}</span></label>
-                        </Col>
-                        <Col sm={6} md={4}>
-                            <label style={{display: "block", fontSize: "18px"}}>{ucFirst(METRICS.FILES)}: <span className="roboto-regular">{numberWithCommas(this.state.sourceFiles)}</span></label>
-                        </Col>
-                        <Col sm={6} md={4}>
-                            <label style={{display: "block", fontSize: "18px"}}>{ucFirst(METRICS.SCREENS)}: <span className="roboto-regular">{numberWithCommas(this.state.screens)}</span></label>
-                        </Col>
-                        <Col sm={6} md={4}>
-                            <label style={{display: "block", fontSize: "18px"}}>{ucFirst(METRICS.TWILIO_MINS)}: <span className="roboto-regular">{numberWithCommas(this.state.twilioMins)}</span></label>
-                        </Col>
-                        <Col sm={6} md={4}>
-                            <label style={{display: "block", fontSize: "18px"}}>{ucFirst(METRICS.STRIPE_DOLLARS)}: <span className="roboto-regular">${numberWithCommas(this.state.stripeDollars)}</span></label>
-                        </Col>
-                    </Row>
+                    <div className="doug-card">
+                        <Row center="xs">
+                            <Col>
+                                <label style={{display: "block", fontSize: "18px"}}>Websites built: <span className="roboto-regular">{this.state.websites}</span></label>
+                            </Col>
+                        </Row>
+                        <Row center="xs">
+                            <Col sm={6} md={4}>
+                                <label style={{display: "block", fontSize: "18px"}}>{ucFirst(METRICS.VISITORS)}: <span className="roboto-regular">{numberWithCommas(this.state.visitors)}</span></label>
+                            </Col>
+                            <Col sm={6} md={4}>
+                                <label style={{display: "block", fontSize: "18px"}}>{ucFirst(METRICS.PAGE_VIEWS)}: <span className="roboto-regular">{numberWithCommas(this.state.pageViews)}</span></label>
+                            </Col>
+                            <Col sm={6} md={4}>
+                                <label style={{display: "block", fontSize: "18px"}}>{ucFirst(METRICS.COMMITS)}: <span className="roboto-regular">{numberWithCommas(this.state.commits)}</span></label>
+                            </Col>
+                            <Col sm={6} md={4}>
+                                <label style={{display: "block", fontSize: "18px"}}>{ucFirst(METRICS.LOC)}: <span className="roboto-regular">{numberWithCommas(this.state.loc)}</span></label>
+                            </Col>
+                            <Col sm={6} md={4}>
+                                <label style={{display: "block", fontSize: "18px"}}>{ucFirst(METRICS.FILES)}: <span className="roboto-regular">{numberWithCommas(this.state.sourceFiles)}</span></label>
+                            </Col>
+                            <Col sm={6} md={4}>
+                                <label style={{display: "block", fontSize: "18px"}}>{ucFirst(METRICS.SCREENS)}: <span className="roboto-regular">{numberWithCommas(this.state.screens)}</span></label>
+                            </Col>
+                            <Col sm={6} md={4}>
+                                <label style={{display: "block", fontSize: "18px"}}>{ucFirst(METRICS.TWILIO_MINS)}: <span className="roboto-regular">{numberWithCommas(this.state.twilioMins)}</span></label>
+                            </Col>
+                            <Col sm={6} md={4}>
+                                <label style={{display: "block", fontSize: "18px"}}>{ucFirst(METRICS.STRIPE_DOLLARS)}: <span className="roboto-regular">${numberWithCommas(this.state.stripeDollars)}</span></label>
+                            </Col>
+                        </Row>
+                    </div>
                 </Grid>
             </div>
             <div className="full-width bg-blue">
                 <div className="wrapper white">
-                    <h1 className="white"><a id="Contact" className="anchor" href="/#">Contact</a>Contact</h1>
+                    <h1 className="white no-margin"><a id="Contact" className="anchor" href="/#">Contact</a>Contact</h1>
+                    <p className="white" style={{margin: "0 0 25px 0"}}>Feel free to shoot me an email at <u>douglasrcjames@gmail.com</u> or text/call at <b>(916) 802-5609</b>.</p>
                     <ContactForm />
                 </div>
             </div>

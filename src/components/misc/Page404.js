@@ -15,7 +15,7 @@ export const Page404 = () => (
                 href="mailto:help@minute.tech"
                 >
 
-                &nbsp;help@minute.tech
+                &#8239;help@minute.tech
             </a>. 
             */}
         </p>
