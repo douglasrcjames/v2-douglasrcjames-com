@@ -15,7 +15,9 @@ export default class SJSU extends Component {
                         <li>AP Microeconomics</li>
                         <li>AP Psychology</li>
                     </ul>
-
+                    <h3 className="heading-rule">
+                        <span>Year 1</span>
+                    </h3>      
                     <li className="roboto-bold">Fall 2013:</li>
                     <ul>
                         <li><a href={`https://catalog.sjsu.edu/preview_course_nopop.php?catoid=2&coid=6047`} target="_blank" rel="noopener noreferrer">MATH 30P - Cal I with Precalculus</a></li>
@@ -31,7 +33,9 @@ export default class SJSU extends Component {
                         <li><a href={`https://catalog.sjsu.edu/preview_course_nopop.php?catoid=1&coid=623`} target="_blank" rel="noopener noreferrer">MATH 31 - Calculus II</a></li>
                         <li><a href={`https://catalog.sjsu.edu/preview_course_nopop.php?catoid=1&coid=3630`} target="_blank" rel="noopener noreferrer">MATH 31W Calculus II Workshop</a></li>
                     </ul>
-
+                    <h3 className="heading-rule">
+                        <span>Year 2</span>
+                    </h3>      
                     <li className="roboto-bold">Fall 2014:</li>
                     <ul>
                         <li><a href={`https://catalog.sjsu.edu/preview_course_nopop.php?catoid=1&coid=648`} target="_blank" rel="noopener noreferrer">MATH 32 - Calculus III</a></li>
@@ -46,7 +50,9 @@ export default class SJSU extends Component {
                         <li><a href={`https://catalog.sjsu.edu/preview_course_nopop.php?catoid=2&coid=5780`} target="_blank" rel="noopener noreferrer">PHYS 51 - General Physics</a></li>
                         <li><a href={`https://catalog.sjsu.edu/preview_course_nopop.php?catoid=1&coid=31`} target="_blank" rel="noopener noreferrer">POLS 1 - American Government</a></li>
                     </ul>
-
+                    <h3 className="heading-rule">
+                        <span>Year 3</span>
+                    </h3>      
                     <li className="roboto-bold">Fall 2015:</li>
                     <ul>
                         <li><a href={`https://catalog.sjsu.edu/preview_course_nopop.php?catoid=1&coid=1377`} target="_blank" rel="noopener noreferrer">CMPE 50 - Object Oriented Concepts</a></li>
@@ -61,7 +67,9 @@ export default class SJSU extends Component {
                         <li><a href={`https://catalog.sjsu.edu/preview_course_nopop.php?catoid=2&coid=1314`} target="_blank" rel="noopener noreferrer">CMPE 102 - Assembly Language</a></li>
                         <li><a href={`https://catalog.sjsu.edu/preview_course_nopop.php?catoid=2&coid=10400`} target="_blank" rel="noopener noreferrer">RTVF 121 - KSJS-FM Radio</a></li>
                     </ul>
-
+                    <h3 className="heading-rule">
+                        <span>Year 4</span>
+                    </h3>      
                     <li className="roboto-bold">Fall 2016:</li>
                     <ul>
                         <li><a href={`https://catalog.sjsu.edu/preview_course_nopop.php?catoid=1&coid=923`} target="_blank" rel="noopener noreferrer">BUS3 160 - Fundamental Management and Organizational Behavior</a></li>
@@ -77,7 +85,9 @@ export default class SJSU extends Component {
                         <li><a href={`https://catalog.sjsu.edu/preview_course_nopop.php?catoid=2&coid=6760`} target="_blank" rel="noopener noreferrer">CMPE 138 - Database System I</a></li>
                         <li><a href={`https://catalog.sjsu.edu/preview_course_nopop.php?catoid=2&coid=10764`} target="_blank" rel="noopener noreferrer">ENGR 100W - Engineering Reports</a></li>
                     </ul>
-                    
+                    <h3 className="heading-rule">
+                        <span>Year 5</span>
+                    </h3>      
                     <li className="roboto-bold">Fall 2017:</li>
                     <ul>
                         <li><a href={`https://catalog.sjsu.edu/preview_course_nopop.php?catoid=2&coid=6798`} target="_blank" rel="noopener noreferrer">CMPE 110 - Electronics for Computing Systems</a></li>
@@ -92,7 +102,9 @@ export default class SJSU extends Component {
                         <li><a href={`https://catalog.sjsu.edu/preview_course_nopop.php?catoid=2&coid=6810`} target="_blank" rel="noopener noreferrer">CMPE 137 - Mobile Software Engineering</a></li>
                         <li><a href={`https://catalog.sjsu.edu/preview_course_nopop.php?catoid=2&coid=9029`} target="_blank" rel="noopener noreferrer">MATH 179 - Intro Graph Theory</a></li>
                     </ul>
-
+                    <h3 className="heading-rule">
+                        <span>Year 6</span>
+                    </h3>      
                     <li className="roboto-bold">Fall 2018:</li>
                     <ul>
                         <li><a href={`https://catalog.sjsu.edu/preview_course_nopop.php?catoid=1&coid=3466`} target="_blank" rel="noopener noreferrer">BIOL 140 - Human Sexuality</a></li>
@@ -105,7 +117,9 @@ export default class SJSU extends Component {
                         <li><a href={`https://catalog.sjsu.edu/preview_course_nopop.php?catoid=1&coid=1326`} target="_blank" rel="noopener noreferrer">CMPE 140 - Computer Architecture &amp; Design</a></li>
                         <li><a href={`https://catalog.sjsu.edu/preview_course_nopop.php?catoid=1&coid=4851`} target="_blank" rel="noopener noreferrer">POLS 150 - War and Peace</a></li>
                     </ul>
-
+                    <h3 className="heading-rule">
+                        <span>Year 7</span>
+                    </h3>      
                     <li className="roboto-bold">Summer 2019:</li>
                     <ul>
                         <li><a href={`https://catalog.sjsu.edu/preview_course_nopop.php?catoid=2&coid=6843`} target="_blank" rel="noopener noreferrer">CMPE 195E - Senior Design I</a></li>

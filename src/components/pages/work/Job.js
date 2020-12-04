@@ -137,7 +137,7 @@ export default class Job extends Component {
                                     {this.props.job.skills.primary && (
                                         <>
                                         <h4>Primary:</h4>
-                                        <Row between="xs">
+                                        <Row>
                                             { 
                                                 this.props.job.skills.primary.map((skill, i) => {
                                                     return (
@@ -152,13 +152,15 @@ export default class Job extends Component {
                                     {this.props.job.skills.secondary && (
                                         <>
                                         <h4>Secondary:</h4>
-                                        { 
-                                            this.props.job.skills.secondary.map((skill, i) => {
-                                                return (
-                                                    <Accolade key={i} link={skill.link} name={skill.name} value={""} />
-                                                )
-                                            }) 
-                                        }
+                                        <Row>
+                                            { 
+                                                this.props.job.skills.secondary.map((skill, i) => {
+                                                    return (
+                                                        <Accolade key={i} link={skill.link} name={skill.name} value={""} />
+                                                    )
+                                                }) 
+                                            }
+                                        </Row>
                                         </>
                                     )}
                                     {this.props.job.skills.other && (

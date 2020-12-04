@@ -136,7 +136,7 @@ export const SKILLS = {
     ASM: { 
         name: "assembly language", 
         link: "https://en.wikipedia.org/wiki/Assembly_language",
-        src: require(`../assets/images/icons/skills/asm.png`) 
+        src: require(`../assets/images/icons/skills/assembly-language.png`) 
     },
     
 

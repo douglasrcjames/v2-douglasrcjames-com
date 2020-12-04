@@ -2,6 +2,7 @@ import React from 'react'
 import { MdWork, MdSchool } from "react-icons/md";
 import { BiCodeAlt, BiRocket } from "react-icons/bi"
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 import { STATUS, SKILLS, SIZE, METRICS } from "./constants";
 
@@ -24,6 +25,7 @@ import PaloAltoNetworks from '../components/pages/work/jobs/PaloAltoNetworks';
 import BodyByYama from '../components/pages/work/jobs/BodyByYama';
 import VectorPSI from '../components/pages/work/jobs/VectorPSI';
 import PhotoGallery from '../components/misc/PhotoGallery';
+import { Col, Row } from 'react-flexbox-grid';
 
 export const jobs = [
     {
@@ -392,11 +394,11 @@ export const jobs = [
         role: "Web developer",
         shortDescription: "Built a front end portfolio website for myself demonstrating and showcasing my skills.",
         longDescription: <p>
-            This is my second and hopefully final build of my personal portfolio website to showcase my work, skills, and more. 
-            At the time I am writing this, I feel that this site design and build is my best yet, and I am proud to show how far my skills have evolved from version 1 to version 2 (granted version 1 was a quick build).
+            This is my second and hopefully final build of my personal portfolio website to showcase my work, skills, and more. Check out how far I've come 
+            from <a href="https://douglasrcjames-v1.web.app/" target="_blank" rel="noopener noreferrer">version 1 of my portfolio site</a>!
+            At the time I am writing this, I feel that this site design and build is my best project to date, and I am proud to show how far my skills have evolved from version 1 to version 2 (granted version 1 was a quick build).
             <br/>
-            Ps. also how meta this is? Here I am creating a project web page about the website you are on!
-            {/* Display link to V1 @ live address on firebase hosting. Have V2 at live address.*/}
+            Also, how meta this is? Here I am creating a project web page about the website you are on!
             </p>,
         githubLink: "https://github.com/douglasrcjames/douglasrcjames.com",
         logoUrl: require("../assets/images/logos/logo512.png"),
@@ -732,16 +734,48 @@ export const jobs = [
     },
     {
         title: "Minute.tech LLC",
-        role: "Founder & Software Engineer",
+        role: "Founder & Engineer",
         shortDescription: "Web and mobile applications connecting non-techies to techies for technical support.",
-        longDescription: <p>Minute.tech plans to be a web, iOS, Android, and desktop app that provides consumer grade 
-            tech support by connecting clients who have tech questions with qualified technicians. 
-            The system will facilitate communication with technicians over messenger, voice/video calls, 
-            remote connection, and in-person scheduling, and a payment solution all under the application's hood. 
-            I recognize this project is ambitious, and has taken me many years, team members, advisors, and prototypes, 
-            but I do believe the opportunity is worth the effort based on my personal experience and extensive research.
-            {/* Mention that source code is proprietary.  */}
-            </p>,
+        longDescription: <>
+            <p>
+                Minute.tech LLC is a software solution connecting clients who have tech questions with qualified technicians for everyday tech support; think GeekSquad crossed with Uber.
+                Users can communicate via real-time messenger, voice/video call, screen sharing, and scheduling with a review and payment system built in. 
+                The Minute.tech system lowers the barrier for non-techies and techies to work together, especially during a pandemic that requires social distanced solutions to in-person services.
+                Minute.tech currently has a live (beta) <HashLink to="/work/minute.tech-llc#Web">web</HashLink> application and a <HashLink to="/work/minute.tech-llc#Mobile">mobile</HashLink> application set to beta launch Q1 2021.
+            </p>
+            <p>
+            
+                I started this project in my junior year at San Jose State University for an intro to entrepreneurship course where we were assigned to pick an idea with a group and build a business plan for it. 
+                I suggested my tech support idea I recently came up with after my parents were constantly calling for tech support after leaving them for college, and my team loved it. The business plan I built for this project impressed my 
+                professor enough for her to suggest I compete in the Shark Tank-like Silicon Valley Business Plan Competition (SVBPC). I wisely listened to her and competed in the SVBPC, which awarded my new business $1500 cash and $1000 in legal help! 
+                For my future engineering/business semesters and many group projects, I conducted tests, did extensive research, and built out app prototypes to turn Minute.tech into a reality.
+            </p>
+            <p>
+                <b>To organize the extensive work history I have done with Minute.tech, I have portioned this job into 4 sections. Please select a portion you want to learn more about below:</b>
+                <Row center="xs">
+                    <Col xs={12} sm={6} md={3} className="sm-padding-t-b">
+                        <HashLink to="/work/minute.tech-llc#Web" className="md-white-btn">
+                                <i className="fas fa-globe" /> Web app
+                        </HashLink>  
+                    </Col>
+                    <Col xs={12} sm={6} md={3} className="sm-padding-t-b">
+                        <HashLink to="/work/minute.tech-llc#Mobile" className="md-white-btn">
+                                <i className="fas fa-mobile" /> Mobile app
+                        </HashLink>  
+                    </Col>
+                    <Col xs={12} sm={6} md={3} className="sm-padding-t-b">
+                        <HashLink to="/work/minute.tech-llc#Business" className="md-white-btn">
+                                <i className="fas fa-briefcase" /> Business development
+                        </HashLink>  
+                    </Col>
+                    <Col xs={12} sm={6} md={3} className="sm-padding-t-b">
+                        <HashLink to="/work/minute.tech-llc#Timeline" className="md-white-btn">
+                                <i className="fas fa-history" /> Full timeline
+                        </HashLink>  
+                    </Col>
+                </Row>
+            </p>
+            </>,
         logoUrl: require("../assets/images/jobs/minutetech/logo.png"),
         logoSize: SIZE.LARGE,
         period: "May. 2016 - Today",

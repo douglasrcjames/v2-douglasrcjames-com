@@ -62,12 +62,10 @@ export const SocialLink = ({ label, link }) =>
 
 export const Accolade = ({ name, link, value }) =>
   <Col xs={6} sm={4} md={3} lg={2} className="accolade">
-    <div>
-      <a href={link} target="_blank" rel="noopener noreferrer">
-          <img alt="skill logo" src={require(`../assets/images/icons/skills/${name}.png`)} /> 
-      </a>
-      <label>{value}</label>
-    </div>
+    <a href={link} target="_blank" rel="noopener noreferrer">
+        <img alt="skill logo" src={require(`../assets/images/icons/skills/${name === "C++" ? "cpp" : name.split(" ").join("-").toLowerCase()}.png`)} /> 
+        <label>{value}</label>
+    </a>
   </Col>
 
 export function numberWithCommas(x) {

@@ -52,7 +52,7 @@ class ContactForm extends Component {
                                             type="text"
                                             required
                                             onChange={props.handleChange}
-                                            placeholder="John Doe"
+                                            placeholder="Taylor Doe"
                                             name="name"
                                             value={props.values.name}
                                         />
@@ -71,7 +71,7 @@ class ContactForm extends Component {
                                             type="text"
                                             required
                                             onChange={props.handleChange}
-                                            placeholder="john_doe@gmail.com"
+                                            placeholder="taylor_doe@gmail.com"
                                             name="email"
                                             value={props.values.email}
                                         />
@@ -91,7 +91,7 @@ class ContactForm extends Component {
                                             component="textarea"
                                             required
                                             onChange={props.handleChange}
-                                            placeholder="Detail what you want to say here."
+                                            placeholder="What would you like to tell me? Inquiries about building your project or a friend just saying hello, all are welcome!"
                                             name="message"
                                             value={props.values.message}
                                         />

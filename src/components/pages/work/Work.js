@@ -4,8 +4,8 @@ import { FaBabyCarriage } from "react-icons/fa";
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
-import digitalResume from '../../../assets/pdfs/DouglasJames-Resume-11.22.2020.pdf'
-import printResume from '../../../assets/pdfs/DouglasJames-Resume-PRINT-11.22.2020.pdf'
+import digitalResume from '../../../assets/pdfs/DouglasJames-Resume-12.01.2020.pdf'
+import printResume from '../../../assets/pdfs/DouglasJames-Resume-PRINT-12.01.2020.pdf'
 import { jobs } from '../../../utils/jobs';
 import { SITE_UPDATED, STATUS } from '../../../utils/constants';
 import { Link } from 'react-router-dom';
@@ -25,7 +25,7 @@ export default class Work extends Component {
                                         I have broken down my relevant work into chronological order below, with a detailed view for each job on tap. 
                                     </p>
                                     <p>
-                                        <b>Featured Project:</b> <Link to="/work/minute.tech-llc" className="white text-hover-yellow">Minute.tech</Link>
+                                        <b>Featured Project:</b> <Link to="/work/minute.tech-llc" className="white">Minute.tech</Link>
                                     </p>
                                     <p>
                                         <b>My work in this section was last updated: {SITE_UPDATED.LONG}</b>

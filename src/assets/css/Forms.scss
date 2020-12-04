@@ -68,12 +68,13 @@ textarea {
 }
 
 .md-blue-btn:hover {
-  background-color: $light-blue;
+  background-color: $dark-blue;
 }
 
 .md-white-btn {
   background-color: $white;
   font-family: $roboto-bold;
+  text-decoration: none !important;
   cursor: pointer;
   font-size: 16px;
   border-radius: 4px;
@@ -83,5 +84,5 @@ textarea {
 }
 
 .md-white-btn:hover {
-  background-color: $light-grey;
+  background-color: $vlight-blue;
 }

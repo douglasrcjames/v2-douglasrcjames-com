@@ -6,6 +6,7 @@ import { METRICS, SITE_UPDATED, SKILLS } from '../../utils/constants';
 import { Accolade, numberWithCommas, ucFirst } from '../../utils/misc';
 import { jobs } from '../../utils/jobs';
 import ContactForm from '../misc/ContactForm';
+import { HashLink } from 'react-router-hash-link';
 
 export default class Home extends Component {
     constructor(props) {
@@ -159,7 +160,7 @@ export default class Home extends Component {
                     <p className="sm-padding-l">
                         <b>+</b> I'm a freelance full-stack software developer working with React.js/Native to build great user experiences.<br/>
                         <b>+</b> I'm trained as a computer engineer in Silicon Valley, California.<br/>
-                        <b>+</b> I'm working on <Link to="/work/minute.tech-llc">Minute.tech</Link> to connect non-techies to techies for tech support.
+                        <b>+</b> I'm working on <Link to="/work/minute.tech-llc" className="">Minute.tech</Link> to connect non-techies to techies for tech support.
                     </p>
                     <Link to="/work">
                         <button className="md-blue-btn">
@@ -221,7 +222,7 @@ export default class Home extends Component {
                                 <p>
                                     My roots are deep in the customer service forest through my work work as a showroom 
                                     guru at <Link to="/work/tesla" className="white">Tesla</Link> and in my many <Link to="/work/minute.tech-llc" className="white">tech support</Link> roles. 
-                                    This has I am adept at being patient, down-to-earth, and pleasant to work with. 
+                                    As a result, I am patient, down-to-earth, and pleasant to work with, just ask my past clients! 
                                 </p>
                             </Col>
                         </Row>
@@ -325,11 +326,11 @@ export default class Home extends Component {
                             </div>
 
                             <div className="center-text md-margin-t">
-                                <a 
-                                    href="/#Contact" 
+                                <HashLink 
+                                    to="/#Contact" 
                                     className="lg-blue-btn">
                                     Contact me
-                                </a>
+                                </HashLink>
                             </div>
                             
                         </div>
@@ -386,7 +387,7 @@ export default class Home extends Component {
                                 </div>
                                 
                                 <label style={{display: "block"}}>Built custom CMS (Content Management System)</label>
-                                <Link to="/work/capsmd.org" className="text-hover-yellow sm-text">See <b>caps.org</b> project</Link>
+                                <Link to="/work/capsmd.org" className=" sm-text">See <b>caps.org</b> project</Link>
                             </div>
 
                         </Col>  
@@ -410,7 +411,7 @@ export default class Home extends Component {
                                 </div>
                                 
                                 <label style={{display: "block"}}>Built custom CRM (Customer Relationship Management) system</label>
-                                <Link to="/work/goprestigepower.com" className="text-hover-yellow sm-text">See <b>goprestigepower.com</b> project</Link>
+                                <Link to="/work/goprestigepower.com" className=" sm-text">See <b>goprestigepower.com</b> project</Link>
                             </div>
                         </Col>
                         <Col sm={12} md={6} className="sm-margin-t-b">
@@ -433,7 +434,7 @@ export default class Home extends Component {
                                 </div>
                                 
                                 <label style={{display: "block"}}>Built tech support system with messenger, video calling, screen sharing, and payment</label>
-                                <Link to="/work/minute.tech-llc" className="text-hover-yellow sm-text">See <b>Minute.tech</b> project</Link>
+                                <Link to="/work/minute.tech-llc" className=" sm-text">See <b>Minute.tech</b> project</Link>
                             </div>
                         </Col>
                     </Row>
@@ -478,7 +479,9 @@ export default class Home extends Component {
             <div className="full-width bg-blue">
                 <div className="wrapper white">
                     <h1 className="white no-margin"><a id="Contact" className="anchor" href="/#">Contact</a>Contact</h1>
-                    <p className="white" style={{margin: "0 0 25px 0"}}>Feel free to shoot me an email at <u>douglasrcjames@gmail.com</u> or text/call at <b>(916) 802-5609</b>.</p>
+                    <p className="white" style={{margin: "0 0 25px 0"}}>Feel free to shoot me an email 
+                    at <a href="mailto:douglasrcjames@gmail.com" className="white " target="_blank" rel="noopener noreferrer">douglasrcjames@gmail.com</a> or 
+                    text/call at <a href="tel:916-802-5609" className="white " target="_blank" rel="noopener noreferrer">(916) 802-5609</a>.</p>
                     <ContactForm />
                 </div>
             </div>

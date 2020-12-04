@@ -39,7 +39,7 @@ export default class Footer extends Component {
                         <Row middle="xs">
                             <Col md={12} lg={3} className="center-text">
                                 <span className="xl-text">douglasrcjames &copy;{this.state.year}</span>
-                                <Link className="display-block sm-text grey text-hover-yellow" style={{textDecoration: "none"}} to="/credits">credits</Link>
+                                <Link className="display-block sm-text grey " style={{textDecoration: "none"}} to="/credits">credits</Link>
                             </Col>
                             <Col md={12} lg={6} className="center-text">
                                 <SocialLink
@@ -123,7 +123,7 @@ export default class Footer extends Component {
                             </Col>
                             <Col xs={12} className="center-text">
                                 <span className="xl-text">douglasrcjames &copy;{this.state.year}</span>
-                                <Link className="display-block sm-text grey text-hover-yellow" style={{textDecoration: "none"}} to="/credits">credits</Link>
+                                <Link className="display-block sm-text grey " style={{textDecoration: "none"}} to="/credits">credits</Link>
                             </Col>
                         </Row>
                     </Grid>

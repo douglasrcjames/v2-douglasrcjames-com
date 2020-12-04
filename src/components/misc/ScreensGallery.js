@@ -23,6 +23,7 @@ export default class ScreensGallery extends Component {
         <div>
             <div className="center-text sm-margin-t-b">
                 <h3 style={{fontSize: "30px", verticalAlign: "middle"}}><u>{this.props.title}</u> <span style={{fontSize: "20px"}}>({this.props.photos.length} total)</span></h3>
+                <span className="dark-grey">{this.props.date}</span>
             </div>
             
             <SimpleBar className="slider-container center-text">
