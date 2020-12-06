@@ -81,9 +81,10 @@ export default class Work extends Component {
                 </div>
                
                 <div className="full-width bg-blue">
-                    <div className="wrapper white center-text">
-                        <h3><FaBabyCarriage color="white" /> &#8239;Douglas R.C. James was born!</h3>
-                        <div className="sm-margin-t">December 21, 1994</div>
+                    <div className="white center center-text">
+                        <h3><FaBabyCarriage /> &#8239;Douglas R.C. James was born!</h3>
+                        <img className="responsive medium" alt="doug baby" src={require('../../../assets/images/social/baby/baby-3.jpg')} />
+                        <div>December 21, 1994 @ 2:45am</div>
                     </div>
                 </div>
             </div>

@@ -342,7 +342,7 @@ export default class Home extends Component {
                <h1 className="no-margin">Accolades</h1>
                <p>
                    Accolades are automatically awarded to me for any job that I used a skill, produced said metric, or built said system. 
-                   For example, I used React.js when I built <Link to="/work/smithzellner.consulting">smithzellner.consulting</Link>&#8239;
+                   For example, I used the technology, React.js, when I built <Link to="/work/smithzellner.consulting">smithzellner.consulting</Link>&#8239;
                    and has thus far accumulated 1,889 page views (among much more). So, 1 React.js accolade and 1,889 page view accolades awarded. 
                 </p>
                 <b>Last updated: {SITE_UPDATED.LONG}</b>

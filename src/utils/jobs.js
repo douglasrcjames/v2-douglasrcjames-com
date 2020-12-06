@@ -740,11 +740,10 @@ export const jobs = [
             <p>
                 Minute.tech LLC is a software solution connecting clients who have tech questions with qualified technicians for everyday tech support; think GeekSquad crossed with Uber.
                 Users can communicate via real-time messenger, voice/video call, screen sharing, and scheduling with a review and payment system built in. 
-                The Minute.tech system lowers the barrier for non-techies and techies to work together, especially during a pandemic that requires social distanced solutions to in-person services.
-                Minute.tech currently has a live (beta) <HashLink to="/work/minute.tech-llc#Web">web</HashLink> application and a <HashLink to="/work/minute.tech-llc#Mobile">mobile</HashLink> application set to beta launch Q1 2021.
+                The Minute.tech system lowers the barrier for non-techies and techies to work together, especially during a pandemic that requires social distanced solutions to previously in-person services.
+                Minute.tech currently has a live (beta) <HashLink to="/work/minute.tech-llc#Web">web</HashLink> application and a <HashLink to="/work/minute.tech-llc#Mobile">mobile</HashLink> application set to beta launch Q2 2021.
             </p>
             <p>
-            
                 I started this project in my junior year at San Jose State University for an intro to entrepreneurship course where we were assigned to pick an idea with a group and build a business plan for it. 
                 I suggested my tech support idea I recently came up with after my parents were constantly calling for tech support after leaving them for college, and my team loved it. The business plan I built for this project impressed my 
                 professor enough for her to suggest I compete in the Shark Tank-like Silicon Valley Business Plan Competition (SVBPC). I wisely listened to her and competed in the SVBPC, which awarded my new business $1500 cash and $1000 in legal help! 
@@ -803,7 +802,7 @@ export const jobs = [
             },
             {
                 name: METRICS.COMMITS,
-                value: 431
+                value: 1306 // estimated between all libraries under MT github org page
             },
             {
                 name: METRICS.LOC,
@@ -1012,4 +1011,222 @@ export const jobs = [
         icon: <MdSchool />,
         extraContent: <ORHS />
     },
+]
+
+export const mtTimeline = [
+    {
+        title: "Completed business plan v1",
+        date: "May. 2016",
+        body: <p>
+            Wrote a 18 page business plan with a team of 3 others (90% me) for our BUS5 181 (Intro to Entrepreneurship) course at San Jose State University.
+            Proceeded to polish the same business plan to compete in the Silicon Valley Business Plan Competition (SVBPC) later that month, awarding my business $1500 cash and $1000 in legal support.
+            <br/><br/>
+            Interested in reading the business plan? <Link to="/#Contact">Contact me</Link>!
+        </p>,
+        icon: <MdWork />
+    },
+    {
+        title: "Incorporated business",
+        date: "June 2016",
+        body: <p>
+            Registered Minute.tech as a Limited Liability Company in the state of California.
+        </p>,
+        icon: <MdWork />
+    },
+    {
+        title: "Built web app v1",
+        date: "Jun. 2016",
+        body: <p>
+            Built the first web app prototype with a team of 3 other engineers for our CMPE 148 (Computer Networks I) course project 
+            at San Jose State University. We used the Python Play! Framework to build a simple interface allowing a user to login and submit a ticket. 
+            We quickly learned that this framework had way to low of a ceiling for our complex app.
+            <br/><br/>
+            <a href="https://github.com/minutetech/pyplay.minute.tech" target="_blank" rel="noopener noreferrer">View source code</a>
+        </p>,
+        icon: <MdWork />
+    },
+    {
+        title: "Built web app v2",
+        date: "Spring 2017",
+        body: <p>
+            Built the second web app prototype with a team of 2 other engineers (90% work done by me) for our CMPE 138 (Database Systems I) course project 
+            at San Jose State University. I used the Python Flask Framework and MySQL to build a full stack interface that included authentication, 
+            profile editing, and ticket creation.
+            {/* TODO: link to ERD img here? */}
+        </p>,
+        icon: <MdWork />
+    },
+    {
+        title: "Built web app v2.3",
+        date: "Fall 2017",
+        body: <p>
+            Expanded the second web app prototype from previous semester with a team of 2 new engineers (90% work done by me) for our 
+            CMPE 130 (Advanced Algorithm Design) course project at San Jose State University. I focused on building a question 
+            ticket priority sorting system using the DIPS (Dynamic Insertion Priority Sort) algorithm to efficiently display the 
+            most important tickets on the system to a technician.
+        </p>,
+        icon: <MdWork />
+    },
+    {
+        title: "Built web app v2.7",
+        date: "Mar. 2018",
+        body: <p>
+            After a few group projects where I did most of the work, I decided to hire an inexpensive Fiverr.com developer from Morocco
+            to work with me to quickly expand on the Flask framework prototype. We successfully implemented real-time chat with instant 
+            messaging using Socket.io and SQLAlchemy libraries. After researching adding more features such as video calling and mobile apps, 
+            I realized that the Flask framework also had too low of a ceiling for the features I was looking for. I was deciding between the Python
+            frame work, Django, or the Javascript framework, React.js. I ultimately went with React.js because it was an emerging and promising technology
+            with it's React Native sibling that allowed me to create an iOS/Android mobile app with one code base.
+            <br/><br/>
+            <a href="https://github.com/minutetech/flask-live.minute.tech" target="_blank" rel="noopener noreferrer">View source code</a>
+        </p>,
+        icon: <MdWork />
+    },
+    {
+        title: "Built iOS mobile app v0.5",
+        date: "Spring 2018",
+        body: <p>
+            Built the first mobile app prototype with a team of 3 other engineers (95% work done by me) for our CMPE 137 (Mobile Software Engineering) course project 
+            at San Jose State University. I used the iOS native language of Swift to build an app that tracked both users (technician and client) navigating on 
+            a map view using MapKit and Google Maps API. Simulate a similar experience to food delivery app drive on their way over to client's location.
+            <br/><br/>
+            <a href="https://github.com/minutetech/swift-gps.minute.tech" target="_blank" rel="noopener noreferrer">View source code</a>
+        </p>,
+        icon: <MdWork />
+    },
+    {
+        title: "Built business plan v2",
+        date: "Q3 & Q4 of 2018",
+        body: <p>
+            Unsure on how to move forward after failing to find reliable teammates, I thought finding potential investors might help my plight.
+            I expanded the 18 page business plan to 60 pages, consolidating my plethora of discoveries and prototypes accrued since the first business plan.
+            To properly quote investors, I needed to research the cost and timeline difference between hiring a large engineering firm, a few software engineers, or just doing it myself.
+            So, I interviewed 5 large software development firms for web/mobile app quotes and interviewed 20 potential software engineers from a physical flyer post. 
+            (I ended up just going with Ryan Morris for equity options, see web app v3 below) Near the end of my search, I came in contact with an older, IT business owner/family 
+            friend who was interested in being a partner/investor on the project. Unfortunately, he ended up wanting to be a 50/50 partner of the business, 
+            which I was advised not to do and ultimately was probably the best decision.
+            <br/><br/>
+            Interested in reading the business plan? <Link to="/#Contact">Contact me</Link>!
+
+            {/* TODO: add physical flyer post and more pictures here? */}
+        </p>,
+        icon: <MdWork />
+    },
+    {
+        title: "Designed web app wireframe v1",
+        date: "Nov. 2018",
+        body: <p>
+            Worked with two graphic designer friends and housemates, <a href="https://www.linkedin.com/in/ryan-wall-287837132/" target="_blank" rel="noopener noreferrer">Ryan Wall</a>&nbsp;
+            and <a href="https://www.linkedin.com/in/mitchell-licata/" target="_blank" rel="noopener noreferrer">Mitch Licata</a> on the web app wireframe using Sketch, XD, and InVision.
+            (See web wireframe screens above)
+            {/* TODO: anchor link this section above? */}
+        </p>,
+        icon: <MdWork />
+    },
+    {
+        title: "Secured trademark",
+        date: "Apr. 2019",
+        body: <p>
+            Using the legal funds awarded from the Silicon Valley Business Plan Competition in 2016, I secured the trademark on the 'Minute.tech' name.
+            {/* TODO: Link to this img above? */}
+        </p>,
+        icon: <MdWork />
+    },
+    {
+        title: "Built web app prototype v3",
+        date: "Jan. 2019 - Aug. 2019",
+        body: <p>
+                Built the second app prototype with <a href="https://www.linkedin.com/in/ryan-morris-26898ba1/" target="_blank" rel="noopener noreferrer">Ryan Morris</a> using 
+                React.js, Redux, and Firebase. We successfully implemented the following features:
+                <ul>
+                    <li>User authentication</li>
+                    <li>Client can ask question to system</li>
+                    <li>Technician can claim question on system</li>
+                    <li>Users can communicate in a chat room sending texts and files</li>
+                    <li>Users can transition to voice/video/screen share call using Twilio API</li>
+                    <li>Client can pay technician directly for their services using the Stripe API</li>
+                    <li>Technician/client ranking system and algorithm that gamified the interactions on the site</li>
+                    <li>Clients can resolve questions and review technicians they interacted with</li>
+                </ul>
+                Ryan ultimately had to step away from the project because he wanted to go more down the robotics path instead of web. 
+                I had to scrap most of the code from this build because Redux was not properly setup, but Ryan taught me a lot and was the best teammate 
+                I have worked with yet on Minute.tech who helped propel the project forward.
+                <br/><br/>
+                This project code is still classified, but <Link to="/#Contact">contact me</Link> if you are interested in viewing.
+        </p>,
+        icon: <MdWork />
+    },
+    {
+        title: "Built iOS mobile app v1",
+        date: "Jun. 2019 - Dec. 2019",
+        body: <p>
+            Built the real first mobile app prototype with a team of 3 other engineers (60% work done by me) for our senior project 
+            at San Jose State University. We again used the iOS native language of Swift to build the app, but this time implemented nearly all the required features:
+            <ul>
+                <li>User authentication</li>
+                <li>Client can ask question to system</li>
+                <li>Technician can claim question on system</li>
+                <li>Users can communicate in a chat room sending texts and files</li>
+                <li>Users can transition to voice/video call using Twilio API</li>
+                <li>Users can schedule a in-person meetup at time and location (UI only)</li>
+                <li>Clients can resolve questions and review technicians they interacted with</li>
+            </ul>
+            Full demo video and screenshots in the Mobile Application &gt;&gt; Swift section above. 
+            <br/><br/>
+            This project code is still classified, but <Link to="/#Contact">contact me</Link> if you are interested in viewing.
+        </p>,
+        icon: <MdWork />
+    },
+    {
+        title: "Built web app v4",
+        date: "Jan. 2020",
+        body: <p>
+            Building off some of the project code developed with Ryan Morris, I built a new React.js app that was more organized, bug-free, and production ready than v3.
+            Version 4 is the current production build visible @ <a href="https://www.minute.tech" target="_blank" rel="noopener noreferrer">www.minute.tech</a> and has the following features:
+            <ul>
+                <li>User authentication</li>
+                <li>Client can ask question to system</li>
+                <li>Technician can claim question on system</li>
+                <li>Users can communicate in a chat room sending texts and files</li>
+                <li>Users can transition to voice/video/screen share call using Twilio API</li>
+                <li>Client can pay technician directly for their services using the Stripe API</li>
+                <li>Clients can resolve questions and review technicians they interacted with</li>
+            </ul>
+            I am working on this codebase to this date. Full demo video and screenshots in the Web Application section above. 
+            <br/><br/>
+            This project code is still classified, but <Link to="/#Contact">contact me</Link> if you are interested in viewing.
+        </p>,
+        icon: <MdWork />
+    },
+    {
+        title: "Started building iOS/Android mobile app v2",
+        date: "September, 2020",
+        body: <p>
+            Started building the second mobile app prototype for iOS and Android devices using React Native and a shared backend with web using Firebase. 
+            So far, the application features:
+            <ul>
+                <li>User authentication</li>
+                <li>Client can ask question to system</li>
+                <li>Technician can claim question on system</li>
+                <li>Users can communicate in a chat room sending texts</li>
+                <li>Clients can resolve questions</li>
+            </ul>
+            There were a few motivations for building the React Native app:
+            <ul>
+                <li>Practice my React Native skills for potential client projects</li>
+                <li>
+                    As the only software developer on the project, it's much easier for me to maintain one React code base. 
+                    Between the web and mobile app builds, there is over 50% overlap between reused 
+                    React components and Firebase server side functions, increasing what I am capable of doing on my own.
+                </li>
+                <li>
+                    Minute.tech is losing clients who are not getting push notifications on their mobile devices they carry everywhere for important app messages.
+                </li>
+            </ul>
+            See progress screenshots in the Mobile Application &gt;&gt; React Native section above. 
+            <br/><br/>
+            This project code is still classified, but <Link to="/#Contact">contact me</Link> if you are interested in viewing.
+        </p>,
+        icon: <MdWork />
+    }
 ]

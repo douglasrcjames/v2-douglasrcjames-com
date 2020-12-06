@@ -2,38 +2,38 @@
 export const smithzellnerV1 = [
     {
         src: require("../assets/images/jobs/smithzellner/screens/v1/Home.png"),
-        caption: "'Home' screen"
+        caption: "'Home' screen."
     },
     {
         src: require("../assets/images/jobs/smithzellner/screens/v1/BooksFilms.png"),
-        caption: "'Books & Films' screen"
+        caption: "'Books & Films' screen."
     },
     {
         src: require("../assets/images/jobs/smithzellner/screens/v1/RecentMedia.png"),
-        caption: "'Recent Media' screen"
+        caption: "'Recent Media' screen."
     },
 ]
 
 export const smithzellnerV2 = [
     {
         src: require("../assets/images/jobs/smithzellner/screens/v2/Home.png"),
-        caption: "'Home' screen"
+        caption: "'Home' screen."
     },
     {
         src: require("../assets/images/jobs/smithzellner/screens/v2/About.png"),
-        caption: "'About' screen"
+        caption: "'About' screen."
     },
     {
         src: require("../assets/images/jobs/smithzellner/screens/v2/Events.png"),
-        caption: "'Events' screen"
+        caption: "'Events' screen."
     },
     {
         src: require("../assets/images/jobs/smithzellner/screens/v2/Media.png"),
-        caption: "'Media' screen"
+        caption: "'Media' screen."
     },
     {
         src: require("../assets/images/jobs/smithzellner/screens/v2/Alliances.png"),
-        caption: "'Alliances' screen"
+        caption: "'Alliances' screen."
     }
 ]
 
@@ -41,78 +41,78 @@ export const smithzellnerV2 = [
 export const goprestigepowerV1 = [
     {
         src: require("../assets/images/jobs/goprestigepower/screens/v1/Home.png"),
-        caption: "'Home' screen"
+        caption: "'Home' screen."
     },
     {
         src: require("../assets/images/jobs/goprestigepower/screens/v1/Quote.png"),
-        caption: "'Solar Quote' screen"
+        caption: "'Solar Quote' screen."
     },
     {
         src: require("../assets/images/jobs/goprestigepower/screens/v1/Bonus.png"),
-        caption: "'Bonus Referral' screen"
+        caption: "'Bonus Referral' screen."
     },
 ]
 
 export const goprestigepowerV2 = [
     {
         src: require("../assets/images/jobs/goprestigepower/screens/v2/Home.png"),
-        caption: "'Home' screen"
+        caption: "'Home' screen."
     },
     {
         src: require("../assets/images/jobs/goprestigepower/screens/v2/Quote.png"),
-        caption: "'Solar Quote' screen"
+        caption: "'Solar Quote' screen."
     },
     {
         src: require("../assets/images/jobs/goprestigepower/screens/v2/WhySolar.png"),
-        caption: "'Why Solar?' screen"
+        caption: "'Why Solar?' screen."
     },
     {
         src: require("../assets/images/jobs/goprestigepower/screens/v2/About.png"),
-        caption: "'About Us' screen"
+        caption: "'About Us' screen."
     },
     {
         src: require("../assets/images/jobs/goprestigepower/screens/v2/FAQ.png"),
-        caption: "'Frequently Asked Questions' screen"
+        caption: "'Frequently Asked Questions' screen."
     },
     {
         src: require("../assets/images/jobs/goprestigepower/screens/v2/Bonus.png"),
-        caption: "'Referral Bonus' screen"
+        caption: "'Referral Bonus' screen."
     },
     {
         src: require("../assets/images/jobs/goprestigepower/screens/v2/Quote.png"),
-        caption: "'Commercial Quote' screen"
+        caption: "'Commercial Quote' screen."
     },
     {
         src: require("../assets/images/jobs/goprestigepower/screens/v2/LogIn.png"),
-        caption: "'Log In' screen"
+        caption: "'Log In' screen."
     },
     {
         src: require("../assets/images/jobs/goprestigepower/screens/v2/ForgotPassword.png"),
-        caption: "Modal for 'Forgot Password'"
+        caption: "Modal for 'Forgot Password'."
     },
     {
         src: require("../assets/images/jobs/goprestigepower/screens/v2/ClientAccount.png"),
-        caption: "Client's 'Account' screen"
+        caption: "Client's 'Account' screen."
     },
     {
         src: require("../assets/images/jobs/goprestigepower/screens/v2/AdminClients.png"),
-        caption: "Admin panel showing 'Clients' tab"
+        caption: "Admin panel showing 'Clients' tab."
     },
     {
         src: require("../assets/images/jobs/goprestigepower/screens/v2/AdminBuildings.png"),
-        caption: "Admin panel showing 'Buildings' tab and an alert"
+        caption: "Admin panel showing 'Buildings' tab and an alert."
     },
     {
         src: require("../assets/images/jobs/goprestigepower/screens/v2/AdminReferrals.png"),
-        caption: "Admin panel showing 'Referrals' tab"
+        caption: "Admin panel showing 'Referrals' tab."
     },
     {
         src: require("../assets/images/jobs/goprestigepower/screens/v2/AdminMessages.png"),
-        caption: "Admin panel showing 'Messages' tab"
+        caption: "Admin panel showing 'Messages' tab."
     },
     {
         src: require("../assets/images/jobs/goprestigepower/screens/v2/Notes.png"),
-        caption: "Admin panel showing Notes editing modal"
+        caption: "Admin panel showing Notes editing modal."
     },
 ]
 
@@ -120,27 +120,27 @@ export const goprestigepowerV2 = [
 export const vectorpsiV1 = [
     {
         src: require("../assets/images/jobs/vectorpsi/screens/Home.png"),
-        caption: "'Home' screen"
+        caption: "'Home' screen."
     },
     {
         src: require("../assets/images/jobs/vectorpsi/screens/ProductCategories.png"),
-        caption: "'Product Categories' screen"
+        caption: "'Product Categories' screen."
     },
     {
         src: require("../assets/images/jobs/vectorpsi/screens/ControlCategory.png"),
-        caption: "A specific 'Product Category' screen"
+        caption: "A specific 'Product Category' screen."
     },
     {
         src: require("../assets/images/jobs/vectorpsi/screens/ProductsIMI-CCI.png"),
-        caption: "A specific product line screen"
+        caption: "A specific product line screen."
     },
     {
         src: require("../assets/images/jobs/vectorpsi/screens/Industries.png"),
-        caption: "'Industries' screen"
+        caption: "'Industries' screen."
     },
     {
         src: require("../assets/images/jobs/vectorpsi/screens/About.png"),
-        caption: "'About' screen"
+        caption: "'About' screen."
     },
 ]
 
@@ -148,15 +148,15 @@ export const vectorpsiV1 = [
 export const dougsReactBoilerV1 = [
     {
         src: require("../assets/images/jobs/dougs-react-boiler/screens/Home.png"),
-        caption: "'Home' screen"
+        caption: "'Home' screen."
     },
     {
         src: require("../assets/images/jobs/dougs-react-boiler/screens/About.png"),
-        caption: "Extra example screen"
+        caption: "Extra example screen."
     },
     {
         src: require("../assets/images/jobs/dougs-react-boiler/screens/404.png"),
-        caption: "'404 error' screen"
+        caption: "'404 error' screen."
     },
 ]
 
@@ -164,53 +164,53 @@ export const dougsReactBoilerV1 = [
 export const blairFamilyV1 = [
     {
         src: require("../assets/images/jobs/blairfamily/screens/v1/Home.png"),
-        caption: "'Home' screen"
+        caption: "'Home' screen."
     },
     {
         src: require("../assets/images/jobs/blairfamily/screens/v1/Press.png"),
-        caption: "'Home' screen"
+        caption: "'Press' screen."
     }
 ]
 
 export const blairFamilyV2 = [
     {
         src: require("../assets/images/jobs/blairfamily/screens/v2/Home.png"),
-        caption: "'Home' screen"
+        caption: "'Home' screen."
     },
     {
         src: require("../assets/images/jobs/blairfamily/screens/v2/About.png"),
-        caption: "'About Us' screen"
+        caption: "'About Us' screen."
     },
     {
         src: require("../assets/images/jobs/blairfamily/screens/v2/Press.png"),
-        caption: "'Press' screen"
+        caption: "'Press' screen."
     },
     {
         src: require("../assets/images/jobs/blairfamily/screens/v2/Focus.png"),
-        caption: "'Focus' overview screen"
+        caption: "'Focus' overview screen."
     },
     {
         src: require("../assets/images/jobs/blairfamily/screens/v2/FocusItem.png"),
-        caption: "'Focus' item screen"
+        caption: "'Focus' item screen."
     },
 ]
 
 export const blairFamilyWireframe = [
     {
         src: require("../assets/images/jobs/blairfamily/screens/wireframe/Home.png"),
-        caption: "'Home' screen"
+        caption: "'Home' screen."
     },
     {
         src: require("../assets/images/jobs/blairfamily/screens/wireframe/About.png"),
-        caption: "'About Us' screen"
+        caption: "'About Us' screen."
     },
     {
         src: require("../assets/images/jobs/blairfamily/screens/wireframe/Focus.png"),
-        caption: "'Focus' overview screen"
+        caption: "'Focus' overview screen."
     },
     {
         src: require("../assets/images/jobs/blairfamily/screens/wireframe/FocusItem.png"),
-        caption: "'Focus' item screen"
+        caption: "'Focus' item screen."
     },
 ]
 
@@ -218,23 +218,23 @@ export const blairFamilyWireframe = [
 export const retreatonnicholsV1 = [
     {
         src: require("../assets/images/jobs/retreatonnichols/screens/Home.png"),
-        caption: "'Home' screen"
+        caption: "'Home' screen."
     },
     {
         src: require("../assets/images/jobs/retreatonnichols/screens/Georgia.png"),
-        caption: "'Georgia O'Keffe suite' screen"
+        caption: "'Georgia O'Keffe suite' screen."
     },
     {
         src: require("../assets/images/jobs/retreatonnichols/screens/Piet.png"),
-        caption: "'Piet Mondrian suite' screen"
+        caption: "'Piet Mondrian suite' screen."
     },
     {
         src: require("../assets/images/jobs/retreatonnichols/screens/Hosts.png"),
-        caption: "'The Hosts' screen"
+        caption: "'The Hosts' screen."
     },
     {
         src: require("../assets/images/jobs/retreatonnichols/screens/Reserve.png"),
-        caption: "'Reserve' screen"
+        caption: "'Reserve' screen."
     },
 ]
 
@@ -242,53 +242,81 @@ export const retreatonnicholsV1 = [
 export const douglasrcjamesV1 = [
     {
         src: require("../assets/images/jobs/douglasrcjames/screens/v1/Home.png"),
-        caption: "'Home' screen"
+        caption: "'Home' screen."
     },
     {
         src: require("../assets/images/jobs/douglasrcjames/screens/v1/ExperienceTimeline.png"),
-        caption: "'Experience' timeline screen"
+        caption: "'Experience' timeline screen."
     },
     {
         src: require("../assets/images/jobs/douglasrcjames/screens/v1/Experience1.png"),
-        caption: "Long example of an 'Experience' screen"
+        caption: "Long example of an 'Experience' screen."
     },
     {
         src: require("../assets/images/jobs/douglasrcjames/screens/v1/Experience2.png"),
-        caption: "Short example of an 'Experience' screen"
+        caption: "Short example of an 'Experience' screen."
     },
     {
         src: require("../assets/images/jobs/douglasrcjames/screens/v1/Gallery.png"),
-        caption: "'Gallery' screen"
+        caption: "'Gallery' screen."
     },
 ]
 
 export const douglasrcjamesV2 = [
     {
-        src: require("../assets/images/jobs/douglasrcjames/screens/v1/Home.png"),
-        caption: "'Home' screen"
+        src: require("../assets/images/jobs/douglasrcjames/screens/v2/Home.png"),
+        caption: "'Home' screen."
+    },
+    {
+        src: require("../assets/images/jobs/douglasrcjames/screens/v2/Work.png"),
+        caption: "'Work' screen."
+    },
+    {
+        src: require("../assets/images/jobs/douglasrcjames/screens/v2/JobLong.png"),
+        caption: "Longest example of a 'Job' screen."
+    },
+    {
+        src: require("../assets/images/jobs/douglasrcjames/screens/v2/JobCollege.png"),
+        caption: "Normal example of a 'Job' screen."
+    },
+    {
+        src: require("../assets/images/jobs/douglasrcjames/screens/v2/JobRegular.png"),
+        caption: "Normal example of a 'Job' screen."
+    },
+    {
+        src: require("../assets/images/jobs/douglasrcjames/screens/v2/JobShort.png"),
+        caption: "Short example of a 'Job' screen."
+    },
+    {
+        src: require("../assets/images/jobs/douglasrcjames/screens/v2/Lightbox.png"),
+        caption: "Example of an expanded image in a lightbox."
+    },
+    {
+        src: require("../assets/images/jobs/douglasrcjames/screens/v2/Social.png"),
+        caption: "'Social' screen."
     },
 ]
 
 export const douglasrcjamesWireframe = [
     {
         src: require("../assets/images/jobs/douglasrcjames/screens/wireframe/Home.png"),
-        caption: "'Home' screen"
+        caption: "'Home' screen."
     },
     {
         src: require("../assets/images/jobs/douglasrcjames/screens/wireframe/ExperienceTimeline.png"),
-        caption: "'Experience' timeline screen"
+        caption: "'Experience' timeline screen."
     },
     {
         src: require("../assets/images/jobs/douglasrcjames/screens/wireframe/Experience1.png"),
-        caption: "Long example of an 'Experience' screen"
+        caption: "Long example of an 'Experience' screen."
     },
     {
         src: require("../assets/images/jobs/douglasrcjames/screens/wireframe/Experience2.png"),
-        caption: "Short example of an 'Experience' screen"
+        caption: "Short example of an 'Experience' screen."
     },
     {
         src: require("../assets/images/jobs/douglasrcjames/screens/wireframe/Social.png"),
-        caption: "'Social' screen"
+        caption: "'Social' screen."
     },
 ]
 
@@ -296,27 +324,27 @@ export const douglasrcjamesWireframe = [
 export const CAPSV1 = [
     {
         src: require("../assets/images/jobs/caps/screens/v1/Home.png"),
-        caption: "'Home' screen"
+        caption: "'Home' screen."
     },
     {
         src: require("../assets/images/jobs/caps/screens/v1/About.png"),
-        caption: "'About' screen"
+        caption: "'About' screen."
     },
     {
         src: require("../assets/images/jobs/caps/screens/v1/Issue.png"),
-        caption: "Screen listing articles for an 'Issue'"
+        caption: "Screen listing articles for an 'Issue'."
     },
     {
         src: require("../assets/images/jobs/caps/screens/v1/Article.png"),
-        caption: "Example of an 'Article' screen"
+        caption: "Example of an 'Article' screen."
     },
     {
         src: require("../assets/images/jobs/caps/screens/v1/News.png"),
-        caption: "'News' screen"
+        caption: "'News' screen."
     },
     {
         src: require("../assets/images/jobs/caps/screens/v1/Contact.png"),
-        caption: "'Contact' screen"
+        caption: "'Contact' screen."
     },
 
 ]
@@ -324,63 +352,63 @@ export const CAPSV1 = [
 export const CAPSV2 = [
     {
         src: require("../assets/images/jobs/caps/screens/v2/Home.png"),
-        caption: "'Home' screen"
+        caption: "'Home' screen."
     },
     {
         src: require("../assets/images/jobs/caps/screens/v2/Issue.png"),
-        caption: "Screen listing articles for an 'Issue'"
+        caption: "Screen listing articles for an 'Issue'."
     },
     {
         src: require("../assets/images/jobs/caps/screens/v2/Article1.png"),
-        caption: "Example article screen with graphs"
+        caption: "Example article screen with graphs."
     },
     {
         src: require("../assets/images/jobs/caps/screens/v2/Article2.png"),
-        caption: "Example article screen with PDF viewer"
+        caption: "Example article screen with PDF viewer."
     },
     {
         src: require("../assets/images/jobs/caps/screens/v2/Article3.png"),
-        caption: "Example article screen with rich text view and image header"
+        caption: "Example article screen with rich text view and image header."
     },
     {
         src: require("../assets/images/jobs/caps/screens/v2/Article4.png"),
-        caption: "Example article screen with more graphs"
+        caption: "Example article screen with more graphs."
     },
     {
         src: require("../assets/images/jobs/caps/screens/v2/CMSSignIn.png"),
-        caption: "CMS 'Sign In' screen"
+        caption: "CMS 'Sign In' screen."
     },
     {
         src: require("../assets/images/jobs/caps/screens/v2/CMSRegister.png"),
-        caption: "CMS 'Register' screen"
+        caption: "CMS 'Register' screen."
     },
     {
         src: require("../assets/images/jobs/caps/screens/v2/CMSHome.png"),
-        caption: "CMS 'Home' screen"
+        caption: "CMS 'Home' screen."
     },
     {
         src: require("../assets/images/jobs/caps/screens/v2/CMSListArticles.png"),
-        caption: "CMS listing articles screen"
+        caption: "CMS listing articles screen."
     },
     {
         src: require("../assets/images/jobs/caps/screens/v2/CMSAddRTArticle.png"),
-        caption: "CMS create rich text article screen"
+        caption: "CMS create rich text article screen."
     },
     {
         src: require("../assets/images/jobs/caps/screens/v2/CMSAddPDFArticle.png"),
-        caption: "CMS create PDF article screen"
+        caption: "CMS create PDF article screen."
     },
     {
         src: require("../assets/images/jobs/caps/screens/v2/News.png"),
-        caption: "'News' screen"
+        caption: "'News' screen."
     },
     {
         src: require("../assets/images/jobs/caps/screens/v2/Contact.png"),
-        caption: "'Contact' & 'Donate' screen"
+        caption: "'Contact' & 'Donate' screen."
     },
     {
         src: require("../assets/images/jobs/caps/screens/v2/About.png"),
-        caption: "'About Us' screen"
+        caption: "'About Us' screen."
     },
 ]
 
@@ -388,7 +416,7 @@ export const CAPSV2 = [
 export const bodybyyamaWireframe = [
     {
         src: require("../assets/images/jobs/bodybyyama/wireframe.png"),
-        caption: "Wireframe 'Home' screen"
+        caption: "Wireframe 'Home' screen."
     }
 ]
 
@@ -397,14 +425,14 @@ export const bodybyyamaWireframe = [
 export const glasshousefarmsWireframe = [
     {
         src: require("../assets/images/jobs/glasshousefarms/wireframe.png"),
-        caption: "Wireframe 'Home' screen"
+        caption: "Wireframe 'Home' screen."
     }
 ]
 
 export const glasshousefarmsV1 = [
     {
         src: require("../assets/images/jobs/glasshousefarms/screen.png"),
-        caption: "'Home' screen"
+        caption: "'Home' screen."
     }
 ]
 
@@ -412,7 +440,7 @@ export const glasshousefarmsV1 = [
 export const mtWebWireframe = [
     {
         src: require("../assets/images/jobs/minutetech/screens/web/wireframe/Ask.png"),
-        caption: "'Ask' home screen for clients"
+        caption: "'Ask' home screen for clients."
     },
     {
         src: require("../assets/images/jobs/minutetech/screens/web/wireframe/ClientQuestions.png"),
@@ -424,15 +452,15 @@ export const mtWebWireframe = [
     },
     {
         src: require("../assets/images/jobs/minutetech/screens/web/wireframe/ChatRoom.png"),
-        caption: "Question 'Chat Room' screen with expanded sections"
+        caption: "Question 'Chat Room' screen with expanded sections."
     },
     {
         src: require("../assets/images/jobs/minutetech/screens/web/wireframe/VideoCall.png"),
-        caption: "'Video Call' screen with call in progress"
+        caption: "'Video Call' screen with call in progress."
     },
     {
         src: require("../assets/images/jobs/minutetech/screens/web/wireframe/SignIn.png"),
-        caption: "'Sign In' screen"
+        caption: "'Sign In' screen."
     },
     {
         src: require("../assets/images/jobs/minutetech/screens/web/wireframe/Register.png"),
@@ -440,238 +468,238 @@ export const mtWebWireframe = [
     },
     {
         src: require("../assets/images/jobs/minutetech/screens/web/wireframe/About.png"),
-        caption: "Drafted 'About' screen example"
+        caption: "Drafted 'About' screen example."
     },
 ]
 
 export const mtWebLive = [
     {
         src: require("../assets/images/jobs/minutetech/screens/web/live/Ask.png"),
-        caption: "'Ask' home screen for clients"
+        caption: "'Ask' home screen for clients."
     },
     {
         src: require("../assets/images/jobs/minutetech/screens/web/live/AskExpanded.png"),
-        caption: "'Ask' screen with expanded sections"
+        caption: "'Ask' screen with expanded sections."
     },
     {
         src: require("../assets/images/jobs/minutetech/screens/web/live/AskFilled.png"),
-        caption: "'Ask' screen with filled sections"
+        caption: "'Ask' screen with filled sections."
     },
     {
         src: require("../assets/images/jobs/minutetech/screens/web/live/ClientQuestions.png"),
-        caption: "Client's view of the 'Questions' screen"
+        caption: "Client's view of the 'Questions' screen."
     },
     {
         src: require("../assets/images/jobs/minutetech/screens/web/live/TechnicianAnswer.png"),
-        caption: "Technician's 'Answer' screen"
+        caption: "Technician's 'Answer' screen."
     },
     {
         src: require("../assets/images/jobs/minutetech/screens/web/live/ClientChatRoom.png"),
-        caption: "Client's view of the question 'Chat Room' screen"
+        caption: "Client's view of the question 'Chat Room' screen."
     },
     {
         src: require("../assets/images/jobs/minutetech/screens/web/live/VideoCall1.png"),
-        caption: "View of the 'Video Call' screen"
+        caption: "View of the 'Video Call' screen."
     },
     {
         src: require("../assets/images/jobs/minutetech/screens/web/live/VideoCall2.png"),
-        caption: "Video call and screen sharing in progress screen"
+        caption: "Video call and screen sharing in progress screen."
     },
     {
         src: require("../assets/images/jobs/minutetech/screens/web/live/EditBody.png"),
-        caption: "Pop up modal of editing a question body"
+        caption: "Pop up modal of editing a question body."
     },
     {
         src: require("../assets/images/jobs/minutetech/screens/web/live/EditTags.png"),
-        caption: "Pop up modal of editing a question tags"
+        caption: "Pop up modal of editing a question tags."
     },
     {
         src: require("../assets/images/jobs/minutetech/screens/web/live/EditMessage.png"),
-        caption: "Pop up modal of editing a chat message"
+        caption: "Pop up modal of editing a chat message."
     },
     {
         src: require("../assets/images/jobs/minutetech/screens/web/live/Invoice.png"),
-        caption: "Question 'Invoice' screen"
+        caption: "Question 'Invoice' screen."
     },
     {
         src: require("../assets/images/jobs/minutetech/screens/web/live/Profile.png"),
-        caption: "'Profile' screen"
+        caption: "'Profile' screen."
     },
     {
         src: require("../assets/images/jobs/minutetech/screens/web/live/Notifications.png"),
-        caption: "'Notifications' list view"
+        caption: "'Notifications' list view."
     },
     {
         src: require("../assets/images/jobs/minutetech/screens/web/live/BecomeTechnician.png"),
-        caption: "'Become Technician' tab selected on the Profile screen"
+        caption: "'Become Technician' tab selected on the Profile screen."
     },
     {
         src: require("../assets/images/jobs/minutetech/screens/web/live/PublicProfile.png"),
-        caption: "'Public Profile' screen"
+        caption: "'Public Profile' screen."
     },
     {
         src: require("../assets/images/jobs/minutetech/screens/web/live/Billing.png"),
-        caption: "'Billing' screen"
+        caption: "'Billing' screen."
     },
     {
         src: require("../assets/images/jobs/minutetech/screens/web/live/AddCard.png"),
-        caption: "Modal open for adding a new credit card"
+        caption: "Modal open for adding a new credit card."
     },
     {
         src: require("../assets/images/jobs/minutetech/screens/web/live/Payouts.png"),
-        caption: "Technician's Billing screen with the 'Payouts' tab selected"
+        caption: "Technician's Billing screen with the 'Payouts' tab selected."
     },
     {
         src: require("../assets/images/jobs/minutetech/screens/web/live/TechnicianChatRoom.png"),
-        caption: "Technician's 'Chat Room' screen"
+        caption: "Technician's 'Chat Room' screen."
     },
     {
         src: require("../assets/images/jobs/minutetech/screens/web/live/TechnicianQuestions.png"),
-        caption: "Technician's question list view"
+        caption: "Technician's question list view."
     },
     {
         src: require("../assets/images/jobs/minutetech/screens/web/live/Register.png"),
-        caption: "'Register' screen"
+        caption: "'Register' screen."
     },
     {
         src: require("../assets/images/jobs/minutetech/screens/web/live/SignIn.png"),
-        caption: "'Sign In' screen"
+        caption: "'Sign In' screen."
     },
     {
         src: require("../assets/images/jobs/minutetech/screens/web/live/ForgotPassword.png"),
-        caption: "'Forgot Password' modal open view"
+        caption: "'Forgot Password' modal open view."
     },
     {
         src: require("../assets/images/jobs/minutetech/screens/web/live/About.png"),
-        caption: "'About' screen with 'About > Minute.tech' selected"
+        caption: "'About' screen with 'About > Minute.tech' selected."
     },
 ]
 
 export const mtMobileWireframe = [
     {
         src: require("../assets/images/jobs/minutetech/screens/mobile/wireframe/Home.png"),
-        caption: "'Home' screen"
+        caption: "'Home' screen."
     },
     {
         src: require("../assets/images/jobs/minutetech/screens/mobile/wireframe/Ask.png"),
-        caption: "'Ask' screen"
+        caption: "'Ask' screen."
     },
     {
         src: require("../assets/images/jobs/minutetech/screens/mobile/wireframe/Questions.png"),
-        caption: "'Questions' list screen"
+        caption: "'Questions' list screen."
     },
     {
         src: require("../assets/images/jobs/minutetech/screens/mobile/wireframe/ChatPending.png"),
-        caption: "'Chat' screen in a pending state"
+        caption: "'Chat' screen in a pending state."
     },
     {
         src: require("../assets/images/jobs/minutetech/screens/mobile/wireframe/ChatPendingExpanded.png"),
-        caption: "'Chat' screen in a pending state and expanded details"
+        caption: "'Chat' screen in a pending state and expanded details."
     },
     {
         src: require("../assets/images/jobs/minutetech/screens/mobile/wireframe/ChatResolved.png"),
-        caption: "'Chat' screen in a resolved state"
+        caption: "'Chat' screen in a resolved state."
     },
     {
         src: require("../assets/images/jobs/minutetech/screens/mobile/wireframe/ScheduleTime.png"),
-        caption: "'Schedule' screen in the Time select step"
+        caption: "'Schedule' screen in the Time select step."
     },
     {
         src: require("../assets/images/jobs/minutetech/screens/mobile/wireframe/ScheduleLocation.png"),
-        caption: "'Schedule' screen in the Location select step"
+        caption: "'Schedule' screen in the Location select step."
     },
     {
         src: require("../assets/images/jobs/minutetech/screens/mobile/wireframe/Profile.png"),
-        caption: "'Profile' screen"
+        caption: "'Profile' screen."
     },
     {
         src: require("../assets/images/jobs/minutetech/screens/mobile/wireframe/Register.png"),
-        caption: "'Register' screen"
+        caption: "'Register' screen."
     },
     {
         src: require("../assets/images/jobs/minutetech/screens/mobile/wireframe/SignIn.png"),
-        caption: "'Sign In' screen"
+        caption: "'Sign In' screen."
     },
 ]
 
 export const mtMobileSwift = [
     {
         src: require("../assets/images/jobs/minutetech/screens/mobile/swift/Ask.png"),
-        caption: "'Ask' screen"
+        caption: "'Ask' screen."
     },
     {
         src: require("../assets/images/jobs/minutetech/screens/mobile/swift/PendingQuestions.png"),
-        caption: "'Pending Questions' screen"
+        caption: "'Pending Questions' screen."
     },
     {
         src: require("../assets/images/jobs/minutetech/screens/mobile/swift/Chat.png"),
-        caption: "'Chat' screen"
+        caption: "'Chat' screen."
     },
     {
         src: require("../assets/images/jobs/minutetech/screens/mobile/swift/QuestionDetails.png"),
-        caption: "'Question Details' screen"
+        caption: "'Question Details' screen."
     },
     {
         src: require("../assets/images/jobs/minutetech/screens/mobile/swift/ScheduleLocation.png"),
-        caption: "'Schedule' screen in the Location select step"
+        caption: "'Schedule' screen in the Location select step."
     },
     {
         src: require("../assets/images/jobs/minutetech/screens/mobile/swift/ScheduleTime.png"),
-        caption: "'Schedule' screen in the Time select step"
+        caption: "'Schedule' screen in the Time select step."
     },
     {
         src: require("../assets/images/jobs/minutetech/screens/mobile/swift/VideoCall.png"),
-        caption: "Video call in progress screen"
+        caption: "Video call in progress screen."
     },
     {
         src: require("../assets/images/jobs/minutetech/screens/mobile/swift/Review.png"),
-        caption: "'Review' screen"
+        caption: "'Review' screen."
     },
     {
         src: require("../assets/images/jobs/minutetech/screens/mobile/swift/Invoice.png"),
-        caption: "'Invoice' screen"
+        caption: "'Invoice' screen."
     },
     {
         src: require("../assets/images/jobs/minutetech/screens/mobile/swift/Profile.png"),
-        caption: "'Profile' screen"
+        caption: "'Profile' screen."
     },
 ]
 
 export const mtMobileNative = [
     {
         src: require("../assets/images/jobs/minutetech/screens/mobile/native/Home.png"),
-        caption: "'Home' screen"
+        caption: "'Home' screen."
     },
     {
         src: require("../assets/images/jobs/minutetech/screens/mobile/native/SignIn.png"),
-        caption: "'Sign In' screen"
+        caption: "'Sign In' screen."
     },
     {
         src: require("../assets/images/jobs/minutetech/screens/mobile/native/Register.png"),
-        caption: "'Register' screen"
+        caption: "'Register' screen."
     },
     {
         src: require("../assets/images/jobs/minutetech/screens/mobile/native/Ask.png"),
-        caption: "'Ask' screen"
+        caption: "'Ask' screen."
     },
     {
         src: require("../assets/images/jobs/minutetech/screens/mobile/native/ClientQuestions.png"),
-        caption: "Client's 'Questions' screen"
+        caption: "Client's 'Questions' screen."
     },
     {
         src: require("../assets/images/jobs/minutetech/screens/mobile/native/ChatUnclaimed.png"),
-        caption: "Question 'Chat' screen in an unclaimed state"
+        caption: "Question 'Chat' screen in an unclaimed state."
     },
     {
         src: require("../assets/images/jobs/minutetech/screens/mobile/native/QuestionDetails1.png"),
-        caption: "Question 'Details' screen"
+        caption: "Question 'Details' screen."
     },
     {
         src: require("../assets/images/jobs/minutetech/screens/mobile/native/QuestionDetails2.png"),
-        caption: "Question 'Details' screen"
+        caption: "Question 'Details' screen."
     },
     {
         src: require("../assets/images/jobs/minutetech/screens/mobile/native/Account.png"),
-        caption: "'Account' screen"
+        caption: "'Account' screen."
     },
 ]
