@@ -68,6 +68,11 @@ export const SKILLS = {
         link: "https://reactjs.org/",
         src: require(`../assets/images/icons/skills/react.png`) 
     },
+    REDUX: { 
+        name: "redux", 
+        link: "https://redux.js.org/",
+        src: require(`../assets/images/icons/skills/redux.png`) 
+    },
     GITHUB: { 
         name: "github", 
         link: "https://github.com/",

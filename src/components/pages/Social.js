@@ -8,7 +8,12 @@ export default class Social extends Component {
                  <div className="social-bg">
                     <div className="shero-container">
                         <h1 className="no-margin">Social</h1>
-                        <p>More content coming soon...</p>
+                        <p>
+                            Social life has definitely taken a hit since COVID started, but I still maintain friendships primarily through 
+                            sending internet memes and playing video games with friends. Fortunately, I have spent quarantine living with 
+                            my girlfriend (Ana), Siamese (Link), Tabby (Zelda), and Basset Hound (Georgie)! I will definitely be adding more content to this 
+                            section, such as my blog, streaming channel, and more in the coming months.
+                        </p>
                         <PhotoGallery photos={socialGallery} setWidth={"lg"} />
                     </div>
                 </div>

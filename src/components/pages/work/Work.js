@@ -4,8 +4,7 @@ import { FaBabyCarriage } from "react-icons/fa";
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
-import digitalResume from '../../../assets/pdfs/DouglasJames-Resume-12.01.2020.pdf'
-import printResume from '../../../assets/pdfs/DouglasJames-Resume-PRINT-12.01.2020.pdf'
+import resume from '../../../assets/pdfs/DouglasJames-Resume-12.01.2020.pdf'
 import { jobs } from '../../../utils/jobs';
 import { SITE_UPDATED, STATUS } from '../../../utils/constants';
 import { Link } from 'react-router-dom';
@@ -34,17 +33,10 @@ export default class Work extends Component {
                                 </Col>
                                 <Col md={12} lg={4}>
                                     <Row center="xs">
-                                        <a href={digitalResume} download className="big-icon-btn">
+                                        <a href={resume} download className="big-icon-btn">
                                             <Col>
                                                 <img alt="download file" src={require('../../../assets/images/icons/file.png')} />
-                                                <p>Download Digital Resume</p>
-                                            </Col>
-                                        </a>
-                                        
-                                        <a href={printResume} download className="big-icon-btn">
-                                            <Col>
-                                                <img alt="download file" src={require('../../../assets/images/icons/file.png')} />
-                                                <p>Download Print Resume</p>
+                                                <p>Download Resume</p>
                                             </Col>
                                         </a>
                                     </Row>

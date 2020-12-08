@@ -8,7 +8,6 @@ export default class Douglasrcjames extends Component {
             <div>
                 <ScreensGallery photos={douglasrcjamesV1} title={"Screens"}/>
                 <ScreensGallery photos={douglasrcjamesWireframe} title={"Version 2 wireframe"}/>
-                {/* TODO: take screenshots and update here */}
                 <ScreensGallery photos={douglasrcjamesV2} title={"Version 2 screens"}/>
             </div>
         )

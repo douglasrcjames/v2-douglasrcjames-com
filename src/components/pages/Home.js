@@ -36,7 +36,8 @@ export default class Home extends Component {
             github: 0,
             wireframing: 0,
             firebase: 0,
-            swift: 0
+            swift: 0,
+            redux: 0
 
         }
     }
@@ -97,6 +98,10 @@ export default class Home extends Component {
                             } else if(skill === SKILLS.SWIFT){
                                 this.setState((prevState, props) => ({
                                     swift: prevState.swift + 1
+                                })); 
+                            } else if(skill === SKILLS.REDUX){
+                                this.setState((prevState, props) => ({
+                                    redux: prevState.redux + 1
                                 })); 
                             } 
                         });
@@ -183,13 +188,14 @@ export default class Home extends Component {
                         </Row>
                         <Row center="xs">
                             <Col md={12} lg={4}>
-                                <img className="home-icon" alt="detective" src={require('../../assets/images/icons/private-detective.png')} />
-                                <h3>Detail-oriented Dude</h3>
+                                <img className="home-icon" alt="spaceship" src={require('../../assets/images/icons/spaceship.png')} />
+                                <h3>Cutting Edge</h3>
                                 <p>
-                                    I truly enjoy the process and treat your project like my own, customizing my client's sites down to the smallest details. 
-                                    No two sites I create are exactly the same because I take the extra step to build unique designs for every new project.
+                                    The software I create is built on industry leading technologies like Node.js and React.js; 
+                                    the same modern bones that large corporations like Twitter and Instagram use for their applications.
                                 </p>
                             </Col>
+                            
                             <Col md={12} lg={4}>
                                 <img className="home-icon" alt="schedule" src={require('../../assets/images/icons/schedule.png')} />
                                 <h3>Always On Time</h3>
@@ -209,11 +215,11 @@ export default class Home extends Component {
                         </Row>
                         <Row center="xs">
                             <Col md={12} lg={4}>
-                                <img className="home-icon" alt="spaceship" src={require('../../assets/images/icons/spaceship.png')} />
-                                <h3>Cutting Edge</h3>
+                                <img className="home-icon" alt="detective" src={require('../../assets/images/icons/private-detective.png')} />
+                                <h3>Detail-oriented Dude</h3>
                                 <p>
-                                    The software I create is built on industry leading technologies like Node.js and React.js, 
-                                    the same modern bones that large corporations like Twitter and Instagram use for their applications.
+                                    I truly enjoy the process and treat your project like my own, customizing my client's sites down to the smallest details. 
+                                    No two sites I create are exactly the same because I take the extra step to build unique designs for every new project.
                                 </p>
                             </Col>
                             <Col md={12} lg={4}>
@@ -240,9 +246,9 @@ export default class Home extends Component {
                                     <h3>Basic</h3>
                                     <ul>
                                         <li>
-                                            <div>5 web pages</div>
+                                            <div>5 responsive web pages</div>
                                             <span>
-                                                We will design your project up to 5 custom web screens. These pages are often Home, About Us, What We Do, F.A.Q., Products, etc.
+                                                We will design your project up to 5 custom web screens that look great on every device. These pages are often Home, About Us, What We Do, F.A.Q., Products, etc.
                                             </span>
                                         </li>
                                         <li>
@@ -280,7 +286,7 @@ export default class Home extends Component {
                                             <div>All Basic offerings</div>
                                         </li>
                                         <li>
-                                            <div>Unlimited web pages</div>
+                                            <div>Unlimited responsive web pages</div>
                                         </li>
                                         <li>
                                             <div>Wireframing</div>
@@ -341,9 +347,9 @@ export default class Home extends Component {
             <div className="wrapper">
                <h1 className="no-margin">Accolades</h1>
                <p>
-                   Accolades are automatically awarded to me for any job that I used a skill, produced said metric, or built said system. 
+                   Accolades "trophies" that are automatically awarded to me (by me) for any job that I used a technology/skill, produced a metric, or built a system. 
                    For example, I used the technology, React.js, when I built <Link to="/work/smithzellner.consulting">smithzellner.consulting</Link>&#8239;
-                   and has thus far accumulated 1,889 page views (among much more). So, 1 React.js accolade and 1,889 page view accolades awarded. 
+                   and has thus far accumulated 1,889 page views. So, 1 React.js accolade and 1,889 page view accolades awarded. 
                 </p>
                 <b>Last updated: {SITE_UPDATED.LONG}</b>
 
@@ -358,6 +364,7 @@ export default class Home extends Component {
                         <Accolade link={SKILLS.GITHUB.link} name={SKILLS.GITHUB.name} value={this.state.github} />
                         <Accolade link={SKILLS.WIREFRAMING.link} name={SKILLS.WIREFRAMING.name} value={this.state.wireframing} />
                         <Accolade link={SKILLS.SWIFT.link} name={SKILLS.SWIFT.name} value={this.state.swift} />
+                        <Accolade link={SKILLS.REDUX.link} name={SKILLS.REDUX.name} value={this.state.redux} />
                         <Accolade link={SKILLS.PHP.link} name={SKILLS.PHP.name} value={this.state.php} />
                         <Accolade link={SKILLS.PYTHON.link} name={SKILLS.PYTHON.name} value={this.state.python} />
                         <Accolade link={SKILLS.MYSQL.link} name={SKILLS.MYSQL.name} value={this.state.mysql} />

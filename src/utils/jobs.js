@@ -3,6 +3,7 @@ import { MdWork, MdSchool } from "react-icons/md";
 import { BiCodeAlt, BiRocket } from "react-icons/bi"
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
+import { Col, Row } from 'react-flexbox-grid';
 
 import { STATUS, SKILLS, SIZE, METRICS } from "./constants";
 
@@ -25,13 +26,13 @@ import PaloAltoNetworks from '../components/pages/work/jobs/PaloAltoNetworks';
 import BodyByYama from '../components/pages/work/jobs/BodyByYama';
 import VectorPSI from '../components/pages/work/jobs/VectorPSI';
 import PhotoGallery from '../components/misc/PhotoGallery';
-import { Col, Row } from 'react-flexbox-grid';
+import TextLinkGallery from '../components/misc/TextLinkGallery';
 
 export const jobs = [
     {
         title: "smithzellner.consulting",
         role: "Web developer",
-        shortDescription: "Built a front end website for a civil rights consulting firm in Fairhope, Alabama.",
+        shortDescription: "Built a full-stack website for a civil rights consulting firm in Fairhope, Alabama.",
         longDescription: <div>
             <p>
                 Bob Zellner and Pamela Smith are partners that form Smith-Zellner Consulting, a civil rights consulting firm out of Fairhope, Alabama. 
@@ -51,7 +52,7 @@ export const jobs = [
                 } 
                 setWidth={"lg"} />
             <p>
-                I built this site using React.js as the front end, and Firebase for the database backend to store contact info then send that contact info to the client's email via 
+                I built this site using React.js as the front-end, and Firebase for the NoSQL database back-end to store contact info then send that contact info to the client's email via 
                 nodemailer with server side functions, and free SSL hosting. The site also features traffic tracking for the client with Google Analytics, as shown in the figure above!
             </p>
         </div>
@@ -102,7 +103,7 @@ export const jobs = [
     // {
     //     title: "zestydoug.com",
     //     role: "Web developer",
-    //     shortDescription: "Built a front end website for my live streaming persona.",
+    //     shortDescription: "Built a full-stack website for my live streaming persona.",
     //     longDescription: <p>Explain that I stream gaming and coding and is a work in progress. Ullamco excepteur adipisicing sit nisi duis sint ex aliquip excepteur ut eiusmod. 
     //         Pariatur nostrud est cupidatat commodo labore eiusmod quis aliquip quis nulla consequat. 
     //         Ad nostrud Lorem nulla ut esse consequat Lorem exercitation nisi ipsum ex adipisicing aliqua magna. 
@@ -127,12 +128,13 @@ export const jobs = [
     {
         title: "goprestigepower.com",
         role: "Web developer",
-        shortDescription: "Built a custom CRM web app and front end site for solar sales company out of Orange County, California.",
+        shortDescription: "Built a full-stack site with custom CRM for a solar sales company out of Orange County, California.",
         longDescription: <p>
-            Prestige Power is a solar sales company out of Orange County, California that came to me looking to replace their current CRM provider charging monthly and wasn't a perfect fit for their use case. 
-            They also were looking to create a front end website to help drive traffic to their business. I was able to build them a beautiful front end experience that included forms to capture leads that directly fed into 
-            the custom CRM (Customer Relationship Management) backend. The front end experience was built with HTML/CSS/React.js and backend services like hosting with SSL, server side functions, file storage, authentication, and databases 
-            were built with Firebase. The site also features traffic tracking for the client with Google Analytics. I also had the pleasure of collaborating with my design partner <a href="https://www.linkedin.com/in/anamariecampos/" target="_blank" rel="noopener noreferrer">Ana Campos</a> to build the client 
+            Prestige Power is a solar sales company out of Orange County, California that came to me looking to create a front-end website to drive traffic to their business, as well as a 
+            solution to replace their current CRM (Customer Relationship Management) provider that was charging monthly and wasn't a perfect fit for their use case. I was able to build them a beautiful front-end experience 
+            that included forms to capture leads that directly fed into the custom CRM back-end. The front-end experience was built with HTML/CSS/React.js 
+            and back-end services like hosting with SSL, server side functions, file storage, authentication, and databases were built with Firebase. The site also features traffic tracking 
+            for the client with Google Analytics. I also had the pleasure of collaborating with my design partner <a href="https://www.linkedin.com/in/anamariecampos/" target="_blank" rel="noopener noreferrer">Ana Campos</a> to build the client 
             branding guidelines (font, colors, logo, and usage) for their business.
             {/* TODO: include? <a href="https://www.linkedin.com/in/reed-reilly-8844251ab/" target="_blank" rel="noopener noreferrer">Reed Reilly</a>&#8239; */}
         </p>,
@@ -181,10 +183,10 @@ export const jobs = [
     {
         title: "vectorpsi.com",
         role: "Web developer",
-        shortDescription: "Built a front end website for an industrial manufacturing sales company in Danville, California.",
+        shortDescription: "Built a full-stack website for an industrial manufacturing sales company in Danville, California.",
         longDescription: <p>
             Vector Process Solutions, Inc is an industrial manufacturing sales company in Danville, California that was looking to showcase their supported manufacturing partners and products. 
-            I built this site using React.js as the front end, and Firebase for the database backend to store contact info then send that contact info to the client's email via 
+            I built this site using React.js as the front-end, and Firebase for the NoSQL database back-end to store contact info then send that contact info to the client's email via 
             nodemailer with server side functions, and free SSL hosting. The site also features traffic tracking with Google Analytics, as well as over 70 manufacturing product lines. 
             I also had the pleasure of collaborating with my design partner <a href="https://www.linkedin.com/in/anamariecampos/" target="_blank" rel="noopener noreferrer">Ana Campos</a> to build the client 
             branding guidelines (font, colors, logo, and usage) for their business.
@@ -236,10 +238,10 @@ export const jobs = [
         role: "Web developer",
         shortDescription: "Built myself a boilerplate template for building my React.js/Firebase web applications.",
         longDescription: <p>
-            This template project features my CSS library I created, base React components like a Header &amp; Footer, directories properly structures, React Router, Google Analytics, .env file, sitemap, and more! 
             I built this template project because I was finding myself recreating the same portions of code for my React web projects. 
+            This template project features my CSS library I created, base React components like a Header &amp; Footer, directories properly structures, React Router, Google Analytics, .env file, sitemap, and more! 
             I figured a boilerplate for me to start from would reduce any mistakes made by repeating the same process, but most importantly speed up the creation of the baseline project.
-            This repository will be evolving as a learn new tricks and such for my web projects. For example, I recently added SCSS to my baseline styles for ease of use when changing the colors and fonts per project!
+            This repository will be evolving as I learn new tricks and technologies for my web projects. For example, I recently added SCSS to my baseline styles for ease of use when changing the colors and fonts per project!
         </p>,
         githubLink: "https://github.com/douglasrcjames/dougs-react-boiler",
         logoUrl: require("../assets/images/jobs/dougs-react-boiler/logo.png"),
@@ -278,13 +280,13 @@ export const jobs = [
     {
         title: "blairfamily.foundation",
         role: "Web developer",
-        shortDescription: "Built a front end website for a philanthropy foundation in Montgomery, Maryland.",
+        shortDescription: "Built a full-stack website for a philanthropy foundation in Montgomery, Maryland.",
         longDescription: <p>
             The David and Mikel Blair Family Foundation is dedicated to purposeful giving and 
-            is rooted in improving the quality of life for individuals around Maryland. The foundation connected with me after a partner worked with me at <Link to="/work/capsmd.org">capsmd.org</Link>. 
-            They were looking to develop a simple front end website with a contact form and subscribe form, much like my work at capsmd.org. I was able to work with a designer on their team to take their 
-            wireframe design and turn it into a living website. The wireframe was one of the more difficult designs I have had to emulate, but I was able to tackle the challenge with relative ease. 
-            I built this site using React.js as the front end, and Firebase for the database backend to store contact info then send that contact info to the client's email via 
+            is rooted in improving the quality of life for individuals around Maryland. The foundation connected with me after a partner had a positive experience working with me at <Link to="/work/capsmd.org">capsmd.org</Link>. 
+            They were looking to develop a simple full-stack website with a contact form and subscribe form, much like my work at capsmd.org. I was able to work with a designer on their team to take their 
+            wireframe design and turn it into a living website. The wireframe was one of the more intricate designs I have had to emulate, but I was able to tackle the challenge with relative ease with my newfound skills. 
+            I built this site using React.js as the front-end, and Firebase for the NoSQL database back-end to store contact info then send that contact info to the client's email via 
             nodemailer with server side functions, and free SSL hosting. The site also features traffic tracking for the client with Google Analytics.
         </p>,
         githubLink: "https://github.com/douglasrcjames/blairfamily.foundation",
@@ -332,7 +334,7 @@ export const jobs = [
     {
         title: "retreatonnichols.com",
         role: "Web developer",
-        shortDescription: "Built a front end website short term luxury rental property in Fairhope, Alabama.",
+        shortDescription: "Built a full-stack website short term luxury rental property in Fairhope, Alabama.",
         longDescription: <>
             <p>
                 The Retreat on Nichols is a two unit luxury short-term accommodation in Fairhope, Alabama. The property features a common outdoor kitchen, wood-fired pizza oven, 
@@ -340,7 +342,7 @@ export const jobs = [
                 manage SEO because the property owners were looking to increase the traffic to the rental via Airbnb and VRBO booking sites.
             </p>
             <p>
-                I built this site using React.js as the front end, and Firebase for the database backend to store contact info then send that contact info to the client's email via 
+                I built this site using React.js as the front-end, and Firebase for the NoSQL database back-end to store contact info then send that contact info to the client's email via 
                 nodemailer with server side functions, and free SSL hosting. The site also features traffic tracking for the client with Google Analytics. The site took me about a month to plan, design, and build, but I continue to this day updating various media and wording content for the clients. 
                 The design phase was fairly quick, because I had previously built a SquareSpace site for the client, so I based much of my design off that template. 
                 I had to do a quick rework of the logo with my Photoshop skills because the client did not have the original image for the logo. 
@@ -392,7 +394,7 @@ export const jobs = [
     {
         title: "douglasrcjames.com",
         role: "Web developer",
-        shortDescription: "Built a front end portfolio website for myself demonstrating and showcasing my skills.",
+        shortDescription: "Built a full-stack portfolio website for myself demonstrating and showcasing my skills.",
         longDescription: <p>
             This is my second and hopefully final build of my personal portfolio website to showcase my work, skills, and more. Check out how far I've come 
             from <a href="https://douglasrcjames-v1.web.app/" target="_blank" rel="noopener noreferrer">version 1 of my portfolio site</a>!
@@ -445,7 +447,7 @@ export const jobs = [
     {
         title: "capsmd.org",
         role: "Web developer",
-        shortDescription: "Built a custom CMS and front end website for a political publication non-profit organization in Montgomery, Maryland.",
+        shortDescription: "Built a full-stack site with custom CMS for a political publication non-profit organization in Montgomery, Maryland.",
         longDescription: <div>
             <p>
                 CAPS (Council for Advocacy and Policy Solutions) is a non-profit political publication group with the goal to educate constituents in 
@@ -472,8 +474,8 @@ export const jobs = [
             </ol>
 
             <p>
-                The final front end experience was built with HTML/CSS/React.js and backend services like hosting with SSL, server side functions, file storage, authentication, and databases 
-                were built with Firebase. The initial build required me to go into the backend to create a React.js component file for every article they wanted to post to the system, which quickly showed was not going to work 
+                The final front-end experience was built with HTML/CSS/React.js and back-end services like hosting with SSL, server side functions, file storage, authentication, and NoSQL databases 
+                were built with Firebase. The initial build required me to go into the back-end to create a React.js component file for every article they wanted to post to the system, which quickly showed was not going to work 
                 efficiently for their use case with short deadlines, differing time zones, etc. So I built them out a custom Content Management System (CMS) so they could login as an admin, and post custom articles at their leisure.
                 Building the system raised a few challenges such as:
             </p>
@@ -506,7 +508,7 @@ export const jobs = [
                     <a href="https://capsmd.org/issues/economic-development/facts/slow-growth-budget" target="_blank" rel="noopener noreferrer">here</a>,&#8239;
                     and <a href="https://capsmd.org/issues/economic-development/stories-opinions/how-did-the-county-spend-your-money-this-year" target="_blank" rel="noopener noreferrer">here</a>. I unfortunately had to sacrifice these 
                     beautiful graphs to trade off for a viable solution that would be simple for the client in this use case. That solution was to use the
-                    &#8239;<a href="https://github.com/zenoamaro/react-quill" target="_blank" rel="noopener noreferrer">react-quill</a> library to allow user to create "Rich Text" articles that have formatted text for the article with image inserts and links. 
+                    &#8239;<a href="https://github.com/zenoamaro/react-quill" target="_blank" rel="noopener noreferrer">react-quill</a> library to allow the user to create "Rich Text" articles that have formatted text for the article with image inserts and links. 
                     I also created an option for the user to upload a PDF that would be viewable in a clean interface with the <a href="https://github.com/wojtekmaj/react-pdf" target="_blank" rel="noopener noreferrer">react-pdf</a> library.
                 </li>
             </ol>
@@ -556,13 +558,13 @@ export const jobs = [
     {
         title: "bodybyyama.com",
         role: "Web developer",
-        shortDescription: "Built a front end website the personal fitness trainer Yamato Nishino in San Jose, California.",
+        shortDescription: "Built a full-stack website the personal fitness trainer Yamato Nishino in San Jose, California.",
         longDescription: <p>
             Yamato Nishino was a friend and personal fitness trainer in the San Fransisco Bay Area. She wanted a website to 
             centralize her personal training business, where potential clients could read and watch more about what she had to offer. 
             I worked with two other graphic designers, <a href="https://www.linkedin.com/in/ryan-wall-287837132/" target="_blank" rel="noopener noreferrer">Ryan Wall</a>&#8239;
             and <a href="https://www.linkedin.com/in/mitchell-licata/" target="_blank" rel="noopener noreferrer">Mitch Licata</a> to create logo, branding (colors, fonts, etc), and 
-            website wireframe. I developed her one-page site with PHP for the contact form and UIkit3 for the front end work. This site turned out simply beautiful, I was so proud 
+            website wireframe. I developed her one-page site with PHP for the contact form and UIkit3 for the front-end work. This site turned out simply beautiful, I was so proud 
             of what we were able to design as a 3 man team. My favorite part of the site is the background image of her and how it that moves a bit as the viewer scrolls down the page.
             Yamato has recently decided to step away from her personal training business and the site is no longer live. 
         </p>,
@@ -603,18 +605,17 @@ export const jobs = [
     {
         title: "glasshousefarms.co",
         role: "Web developer",
-        shortDescription: "Built a front end website a hydroponic growing facility in Ithaca, New York.",
+        shortDescription: "Built a full-stack website a hydroponic growing facility in Ithaca, New York.",
         longDescription: <>
             <p>
-                Glass House Farms LLC is a hydroponic growing faculty based out of Ithaca, New York. They grow veggies like lettuce, basil, pac choi, and arugula in hydroponic glasshouse farms (hence the name) and are sold in local grocery stores.
+                Glass House Farms LLC is a hydroponic growing facility based out of Ithaca, New York. They grow veggies like lettuce, basil, pac choi, and arugula in hydroponic glasshouse farms (hence the name) and are sold in local grocery stores.
                 The business wanted a central website where they could educate potential buyers and consumers on their tasty, healthy, and trusted products, as well as a contact channel. 
             </p>
             <p>
                 I worked with a graphic designer <a href="https://www.linkedin.com/in/ryan-wall-287837132/" target="_blank" rel="noopener noreferrer">Ryan Wall</a>&#8239;
                 to create a logo, branding (colors, fonts, etc), and website wireframe that fit the client's needs. Ryan was able to create the wireframe mock and I was able to code 
-                the site in under a week! Both Ryan and I, as well as the client are stoked with the outcome of the website. I was particularly excited because this was my first experience with
-                translating a wireframe to a working website. There was only one style I wasn't able to figure out, which was the green or white stripe that went from the headers
-                to the edge of the screen. Perhaps with more time on the project, I would have found a solution to this, but it was not vital to the design so I scrapped it in the final design.
+                the site in under a week! Both Ryan and I, as well as the client were stoked with the outcome of the website. I was particularly excited because this was my first experience with
+                translating a wireframe to a working website.
             </p>
         </>,
         githubLink: "https://github.com/douglasrcjames/glasshousefarms",
@@ -668,7 +669,7 @@ export const jobs = [
             and I caught wind that he was looking for a web designer to help with client demand. I joined his Slack team, Trello workspace, and Github repositories
             so I could jump in to help with various web maintenance tasks. There was an even mix between fixing and updating WordPress, SquareSpace, and HTML/CSS/JS/PHP bugs and content. 
             As my position ramped up I started to attend Zoom and in-person meetings, as well as visiting clients in person to get a better idea of the brand
-            they wanted to build on the site. Overall, this was a great job and with a motivated team around me that I gained a plethora of knowledge from. Mike motivated me
+            they wanted to build on the site. Overall, this was a great job where I was surrounded with a motivated team taught me a plethora of new skills. Mike motivated me
             as a leader, <a href="https://github.com/andyhqtran" target="_blank" rel="noopener noreferrer">Andy Tran</a> motivated me as a software engineer, and&#8239;
             <a href="https://www.linkedin.com/in/ryan-wall-287837132/" target="_blank" rel="noopener noreferrer">Ryan Wall</a> motivated me as a designer. Ultimately, I left
             the team because I was working with technology too far up the stack (WordPress) and wanted to work with less abstracted technologies, like Node and Python.</p>,
@@ -696,16 +697,16 @@ export const jobs = [
         shortDescription: "Car salesman at the flagship Tesla electric vehicle showroom in Sunnyvale, California.",
         longDescription: <div>
             <p>
-                While attending San Jose State University, a heavy interest in Tesla as a company and the products they were building. I got an interview from a 
+                While attending San Jose State University, I had a heavy interest in Tesla as a company and the products they were building. I got an interview from a 
                 college friend of mine, <a href="https://www.linkedin.com/in/vybhav-a-kandadai-%E2%98%81-8525244a/" rel="noopener noreferrer" target="_blank">Vybhav Kandadai</a>, another car salesman 
-                at the Santana Row show room in San Jose. I nailed the interview after expressing my knowledge for Elon's vision for Tesla and his other companies. I made quick friends
+                at the Santana Row showroom in San Jose. I nailed the interview after expressing my knowledge for Elon's vision for Tesla, SpaceX, and Solar City. I made quick friends
                 with my co-workers, and have lasting relationships with many of them from my experience there. The Santana Row location was the flagship store for Tesla, so we got many affluent visitors, 
                 such as business men and women, sports players, actors/actresses, Steve Wozniak and even Elon himself. This high stakes environment allowed me to perfect presenting myself professionally.
             </p>
 
             <p>
                 In this position, I represented Tesla as a showroom guru educating walk-in clients on Tesla's line of innovative electric vehicles, such as the Model S, 
-                Model X, and upcoming Model 3. Interested clients would be invited to setup a test drive, where I would copilot the client while they test out our 
+                Model X, and upcoming Model 3. Interested clients would be invited to setup a test drive, where I would copilot them while they tested the 
                 vehicle's features (ie Autopilot) on the freeway. I would then guide them through our online Design Studio to personalize a vehicle to their needs. 
                 If the client was in the direct market and satisfied with the vehicle, we would go over payment options (ie cash, lease, or financing) 
                 to begin the car building process.
@@ -741,39 +742,50 @@ export const jobs = [
                 Minute.tech LLC is a software solution connecting clients who have tech questions with qualified technicians for everyday tech support; think GeekSquad crossed with Uber.
                 Users can communicate via real-time messenger, voice/video call, screen sharing, and scheduling with a review and payment system built in. 
                 The Minute.tech system lowers the barrier for non-techies and techies to work together, especially during a pandemic that requires social distanced solutions to previously in-person services.
-                Minute.tech currently has a live (beta) <HashLink to="/work/minute.tech-llc#Web">web</HashLink> application and a <HashLink to="/work/minute.tech-llc#Mobile">mobile</HashLink> application set to beta launch Q2 2021.
+                Minute.tech currently has a live (beta) <HashLink to="/work/minute.tech-llc#Web">web</HashLink> application and an upcoming <HashLink to="/work/minute.tech-llc#Mobile">mobile</HashLink> application set to beta launch Q2 2021. 
+                Since the pandemic started in Feb. 2020, I have been testing the Minute.tech beta web app with live clients with me as the only technician. I gave the customer the option to resolve with or without paying me for my help. 
+                So far I have answered 100 client questions with the Minute.tech platform, transacted nearly $4000 with the Stripe API, and accrued almost 10,000 call minutes with the Twilio API.
             </p>
             <p>
-                I started this project in my junior year at San Jose State University for an intro to entrepreneurship course where we were assigned to pick an idea with a group and build a business plan for it. 
+                I started this project in my junior year at San Jose State University for an entrepreneurship course where we were assigned to pick an idea with a group and build a business plan for it. 
                 I suggested my tech support idea I recently came up with after my parents were constantly calling for tech support after leaving them for college, and my team loved it. The business plan I built for this project impressed my 
-                professor enough for her to suggest I compete in the Shark Tank-like Silicon Valley Business Plan Competition (SVBPC). I wisely listened to her and competed in the SVBPC, which awarded my new business $1500 cash and $1000 in legal help! 
+                professor enough for her to suggest I compete in the Shark Tank-like Silicon Valley Business Plan Competition (SVBPC). I wisely listened to her and competed in the SVBPC,&#8239;&#8239;
+                <a href="https://www.sjsu.edu/svce/svbpc/pastwinners/index.html" target="_blank" rel="noopener noreferrer">which awarded my new business $1500 cash and $1000 in legal help</a>! 
                 For my future engineering/business semesters and many group projects, I conducted tests, did extensive research, and built out app prototypes to turn Minute.tech into a reality.
             </p>
             <p>
                 <b>To organize the extensive work history I have done with Minute.tech, I have portioned this job into 4 sections. Please select a portion you want to learn more about below:</b>
-                <Row center="xs">
-                    <Col xs={12} sm={6} md={3} className="sm-padding-t-b">
-                        <HashLink to="/work/minute.tech-llc#Web" className="md-white-btn">
-                                <i className="fas fa-globe" /> Web app
-                        </HashLink>  
-                    </Col>
-                    <Col xs={12} sm={6} md={3} className="sm-padding-t-b">
-                        <HashLink to="/work/minute.tech-llc#Mobile" className="md-white-btn">
-                                <i className="fas fa-mobile" /> Mobile app
-                        </HashLink>  
-                    </Col>
-                    <Col xs={12} sm={6} md={3} className="sm-padding-t-b">
-                        <HashLink to="/work/minute.tech-llc#Business" className="md-white-btn">
-                                <i className="fas fa-briefcase" /> Business development
-                        </HashLink>  
-                    </Col>
-                    <Col xs={12} sm={6} md={3} className="sm-padding-t-b">
-                        <HashLink to="/work/minute.tech-llc#Timeline" className="md-white-btn">
-                                <i className="fas fa-history" /> Full timeline
-                        </HashLink>  
-                    </Col>
-                </Row>
             </p>
+            <Row center="xs">
+                <Col xs={12} sm={6} md={3} className="sm-padding-t-b">
+                    <HashLink to="/work/minute.tech-llc#Web">
+                        <button className="md-white-btn">
+                            <i className="fas fa-globe" /> Web app
+                        </button>
+                    </HashLink>  
+                </Col>
+                <Col xs={12} sm={6} md={3} className="sm-padding-t-b">
+                    <HashLink to="/work/minute.tech-llc#Mobile">
+                        <button className="md-white-btn">
+                            <i className="fas fa-mobile" /> Mobile app
+                        </button>
+                    </HashLink>  
+                </Col>
+                <Col xs={12} sm={6} md={3} className="sm-padding-t-b">
+                    <HashLink to="/work/minute.tech-llc#Business">
+                        <button className="md-white-btn">
+                            <i className="fas fa-briefcase" /> Business development
+                        </button>  
+                    </HashLink>  
+                </Col>
+                <Col xs={12} sm={6} md={3} className="sm-padding-t-b">
+                    <HashLink to="/work/minute.tech-llc#Timeline">
+                        <button className="md-white-btn">
+                            <i className="fas fa-history" /> Full timeline
+                        </button> 
+                    </HashLink>  
+                </Col>
+            </Row>
             </>,
         logoUrl: require("../assets/images/jobs/minutetech/logo.png"),
         logoSize: SIZE.LARGE,
@@ -785,7 +797,7 @@ export const jobs = [
                 SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.NODE, SKILLS.REACT, SKILLS.STRIPE, SKILLS.TWILIO, SKILLS.GITHUB, SKILLS.FIREBASE, SKILLS.WIREFRAMING
             ],
             secondary: [
-                SKILLS.SWIFT, SKILLS.PYTHON, SKILLS.MYSQL, SKILLS.FLASK
+                SKILLS.SWIFT, SKILLS.REDUX, SKILLS.PYTHON, SKILLS.MYSQL, SKILLS.FLASK
             ],
             other: [
                 SKILLS.COMPUTER_HARDWARE, SKILLS.BUSINESS_DEV, SKILLS.LEADERSHIP, SKILLS.TEAMWORK, SKILLS.TECHNICAL_SUPPORT, SKILLS.CUSTOMER_SERVICE
@@ -835,17 +847,17 @@ export const jobs = [
         title: "Palo Alto Networks",
         role: "IT Specialist",
         shortDescription: "Provided on-site technical support at the previous Palo Alto Networks headquarters in Sunnyvale, California",
-        longDescription: <p>While attending San Jose State, I got into a deep conversation at a party with <a href="https://www.linkedin.com/in/matthew-elliott11/" target="_blank" rel="noopener noreferrer">Matt Elliott,</a>&#8239;
-            an MIS student and employee at Palo Alto Networks at the time. After discussion on my interest in all things technology, he advised that I send him my 
+        longDescription: <p>While attending San Jose State University, I got into a deep conversation at a party with <a href="https://www.linkedin.com/in/matthew-elliott11/" target="_blank" rel="noopener noreferrer">Matt Elliott,</a>&#8239;
+            an MIS student and employee at Palo Alto Networks. After discussion on my interest in all things technology, he advised that I send him my 
             resume to forward to his hiring manager. After a few phone interviews, and one in-person interview, I got the job! The job fit me perfectly, 
             I was stationed in the room where all the tech hardware like monitors, cables, and computers were kept and organized.
             I was tasked at distributing this hardware to new hire employees or employees with broken/outdated hardware. I would grab the appropriate hardware for them, deliver it to their
             desk, and set all the hardware and software up. Palo Alto Networks was growing rapidly at the time and thus new hires were coming in daily, so a good chunk of my time was occupied
             by setting up desks. While not setting up desks, I was busy re-imaging old laptops to be recirculated into the company. This doesn't sound that glamorous, but to me I loved it; 
             I always enjoyed tearing my computer setup apart at home and putting it back together in a more organized or optimal way. My main project was for hardware reconciliation, 
-            where I had to account for all hardware under the hood of the headquarters in Sunnyvale, which was more than 700,000 computers and over a $350 million in assets. I needed to sift through hundreds 
+            where I had to account for all hardware under the hood of the headquarters in Sunnyvale, which was more than 700,000 computers and over $350 million in assets. I needed to sift through hundreds 
             of separate spreadsheets and cross reference them with the physical hardware into one consolidated list to reference. I was able to finish the project, but it was more difficult than my manager or 
-            I had anticipated because many assets were either unaccounted for or unaccessible.  Through this, I learned the bureaucracy of a large, publicly traded, network security corporation.</p>,
+            I had anticipated because many assets were either unaccounted for or unaccessible. Through this, I learned top level tech support and the pros/cons of a large, publicly traded, network security corporation's bureaucracy.</p>,
         logoUrl: require("../assets/images/jobs/palo-alto-networks/logo.png"),
         logoSize: SIZE.LARGE,
         period: "May. 2015 - Aug. 2015",
@@ -891,10 +903,11 @@ export const jobs = [
         role: "Computer Engineering & Business Student",
         shortDescription: "Earned a computer engineering major and business & math minors in the heart of Silicon Valley.",
         longDescription: <p>
-            Earned computer engineering major with business &amp; math minors in the heart of Silicon Valley. Active member of the Computer &amp; Software Engineering Society (SCE) and Pi Kappa Alpha fraternity. 
-            Earned the confidence and paperwork to work professionally as an engineer solving problems around the world! 
+            San Jose State University is centered in the heart of Silicon Valley in downtown San Jose, which give me the opportunity to be fully emersed in the business and technology community. 
+            While attending, I earned my computer engineering major with business &amp; math minors, giving me the confidence and paperwork to work professionally as an engineer to solve problems worldwide. 
             From the technical courses I took in my higher level courses, I learned how computers are structured and abstracted at all levels of the stack, from machine code to web coding.
-            I learned where I wanted to work on that stack, which I have currently landed at around the top, with web based coding languages because I love to see everyday consumers seeing and using my products.
+            I learned where I wanted to work on that stack, which I have currently landed at around the top, with web based coding languages because I love to "quickly" see everyday consumers using my products.
+            I was also an active member of the Computer &amp; Software Engineering Society (SCE) and Pi Kappa Alpha fraternity. Go Spartans!
         </p>,
         logoUrl: require("../assets/images/jobs/sjsu/logo.png"),
         logoSize: SIZE.LARGE,
@@ -945,7 +958,7 @@ export const jobs = [
             These requests got so bad, that I "had" to make a shirt that said "No, I will not fix your phone for free." (I know, pretty cringey.) 
             The HTML, CSS, PHP, and Flash website I built for this business was my first website and introduced me to the coding world for the first time.
             The tech repair/support business and troubleshooting knowledge I learned at this job directly applied to the inception of <Link to="/work/minute.tech-llc">Minute.tech</Link>. 
-            The business was a great opportunity for me to learn from my (many) mistakes, and gave me the confidence and passion for computer engineering and entrepreneurship.
+            The business was a great opportunity for me to learn from my (many) mistakes, and gave me the confidence and passion for computer engineering and business.
         </p>,
         logoUrl: require("../assets/images/jobs/ihealphones/logo-v2.png"),
         logoSize: SIZE.XLARGE,
@@ -984,7 +997,7 @@ export const jobs = [
             managed the school website. Through this early opportunity, I was given a free subscription to Adobe Creative Suite (Photoshop, Dreamweaver, etc) 
             and to <a href="https://www.lynda.com" target="_blank" rel="noopener noreferrer">Lyndia.com</a> (now owned by LinkedIn) where I learned the basics of web development and design with hours of online tutorials. 
             Despite my "techie" persona, I managed to still be a sporty dude, playing soccer and lacrosse, but ultimately, I knew my calling was technology, 
-            so I applied to colleges to pursue a computer engineering degree at <Link to="/work/san-jose-state-university">San Jose State University</Link>.
+            so I applied to colleges to pursue a computer engineering degree and got into <Link to="/work/san-jose-state-university">San Jose State University</Link>!
         </p>,
         logoUrl: require("../assets/images/jobs/orhs/logo.png"),
         logoSize: SIZE.LARGE,
@@ -1018,8 +1031,8 @@ export const mtTimeline = [
         title: "Completed business plan v1",
         date: "May. 2016",
         body: <p>
-            Wrote a 18 page business plan with a team of 3 others (90% me) for our BUS5 181 (Intro to Entrepreneurship) course at San Jose State University.
-            Proceeded to polish the same business plan to compete in the Silicon Valley Business Plan Competition (SVBPC) later that month, awarding my business $1500 cash and $1000 in legal support.
+            Wrote an 18 page business plan with a team of 3 others (90% me) for our BUS5 181 (Intro to Entrepreneurship) course at San Jose State University.
+            I proceeded to polish the same business plan to compete in the Silicon Valley Business Plan Competition (SVBPC) later that month, awarding my business $1500 cash and $1000 in legal support.
             <br/><br/>
             Interested in reading the business plan? <Link to="/#Contact">Contact me</Link>!
         </p>,
@@ -1027,7 +1040,7 @@ export const mtTimeline = [
     },
     {
         title: "Incorporated business",
-        date: "June 2016",
+        date: "Jun. 2016",
         body: <p>
             Registered Minute.tech as a Limited Liability Company in the state of California.
         </p>,
@@ -1039,7 +1052,7 @@ export const mtTimeline = [
         body: <p>
             Built the first web app prototype with a team of 3 other engineers for our CMPE 148 (Computer Networks I) course project 
             at San Jose State University. We used the Python Play! Framework to build a simple interface allowing a user to login and submit a ticket. 
-            We quickly learned that this framework had way to low of a ceiling for our complex app.
+            We quickly learned that this framework had way too low of a ceiling for our complex app.
             <br/><br/>
             <a href="https://github.com/minutetech/pyplay.minute.tech" target="_blank" rel="noopener noreferrer">View source code</a>
         </p>,
@@ -1051,8 +1064,8 @@ export const mtTimeline = [
         body: <p>
             Built the second web app prototype with a team of 2 other engineers (90% work done by me) for our CMPE 138 (Database Systems I) course project 
             at San Jose State University. I used the Python Flask Framework and MySQL to build a full stack interface that included authentication, 
-            profile editing, and ticket creation.
-            {/* TODO: link to ERD img here? */}
+            profile editing, and ticket creation.&nbsp;
+            (<TextLinkGallery text={"See the MySQL database structure diagram"} photo={{src: require('../assets/images/jobs/minutetech/misc/mysql-erd.png'), caption: "MySQL ERD showing the database structure" }}/>)
         </p>,
         icon: <MdWork />
     },
@@ -1073,10 +1086,10 @@ export const mtTimeline = [
         body: <p>
             After a few group projects where I did most of the work, I decided to hire an inexpensive Fiverr.com developer from Morocco
             to work with me to quickly expand on the Flask framework prototype. We successfully implemented real-time chat with instant 
-            messaging using Socket.io and SQLAlchemy libraries. After researching adding more features such as video calling and mobile apps, 
+            messaging using Socket.io and SQLAlchemy libraries. After researching more features to add such as video calling and mobile apps, 
             I realized that the Flask framework also had too low of a ceiling for the features I was looking for. I was deciding between the Python
-            frame work, Django, or the Javascript framework, React.js. I ultimately went with React.js because it was an emerging and promising technology
-            with it's React Native sibling that allowed me to create an iOS/Android mobile app with one code base.
+            framework, Django, or the Javascript framework, React.js. I ultimately went with React.js because it was an especially powerful technology when
+            coupled with it's sibling, React Native, that allowed me to create an iOS/Android mobile app with one code base.
             <br/><br/>
             <a href="https://github.com/minutetech/flask-live.minute.tech" target="_blank" rel="noopener noreferrer">View source code</a>
         </p>,
@@ -1088,7 +1101,7 @@ export const mtTimeline = [
         body: <p>
             Built the first mobile app prototype with a team of 3 other engineers (95% work done by me) for our CMPE 137 (Mobile Software Engineering) course project 
             at San Jose State University. I used the iOS native language of Swift to build an app that tracked both users (technician and client) navigating on 
-            a map view using MapKit and Google Maps API. Simulate a similar experience to food delivery app drive on their way over to client's location.
+            a map view using MapKit and Google Maps API. Simulated a similar experience to food delivery apps tracking the driver on their way to client's location.
             <br/><br/>
             <a href="https://github.com/minutetech/swift-gps.minute.tech" target="_blank" rel="noopener noreferrer">View source code</a>
         </p>,
@@ -1100,15 +1113,14 @@ export const mtTimeline = [
         body: <p>
             Unsure on how to move forward after failing to find reliable teammates, I thought finding potential investors might help my plight.
             I expanded the 18 page business plan to 60 pages, consolidating my plethora of discoveries and prototypes accrued since the first business plan.
-            To properly quote investors, I needed to research the cost and timeline difference between hiring a large engineering firm, a few software engineers, or just doing it myself.
-            So, I interviewed 5 large software development firms for web/mobile app quotes and interviewed 20 potential software engineers from a physical flyer post. 
+            To properly quote investors, I needed to research the cost and timeline differences between hiring a large engineering firm, a few software engineers, or just doing it myself.
+            So, I interviewed 5 large software development firms for web/mobile app quotes and interviewed 20 potential software engineers from a&nbsp;
+            <TextLinkGallery text={"physical flyer"} photo={{src: require('../assets/images/jobs/minutetech/misc/react-dev-flyer-MT.png'), caption: "Flyer posted at San Jose State University to find a software developer." }}/>. 
             (I ended up just going with Ryan Morris for equity options, see web app v3 below) Near the end of my search, I came in contact with an older, IT business owner/family 
             friend who was interested in being a partner/investor on the project. Unfortunately, he ended up wanting to be a 50/50 partner of the business, 
             which I was advised not to do and ultimately was probably the best decision.
             <br/><br/>
             Interested in reading the business plan? <Link to="/#Contact">Contact me</Link>!
-
-            {/* TODO: add physical flyer post and more pictures here? */}
         </p>,
         icon: <MdWork />
     },
@@ -1118,8 +1130,7 @@ export const mtTimeline = [
         body: <p>
             Worked with two graphic designer friends and housemates, <a href="https://www.linkedin.com/in/ryan-wall-287837132/" target="_blank" rel="noopener noreferrer">Ryan Wall</a>&nbsp;
             and <a href="https://www.linkedin.com/in/mitchell-licata/" target="_blank" rel="noopener noreferrer">Mitch Licata</a> on the web app wireframe using Sketch, XD, and InVision.
-            (See web wireframe screens above)
-            {/* TODO: anchor link this section above? */}
+            (<HashLink to="/work/minute.tech-llc#Web">See web wireframe screens above</HashLink>)
         </p>,
         icon: <MdWork />
     },
@@ -1127,95 +1138,113 @@ export const mtTimeline = [
         title: "Secured trademark",
         date: "Apr. 2019",
         body: <p>
-            Using the legal funds awarded from the Silicon Valley Business Plan Competition in 2016, I secured the trademark on the 'Minute.tech' name.
-            {/* TODO: Link to this img above? */}
+            Using the legal funds awarded from the Silicon Valley Business Plan Competition in 2016,&nbsp;
+            <TextLinkGallery text={"I secured the trademark on the 'Minute.tech' name"} photo={{src: require('../assets/images/jobs/minutetech/misc/trademark-cert.jpg'), caption: "Minute.tech trademark certification" }}/>.
         </p>,
         icon: <MdWork />
     },
     {
         title: "Built web app prototype v3",
         date: "Jan. 2019 - Aug. 2019",
-        body: <p>
-                Built the second app prototype with <a href="https://www.linkedin.com/in/ryan-morris-26898ba1/" target="_blank" rel="noopener noreferrer">Ryan Morris</a> using 
+        body: <>
+            <p>
+                Built the third web app prototype with <a href="https://www.linkedin.com/in/ryan-morris-26898ba1/" target="_blank" rel="noopener noreferrer">Ryan Morris</a> using 
                 React.js, Redux, and Firebase. We successfully implemented the following features:
-                <ul>
-                    <li>User authentication</li>
-                    <li>Client can ask question to system</li>
-                    <li>Technician can claim question on system</li>
-                    <li>Users can communicate in a chat room sending texts and files</li>
-                    <li>Users can transition to voice/video/screen share call using Twilio API</li>
-                    <li>Client can pay technician directly for their services using the Stripe API</li>
-                    <li>Technician/client ranking system and algorithm that gamified the interactions on the site</li>
-                    <li>Clients can resolve questions and review technicians they interacted with</li>
-                </ul>
-                Ryan ultimately had to step away from the project because he wanted to go more down the robotics path instead of web. 
+            </p>
+            <ul>
+                <li>User authentication</li>
+                <li>Clients can ask question to system</li>
+                <li>Technicians can claim question on system</li>
+                <li>Users can communicate in a chat room sending texts and files</li>
+                <li>Users can transition to voice/video/screen share call using Twilio API</li>
+                <li>Clients can pay technicians directly for their services using the Stripe API</li>
+                <li>Technician/client ranking system and algorithm that gamified the interactions on the site</li>
+                <li>Clients can resolve questions and review technicians they interacted with</li>
+            </ul>
+            <p> 
+                Ryan ultimately wanted to step away from the project because he wanted to go more down the robotics path instead of web. 
                 I had to scrap most of the code from this build because Redux was not properly setup, but Ryan taught me a lot and was the best teammate 
                 I have worked with yet on Minute.tech who helped propel the project forward.
                 <br/><br/>
                 This project code is still classified, but <Link to="/#Contact">contact me</Link> if you are interested in viewing.
-        </p>,
+            </p>
+        </>,
         icon: <MdWork />
     },
     {
         title: "Built iOS mobile app v1",
         date: "Jun. 2019 - Dec. 2019",
-        body: <p>
-            Built the real first mobile app prototype with a team of 3 other engineers (60% work done by me) for our senior project 
-            at San Jose State University. We again used the iOS native language of Swift to build the app, but this time implemented nearly all the required features:
+        body: <>
+            <p>
+                Built the first fully featured mobile app prototype with a team of 3 other engineers (60% work done by me) for our senior project 
+                at San Jose State University. We again used the iOS native language of Swift to build the app, but this time implemented nearly all the required features:
+            </p>
             <ul>
                 <li>User authentication</li>
-                <li>Client can ask question to system</li>
-                <li>Technician can claim question on system</li>
+                <li>Clients can ask question to system</li>
+                <li>Technicians can claim question on system</li>
                 <li>Users can communicate in a chat room sending texts and files</li>
                 <li>Users can transition to voice/video call using Twilio API</li>
-                <li>Users can schedule a in-person meetup at time and location (UI only)</li>
+                <li>Users can schedule an in-person meetup at time and location (UI only)</li>
                 <li>Clients can resolve questions and review technicians they interacted with</li>
             </ul>
-            Full demo video and screenshots in the Mobile Application &gt;&gt; Swift section above. 
-            <br/><br/>
-            This project code is still classified, but <Link to="/#Contact">contact me</Link> if you are interested in viewing.
-        </p>,
+            <p>
+                Full demo video and screenshots in the Mobile Application &gt;&gt; Swift section above. 
+                <br/><br/>
+                This project code is still classified, but <Link to="/#Contact">contact me</Link> if you are interested in viewing.
+            </p>
+        </>,
         icon: <MdWork />
     },
     {
         title: "Built web app v4",
         date: "Jan. 2020",
-        body: <p>
-            Building off some of the project code developed with Ryan Morris, I built a new React.js app that was more organized, bug-free, and production ready than v3.
-            Version 4 is the current production build visible @ <a href="https://www.minute.tech" target="_blank" rel="noopener noreferrer">www.minute.tech</a> and has the following features:
+        body: <>
+            <p>
+                Building off some of the project code developed with Ryan Morris, I built a new React.js app that was more organized, had less bugs, and was more production ready than version 3.
+                Version 4 is the current production build visible @ <a href="https://www.minute.tech" target="_blank" rel="noopener noreferrer">www.minute.tech</a> and has the following features:
+            </p>
+            
             <ul>
                 <li>User authentication</li>
-                <li>Client can ask question to system</li>
-                <li>Technician can claim question on system</li>
+                <li>Clients can ask question to system</li>
+                <li>Technicians can claim question on system</li>
                 <li>Users can communicate in a chat room sending texts and files</li>
                 <li>Users can transition to voice/video/screen share call using Twilio API</li>
-                <li>Client can pay technician directly for their services using the Stripe API</li>
+                <li>Clients can pay technicians directly for their services using the Stripe API</li>
                 <li>Clients can resolve questions and review technicians they interacted with</li>
             </ul>
-            I am working on this codebase to this date. Full demo video and screenshots in the Web Application section above. 
-            <br/><br/>
-            This project code is still classified, but <Link to="/#Contact">contact me</Link> if you are interested in viewing.
-        </p>,
+            <p>
+                I am working on this codebase to this date. Full demo video and screenshots in the Web Application section above. 
+                <br/><br/>
+                This project code is still classified, but <Link to="/#Contact">contact me</Link> if you are interested in viewing.
+            </p>
+        </>,
         icon: <MdWork />
     },
     {
         title: "Started building iOS/Android mobile app v2",
-        date: "September, 2020",
-        body: <p>
-            Started building the second mobile app prototype for iOS and Android devices using React Native and a shared backend with web using Firebase. 
-            So far, the application features:
+        date: "Sep. 2020",
+        body: <>
+            <p>
+                Started building the second mobile app prototype for iOS and Android devices using React Native and a shared back-end with web using Firebase. 
+                So far, the application features:
+            </p>
             <ul>
                 <li>User authentication</li>
-                <li>Client can ask question to system</li>
-                <li>Technician can claim question on system</li>
+                <li>Clients can ask question to system</li>
+                <li>Technicians can claim question on system</li>
                 <li>Users can communicate in a chat room sending texts</li>
                 <li>Clients can resolve questions</li>
             </ul>
-            There were a few motivations for building the React Native app:
+            <p>
+                There were a few motivations for building the React Native app:
+            </p>    
+            
             <ul>
                 <li>Practice my React Native skills for potential client projects</li>
                 <li>
-                    As the only software developer on the project, it's much easier for me to maintain one React code base. 
+                    It's much easier to maintain one React codebase as a solo developer. 
                     Between the web and mobile app builds, there is over 50% overlap between reused 
                     React components and Firebase server side functions, increasing what I am capable of doing on my own.
                 </li>
@@ -1223,10 +1252,12 @@ export const mtTimeline = [
                     Minute.tech is losing clients who are not getting push notifications on their mobile devices they carry everywhere for important app messages.
                 </li>
             </ul>
-            See progress screenshots in the Mobile Application &gt;&gt; React Native section above. 
-            <br/><br/>
-            This project code is still classified, but <Link to="/#Contact">contact me</Link> if you are interested in viewing.
-        </p>,
+            <p>
+                See progress screenshots in the Mobile Application &gt;&gt; React Native section above. 
+                <br/><br/>
+                This project code is still classified, but <Link to="/#Contact">contact me</Link> if you are interested in viewing.
+            </p>    
+        </>,
         icon: <MdWork />
     }
 ]
