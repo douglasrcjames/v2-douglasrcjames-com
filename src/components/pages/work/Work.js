@@ -7,7 +7,6 @@ import 'react-vertical-timeline-component/style.min.css';
 import resume from '../../../assets/pdfs/DouglasJames-Resume-12.01.2020.pdf'
 import { jobs } from '../../../utils/jobs';
 import { SITE_UPDATED, STATUS } from '../../../utils/constants';
-import { Link } from 'react-router-dom';
 
 export default class Work extends Component {
     render() {
@@ -22,9 +21,6 @@ export default class Work extends Component {
                                     <p>
                                         I am a web developer, computer technician, and an entrepreneur with a lifelong dream to build great products. 
                                         I have broken down my relevant work into chronological order below, with a detailed view for each job on tap. 
-                                    </p>
-                                    <p>
-                                        <b>Featured Project:</b> <Link to="/work/minute.tech-llc" className="white">Minute.tech</Link>
                                     </p>
                                     <p>
                                         <b>My work in this section was last updated: {SITE_UPDATED.LONG}</b>

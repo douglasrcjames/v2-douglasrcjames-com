@@ -30,208 +30,167 @@ import TextLinkGallery from '../components/misc/TextLinkGallery';
 
 export const jobs = [
     {
-        title: "smithzellner.consulting",
-        role: "Web developer",
-        shortDescription: "Built a full-stack website for a civil rights consulting firm in Fairhope, Alabama.",
-        longDescription: <div>
+        title: "Minute.tech LLC",
+        role: "Founder & Engineer",
+        shortDescription: "Web and mobile applications connecting non-techies to techies for technical support.",
+        longDescription: <>
             <p>
-                Bob Zellner and Pamela Smith are partners that form Smith-Zellner Consulting, a civil rights consulting firm out of Fairhope, Alabama. 
-                Bob Zellner is the author of <i>The Wrong Side of Murder Creek: A White Southerner in the Freedom Movement</i>, a story detailing how - as a teenage, white, 
-                Alabama son and grandson of Ku Klux Klansmen – he changed his point of view and joined ranks with the black students who were sitting-in, marching, fighting 
-                and sometimes dying to challenge the “Southern way of life”. <a href="https://www.imdb.com/title/tt2235372/" target="_blank" rel="noopener noreferrer"><i>Son of the South</i></a>, 
-                a major motion picture adaptation of his book, <i>The Wrong Side of Murder Creek</i>, was released on August 26th, 2020. A trend that was clearly visible on the Google Analytics graph of users! See below:
+                Minute.tech LLC is a software solution connecting clients who have tech questions with qualified technicians for everyday tech support; think GeekSquad crossed with Uber.
+                Users can communicate via real-time messenger, voice/video call, screen sharing, and scheduling with a review and payment system built in. 
+                The Minute.tech system lowers the barrier for non-techies and techies to work together, especially during a pandemic that requires social distanced solutions to previously in-person services.
+                Minute.tech currently has a live (beta) <HashLink to="/work/minute.tech-llc#Web">web</HashLink> application and an upcoming <HashLink to="/work/minute.tech-llc#Mobile">mobile</HashLink> application set to beta launch Q2 2021. 
+                Since the pandemic started in Feb. 2020, I have been testing the Minute.tech beta web app with live clients with me as the only technician. I gave the customer the option to resolve with or without paying me for my help. 
+                So far I have answered 100 client questions with the Minute.tech platform, transacted nearly $4000 with the Stripe API, and accrued almost 10,000 call minutes with the Twilio API.
             </p>
-            <PhotoGallery 
-                photos={
-                    [{
-                        src: require(`../assets/images/jobs/smithzellner/misc/ga-graph.png`), 
-                        caption: "Google Analytics graph of movie release surge",
-                        width: 2.2,
-                        height: 0.3
-                    }]
-                } 
-                setWidth={"lg"} />
             <p>
-                I built this site using React.js as the front-end, and Firebase for the NoSQL database back-end to store contact info then send that contact info to the client's email via 
-                nodemailer with server side functions, and free SSL hosting. The site also features traffic tracking for the client with Google Analytics, as shown in the figure above!
+                I started this project in my junior year at San Jose State University for an entrepreneurship course where we were assigned to pick an idea with a group and build a business plan for it. 
+                I suggested my tech support idea I recently came up with after my parents were constantly calling for tech support after leaving them for college, and my team loved it. The business plan I built for this project impressed my 
+                professor enough for her to suggest I compete in the Shark Tank-like Silicon Valley Business Plan Competition (SVBPC). I wisely listened to her and competed in the SVBPC,&#8239;&#8239;
+                <a href="https://www.sjsu.edu/svce/svbpc/pastwinners/index.html" target="_blank" rel="noopener noreferrer">which awarded my new business $1500 cash and $1000 in legal help</a>! 
+                For my future engineering/business semesters and many group projects, I conducted tests, did extensive research, and built out app prototypes to turn Minute.tech into a reality.
             </p>
-        </div>
-        ,
-        githubLink: "https://github.com/douglasrcjames/smithzellner.consulting",
-        logoUrl: require("../assets/images/jobs/smithzellner/logo.png"),
+            <p>
+                <b>To organize the extensive work history I have done with Minute.tech, I have portioned this job into 4 sections. Please select a portion you want to learn more about below:</b>
+            </p>
+            <Row center="xs">
+                <Col xs={12} sm={6} md={3} className="sm-padding-t-b">
+                    <HashLink to="/work/minute.tech-llc#Web">
+                        <button className="md-white-btn">
+                            <i className="fas fa-globe" /> Web app
+                        </button>
+                    </HashLink>  
+                </Col>
+                <Col xs={12} sm={6} md={3} className="sm-padding-t-b">
+                    <HashLink to="/work/minute.tech-llc#Mobile">
+                        <button className="md-white-btn">
+                            <i className="fas fa-mobile" /> Mobile app
+                        </button>
+                    </HashLink>  
+                </Col>
+                <Col xs={12} sm={6} md={3} className="sm-padding-t-b">
+                    <HashLink to="/work/minute.tech-llc#Business">
+                        <button className="md-white-btn">
+                            <i className="fas fa-briefcase" /> Business development
+                        </button>  
+                    </HashLink>  
+                </Col>
+                <Col xs={12} sm={6} md={3} className="sm-padding-t-b">
+                    <HashLink to="/work/minute.tech-llc#Timeline">
+                        <button className="md-white-btn">
+                            <i className="fas fa-history" /> Full timeline
+                        </button> 
+                    </HashLink>  
+                </Col>
+            </Row>
+            </>,
+        logoUrl: require("../assets/images/jobs/minutetech/logo.png"),
         logoSize: SIZE.LARGE,
-        period: "Jul. 2020 - Sep. 2020",
-        status: STATUS.COMPLETE,
-        link: "https://www.smithzellner.consulting",
+        period: "May. 2016 - Today",
+        status: STATUS.WORKING,
+        link: "https://www.minute.tech",
         skills: {
             primary: [
-                SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.NODE, SKILLS.REACT, SKILLS.GITHUB, SKILLS.FIREBASE
+                SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.NODE, SKILLS.REACT, SKILLS.STRIPE, SKILLS.TWILIO, SKILLS.GITHUB, SKILLS.FIREBASE, SKILLS.WIREFRAMING
+            ],
+            secondary: [
+                SKILLS.SWIFT, SKILLS.REDUX, SKILLS.PYTHON, SKILLS.MYSQL, SKILLS.FLASK
+            ],
+            other: [
+                SKILLS.COMPUTER_HARDWARE, SKILLS.BUSINESS_DEV, SKILLS.LEADERSHIP, SKILLS.TEAMWORK, SKILLS.TECHNICAL_SUPPORT, SKILLS.CUSTOMER_SERVICE
             ]
         },
         metrics: [
             {
                 name: METRICS.VISITORS,
-                value: 176
+                value: 1277
             },
             {
                 name: METRICS.PAGE_VIEWS,
-                value: 1889
+                value: 66505
             },
             {
                 name: METRICS.COMMITS,
-                value: 34
+                value: 1306 // estimated between all libraries under MT github org page
             },
             {
                 name: METRICS.LOC,
-                value: 2200
+                value: 20000
             },
             {
                 name: METRICS.FILES,
-                value: 80
+                value: 500
+            },
+            {
+                name: METRICS.SCREENS,
+                value: 45
+            },
+            {
+                name: METRICS.TWILIO_MINS,
+                value: 9879
+            },
+            {
+                name: METRICS.STRIPE_DOLLARS,
+                value: 3892
+
+            }
+        ],
+        headerUrl: require("../assets/images/jobs/minutetech/header.png"),
+        headerPosition: "50% 50%",
+        icon: <BiRocket />,
+        extraContent: <MinuteTech />
+    },
+    {
+        title: "douglasrcjames.com",
+        role: "Web developer",
+        shortDescription: "Built a full-stack portfolio website for myself demonstrating and showcasing my skills.",
+        longDescription: <p>
+            This is my second and hopefully final build of my personal portfolio website to showcase my work, skills, and more. Check out how far I've come 
+            from <a href="https://douglasrcjames-v1.web.app/" target="_blank" rel="noopener noreferrer">version 1 of my portfolio site</a>!
+            At the time I am writing this, I feel that this site design and build is my best project to date, and I am proud to show how far my skills have evolved from version 1 to version 2 (granted version 1 was a quick build).
+            <br/>
+            Also, how meta is this? Here I am creating a project web page about the website you are on!
+            </p>,
+        githubLink: "https://github.com/douglasrcjames/douglasrcjames.com",
+        logoUrl: require("../assets/images/logos/logo512.png"),
+        logoSize: SIZE.LARGE,
+        period: "Aug. 2019 - Dec. 2020",
+        status: STATUS.COMPLETE,
+        link: "https://www.douglasrcjames.com",
+        skills: {
+            primary: [
+                SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.NODE, SKILLS.REACT, SKILLS.GITHUB, SKILLS.FIREBASE, SKILLS.WIREFRAMING
+            ]
+        },
+        metrics: [
+            {
+                name: METRICS.VISITORS,
+                value: 245
+            },
+            {
+                name: METRICS.PAGE_VIEWS,
+                value: 2226
+            },
+            {
+                name: METRICS.COMMITS,
+                value: 77
+            },
+            {
+                name: METRICS.LOC,
+                value: 4600
+            },
+            {
+                name: METRICS.FILES,
+                value: 350
             },
             {
                 name: METRICS.SCREENS,
                 value: 5
             }
         ],
-        headerUrl: require("../assets/images/jobs/smithzellner/header.png"),
-        headerPosition: "50% 50%",
+        headerUrl: require("../assets/images/jobs/douglasrcjames/header.png"),
+        headerPosition: "50% 40%",
         icon: <BiCodeAlt />,
-        extraContent: <SmithZellnerConsulting />
-    },
-    // TODO: wait to put this one in there
-    // {
-    //     title: "zestydoug.com",
-    //     role: "Web developer",
-    //     shortDescription: "Built a full-stack website for my live streaming persona.",
-    //     longDescription: <p>Explain that I stream gaming and coding and is a work in progress. Ullamco excepteur adipisicing sit nisi duis sint ex aliquip excepteur ut eiusmod. 
-    //         Pariatur nostrud est cupidatat commodo labore eiusmod quis aliquip quis nulla consequat. 
-    //         Ad nostrud Lorem nulla ut esse consequat Lorem exercitation nisi ipsum ex adipisicing aliqua magna. 
-    //         Minim enim aliquip consectetur est ipsum incididunt labore aliquip. Magna consequat sint laboris velit 
-    //         do tempor irure. Ullamco nulla excepteur in ea enim ipsum minim ullamco aliqua. Ullamco qui excepteur do 
-    //         nostrud non.</p>,
-    //     logoUrl: require("../assets/images/logos/logo512.png"),
-    //     logoSize: SIZE.LARGE,
-    //     period: "August, 2020 - September, 2020",
-    //     status: STATUS.WORKING,
-    //     link: "https://www.zestydoug.com",
-    //     skills: {
-    //         primary: [
-    //             SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.NODE, SKILLS.REACT, SKILLS.GITHUB, SKILLS.FIREBASE
-    //         ]
-    //     },
-    //     headerUrl: require("../assets/images/jobs/zestydoug/header.png"),
-    //     headerPosition: "50% 40%",
-    //     icon: <BiCodeAlt />,
-    //     extraContent: ""
-    // },
-    {
-        title: "goprestigepower.com",
-        role: "Web developer",
-        shortDescription: "Built a full-stack site with custom CRM for a solar sales company out of Orange County, California.",
-        longDescription: <p>
-            Prestige Power is a solar sales company out of Orange County, California that came to me looking to create a front-end website to drive traffic to their business, as well as a 
-            solution to replace their current CRM (Customer Relationship Management) provider that was charging monthly and wasn't a perfect fit for their use case. I was able to build them a beautiful front-end experience 
-            that included forms to capture leads that directly fed into the custom CRM back-end. The front-end experience was built with HTML/CSS/React.js 
-            and back-end services like hosting with SSL, server side functions, file storage, authentication, and databases were built with Firebase. The site also features traffic tracking 
-            for the client with Google Analytics. I also had the pleasure of collaborating with my design partner <a href="https://www.linkedin.com/in/anamariecampos/" target="_blank" rel="noopener noreferrer">Ana Campos</a> to build the client 
-            branding guidelines (font, colors, logo, and usage) for their business.
-            {/* TODO: include? <a href="https://www.linkedin.com/in/reed-reilly-8844251ab/" target="_blank" rel="noopener noreferrer">Reed Reilly</a>&#8239; */}
-        </p>,
-        githubLink: "https://github.com/douglasrcjames/goprestigepower.com",
-        logoUrl: require("../assets/images/jobs/goprestigepower/logo.png"),
-        logoSize: SIZE.LARGE,
-        period: "Jul. 2020 - Aug. 2020",
-        status: STATUS.COMPLETE,
-        link: "https://www.goprestigepower.com",
-        skills: {
-            primary: [
-                SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.NODE, SKILLS.REACT, SKILLS.GITHUB, SKILLS.FIREBASE
-            ]
-        },
-        metrics: [
-            {
-                name: METRICS.VISITORS,
-                value: 698
-            },
-            {
-                name: METRICS.PAGE_VIEWS,
-                value: 4361
-            },
-            {
-                name: METRICS.COMMITS,
-                value: 62
-            },
-            {
-                name: METRICS.LOC,
-                value: 8000
-            },
-            {
-                name: METRICS.FILES,
-                value: 85
-            },
-            {
-                name: METRICS.SCREENS,
-                value: 15
-            }
-        ],
-        headerUrl: require("../assets/images/jobs/goprestigepower/header.png"),
-        headerPosition: "50% 50%",
-        icon: <BiCodeAlt />,
-        extraContent: <GoPrestigePower />
-    },
-    {
-        title: "vectorpsi.com",
-        role: "Web developer",
-        shortDescription: "Built a full-stack website for an industrial manufacturing sales company in Danville, California.",
-        longDescription: <p>
-            Vector Process Solutions, Inc is an industrial manufacturing sales company in Danville, California that was looking to showcase their supported manufacturing partners and products. 
-            I built this site using React.js as the front-end, and Firebase for the NoSQL database back-end to store contact info then send that contact info to the client's email via 
-            nodemailer with server side functions, and free SSL hosting. The site also features traffic tracking with Google Analytics, as well as over 70 manufacturing product lines. 
-            I also had the pleasure of collaborating with my design partner <a href="https://www.linkedin.com/in/anamariecampos/" target="_blank" rel="noopener noreferrer">Ana Campos</a> to build the client 
-            branding guidelines (font, colors, logo, and usage) for their business.
-        </p>,
-        githubLink: "https://github.com/douglasrcjames/vectorpsi.com",
-        logoUrl: require("../assets/images/jobs/vectorpsi/logo.png"),
-        logoSize: SIZE.LARGE,
-        period: "Jun. 2020 - Oct. 2020",
-        status: STATUS.COMPLETE,
-        link: "https://www.vectorpsi.com",
-        skills: {
-            primary: [
-                SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.NODE, SKILLS.REACT, SKILLS.GITHUB, SKILLS.FIREBASE
-            ]
-        },
-        metrics: [
-            {
-                name: METRICS.VISITORS,
-                value: 361
-            },
-            {
-                name: METRICS.PAGE_VIEWS,
-                value: 1889
-            },
-            {
-                name: METRICS.COMMITS,
-                value: 33
-            },
-            {
-                name: METRICS.LOC,
-                value: 3700
-            },
-            {
-                name: METRICS.FILES,
-                value: 240
-            },
-            {
-                name: METRICS.SCREENS,
-                value: 6
-            }
-        ],
-        headerUrl: require("../assets/images/jobs/vectorpsi/header.png"),
-        headerPosition: "50% 50%",
-        icon: <BiCodeAlt />,
-        extraContent: <VectorPSI />
+        extraContent: <Douglasrcjames />
     },
     {
         title: "Doug's React Boiler",
@@ -276,173 +235,6 @@ export const jobs = [
         headerPosition: "50% 50%",
         icon: <BiCodeAlt />,
         extraContent: <DougsReactBoiler />
-    },
-    {
-        title: "blairfamily.foundation",
-        role: "Web developer",
-        shortDescription: "Built a full-stack website for a philanthropy foundation in Montgomery, Maryland.",
-        longDescription: <p>
-            The David and Mikel Blair Family Foundation is dedicated to purposeful giving and 
-            is rooted in improving the quality of life for individuals around Maryland. The foundation connected with me after a partner had a positive experience working with me at <Link to="/work/capsmd.org">capsmd.org</Link>. 
-            They were looking to develop a simple full-stack website with a contact form and subscribe form, much like my work at capsmd.org. I was able to work with a designer on their team to take their 
-            wireframe design and turn it into a living website. The wireframe was one of the more intricate designs I have had to emulate, but I was able to tackle the challenge with relative ease with my newfound skills. 
-            I built this site using React.js as the front-end, and Firebase for the NoSQL database back-end to store contact info then send that contact info to the client's email via 
-            nodemailer with server side functions, and free SSL hosting. The site also features traffic tracking for the client with Google Analytics.
-        </p>,
-        githubLink: "https://github.com/douglasrcjames/blairfamily.foundation",
-        logoUrl: require("../assets/images/jobs/blairfamily/logo.png"),
-        logoSize: SIZE.LARGE,
-        period: "Apr. 2020 - Sep. 2020",
-        status: STATUS.COMPLETE,
-        link: "https://www.blairfamily.foundation",
-        skills: {
-            primary: [
-                SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.NODE, SKILLS.REACT, SKILLS.GITHUB, SKILLS.FIREBASE, SKILLS.WIREFRAMING
-            ]
-        },
-        metrics: [
-            {
-                name: METRICS.VISITORS,
-                value: 1141
-            },
-            {
-                name: METRICS.PAGE_VIEWS,
-                value: 4147
-            },
-            {
-                name: METRICS.COMMITS,
-                value: 43
-            },
-            {
-                name: METRICS.LOC,
-                value: 3400
-            },
-            {
-                name: METRICS.FILES,
-                value: 150
-            },
-            {
-                name: METRICS.SCREENS,
-                value: 5
-            }
-        ],
-        headerUrl: require("../assets/images/jobs/blairfamily/header.png"),
-        headerPosition: "50% 50%",
-        icon: <BiCodeAlt />,
-        extraContent: <BlairFamilyFoundation />
-    },
-    {
-        title: "retreatonnichols.com",
-        role: "Web developer",
-        shortDescription: "Built a full-stack website short term luxury rental property in Fairhope, Alabama.",
-        longDescription: <>
-            <p>
-                The Retreat on Nichols is a two unit luxury short-term accommodation in Fairhope, Alabama. The property features a common outdoor kitchen, wood-fired pizza oven, 
-                fire pit, Petanque court, lawn &amp; board games, additional bathroom, laundry, gated parking, bicycles, &amp; golf cart. I was brought on board to build the website and 
-                manage SEO because the property owners were looking to increase the traffic to the rental via Airbnb and VRBO booking sites.
-            </p>
-            <p>
-                I built this site using React.js as the front-end, and Firebase for the NoSQL database back-end to store contact info then send that contact info to the client's email via 
-                nodemailer with server side functions, and free SSL hosting. The site also features traffic tracking for the client with Google Analytics. The site took me about a month to plan, design, and build, but I continue to this day updating various media and wording content for the clients. 
-                The design phase was fairly quick, because I had previously built a SquareSpace site for the client, so I based much of my design off that template. 
-                I had to do a quick rework of the logo with my Photoshop skills because the client did not have the original image for the logo. 
-                I also worked with a videographer and photographer to fit their content captured into the site. 
-            </p>
-        </>,
-        githubLink: "https://github.com/douglasrcjames/retreatonnichols.com",
-        logoUrl: require("../assets/images/jobs/retreatonnichols/logo.png"),
-        logoSize: SIZE.LARGE,
-        period: "Aug. 2019 - Mar. 2020",
-        status: STATUS.COMPLETE,
-        link: "https://www.retreatonnichols.com",
-        skills: {
-            primary: [
-                SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.NODE, SKILLS.REACT, SKILLS.GITHUB, SKILLS.FIREBASE
-            ]
-        },
-        metrics: [
-            {
-                name: METRICS.VISITORS,
-                value: 1302
-            },
-            {
-                name: METRICS.PAGE_VIEWS,
-                value: 4953
-            },
-            {
-                name: METRICS.COMMITS,
-                value: 59
-            },
-            {
-                name: METRICS.LOC,
-                value: 2000
-            },
-            {
-                name: METRICS.FILES,
-                value: 150
-            },
-            {
-                name: METRICS.SCREENS,
-                value: 5
-            }
-        ],
-        headerUrl: require("../assets/images/jobs/retreatonnichols/header.png"),
-        headerPosition: "50% 50%",
-        icon: <BiCodeAlt />,
-        extraContent: <RetreatOnNichols />
-    },
-    {
-        title: "douglasrcjames.com",
-        role: "Web developer",
-        shortDescription: "Built a full-stack portfolio website for myself demonstrating and showcasing my skills.",
-        longDescription: <p>
-            This is my second and hopefully final build of my personal portfolio website to showcase my work, skills, and more. Check out how far I've come 
-            from <a href="https://douglasrcjames-v1.web.app/" target="_blank" rel="noopener noreferrer">version 1 of my portfolio site</a>!
-            At the time I am writing this, I feel that this site design and build is my best project to date, and I am proud to show how far my skills have evolved from version 1 to version 2 (granted version 1 was a quick build).
-            <br/>
-            Also, how meta this is? Here I am creating a project web page about the website you are on!
-            </p>,
-        githubLink: "https://github.com/douglasrcjames/douglasrcjames.com",
-        logoUrl: require("../assets/images/logos/logo512.png"),
-        logoSize: SIZE.LARGE,
-        period: "Aug. 2019 - Today",
-        status: STATUS.WORKING,
-        link: "https://www.douglasrcjames.com",
-        skills: {
-            primary: [
-                SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.NODE, SKILLS.REACT, SKILLS.GITHUB, SKILLS.FIREBASE, SKILLS.WIREFRAMING
-            ]
-        },
-        metrics: [
-            {
-                name: METRICS.VISITORS,
-                value: 245
-            },
-            {
-                name: METRICS.PAGE_VIEWS,
-                value: 2226
-            },
-            {
-                name: METRICS.COMMITS,
-                value: 77
-            },
-            {
-                name: METRICS.LOC,
-                value: 4600
-            },
-            {
-                name: METRICS.FILES,
-                value: 350
-            },
-            {
-                name: METRICS.SCREENS,
-                value: 5
-            }
-        ],
-        headerUrl: require("../assets/images/jobs/douglasrcjames/header.png"),
-        headerPosition: "50% 40%",
-        icon: <BiCodeAlt />,
-        extraContent: <Douglasrcjames />
     },
     {
         title: "capsmd.org",
@@ -554,6 +346,373 @@ export const jobs = [
         headerPosition: "50% 50%",
         icon: <BiCodeAlt />,
         extraContent: <CAPS />
+    },
+    {
+        title: "vectorpsi.com",
+        role: "Web developer",
+        shortDescription: "Built a full-stack website for an industrial manufacturing sales company in Danville, California.",
+        longDescription: <p>
+            Vector Process Solutions, Inc is an industrial manufacturing sales company in Danville, California that was looking to showcase their supported manufacturing partners and products. 
+            I built this site using React.js as the front-end, and Firebase for the NoSQL database back-end to store contact info then send that contact info to the client's email via 
+            nodemailer with server side functions, and free SSL hosting. The site also features traffic tracking with Google Analytics, as well as over 70 manufacturing product lines. 
+            I also had the pleasure of collaborating with my design partner <a href="https://www.linkedin.com/in/anamariecampos/" target="_blank" rel="noopener noreferrer">Ana Campos</a> to build the client 
+            branding guidelines (font, colors, logo, and usage) for their business.
+        </p>,
+        githubLink: "https://github.com/douglasrcjames/vectorpsi.com",
+        logoUrl: require("../assets/images/jobs/vectorpsi/logo.png"),
+        logoSize: SIZE.LARGE,
+        period: "Jun. 2020 - Oct. 2020",
+        status: STATUS.COMPLETE,
+        link: "https://www.vectorpsi.com",
+        skills: {
+            primary: [
+                SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.NODE, SKILLS.REACT, SKILLS.GITHUB, SKILLS.FIREBASE
+            ]
+        },
+        metrics: [
+            {
+                name: METRICS.VISITORS,
+                value: 361
+            },
+            {
+                name: METRICS.PAGE_VIEWS,
+                value: 1889
+            },
+            {
+                name: METRICS.COMMITS,
+                value: 33
+            },
+            {
+                name: METRICS.LOC,
+                value: 3700
+            },
+            {
+                name: METRICS.FILES,
+                value: 240
+            },
+            {
+                name: METRICS.SCREENS,
+                value: 6
+            }
+        ],
+        headerUrl: require("../assets/images/jobs/vectorpsi/header.png"),
+        headerPosition: "50% 50%",
+        icon: <BiCodeAlt />,
+        extraContent: <VectorPSI />
+    },
+    {
+        title: "smithzellner.consulting",
+        role: "Web developer",
+        shortDescription: "Built a full-stack website for a civil rights consulting firm in Fairhope, Alabama.",
+        longDescription: <div>
+            <p>
+                Bob Zellner and Pamela Smith are partners that form Smith-Zellner Consulting, a civil rights consulting firm out of Fairhope, Alabama. 
+                Bob Zellner is the author of <i>The Wrong Side of Murder Creek: A White Southerner in the Freedom Movement</i>, a story detailing how - as a teenage, white, 
+                Alabama son and grandson of Ku Klux Klansmen – he changed his point of view and joined ranks with the black students who were sitting-in, marching, fighting 
+                and sometimes dying to challenge the “Southern way of life”. <a href="https://www.imdb.com/title/tt2235372/" target="_blank" rel="noopener noreferrer"><i>Son of the South</i></a>, 
+                a major motion picture adaptation of his book, <i>The Wrong Side of Murder Creek</i>, was released on August 26th, 2020. A trend that was clearly visible on the Google Analytics graph of users! See below:
+            </p>
+            <PhotoGallery 
+                photos={
+                    [{
+                        src: require(`../assets/images/jobs/smithzellner/misc/ga-graph.png`), 
+                        caption: "Google Analytics graph of movie release surge",
+                        width: 2.2,
+                        height: 0.3
+                    }]
+                } 
+                setWidth={"lg"} />
+            <p>
+                I built this site using React.js as the front-end, and Firebase for the NoSQL database back-end to store contact info then send that contact info to the client's email via 
+                nodemailer with server side functions, and free SSL hosting. The site also features traffic tracking for the client with Google Analytics, as shown in the figure above!
+            </p>
+        </div>
+        ,
+        githubLink: "https://github.com/douglasrcjames/smithzellner.consulting",
+        logoUrl: require("../assets/images/jobs/smithzellner/logo.png"),
+        logoSize: SIZE.LARGE,
+        period: "Jul. 2020 - Sep. 2020",
+        status: STATUS.COMPLETE,
+        link: "https://www.smithzellner.consulting",
+        skills: {
+            primary: [
+                SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.NODE, SKILLS.REACT, SKILLS.GITHUB, SKILLS.FIREBASE
+            ]
+        },
+        metrics: [
+            {
+                name: METRICS.VISITORS,
+                value: 176
+            },
+            {
+                name: METRICS.PAGE_VIEWS,
+                value: 1889
+            },
+            {
+                name: METRICS.COMMITS,
+                value: 34
+            },
+            {
+                name: METRICS.LOC,
+                value: 2200
+            },
+            {
+                name: METRICS.FILES,
+                value: 80
+            },
+            {
+                name: METRICS.SCREENS,
+                value: 5
+            }
+        ],
+        headerUrl: require("../assets/images/jobs/smithzellner/header.png"),
+        headerPosition: "50% 50%",
+        icon: <BiCodeAlt />,
+        extraContent: <SmithZellnerConsulting />
+    },
+    {
+        title: "blairfamily.foundation",
+        role: "Web developer",
+        shortDescription: "Built a full-stack website for a philanthropy foundation in Montgomery, Maryland.",
+        longDescription: <p>
+            The David and Mikel Blair Family Foundation is dedicated to purposeful giving and 
+            is rooted in improving the quality of life for individuals around Maryland. The foundation connected with me after a partner had a positive experience working with me at <Link to="/work/capsmd.org">capsmd.org</Link>. 
+            They were looking to develop a simple full-stack website with a contact form and subscribe form, much like my work at capsmd.org. I was able to work with a designer on their team to take their 
+            wireframe design and turn it into a living website. The wireframe was one of the more intricate designs I have had to emulate, but I was able to tackle the challenge with relative ease with my newfound skills. 
+            I built this site using React.js as the front-end, and Firebase for the NoSQL database back-end to store contact info then send that contact info to the client's email via 
+            nodemailer with server side functions, and free SSL hosting. The site also features traffic tracking for the client with Google Analytics.
+        </p>,
+        githubLink: "https://github.com/douglasrcjames/blairfamily.foundation",
+        logoUrl: require("../assets/images/jobs/blairfamily/logo.png"),
+        logoSize: SIZE.LARGE,
+        period: "Apr. 2020 - Sep. 2020",
+        status: STATUS.COMPLETE,
+        link: "https://www.blairfamily.foundation",
+        skills: {
+            primary: [
+                SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.NODE, SKILLS.REACT, SKILLS.GITHUB, SKILLS.FIREBASE, SKILLS.WIREFRAMING
+            ]
+        },
+        metrics: [
+            {
+                name: METRICS.VISITORS,
+                value: 1141
+            },
+            {
+                name: METRICS.PAGE_VIEWS,
+                value: 4147
+            },
+            {
+                name: METRICS.COMMITS,
+                value: 43
+            },
+            {
+                name: METRICS.LOC,
+                value: 3400
+            },
+            {
+                name: METRICS.FILES,
+                value: 150
+            },
+            {
+                name: METRICS.SCREENS,
+                value: 5
+            }
+        ],
+        headerUrl: require("../assets/images/jobs/blairfamily/header.png"),
+        headerPosition: "50% 50%",
+        icon: <BiCodeAlt />,
+        extraContent: <BlairFamilyFoundation />
+    },
+    // TODO: wait to put this one in there
+    // {
+    //     title: "zestydoug.com",
+    //     role: "Web developer",
+    //     shortDescription: "Built a full-stack website for my live streaming persona.",
+    //     longDescription: <p>Explain that I stream gaming and coding and is a work in progress. Ullamco excepteur adipisicing sit nisi duis sint ex aliquip excepteur ut eiusmod. 
+    //         Pariatur nostrud est cupidatat commodo labore eiusmod quis aliquip quis nulla consequat. 
+    //         Ad nostrud Lorem nulla ut esse consequat Lorem exercitation nisi ipsum ex adipisicing aliqua magna. 
+    //         Minim enim aliquip consectetur est ipsum incididunt labore aliquip. Magna consequat sint laboris velit 
+    //         do tempor irure. Ullamco nulla excepteur in ea enim ipsum minim ullamco aliqua. Ullamco qui excepteur do 
+    //         nostrud non.</p>,
+    //     logoUrl: require("../assets/images/logos/logo512.png"),
+    //     logoSize: SIZE.LARGE,
+    //     period: "August, 2020 - September, 2020",
+    //     status: STATUS.WORKING,
+    //     link: "https://www.zestydoug.com",
+    //     skills: {
+    //         primary: [
+    //             SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.NODE, SKILLS.REACT, SKILLS.GITHUB, SKILLS.FIREBASE
+    //         ]
+    //     },
+    //     headerUrl: require("../assets/images/jobs/zestydoug/header.png"),
+    //     headerPosition: "50% 40%",
+    //     icon: <BiCodeAlt />,
+    //     extraContent: ""
+    // },
+    {
+        title: "goprestigepower.com",
+        role: "Web developer",
+        shortDescription: "Built a full-stack site with custom CRM for a solar sales company out of Orange County, California.",
+        longDescription: <p>
+            Prestige Power is a solar sales company out of Orange County, California that came to me looking to create a front-end website to drive traffic to their business, as well as a 
+            solution to replace their current CRM (Customer Relationship Management) provider that was charging monthly and wasn't a perfect fit for their use case. I was able to build them a beautiful front-end experience 
+            that included forms to capture leads that directly fed into the custom CRM back-end. The front-end experience was built with HTML/CSS/React.js 
+            and back-end services like hosting with SSL, server side functions, file storage, authentication, and databases were built with Firebase. The site also features traffic tracking 
+            for the client with Google Analytics. I also had the pleasure of collaborating with my design partner <a href="https://www.linkedin.com/in/anamariecampos/" target="_blank" rel="noopener noreferrer">Ana Campos</a> to build the client 
+            branding guidelines (font, colors, logo, and usage) for their business.
+            {/* TODO: include? <a href="https://www.linkedin.com/in/reed-reilly-8844251ab/" target="_blank" rel="noopener noreferrer">Reed Reilly</a>&#8239; */}
+        </p>,
+        githubLink: "https://github.com/douglasrcjames/goprestigepower.com",
+        logoUrl: require("../assets/images/jobs/goprestigepower/logo.png"),
+        logoSize: SIZE.LARGE,
+        period: "Jul. 2020 - Aug. 2020",
+        status: STATUS.COMPLETE,
+        link: "https://www.goprestigepower.com",
+        skills: {
+            primary: [
+                SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.NODE, SKILLS.REACT, SKILLS.GITHUB, SKILLS.FIREBASE
+            ]
+        },
+        metrics: [
+            {
+                name: METRICS.VISITORS,
+                value: 698
+            },
+            {
+                name: METRICS.PAGE_VIEWS,
+                value: 4361
+            },
+            {
+                name: METRICS.COMMITS,
+                value: 62
+            },
+            {
+                name: METRICS.LOC,
+                value: 8000
+            },
+            {
+                name: METRICS.FILES,
+                value: 85
+            },
+            {
+                name: METRICS.SCREENS,
+                value: 15
+            }
+        ],
+        headerUrl: require("../assets/images/jobs/goprestigepower/header.png"),
+        headerPosition: "50% 50%",
+        icon: <BiCodeAlt />,
+        extraContent: <GoPrestigePower />
+    },
+    {
+        title: "retreatonnichols.com",
+        role: "Web developer",
+        shortDescription: "Built a full-stack website short term luxury rental property in Fairhope, Alabama.",
+        longDescription: <>
+            <p>
+                The Retreat on Nichols is a two unit luxury short-term accommodation in Fairhope, Alabama. The property features a common outdoor kitchen, wood-fired pizza oven, 
+                fire pit, Petanque court, lawn &amp; board games, additional bathroom, laundry, gated parking, bicycles, &amp; golf cart. I was brought on board to build the website and 
+                manage SEO because the property owners were looking to increase the traffic to the rental via Airbnb and VRBO booking sites.
+            </p>
+            <p>
+                I built this site using React.js as the front-end, and Firebase for the NoSQL database back-end to store contact info then send that contact info to the client's email via 
+                nodemailer with server side functions, and free SSL hosting. The site also features traffic tracking for the client with Google Analytics. The site took me about a month to plan, design, and build, but I continue to this day updating various media and wording content for the clients. 
+                The design phase was fairly quick, because I had previously built a SquareSpace site for the client, so I based much of my design off that template. 
+                I had to do a quick rework of the logo with my Photoshop skills because the client did not have the original image for the logo. 
+                I also worked with a videographer and photographer to fit their content captured into the site. 
+            </p>
+        </>,
+        githubLink: "https://github.com/douglasrcjames/retreatonnichols.com",
+        logoUrl: require("../assets/images/jobs/retreatonnichols/logo.png"),
+        logoSize: SIZE.LARGE,
+        period: "Aug. 2019 - Mar. 2020",
+        status: STATUS.COMPLETE,
+        link: "https://www.retreatonnichols.com",
+        skills: {
+            primary: [
+                SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.NODE, SKILLS.REACT, SKILLS.GITHUB, SKILLS.FIREBASE
+            ]
+        },
+        metrics: [
+            {
+                name: METRICS.VISITORS,
+                value: 1302
+            },
+            {
+                name: METRICS.PAGE_VIEWS,
+                value: 4953
+            },
+            {
+                name: METRICS.COMMITS,
+                value: 59
+            },
+            {
+                name: METRICS.LOC,
+                value: 2000
+            },
+            {
+                name: METRICS.FILES,
+                value: 150
+            },
+            {
+                name: METRICS.SCREENS,
+                value: 5
+            }
+        ],
+        headerUrl: require("../assets/images/jobs/retreatonnichols/header.png"),
+        headerPosition: "50% 50%",
+        icon: <BiCodeAlt />,
+        extraContent: <RetreatOnNichols />
+    },
+    {
+        title: "San Jose State University",
+        role: "Computer Engineering & Business Student",
+        shortDescription: "Earned a computer engineering major and business & math minors in the heart of Silicon Valley.",
+        longDescription: <p>
+            San Jose State University is centered in the heart of Silicon Valley in downtown San Jose, which give me the opportunity to be fully emersed in the business and technology community. 
+            While attending, I earned my computer engineering major with business &amp; math minors, giving me the confidence and paperwork to work professionally as an engineer to solve problems worldwide. 
+            From the technical courses I took in my higher level courses, I learned how computers are structured and abstracted at all levels of the stack, from machine code to web coding.
+            I learned where I wanted to work on that stack, which I have currently landed at around the top, with web based coding languages because I love to "quickly" see everyday consumers using my products.
+            I was also an active member of the Computer &amp; Software Engineering Society (SCE) and Pi Kappa Alpha fraternity. Go Spartans!
+        </p>,
+        logoUrl: require("../assets/images/jobs/sjsu/logo.png"),
+        logoSize: SIZE.LARGE,
+        period: "Aug. 2013 - Dec. 2019",
+        status: STATUS.COMPLETE,
+        link: "https://www.sjsu.edu",
+        skills: {
+            primary: [
+                SKILLS.CPP, SKILLS.GITHUB, SKILLS.SWIFT, SKILLS.PYTHON, SKILLS.FLASK, SKILLS.MYSQL, SKILLS.VERILOG, SKILLS.ASM,
+            ],
+            other: [
+                SKILLS.BUSINESS_DEV, 
+                SKILLS.ACCOUNTING,
+                SKILLS.ENTREPRENEURSHIP, 
+                SKILLS.LEADERSHIP, 
+                SKILLS.TEAMWORK, 
+                SKILLS.MATHEMATICS, 
+                SKILLS.PHYSICS, 
+                SKILLS.ENGINEERING_FUNDAMENTALS, 
+                SKILLS.ENGINEERING_ETHICS,
+                SKILLS.COMPUTER_HARDWARE, 
+                SKILLS.SOFTWARE_ENGINEERING,
+                SKILLS.COMPUTER_NETWORKING, 
+                SKILLS.COMPUTER_ALGORITHMS,
+                SKILLS.DATABASE_SYSTEMS,
+                SKILLS.OBJECT_ORIENTED_PROGRAMMING,
+                SKILLS.ELECTRONIC_CIRCUITS,
+                SKILLS.MICROPROCESSOR_DESIGN,
+                SKILLS.COMPUTER_ARCHITECTURE,
+                SKILLS.OPERATING_SYSTEMS_DESIGN,
+                SKILLS.ASSEMBLY_LANGUAGE,
+                SKILLS.COMPILER_DESIGN,
+            ]
+        },
+        headerUrl: require("../assets/images/jobs/sjsu/header.png"),
+        headerPosition: "50% 50%",
+        icon: <MdSchool />,
+        extraContent: <SJSU />
     },
     {
         title: "bodybyyama.com",
@@ -734,116 +893,6 @@ export const jobs = [
         extraContent: <Tesla />
     },
     {
-        title: "Minute.tech LLC",
-        role: "Founder & Engineer",
-        shortDescription: "Web and mobile applications connecting non-techies to techies for technical support.",
-        longDescription: <>
-            <p>
-                Minute.tech LLC is a software solution connecting clients who have tech questions with qualified technicians for everyday tech support; think GeekSquad crossed with Uber.
-                Users can communicate via real-time messenger, voice/video call, screen sharing, and scheduling with a review and payment system built in. 
-                The Minute.tech system lowers the barrier for non-techies and techies to work together, especially during a pandemic that requires social distanced solutions to previously in-person services.
-                Minute.tech currently has a live (beta) <HashLink to="/work/minute.tech-llc#Web">web</HashLink> application and an upcoming <HashLink to="/work/minute.tech-llc#Mobile">mobile</HashLink> application set to beta launch Q2 2021. 
-                Since the pandemic started in Feb. 2020, I have been testing the Minute.tech beta web app with live clients with me as the only technician. I gave the customer the option to resolve with or without paying me for my help. 
-                So far I have answered 100 client questions with the Minute.tech platform, transacted nearly $4000 with the Stripe API, and accrued almost 10,000 call minutes with the Twilio API.
-            </p>
-            <p>
-                I started this project in my junior year at San Jose State University for an entrepreneurship course where we were assigned to pick an idea with a group and build a business plan for it. 
-                I suggested my tech support idea I recently came up with after my parents were constantly calling for tech support after leaving them for college, and my team loved it. The business plan I built for this project impressed my 
-                professor enough for her to suggest I compete in the Shark Tank-like Silicon Valley Business Plan Competition (SVBPC). I wisely listened to her and competed in the SVBPC,&#8239;&#8239;
-                <a href="https://www.sjsu.edu/svce/svbpc/pastwinners/index.html" target="_blank" rel="noopener noreferrer">which awarded my new business $1500 cash and $1000 in legal help</a>! 
-                For my future engineering/business semesters and many group projects, I conducted tests, did extensive research, and built out app prototypes to turn Minute.tech into a reality.
-            </p>
-            <p>
-                <b>To organize the extensive work history I have done with Minute.tech, I have portioned this job into 4 sections. Please select a portion you want to learn more about below:</b>
-            </p>
-            <Row center="xs">
-                <Col xs={12} sm={6} md={3} className="sm-padding-t-b">
-                    <HashLink to="/work/minute.tech-llc#Web">
-                        <button className="md-white-btn">
-                            <i className="fas fa-globe" /> Web app
-                        </button>
-                    </HashLink>  
-                </Col>
-                <Col xs={12} sm={6} md={3} className="sm-padding-t-b">
-                    <HashLink to="/work/minute.tech-llc#Mobile">
-                        <button className="md-white-btn">
-                            <i className="fas fa-mobile" /> Mobile app
-                        </button>
-                    </HashLink>  
-                </Col>
-                <Col xs={12} sm={6} md={3} className="sm-padding-t-b">
-                    <HashLink to="/work/minute.tech-llc#Business">
-                        <button className="md-white-btn">
-                            <i className="fas fa-briefcase" /> Business development
-                        </button>  
-                    </HashLink>  
-                </Col>
-                <Col xs={12} sm={6} md={3} className="sm-padding-t-b">
-                    <HashLink to="/work/minute.tech-llc#Timeline">
-                        <button className="md-white-btn">
-                            <i className="fas fa-history" /> Full timeline
-                        </button> 
-                    </HashLink>  
-                </Col>
-            </Row>
-            </>,
-        logoUrl: require("../assets/images/jobs/minutetech/logo.png"),
-        logoSize: SIZE.LARGE,
-        period: "May. 2016 - Today",
-        status: STATUS.WORKING,
-        link: "https://www.minute.tech",
-        skills: {
-            primary: [
-                SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.NODE, SKILLS.REACT, SKILLS.STRIPE, SKILLS.TWILIO, SKILLS.GITHUB, SKILLS.FIREBASE, SKILLS.WIREFRAMING
-            ],
-            secondary: [
-                SKILLS.SWIFT, SKILLS.REDUX, SKILLS.PYTHON, SKILLS.MYSQL, SKILLS.FLASK
-            ],
-            other: [
-                SKILLS.COMPUTER_HARDWARE, SKILLS.BUSINESS_DEV, SKILLS.LEADERSHIP, SKILLS.TEAMWORK, SKILLS.TECHNICAL_SUPPORT, SKILLS.CUSTOMER_SERVICE
-            ]
-        },
-        metrics: [
-            {
-                name: METRICS.VISITORS,
-                value: 1277
-            },
-            {
-                name: METRICS.PAGE_VIEWS,
-                value: 66505
-            },
-            {
-                name: METRICS.COMMITS,
-                value: 1306 // estimated between all libraries under MT github org page
-            },
-            {
-                name: METRICS.LOC,
-                value: 20000
-            },
-            {
-                name: METRICS.FILES,
-                value: 500
-            },
-            {
-                name: METRICS.SCREENS,
-                value: 45
-            },
-            {
-                name: METRICS.TWILIO_MINS,
-                value: 9879
-            },
-            {
-                name: METRICS.STRIPE_DOLLARS,
-                value: 3892
-
-            }
-        ],
-        headerUrl: require("../assets/images/jobs/minutetech/header.png"),
-        headerPosition: "50% 50%",
-        icon: <BiRocket />,
-        extraContent: <MinuteTech />
-    },
-    {
         title: "Palo Alto Networks",
         role: "IT Specialist",
         shortDescription: "Provided on-site technical support at the previous Palo Alto Networks headquarters in Sunnyvale, California",
@@ -897,55 +946,6 @@ export const jobs = [
         headerPosition: "50% 50%",
         icon: <MdWork />,
         extraContent: <ACFN />
-    },
-    {
-        title: "San Jose State University",
-        role: "Computer Engineering & Business Student",
-        shortDescription: "Earned a computer engineering major and business & math minors in the heart of Silicon Valley.",
-        longDescription: <p>
-            San Jose State University is centered in the heart of Silicon Valley in downtown San Jose, which give me the opportunity to be fully emersed in the business and technology community. 
-            While attending, I earned my computer engineering major with business &amp; math minors, giving me the confidence and paperwork to work professionally as an engineer to solve problems worldwide. 
-            From the technical courses I took in my higher level courses, I learned how computers are structured and abstracted at all levels of the stack, from machine code to web coding.
-            I learned where I wanted to work on that stack, which I have currently landed at around the top, with web based coding languages because I love to "quickly" see everyday consumers using my products.
-            I was also an active member of the Computer &amp; Software Engineering Society (SCE) and Pi Kappa Alpha fraternity. Go Spartans!
-        </p>,
-        logoUrl: require("../assets/images/jobs/sjsu/logo.png"),
-        logoSize: SIZE.LARGE,
-        period: "Aug. 2013 - Dec. 2019",
-        status: STATUS.COMPLETE,
-        link: "https://www.sjsu.edu",
-        skills: {
-            primary: [
-                SKILLS.CPP, SKILLS.GITHUB, SKILLS.SWIFT, SKILLS.PYTHON, SKILLS.FLASK, SKILLS.MYSQL, SKILLS.VERILOG, SKILLS.ASM,
-            ],
-            other: [
-                SKILLS.BUSINESS_DEV, 
-                SKILLS.ACCOUNTING,
-                SKILLS.ENTREPRENEURSHIP, 
-                SKILLS.LEADERSHIP, 
-                SKILLS.TEAMWORK, 
-                SKILLS.MATHEMATICS, 
-                SKILLS.PHYSICS, 
-                SKILLS.ENGINEERING_FUNDAMENTALS, 
-                SKILLS.ENGINEERING_ETHICS,
-                SKILLS.COMPUTER_HARDWARE, 
-                SKILLS.SOFTWARE_ENGINEERING,
-                SKILLS.COMPUTER_NETWORKING, 
-                SKILLS.COMPUTER_ALGORITHMS,
-                SKILLS.DATABASE_SYSTEMS,
-                SKILLS.OBJECT_ORIENTED_PROGRAMMING,
-                SKILLS.ELECTRONIC_CIRCUITS,
-                SKILLS.MICROPROCESSOR_DESIGN,
-                SKILLS.COMPUTER_ARCHITECTURE,
-                SKILLS.OPERATING_SYSTEMS_DESIGN,
-                SKILLS.ASSEMBLY_LANGUAGE,
-                SKILLS.COMPILER_DESIGN,
-            ]
-        },
-        headerUrl: require("../assets/images/jobs/sjsu/header.png"),
-        headerPosition: "50% 50%",
-        icon: <MdSchool />,
-        extraContent: <SJSU />
     },
     {
         title: "iHealPhones",

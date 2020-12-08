@@ -200,7 +200,7 @@ export default class Home extends Component {
                                 <img className="home-icon" alt="schedule" src={require('../../assets/images/icons/schedule.png')} />
                                 <h3>Always On Time</h3>
                                 <p>
-                                    The projects I complete are always delivered to on time, if not earlier. Weekly (if not daily) updates are posted for my projects on
+                                    The projects I complete are always delivered on time, if not earlier. Weekly updates or "sprints" are posted for my projects on
                                     &#8239;<a href="https://github.com" target="_blank" rel="noopener noreferrer" className="white">GitHub</a> so my clients can track the progress of development.
                                 </p>
                             </Col>
@@ -226,7 +226,7 @@ export default class Home extends Component {
                                 <img className="home-icon" alt="mushroom" src={require('../../assets/images/icons/mushroom.png')} />
                                 <h3>Fun Guy</h3>
                                 <p>
-                                    My roots are deep in the customer service forest through my work work as a showroom 
+                                    My roots are deep in the customer service forest through my work as a showroom 
                                     guru at <Link to="/work/tesla" className="white">Tesla</Link> and in my many <Link to="/work/minute.tech-llc" className="white">tech support</Link> roles. 
                                     As a result, I am patient, down-to-earth, and pleasant to work with, just ask my past clients! 
                                 </p>
@@ -248,14 +248,14 @@ export default class Home extends Component {
                                         <li>
                                             <div>5 responsive web pages</div>
                                             <span>
-                                                We will design your project up to 5 custom web screens that look great on every device. These pages are often Home, About Us, What We Do, F.A.Q., Products, etc.
+                                                We will design your website with up to 5 custom web screens that look great on every device; iPhone, Android, Mac, and more. These pages are often Home, About Us, What We Do, F.A.Q., Products, etc.
                                             </span>
                                         </li>
                                         <li>
                                             <div>Contact form</div>
                                             <span>
                                                 Form that collects visitor name, email, message, and automatically sends you an email with this info. 
-                                                Lowers the barrier for potential visitors to effectively contact you with a personal message or question.
+                                                Lowers the barrier for potential visitors to contact you with a personal message or question.
                                             </span>
                                         </li>
                                         <li>
@@ -271,7 +271,7 @@ export default class Home extends Component {
                                             <span>
                                                 Search Engine Optimization (SEO) increases your business relevance ranking on any search engine (Google, Bing, etc). 
                                                 So if someone searches on Google for your business name or related keywords, you will appear at the top. 
-                                                Results can differ greatly depending on your market, business name, competitors, and more.
+                                                Results can differ depending on your market, business name, competitors, and more.
                                             </span>
                                         </li>
                                     </ul>
