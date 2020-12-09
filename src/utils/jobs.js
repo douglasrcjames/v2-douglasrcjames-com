@@ -735,7 +735,7 @@ export const jobs = [
         link: "https://www.bodybyyama.com",
         skills: {
             primary: [
-                SKILLS.HTML, SKILLS.CSS, SKILLS.PHP, SKILLS.MYSQL, SKILLS.WIREFRAMING
+                SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.PHP, SKILLS.MYSQL, SKILLS.WIREFRAMING
             ]
         },
         metrics: [
@@ -785,7 +785,7 @@ export const jobs = [
         link: "https://www.glasshousefarms.co",
         skills: {
             primary: [
-                SKILLS.HTML, SKILLS.CSS, SKILLS.PHP, SKILLS.MYSQL, SKILLS.WIREFRAMING
+                SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.PHP, SKILLS.MYSQL, SKILLS.WIREFRAMING
             ]
         },
         metrics: [
