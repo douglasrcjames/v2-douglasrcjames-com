@@ -683,7 +683,7 @@ export const jobs = [
         link: "https://www.sjsu.edu",
         skills: {
             primary: [
-                SKILLS.CPP, SKILLS.GITHUB, SKILLS.SWIFT, SKILLS.PYTHON, SKILLS.FLASK, SKILLS.MYSQL, SKILLS.VERILOG, SKILLS.ASM,
+                SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.REACT, SKILLS.FIREBASE, SKILLS.SWIFT, SKILLS.PYTHON, SKILLS.FLASK, SKILLS.MYSQL, SKILLS.GITHUB, SKILLS.CPP, SKILLS.VERILOG, SKILLS.ASM,
             ],
             other: [
                 SKILLS.BUSINESS_DEV, 
@@ -905,7 +905,7 @@ export const jobs = [
             by setting up desks. While not setting up desks, I was busy re-imaging old laptops to be recirculated into the company. This doesn't sound that glamorous, but to me I loved it; 
             I always enjoyed tearing my computer setup apart at home and putting it back together in a more organized or optimal way. My main project was for hardware reconciliation, 
             where I had to account for all hardware under the hood of the headquarters in Sunnyvale, which was more than 700,000 computers and over $350 million in assets. I needed to sift through hundreds 
-            of separate spreadsheets and cross reference them with the physical hardware into one consolidated list to reference. I was able to finish the project, but it was more difficult than my manager or 
+            of separate spreadsheets and cross reference them with the physical hardware into one consolidated database to reference. I was able to finish the project, but it was more difficult than my manager or 
             I had anticipated because many assets were either unaccounted for or unaccessible. Through this, I learned top level tech support and the pros/cons of a large, publicly traded, network security corporation's bureaucracy.</p>,
         logoUrl: require("../assets/images/jobs/palo-alto-networks/logo.png"),
         logoSize: SIZE.LARGE,
@@ -953,7 +953,7 @@ export const jobs = [
         shortDescription: "Founded a local device repair business in El Dorado Hills, California.",
         longDescription: <p>
             iHealPhones was a phone repair and computer servicing business that was born out of my garage in the sunny hills to the east of Sacramento in El Dorado Hills, California when I was a ripe age of 15.
-            80% of work done was fixing iPhone screens at a time when iPhones were hitting the market. 
+            I capitalized on the limited options smartphone users had for fixing common screen breaks by providing them with reliable and inexpensive repairs.
             iHealPhones gave me the reputation at my high school as the "phone guy", which caused many jobless high schoolers asking for a free phone fix. 
             These requests got so bad, that I "had" to make a shirt that said "No, I will not fix your phone for free." (I know, pretty cringey.) 
             The HTML, CSS, PHP, and Flash website I built for this business was my first website and introduced me to the coding world for the first time.

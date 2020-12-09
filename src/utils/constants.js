@@ -1,7 +1,7 @@
 
 export const SITE_UPDATED = {
-    SHORT: "12/08/2020",
-    LONG: "Dec. 8th, 2020"
+    SHORT: "12/09/2020",
+    LONG: "Dec. 9th, 2020"
 }
 
 export const STATUS = {
