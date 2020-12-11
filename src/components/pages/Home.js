@@ -347,7 +347,7 @@ export default class Home extends Component {
             <div className="wrapper">
                <h1 className="no-margin">Accolades</h1>
                <p>
-                   Accolades "trophies" that are automatically awarded to me (by me) for any job that I used a technology/skill, produced a metric, or built a system. 
+                   Accolades are "trophies" that are automatically awarded to me (by me) for any job that I used a technology/skill, produced a metric, or built a system. 
                    For example, I used the technology, React.js, when I built <Link to="/work/smithzellner.consulting">smithzellner.consulting</Link>&#8239;
                    and has thus far accumulated 1,889 page views. So, 1 React.js accolade and 1,889 page view accolades awarded. 
                 </p>
