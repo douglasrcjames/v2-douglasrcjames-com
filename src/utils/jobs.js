@@ -90,7 +90,7 @@ export const jobs = [
         link: "https://www.minute.tech",
         skills: {
             primary: [
-                SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.NODE, SKILLS.REACT, SKILLS.STRIPE, SKILLS.TWILIO, SKILLS.GITHUB, SKILLS.FIREBASE, SKILLS.WIREFRAMING
+                SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.NODE, SKILLS.REACT, SKILLS.TS, SKILLS.STRIPE, SKILLS.TWILIO, SKILLS.GITHUB, SKILLS.FIREBASE, SKILLS.WIREFRAMING
             ],
             secondary: [
                 SKILLS.SWIFT, SKILLS.REDUX, SKILLS.PYTHON, SKILLS.MYSQL, SKILLS.FLASK
@@ -158,7 +158,7 @@ export const jobs = [
         link: "https://www.douglasrcjames.com",
         skills: {
             primary: [
-                SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.NODE, SKILLS.REACT, SKILLS.GITHUB, SKILLS.FIREBASE, SKILLS.WIREFRAMING
+                SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.NODE, SKILLS.REACT, SKILLS.TS, SKILLS.GITHUB, SKILLS.FIREBASE, SKILLS.WIREFRAMING
             ]
         },
         metrics: [
@@ -210,7 +210,7 @@ export const jobs = [
         link: "https://dougs-react-boiler.web.app/",
         skills: {
             primary: [
-                SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.NODE, SKILLS.REACT, SKILLS.GITHUB, SKILLS.FIREBASE
+                SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.NODE, SKILLS.REACT, SKILLS.TS, SKILLS.GITHUB, SKILLS.FIREBASE
             ]
         },
         metrics: [
@@ -366,7 +366,7 @@ export const jobs = [
         link: "https://www.vectorpsi.com",
         skills: {
             primary: [
-                SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.NODE, SKILLS.REACT, SKILLS.GITHUB, SKILLS.FIREBASE
+                SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.NODE, SKILLS.REACT, SKILLS.TS, SKILLS.GITHUB, SKILLS.FIREBASE
             ]
         },
         metrics: [
@@ -436,7 +436,7 @@ export const jobs = [
         link: "https://www.smithzellner.consulting",
         skills: {
             primary: [
-                SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.NODE, SKILLS.REACT, SKILLS.GITHUB, SKILLS.FIREBASE
+                SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.NODE, SKILLS.REACT, SKILLS.TS, SKILLS.GITHUB, SKILLS.FIREBASE
             ]
         },
         metrics: [
@@ -571,7 +571,7 @@ export const jobs = [
         link: "https://www.goprestigepower.com",
         skills: {
             primary: [
-                SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.NODE, SKILLS.REACT, SKILLS.GITHUB, SKILLS.FIREBASE
+                SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.NODE, SKILLS.REACT, SKILLS.TS, SKILLS.GITHUB, SKILLS.FIREBASE
             ]
         },
         metrics: [

@@ -37,7 +37,8 @@ export default class Home extends Component {
             wireframing: 0,
             firebase: 0,
             swift: 0,
-            redux: 0
+            redux: 0,
+            ts: 0
 
         }
     }
@@ -102,6 +103,10 @@ export default class Home extends Component {
                             } else if(skill === SKILLS.REDUX){
                                 this.setState((prevState, props) => ({
                                     redux: prevState.redux + 1
+                                })); 
+                            }  else if(skill === SKILLS.TS){
+                                this.setState((prevState, props) => ({
+                                    ts: prevState.ts + 1
                                 })); 
                             } 
                         });
@@ -355,20 +360,21 @@ export default class Home extends Component {
 
                 <Grid fluid className="sm-margin-t-b">
                     <Row center="xs">
-                        <Accolade link={SKILLS.HTML.link} name={SKILLS.HTML.name} value={this.state.html} />
-                        <Accolade link={SKILLS.CSS.link} name={SKILLS.CSS.name} value={this.state.css} />
-                        <Accolade link={SKILLS.JS.link} name={SKILLS.JS.name} value={this.state.js} />
-                        <Accolade link={SKILLS.REACT.link} name={SKILLS.REACT.name} value={this.state.react} />
-                        <Accolade link={SKILLS.NODE.link} name={SKILLS.NODE.name} value={this.state.node} />
-                        <Accolade link={SKILLS.FIREBASE.link} name={SKILLS.FIREBASE.name} value={this.state.firebase} />
-                        <Accolade link={SKILLS.GITHUB.link} name={SKILLS.GITHUB.name} value={this.state.github} />
-                        <Accolade link={SKILLS.WIREFRAMING.link} name={SKILLS.WIREFRAMING.name} value={this.state.wireframing} />
-                        <Accolade link={SKILLS.SWIFT.link} name={SKILLS.SWIFT.name} value={this.state.swift} />
-                        <Accolade link={SKILLS.REDUX.link} name={SKILLS.REDUX.name} value={this.state.redux} />
-                        <Accolade link={SKILLS.PHP.link} name={SKILLS.PHP.name} value={this.state.php} />
-                        <Accolade link={SKILLS.PYTHON.link} name={SKILLS.PYTHON.name} value={this.state.python} />
-                        <Accolade link={SKILLS.MYSQL.link} name={SKILLS.MYSQL.name} value={this.state.mysql} />
-                        <Accolade link={"https://douglasrcjames.com/work"} name={"plus"} value={"and more!"} />
+                        <Accolade link={SKILLS.HTML.link} name={SKILLS.HTML.name} src={SKILLS.HTML.src} value={this.state.html} />
+                        <Accolade link={SKILLS.CSS.link} name={SKILLS.CSS.name} src={SKILLS.CSS.src} value={this.state.css} />
+                        <Accolade link={SKILLS.JS.link} name={SKILLS.JS.name} src={SKILLS.JS.src} value={this.state.js} />
+                        <Accolade link={SKILLS.NODE.link} name={SKILLS.NODE.name} src={SKILLS.NODE.src} value={this.state.node} />
+                        <Accolade link={SKILLS.REACT.link} name={SKILLS.REACT.name} src={SKILLS.REACT.src} value={this.state.react} />
+                        <Accolade link={SKILLS.TS.link} name={SKILLS.TS.name} src={SKILLS.TS.src} value={this.state.ts} />
+                        <Accolade link={SKILLS.FIREBASE.link} name={SKILLS.FIREBASE.name} src={SKILLS.FIREBASE.src} value={this.state.firebase} />
+                        <Accolade link={SKILLS.GITHUB.link} name={SKILLS.GITHUB.name} src={SKILLS.GITHUB.src} value={this.state.github} />
+                        <Accolade link={SKILLS.WIREFRAMING.link} name={SKILLS.WIREFRAMING.name} src={SKILLS.WIREFRAMING.src} value={this.state.wireframing} />
+                        <Accolade link={SKILLS.SWIFT.link} name={SKILLS.SWIFT.name} src={SKILLS.SWIFT.src} value={this.state.swift} />
+                        <Accolade link={SKILLS.REDUX.link} name={SKILLS.REDUX.name} src={SKILLS.REDUX.src} value={this.state.redux} />
+                        <Accolade link={SKILLS.PHP.link} name={SKILLS.PHP.name} src={SKILLS.PHP.src} value={this.state.php} />
+                        <Accolade link={SKILLS.PYTHON.link} name={SKILLS.PYTHON.name} src={SKILLS.PYTHON.src} value={this.state.python} />
+                        <Accolade link={SKILLS.MYSQL.link} name={SKILLS.MYSQL.name} src={SKILLS.MYSQL.src} value={this.state.mysql} />
+                        <Accolade link={"https://douglasrcjames.com/work"} name={"and more!"} src={require("../../assets/images/icons/skills/plus.png")} />
                     </Row>
                     <br/>
                     <div className="horiz-rule" />

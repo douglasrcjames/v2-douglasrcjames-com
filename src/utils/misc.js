@@ -60,11 +60,11 @@ export const SocialLink = ({ label, link }) =>
         />
   </a>
 
-export const Accolade = ({ name, link, value }) =>
+export const Accolade = ({ name, link, value, src }) =>
   <Col xs={6} sm={4} md={3} lg={2} className="accolade">
     <a href={link} target="_blank" rel="noopener noreferrer">
-        <img alt="skill logo" src={require(`../assets/images/icons/skills/${name === "C++" ? "cpp" : name.split(" ").join("-").toLowerCase()}.png`)} /> 
-        <label>{value}</label>
+        <img alt="skill logo" src={src} /> 
+        <label>{ucFirst(name)}{ value ? `: ${value}` : `` }</label>
     </a>
   </Col>
 

@@ -39,87 +39,92 @@ export const SKILLS = {
         src: require(`../assets/images/icons/skills/web-fundamentals.png`) 
     },
     HTML: { 
-        name: "html", 
+        name: "HTML", 
         link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
         src: require(`../assets/images/icons/skills/html.png`) 
     },
     CSS: { 
-        name: "css", 
+        name: "CSS", 
         link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
         src: require(`../assets/images/icons/skills/css.png`) 
     },
     JS: { 
-        name: "javascript", 
+        name: "JavaScript", 
         link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
         src: require(`../assets/images/icons/skills/javascript.png`) 
     },
+    TS: { 
+        name: "TypeScript", 
+        link: "https://www.typescriptlang.org/",
+        src: require(`../assets/images/icons/skills/typescript.png`) 
+    },
     FIREBASE: { 
-        name: "firebase", 
+        name: "Firebase", 
         link: "https://firebase.google.com/",
         src: require(`../assets/images/icons/skills/firebase.png`) 
     },
     NODE: { 
-        name: "node", 
+        name: "Node.js", 
         link: "https://nodejs.org/en/",
         src: require(`../assets/images/icons/skills/node.png`) 
     },
     REACT: { 
-        name: "react", 
+        name: "React.js", 
         link: "https://reactjs.org/",
         src: require(`../assets/images/icons/skills/react.png`) 
     },
     REDUX: { 
-        name: "redux", 
+        name: "React Redux", 
         link: "https://redux.js.org/",
         src: require(`../assets/images/icons/skills/redux.png`) 
     },
     GITHUB: { 
-        name: "github", 
+        name: "GitHub", 
         link: "https://github.com/",
         src: require(`../assets/images/icons/skills/github.png`) 
     },
     STRIPE: { 
-        name: "stripe", 
+        name: "Stripe", 
         link: "https://stripe.com/",
         src: require(`../assets/images/icons/skills/stripe.png`) 
     },
     TWILIO: { 
-        name: "twilio", 
+        name: "Twilio", 
         link: "https://www.twilio.com/",
         src: require(`../assets/images/icons/skills/twilio.png`) 
     },
     SWIFT: { 
-        name: "swift", 
+        name: "Swift", 
         link: "https://developer.apple.com/swift/",
         src: require(`../assets/images/icons/skills/swift.png`) 
     },
     PYTHON: { 
-        name: "python", 
+        name: "Python", 
         link: "https://www.python.org/",
         src: require(`../assets/images/icons/skills/python.png`) 
     },
     MYSQL: { 
-        name: "mysql", 
+        name: "MySQL", 
         link: "https://www.mysql.com/",
         src: require(`../assets/images/icons/skills/mysql.png`) 
     },
     FLASK: { 
-        name: "flask", 
+        name: "Flask", 
         link: "https://flask.palletsprojects.com/en/1.1.x/",
         src: require(`../assets/images/icons/skills/flask.png`) 
     },
     PHP: { 
-        name: "php", 
+        name: "PHP", 
         link: "https://www.php.net/",
         src: require(`../assets/images/icons/skills/php.png`) 
     },
     WORDPRESS: { 
-        name: "wordpress", 
+        name: "WordPress", 
         link: "https://wordpress.com/",
         src: require(`../assets/images/icons/skills/wordpress.png`) 
     },
     SQUARESPACE: { 
-        name: "squarespace", 
+        name: "SquareSpace", 
         link: "https://www.squarespace.com/",
         src: require(`../assets/images/icons/skills/squarespace.png`) 
     },

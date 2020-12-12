@@ -4,7 +4,7 @@ import { FaBabyCarriage } from "react-icons/fa";
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
-import resume from '../../../assets/pdfs/DouglasJames-Resume-12.09.2020.pdf'
+import resume from '../../../assets/pdfs/DouglasJames-Resume-12.11.2020.pdf'
 import { jobs } from '../../../utils/jobs';
 import { SITE_UPDATED, STATUS } from '../../../utils/constants';
 
