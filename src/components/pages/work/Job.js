@@ -99,7 +99,10 @@ export default class Job extends Component {
                                     
 
                                     {/* DESCRIPTION */}
-                                    {this.props.job.longDescription}
+                                    <div className="description-div">
+                                        {this.props.job.longDescription}
+                                    </div>
+                                    
                                     <Row center="xs">
                                         <Col xs={12} sm={6} className="sm-padding-t-b">
                                             <a href={this.props.job.link} rel="noopener noreferrer" target="_blank">
