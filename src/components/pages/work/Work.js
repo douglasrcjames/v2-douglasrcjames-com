@@ -7,6 +7,7 @@ import 'react-vertical-timeline-component/style.min.css';
 import resume from '../../../assets/pdfs/DouglasJames-Resume-12.11.2020.pdf'
 import { jobs } from '../../../utils/jobs';
 import { SITE_UPDATED, STATUS } from '../../../utils/constants';
+// import Particles from '../../../utils/misc';
 
 export default class Work extends Component {
     render() {
@@ -42,6 +43,7 @@ export default class Work extends Component {
                     </div>
                 </div>
                 <div className="timeline-x-scroll">
+                    {/* <Particles numParts={50} /> */}
                     <VerticalTimeline className="custom-line">
                         {
                             jobs.map((job, i) => { 

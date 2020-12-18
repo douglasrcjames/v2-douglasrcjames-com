@@ -1,7 +1,7 @@
 // 
 // Some random handy functions! 
 //
-import React from "react"
+import React, { Component } from "react"
 import { Col } from "react-flexbox-grid";
 
 // First letter is uppercase
@@ -70,4 +70,22 @@ export const Accolade = ({ name, link, value, src }) =>
 
 export function numberWithCommas(x) {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
+export default class Particles extends Component {
+  renderParticles = () => {
+    var particles = [];
+    for (var i = 0; i < this.props.numParts; i++) {
+        particles.push(<div className="particle" key={i}></div>);
+    }
+    return <div id="particle-container">{particles}</div>;
+  }
+
+  render() {
+      return (
+          <div id="particle-container">
+              {this.renderParticles()}
+          </div>
+      )
+  }
 }

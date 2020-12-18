@@ -349,6 +349,8 @@ hr {
 }
 
 .doug-card {
+    position: relative;
+    z-index: 2;
     border: 2px $blue solid;
     border-radius: 4px;
     padding: 10px 20px;
@@ -365,6 +367,8 @@ hr {
 }
 
 .accolade {
+    position: relative;
+    z-index: 2;
     a {
         display: inline-block;
         border: 2px $blue solid;
@@ -406,6 +410,40 @@ hr {
 
 }
 
+
+// Particles
+.particle-container {
+    position: relative;
+    z-index: 1;
+}
+.particle {
+	position: absolute;
+ 	border-radius: 50%;
+}
+
+
+@for $i from 1 through 30 {
+	@keyframes particle-animation-#{$i} {
+		100% {
+			transform: translate3d((random(90) * 1vw), (random(90) * 1vh), (random(100) * 1px));
+		}
+	}
+	
+	.particle:nth-child(#{$i}){
+		animation: particle-animation-#{$i} 50s infinite;
+		$size: random(5) + 5 + px;
+		opacity: random(100)/100;
+		height: $size;
+		width: $size;
+		animation-delay: -$i * .2s;
+		transform: translate3d((random(90) * 1vw), (random(90) * 1vh), (random(100) * 1px));
+		background: $blue;
+	}
+
+    .particle:hover{
+        background: $green;
+    }
+}
  
 
 

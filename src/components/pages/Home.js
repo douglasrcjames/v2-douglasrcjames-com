@@ -3,7 +3,7 @@ import { Grid, Row, Col } from 'react-flexbox-grid';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { METRICS, SITE_UPDATED, SKILLS } from '../../utils/constants';
-import { Accolade, numberWithCommas, ucFirst } from '../../utils/misc';
+import Particles, { Accolade, numberWithCommas, ucFirst } from '../../utils/misc';
 import { jobs } from '../../utils/jobs';
 import ContactForm from '../misc/ContactForm';
 import { HashLink } from 'react-router-hash-link';
@@ -161,6 +161,7 @@ export default class Home extends Component {
             <Helmet>
                 <title>Home | Douglas R.C. James</title>
             </Helmet>
+            <Particles numParts={10} />
             <div className="headshot-bg">
                 <div className="hero-container">
                     <h1>
@@ -349,6 +350,7 @@ export default class Home extends Component {
                 </div>
             </div>
             
+            <Particles numParts={20} />
             <div className="wrapper">
                <h1 className="no-margin">Accolades</h1>
                <p>
