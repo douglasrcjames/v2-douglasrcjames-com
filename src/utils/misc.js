@@ -76,7 +76,11 @@ export default class Particles extends Component {
   renderParticles = () => {
     var particles = [];
     for (var i = 0; i < this.props.numParts; i++) {
+      if(this.props.longScreen){
+        particles.push(<div className="particle-long-screen" key={i}></div>);
+      } else {
         particles.push(<div className="particle" key={i}></div>);
+      }
     }
     return <div id="particle-container">{particles}</div>;
   }

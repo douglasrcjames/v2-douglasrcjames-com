@@ -105,27 +105,41 @@ img.xl-em {
 
 .headshot-bg {
     /* The image used */
-    background-image: url("https://firebasestorage.googleapis.com/v0/b/douglasrcjamescom.appspot.com/o/professional-bg.png?alt=media&token=65a5b4c9-d978-4e41-b8f4-00e6901fd62a");
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/douglasrcjamescom.appspot.com/o/pro.png?alt=media&token=4d5b2556-8dc2-4195-814a-5cae892bb3b3");
 
     /* Full height */
     height: 100%; 
 
     /* Center and scale the image nicely */
-    background-position: center;
+    background-position: right 5% bottom;
     background-repeat: no-repeat;
-    background-size: cover;
-    z-index: 5;
+    background-size: 22% auto;
+
+    position: relative;
+    z-index: 2;
+
+    animation-name: fadeIn;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(.37,.09,.29,.97);
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
 }
+
+@keyframes fadeIn {
+    0% {
+        background-position: right 5% bottom -1000px;
+    }
+    100% {
+        background-position: right 5% bottom;
+    }
+}
+
 
 .headshot-block {
     display: none;
 }
 
-@media screen and (max-width: 1400px) {
-    .headshot-bg {
-        background-image: none;
-      }
-    
+@media screen and (max-width: 1200px) {
     .headshot-block {
         display: block;
     }

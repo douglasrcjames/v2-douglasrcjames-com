@@ -13,6 +13,8 @@ export default class Home extends Component {
         super(props)
     
         this.state = {
+            deviceWidth: 0,
+            deviceHeight: 0,
             // metrics
             visitors: 0,
             pageViews: 0,
@@ -44,6 +46,9 @@ export default class Home extends Component {
     }
 
     componentDidMount(){
+        this.updateWindowDimensions();
+        window.addEventListener('resize', this.updateWindowDimensions);
+
         if(jobs){
             jobs.forEach((job, i) => { 
                 if(job.skills){
@@ -153,6 +158,14 @@ export default class Home extends Component {
             })
         }
     }
+
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.updateWindowDimensions);
+    }
+      
+    updateWindowDimensions = () => {
+        this.setState({ deviceWidth: window.innerWidth, deviceHeight: window.innerHeight });
+    }
     
 
     render() {
@@ -161,17 +174,21 @@ export default class Home extends Component {
             <Helmet>
                 <title>Home | Douglas R.C. James</title>
             </Helmet>
-            <Particles numParts={10} />
+            <Particles numParts={this.state.deviceWidth > 1000 ? 10 : 0} />
             <div className="headshot-bg">
                 <div className="hero-container">
                     <h1>
-                        Hi, I'm Doug. <br/>
-                        I solve tech problems.
+                        <span className="top-span roboto-black">
+                            Hi, I'm Doug. <br/>
+                            I solve tech problems.
+                        </span>
                     </h1>
                     <p className="sm-padding-l">
-                        <b>+</b> I'm a freelance full-stack software developer working with React.js/Native to build great user experiences.<br/>
-                        <b>+</b> I'm trained as a computer engineer in Silicon Valley, California.<br/>
-                        <b>+</b> I'm working on <Link to="/work/minute.tech-llc" className="">Minute.tech</Link> to connect non-techies to techies for tech support.
+                        <span className="top-span">
+                            <b>+</b> I'm a freelance full-stack software developer working with React.js/Native to build great user experiences.<br/>
+                            <b>+</b> I'm trained as a computer engineer in Silicon Valley, California.<br/>
+                            <b>+</b> I'm working on <Link to="/work/minute.tech-llc" className="">Minute.tech</Link> to connect non-techies to techies for tech support.
+                        </span>
                     </p>
                     <Link to="/work">
                         <button className="md-blue-btn">
@@ -350,13 +367,15 @@ export default class Home extends Component {
                 </div>
             </div>
             
-            <Particles numParts={20} />
+            <Particles numParts={this.state.deviceWidth > 1000 ? 40 : 0} />
             <div className="wrapper">
                <h1 className="no-margin">Accolades</h1>
                <p>
-                   Accolades are "trophies" that are automatically awarded to me (by me) for any job that I used a technology/skill, produced a metric, or built a system. 
-                   For example, I used the technology, React.js, when I built <Link to="/work/smithzellner.consulting">smithzellner.consulting</Link>&#8239;
-                   and has thus far accumulated 1,889 page views. So, 1 React.js accolade and 1,889 page view accolades awarded. 
+                   <span className="top-span">
+                    Accolades are "trophies" that are automatically awarded to me (by me) for any job that I used a technology/skill, produced a metric, or built a system. 
+                    For example, I used the technology, React.js, when I built <Link to="/work/smithzellner.consulting">smithzellner.consulting</Link>&#8239;
+                    and has thus far accumulated 1,889 page views. So, 1 React.js accolade and 1,889 page view accolades awarded. 
+                   </span>
                 </p>
                 <b>Last updated: {SITE_UPDATED.LONG}</b>
 

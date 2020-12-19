@@ -56,6 +56,8 @@ textarea {
 }
 
 .md-blue-btn {
+  position: relative;
+  z-index: 2;
   background-color: $blue;
   font-family: $roboto-bold;
   cursor: pointer;

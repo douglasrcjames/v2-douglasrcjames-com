@@ -4,10 +4,10 @@ import { FaBabyCarriage } from "react-icons/fa";
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
-import resume from '../../../assets/pdfs/DouglasJames-Resume-12.11.2020.pdf'
+import resume from '../../../assets/pdfs/DouglasJames-Resume-12.18.2020.pdf'
 import { jobs } from '../../../utils/jobs';
 import { SITE_UPDATED, STATUS } from '../../../utils/constants';
-// import Particles from '../../../utils/misc';
+import Particles from '../../../utils/misc';
 
 export default class Work extends Component {
     render() {
@@ -43,7 +43,7 @@ export default class Work extends Component {
                     </div>
                 </div>
                 <div className="timeline-x-scroll">
-                    {/* <Particles numParts={50} /> */}
+                    <Particles numParts={100} longScreen={true} />
                     <VerticalTimeline className="custom-line">
                         {
                             jobs.map((job, i) => { 
