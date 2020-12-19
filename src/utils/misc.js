@@ -87,9 +87,9 @@ export default class Particles extends Component {
 
   render() {
       return (
-          <div id="particle-container">
-              {this.renderParticles()}
-          </div>
+          <>
+            {this.renderParticles()}
+          </>
       )
   }
 }

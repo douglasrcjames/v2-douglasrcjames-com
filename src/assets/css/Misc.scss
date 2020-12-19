@@ -325,11 +325,13 @@ hr {
 @media screen and (max-width: 1169px) {
     .vertical-timeline-element-date {
         color: $white;
+        background-color: transparent;
     }
 
     .vertical-timeline-element-content:hover {
         .vertical-timeline-element-date {
             color: $blue;
+            background-color: transparent;
         }
     }
 }
@@ -420,58 +422,77 @@ hr {
 // Particles
 .particle-container {
     position: relative;
-    z-index: 1;
+    z-index: 0;
 }
+
 .particle {
 	position: absolute;
  	border-radius: 50%;
-    z-index: 1;
+    z-index: 0;
 }
 
 .particle-long-screen {
     position: absolute;
     border-radius: 50%;
-   z-index: 1;
+    z-index: 0;
 }
 
 .top-span {
     position: relative;
     z-index: 2;
-    background-color: $white;
+    background-color: rgba(255,255,255,0.7);
 }
 
 
 @for $i from 1 through 30 {
 	@keyframes particle-animation-#{$i} {
 		100% {
-			transform: translate3d((random(90) * 1vw), (random(90) * 1vh), (random(100) * 1px));
+			transform: translate3d((random(90) * 1vw), (random(90) * 1vh), (random(100) * 0px));
 		}
 	}
 	
 	.particle:nth-child(#{$i}){
 		animation: particle-animation-#{$i} 50s infinite;
-		$size: random(5) + 5 + px;
+		$size: random(10) + 5 + px;
 		opacity: random(100)/100;
 		height: $size;
 		width: $size;
 		animation-delay: -$i * .2s;
-		transform: translate3d((random(90) * 1vw), (random(90) * 1vh), (random(100) * 1px));
+		transform: translate3d((random(90) * 1vw), (random(90) * 1vh), (random(100) * 0px));
 		background: $blue;
 	}
 
     .particle-long-screen:nth-child(#{$i}){
 		animation: particle-animation-#{$i} 50s infinite;
-		$size: random(5) + 5 + px;
+		$size: random(10) + 5 + px;
 		opacity: random(100)/100;
 		height: $size;
 		width: $size;
 		animation-delay: -$i * .2s;
-		transform: translate3d((random(90) * 1vw), (random(90) * 5vh), (random(100) * 1px));
+		transform: translate3d((random(90) * 1vw), (random(90) * 5vh), (random(100) * 0px));
 		background: $blue;
 	}
 
     .particle:hover{
         background: $green;
+    }
+
+    .particle-long-screen:hover{
+        background: $green;
+    }
+
+    .particle:active{
+        background: $red;
+        height: 15px;
+		width: 15px;
+        animation-play-state: paused !important;
+    }
+
+    .particle-long-screen:active{
+        background: $red;
+        height: 15px;
+		width: 15px;
+        animation-play-state: paused !important;
     }
 }
  

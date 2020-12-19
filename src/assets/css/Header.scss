@@ -1,7 +1,9 @@
 @import "variables";
 
 .nav-container {
-    margin: 0 auto;
+  position: relative;
+  z-index: 5;
+  margin: 0 auto;
 }
 
 .nav-logo {
@@ -165,7 +167,10 @@
 // Side nav //
 
 .side-menu {
+
     nav {
+      position: relative;
+      z-index: 5;
       ul {
         list-style: none;
         text-align: center;

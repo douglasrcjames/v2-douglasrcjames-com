@@ -174,8 +174,9 @@ export default class Home extends Component {
             <Helmet>
                 <title>Home | Douglas R.C. James</title>
             </Helmet>
-            <Particles numParts={this.state.deviceWidth > 1000 ? 10 : 0} />
-            <div className="headshot-bg">
+            
+            <div className="headshot-container">
+                <Particles numParts={15} />
                 <div className="hero-container">
                     <h1>
                         <span className="top-span roboto-black">
@@ -196,9 +197,7 @@ export default class Home extends Component {
                         </button>
                     </Link>
                 </div>
-                <div className="headshot-block">
-                    <img className="xlarge center" alt="headshot" src={require('../../assets/images/misc/professional.png')} />
-                </div>
+                <img alt="headshot" src={require('../../assets/images/misc/professional.png')} />
             </div>
            
             <div className="full-width bg-blue">
@@ -367,8 +366,9 @@ export default class Home extends Component {
                 </div>
             </div>
             
-            <Particles numParts={this.state.deviceWidth > 1000 ? 40 : 0} />
+            
             <div className="wrapper">
+                <Particles numParts={15} />
                <h1 className="no-margin">Accolades</h1>
                <p>
                    <span className="top-span">
@@ -419,7 +419,7 @@ export default class Home extends Component {
                                         />
                                     </div>
                                 </div>
-                                
+                                <br/>
                                 <label style={{display: "block"}}>Built custom CMS (Content Management System)</label>
                                 <Link to="/work/capsmd.org" className=" sm-text">See <b>caps.org</b> project</Link>
                             </div>
@@ -443,7 +443,7 @@ export default class Home extends Component {
                                         />
                                     </div>
                                 </div>
-                                
+                                <br/>
                                 <label style={{display: "block"}}>Built custom CRM (Customer Relationship Management) system</label>
                                 <Link to="/work/goprestigepower.com" className=" sm-text">See <b>goprestigepower.com</b> project</Link>
                             </div>
@@ -466,7 +466,7 @@ export default class Home extends Component {
                                         />
                                     </div>
                                 </div>
-                                
+                                <br/>
                                 <label style={{display: "block"}}>Built tech support system with messenger, video calling, screen sharing, and payment</label>
                                 <Link to="/work/minute.tech-llc" className=" sm-text">See <b>Minute.tech</b> project</Link>
                             </div>

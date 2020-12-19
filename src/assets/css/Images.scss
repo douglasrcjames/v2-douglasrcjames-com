@@ -103,45 +103,40 @@ img.xl-em {
     padding: 5% 0 10% 0;
 }
 
-.headshot-bg {
-    /* The image used */
-    background-image: url("https://firebasestorage.googleapis.com/v0/b/douglasrcjamescom.appspot.com/o/pro.png?alt=media&token=4d5b2556-8dc2-4195-814a-5cae892bb3b3");
-
-    /* Full height */
-    height: 100%; 
-
-    /* Center and scale the image nicely */
-    background-position: right 5% bottom;
-    background-repeat: no-repeat;
-    background-size: 22% auto;
-
+.headshot-container {
     position: relative;
-    z-index: 2;
+    img {
+        width: 100%;
+        height: auto;
+        max-width: 20%;
+        position: absolute;
+        right: 5%;
+        bottom: 0;
+        z-index: 2;
 
-    animation-name: fadeIn;
-    animation-iteration-count: 1;
-    animation-timing-function: cubic-bezier(.37,.09,.29,.97);
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes fadeIn {
-    0% {
-        background-position: right 5% bottom -1000px;
+        animation-name: fadeIn;
+        animation-iteration-count: 1;
+        animation-timing-function: cubic-bezier(.37,.09,.29,.97);
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
     }
-    100% {
-        background-position: right 5% bottom;
-    }
-}
 
 
-.headshot-block {
-    display: none;
 }
 
 @media screen and (max-width: 1200px) {
-    .headshot-block {
-        display: block;
+    .headshot-container {
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            float: center;
+            max-width: 40%;
+            margin-bottom: -4px;
+            position: relative;
+            z-index: 2;
+            animation-name: fadeInMobile;
+        }
     }
 }
 
@@ -152,6 +147,44 @@ img.xl-em {
         h1 {
             margin: 0 !important
         }
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        right: -20%;
+        bottom: 0;
+    }
+    40% {
+        right: 6%;
+        bottom: 0;
+    }
+    75% {
+        right: 4.5%;
+        bottom: 0;
+    }
+    100% {
+        right: 5%;
+        bottom: 0;
+    }
+}
+
+@keyframes fadeInMobile {
+    0% {
+        right: -20%;
+        bottom: 0;
+    }
+    40% {
+        right: 2%;
+        bottom: 0;
+    }
+    75% {
+        right: -1%;
+        bottom: 0;
+    }
+    100% {
+        right: 0;
+        bottom: 0;
     }
 }
 
