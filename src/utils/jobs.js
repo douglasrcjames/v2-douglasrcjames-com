@@ -1,6 +1,6 @@
 import React from 'react'
 import { MdWork, MdSchool } from "react-icons/md";
-import { BiCodeAlt, BiRocket } from "react-icons/bi"
+import { BiCodeAlt, BiRocket, BiBuildings } from "react-icons/bi"
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import { Col, Row } from 'react-flexbox-grid';
@@ -27,8 +27,114 @@ import BodyByYama from '../components/pages/work/jobs/BodyByYama';
 import VectorPSI from '../components/pages/work/jobs/VectorPSI';
 import PhotoGallery from '../components/misc/PhotoGallery';
 import TextLinkGallery from '../components/misc/TextLinkGallery';
+import Canary from '../components/pages/work/jobs/Canary';
+import MeerkatMedical from '../components/pages/work/jobs/MeerkatMedical';
+import StreetsOnTheLake from '../components/pages/work/jobs/StreetsOnTheLake';
 
 export const jobs = [
+    {
+        title: "meerkatmedical.com",
+        role: "Web developer",
+        shortDescription: "Working on a full-stack website with API integration for an insurance company out of Tulsa, Oklahoma",
+        longDescription: <p>Tasked at creating a simple customer lead form collection web app that interfaces with their CRM backend API, AgencyBloc. Website is still in the works and will report back with the finished build details soon!</p>,
+        logoUrl: require("../assets/images/jobs/meerkatmedical/logo.png"),
+        logoSize: SIZE.LARGE,
+        period: "Feb. 2021 - Today",
+        status: STATUS.WORKING,
+        link: "https://www.meerkatmedical.com",
+        githubLink: "https://github.com/douglasrcjames/meerkatmedical.com",
+        skills: {
+            primary: [
+                SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.NODE, SKILLS.REACT, SKILLS.GITHUB, SKILLS.FIREBASE
+            ]
+        },
+        headerUrl: require("../assets/images/jobs/meerkatmedical/header.png"),
+        lastUpdated: "Mar. 13th, 2021",
+        headerPosition: "50% 70%",
+        icon: <BiCodeAlt />,
+        extraContent: <MeerkatMedical />
+    },
+    {
+        title: "Canary Marketing",
+        role: "Web Engineer",
+        shortDescription: "Building an ecommerce web application for a marketing agency and hired full-time as their web expert.",
+        longDescription: <>
+            <p>
+                Canary Marketing is a full service marketing agency with a simple mission. Create merch people actually want to keep. 
+                Whether it's a shirt or a seeding kit, make it the best one it can be. Hold every project to the same standard. Be thoughtful. Design differently. 
+                Because after all, no one needs more "stuff".
+            </p>
+            <p>
+                I started working as a contractor for Canary creating online pop up shops for them to display branded merchandise for their client project: Stitch Fix's 10th Anniversary. 
+                This initial shop was a prototype for the greater web app/shop system that included customer authentication, admin management, item postings, checkout, and payment. 
+                The initial shop had a guest list of ~10,000 users and the system worked great! So great that I was hired full time in March of 2021 as their web engineer to bring the full web shop to life. 
+                As I finish building this web shop, I will report back and post screenshots and a deeper explanation of the web app!
+            </p>
+            </>,
+        logoUrl: require("../assets/images/jobs/canary/logo.png"),
+        logoSize: SIZE.LARGE,
+        period: "Jan. 2021 - Today",
+        status: STATUS.WORKING,
+        link: "https://www.canarymarketing.shop",
+        skills: {
+            primary: [
+                SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.NODE, SKILLS.REACT, SKILLS.TS, SKILLS.GITHUB, SKILLS.FIREBASE
+            ],
+        },
+        metrics: [
+            {
+                name: METRICS.VISITORS,
+                value: 10583
+            },
+            {
+                name: METRICS.PAGE_VIEWS,
+                value: 374122
+            },
+            {
+                name: METRICS.COMMITS,
+                value: 71
+            },
+            {
+                name: METRICS.LOC,
+                value: 9000
+            },
+            {
+                name: METRICS.FILES,
+                value: 84
+            },
+            {
+                name: METRICS.SCREENS,
+                value: 18
+            },
+        ],
+        headerUrl: require("../assets/images/jobs/canary/header.png"),
+        lastUpdated: "Mar. 13th, 2021",
+        headerPosition: "50% 50%",
+        icon: <BiBuildings />,
+        extraContent: <Canary />
+    },
+    {
+        title: "streetsonthelake.com",
+        role: "Web developer",
+        shortDescription: "Working on a full-stack web app with RSVP functionality for a friend's wedding out of Anchorage, Alaska",
+        longDescription: <p>Creating a website to showcase a friends upcoming wedding and to collect RSVPs for the event. Website is still in the works and will report back with the finished build details soon!</p>,
+        logoUrl: require("../assets/images/jobs/streetsonthelake/logo.png"),
+        logoSize: SIZE.ROUNDED,
+        period: "Jan. 2021 - Today",
+        status: STATUS.WORKING,
+        link: "https://www.streetsonthelake.com",
+        githubLink: "https://github.com/douglasrcjames/streetsonthelake.com",
+        skills: {
+            primary: [
+                SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.NODE, SKILLS.REACT, SKILLS.GITHUB, SKILLS.FIREBASE
+            ]
+        },
+        headerUrl: require("../assets/images/jobs/streetsonthelake/header.png"),
+        lastUpdated: "Mar. 13th, 2021",
+        headerPosition: "50% 40%",
+        icon: <BiCodeAlt />,
+        extraContent: <StreetsOnTheLake />
+    },
     {
         title: "Minute.tech LLC",
         role: "Founder & Engineer",
@@ -135,106 +241,10 @@ export const jobs = [
             }
         ],
         headerUrl: require("../assets/images/jobs/minutetech/header.png"),
+        lastUpdated: "Dec. 18th, 2020",
         headerPosition: "50% 50%",
         icon: <BiRocket />,
         extraContent: <MinuteTech />
-    },
-    {
-        title: "douglasrcjames.com",
-        role: "Web developer",
-        shortDescription: "Built a full-stack portfolio website for myself demonstrating and showcasing my skills.",
-        longDescription: <p>
-            This is my second and hopefully final build of my personal portfolio website to showcase my work, skills, and more. Check out how far I've come 
-            from <a href="https://douglasrcjames-v1.web.app/" target="_blank" rel="noopener noreferrer">version 1 of my portfolio site</a>!
-            At the time I am writing this, I feel that this site design and build is my best project to date, and I am proud to show how far my skills have evolved from version 1 to version 2 (granted version 1 was a quick build).
-            <br/>
-            Also, how meta is this? Here I am creating a project web page about the website you are on!
-            </p>,
-        githubLink: "https://github.com/douglasrcjames/douglasrcjames.com",
-        logoUrl: require("../assets/images/logos/logo512.png"),
-        logoSize: SIZE.LARGE,
-        period: "Aug. 2019 - Dec. 2020",
-        status: STATUS.COMPLETE,
-        link: "https://www.douglasrcjames.com",
-        skills: {
-            primary: [
-                SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.NODE, SKILLS.REACT, SKILLS.TS, SKILLS.GITHUB, SKILLS.FIREBASE, SKILLS.WIREFRAMING
-            ]
-        },
-        metrics: [
-            {
-                name: METRICS.VISITORS,
-                value: 245
-            },
-            {
-                name: METRICS.PAGE_VIEWS,
-                value: 2226
-            },
-            {
-                name: METRICS.COMMITS,
-                value: 77
-            },
-            {
-                name: METRICS.LOC,
-                value: 4600
-            },
-            {
-                name: METRICS.FILES,
-                value: 350
-            },
-            {
-                name: METRICS.SCREENS,
-                value: 5
-            }
-        ],
-        headerUrl: require("../assets/images/jobs/douglasrcjames/header.png"),
-        headerPosition: "50% 40%",
-        icon: <BiCodeAlt />,
-        extraContent: <Douglasrcjames />
-    },
-    {
-        title: "Doug's React Boiler",
-        role: "Web developer",
-        shortDescription: "Built myself a boilerplate template for building my React.js/Firebase web applications.",
-        longDescription: <p>
-            I built this template project because I was finding myself recreating the same portions of code for my React web projects. 
-            This template project features my CSS library I created, base React components like a Header &amp; Footer, directories properly structures, React Router, Google Analytics, .env file, sitemap, and more! 
-            I figured a boilerplate for me to start from would reduce any mistakes made by repeating the same process, but most importantly speed up the creation of the baseline project.
-            This repository will be evolving as I learn new tricks and technologies for my web projects. For example, I recently added SCSS to my baseline styles for ease of use when changing the colors and fonts per project!
-        </p>,
-        githubLink: "https://github.com/douglasrcjames/dougs-react-boiler",
-        logoUrl: require("../assets/images/jobs/dougs-react-boiler/logo.png"),
-        logoSize: SIZE.LARGE,
-        period: "Jun. 2020 - Nov. 2020",
-        status: STATUS.COMPLETE,
-        link: "https://dougs-react-boiler.web.app/",
-        skills: {
-            primary: [
-                SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.NODE, SKILLS.REACT, SKILLS.TS, SKILLS.GITHUB, SKILLS.FIREBASE
-            ]
-        },
-        metrics: [
-            {
-                name: METRICS.LOC,
-                value: 1200
-            },
-            {
-                name: METRICS.COMMITS,
-                value: 34
-            },
-            {
-                name: METRICS.FILES,
-                value: 35
-            },
-            {
-                name: METRICS.SCREENS,
-                value: 3
-            }
-        ],
-        headerUrl: require("../assets/images/jobs/dougs-react-boiler/header.png"),
-        headerPosition: "50% 50%",
-        icon: <BiCodeAlt />,
-        extraContent: <DougsReactBoiler />
     },
     {
         title: "capsmd.org",
@@ -308,7 +318,7 @@ export const jobs = [
         githubLink: "https://github.com/douglasrcjames/capsmd.org",
         logoUrl: require("../assets/images/jobs/caps/logo.png"),
         logoSize: SIZE.LARGE,
-        period: "May. 2019 - Nov. 2020",
+        period: "May. 2019 - Mar. 2021",
         status: STATUS.COMPLETE,
         link: "https://www.capsmd.org",
         skills: {
@@ -319,15 +329,15 @@ export const jobs = [
         metrics: [
             {
                 name: METRICS.VISITORS,
-                value: 3668
+                value: 4022
             },
             {
                 name: METRICS.PAGE_VIEWS,
-                value: 16964
+                value: 19531
             },
             {
                 name: METRICS.COMMITS,
-                value: 177
+                value: 190
             },
             {
                 name: METRICS.LOC,
@@ -342,10 +352,165 @@ export const jobs = [
                 value: 15
             }
         ],
+        lastUpdated: "Mar. 13th, 2021",
         headerUrl: require("../assets/images/jobs/caps/header.png"),
         headerPosition: "50% 50%",
         icon: <BiCodeAlt />,
         extraContent: <CAPS />
+    },
+    {
+        title: "blairfamily.foundation",
+        role: "Web developer",
+        shortDescription: "Built a full-stack website for a philanthropy foundation in Montgomery, Maryland.",
+        longDescription: <p>
+            The David and Mikel Blair Family Foundation is dedicated to purposeful giving and 
+            is rooted in improving the quality of life for individuals around Maryland. The foundation connected with me after a partner had a positive experience working with me at <Link to="/work/capsmd.org">capsmd.org</Link>. 
+            They were looking to develop a simple full-stack website with a contact form and subscribe form, much like my work at capsmd.org. I was able to work with a designer on their team to take their 
+            wireframe design and turn it into a living website. The wireframe was one of the more intricate designs I have had to emulate, but I was able to tackle the challenge with relative ease with my newfound skills. 
+            I built this site using React.js as the front-end, and Firebase for the NoSQL database back-end to store contact info then send that contact info to the client's email via 
+            nodemailer with server side functions, and free SSL hosting. The site also features traffic tracking for the client with Google Analytics.
+        </p>,
+        githubLink: "https://github.com/douglasrcjames/blairfamily.foundation",
+        logoUrl: require("../assets/images/jobs/blairfamily/logo.png"),
+        logoSize: SIZE.LARGE,
+        period: "Apr. 2020 - Mar. 2021",
+        status: STATUS.COMPLETE,
+        link: "https://www.blairfamily.foundation",
+        skills: {
+            primary: [
+                SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.NODE, SKILLS.REACT, SKILLS.GITHUB, SKILLS.FIREBASE, SKILLS.WIREFRAMING
+            ]
+        },
+        metrics: [
+            {
+                name: METRICS.VISITORS,
+                value: 1488
+            },
+            {
+                name: METRICS.PAGE_VIEWS,
+                value: 5151
+            },
+            {
+                name: METRICS.COMMITS,
+                value: 55
+            },
+            {
+                name: METRICS.LOC,
+                value: 3400
+            },
+            {
+                name: METRICS.FILES,
+                value: 150
+            },
+            {
+                name: METRICS.SCREENS,
+                value: 5
+            }
+        ],
+        headerUrl: require("../assets/images/jobs/blairfamily/header.png"),
+        lastUpdated: "Mar. 13th, 2021",
+        headerPosition: "50% 50%",
+        icon: <BiCodeAlt />,
+        extraContent: <BlairFamilyFoundation />
+    },
+    {
+        title: "douglasrcjames.com",
+        role: "Web developer",
+        shortDescription: "Built a full-stack portfolio website for myself demonstrating and showcasing my skills.",
+        longDescription: <p>
+            This is my second and hopefully final build of my personal portfolio website to showcase my work, skills, and more. Check out how far I've come 
+            from <a href="https://douglasrcjames-v1.web.app/" target="_blank" rel="noopener noreferrer">version 1 of my portfolio site</a>!
+            At the time I am writing this, I feel that this site design and build is my best project to date, and I am proud to show how far my skills have evolved from version 1 to version 2 (granted version 1 was a quick build).
+            <br/>
+            Also, how meta is this? Here I am creating a project web page about the website you are on!
+            </p>,
+        githubLink: "https://github.com/douglasrcjames/douglasrcjames.com",
+        logoUrl: require("../assets/images/logos/logo512.png"),
+        logoSize: SIZE.LARGE,
+        period: "Aug. 2019 - Dec. 2020",
+        status: STATUS.COMPLETE,
+        link: "https://www.douglasrcjames.com",
+        skills: {
+            primary: [
+                SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.NODE, SKILLS.REACT, SKILLS.TS, SKILLS.GITHUB, SKILLS.FIREBASE, SKILLS.WIREFRAMING
+            ]
+        },
+        metrics: [
+            {
+                name: METRICS.VISITORS,
+                value: 245
+            },
+            {
+                name: METRICS.PAGE_VIEWS,
+                value: 2226
+            },
+            {
+                name: METRICS.COMMITS,
+                value: 77
+            },
+            {
+                name: METRICS.LOC,
+                value: 4600
+            },
+            {
+                name: METRICS.FILES,
+                value: 350
+            },
+            {
+                name: METRICS.SCREENS,
+                value: 5
+            }
+        ],
+        headerUrl: require("../assets/images/jobs/douglasrcjames/header.png"),
+        lastUpdated: "Dec. 18th, 2020",
+        headerPosition: "50% 40%",
+        icon: <BiCodeAlt />,
+        extraContent: <Douglasrcjames />
+    },
+    {
+        title: "Doug's React Boiler",
+        role: "Web developer",
+        shortDescription: "Built myself a boilerplate template for building my React.js/Firebase web applications.",
+        longDescription: <p>
+            I built this template project because I was finding myself recreating the same portions of code for my React web projects. 
+            This template project features my CSS library I created, base React components like a Header &amp; Footer, directories properly structures, React Router, Google Analytics, .env file, sitemap, and more! 
+            I figured a boilerplate for me to start from would reduce any mistakes made by repeating the same process, but most importantly speed up the creation of the baseline project.
+            This repository will be evolving as I learn new tricks and technologies for my web projects. For example, I recently added SCSS to my baseline styles for ease of use when changing the colors and fonts per project!
+        </p>,
+        githubLink: "https://github.com/douglasrcjames/dougs-react-boiler",
+        logoUrl: require("../assets/images/jobs/dougs-react-boiler/logo.png"),
+        logoSize: SIZE.LARGE,
+        period: "Jun. 2020 - Nov. 2020",
+        status: STATUS.COMPLETE,
+        link: "https://dougs-react-boiler.web.app/",
+        skills: {
+            primary: [
+                SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.NODE, SKILLS.REACT, SKILLS.TS, SKILLS.GITHUB, SKILLS.FIREBASE
+            ]
+        },
+        metrics: [
+            {
+                name: METRICS.LOC,
+                value: 1200
+            },
+            {
+                name: METRICS.COMMITS,
+                value: 34
+            },
+            {
+                name: METRICS.FILES,
+                value: 35
+            },
+            {
+                name: METRICS.SCREENS,
+                value: 3
+            }
+        ],
+        headerUrl: require("../assets/images/jobs/dougs-react-boiler/header.png"),
+        lastUpdated: "Dec. 18th, 2020",
+        headerPosition: "50% 50%",
+        icon: <BiCodeAlt />,
+        extraContent: <DougsReactBoiler />
     },
     {
         title: "vectorpsi.com",
@@ -396,6 +561,7 @@ export const jobs = [
             }
         ],
         headerUrl: require("../assets/images/jobs/vectorpsi/header.png"),
+        lastUpdated: "Dec. 18th, 2020",
         headerPosition: "50% 50%",
         icon: <BiCodeAlt />,
         extraContent: <VectorPSI />
@@ -466,63 +632,10 @@ export const jobs = [
             }
         ],
         headerUrl: require("../assets/images/jobs/smithzellner/header.png"),
+        lastUpdated: "Dec. 18th, 2020",
         headerPosition: "50% 50%",
         icon: <BiCodeAlt />,
         extraContent: <SmithZellnerConsulting />
-    },
-    {
-        title: "blairfamily.foundation",
-        role: "Web developer",
-        shortDescription: "Built a full-stack website for a philanthropy foundation in Montgomery, Maryland.",
-        longDescription: <p>
-            The David and Mikel Blair Family Foundation is dedicated to purposeful giving and 
-            is rooted in improving the quality of life for individuals around Maryland. The foundation connected with me after a partner had a positive experience working with me at <Link to="/work/capsmd.org">capsmd.org</Link>. 
-            They were looking to develop a simple full-stack website with a contact form and subscribe form, much like my work at capsmd.org. I was able to work with a designer on their team to take their 
-            wireframe design and turn it into a living website. The wireframe was one of the more intricate designs I have had to emulate, but I was able to tackle the challenge with relative ease with my newfound skills. 
-            I built this site using React.js as the front-end, and Firebase for the NoSQL database back-end to store contact info then send that contact info to the client's email via 
-            nodemailer with server side functions, and free SSL hosting. The site also features traffic tracking for the client with Google Analytics.
-        </p>,
-        githubLink: "https://github.com/douglasrcjames/blairfamily.foundation",
-        logoUrl: require("../assets/images/jobs/blairfamily/logo.png"),
-        logoSize: SIZE.LARGE,
-        period: "Apr. 2020 - Sep. 2020",
-        status: STATUS.COMPLETE,
-        link: "https://www.blairfamily.foundation",
-        skills: {
-            primary: [
-                SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.NODE, SKILLS.REACT, SKILLS.GITHUB, SKILLS.FIREBASE, SKILLS.WIREFRAMING
-            ]
-        },
-        metrics: [
-            {
-                name: METRICS.VISITORS,
-                value: 1141
-            },
-            {
-                name: METRICS.PAGE_VIEWS,
-                value: 4147
-            },
-            {
-                name: METRICS.COMMITS,
-                value: 43
-            },
-            {
-                name: METRICS.LOC,
-                value: 3400
-            },
-            {
-                name: METRICS.FILES,
-                value: 150
-            },
-            {
-                name: METRICS.SCREENS,
-                value: 5
-            }
-        ],
-        headerUrl: require("../assets/images/jobs/blairfamily/header.png"),
-        headerPosition: "50% 50%",
-        icon: <BiCodeAlt />,
-        extraContent: <BlairFamilyFoundation />
     },
     // TODO: wait to put this one in there
     // {
@@ -601,6 +714,7 @@ export const jobs = [
             }
         ],
         headerUrl: require("../assets/images/jobs/goprestigepower/header.png"),
+        lastUpdated: "Dec. 18th, 2020",
         headerPosition: "50% 50%",
         icon: <BiCodeAlt />,
         extraContent: <GoPrestigePower />
@@ -661,6 +775,7 @@ export const jobs = [
             }
         ],
         headerUrl: require("../assets/images/jobs/retreatonnichols/header.png"),
+        lastUpdated: "Dec. 18th, 2020",
         headerPosition: "50% 50%",
         icon: <BiCodeAlt />,
         extraContent: <RetreatOnNichols />
@@ -710,6 +825,7 @@ export const jobs = [
             ]
         },
         headerUrl: require("../assets/images/jobs/sjsu/header.png"),
+        lastUpdated: "Dec. 18th, 2020",
         headerPosition: "50% 50%",
         icon: <MdSchool />,
         extraContent: <SJSU />
@@ -757,6 +873,7 @@ export const jobs = [
             }
         ],
         headerUrl: require("../assets/images/jobs/bodybyyama/header.png"),
+        lastUpdated: "Dec. 18th, 2020",
         headerPosition: "50% 70%",
         icon: <BiCodeAlt />,
         extraContent: <BodyByYama />
@@ -815,6 +932,7 @@ export const jobs = [
             }
         ],
         headerUrl: require("../assets/images/jobs/glasshousefarms/header.png"),
+        lastUpdated: "Dec. 18th, 2020",
         headerPosition: "50% 60%",
         icon: <BiCodeAlt />,
         extraContent: <GlassHouseFarms />
@@ -846,6 +964,7 @@ export const jobs = [
             ]
         },
         headerUrl: require("../assets/images/jobs/coldbrewcreative/header.png"),
+        lastUpdated: "Dec. 18th, 2020",
         headerPosition: "50% 50%",
         icon: <MdWork />,
         extraContent: <ColdBrewCreative />
@@ -888,6 +1007,7 @@ export const jobs = [
             ]
         },
         headerUrl: require("../assets/images/jobs/tesla/header.png"),
+        lastUpdated: "Dec. 18th, 2020",
         headerPosition: "50% 50%",
         icon: <MdWork />,
         extraContent: <Tesla />
@@ -918,6 +1038,7 @@ export const jobs = [
             ]
         },
         headerUrl: require("../assets/images/jobs/palo-alto-networks/header.png"),
+        lastUpdated: "Dec. 18th, 2020",
         headerPosition: "50% 50%",
         icon: <MdWork />,
         extraContent: <PaloAltoNetworks />
@@ -943,6 +1064,7 @@ export const jobs = [
             ]
         },
         headerUrl: require("../assets/images/jobs/acfn/header.png"),
+        lastUpdated: "Dec. 18th, 2020",
         headerPosition: "50% 50%",
         icon: <MdWork />,
         extraContent: <ACFN />
@@ -981,6 +1103,7 @@ export const jobs = [
             ]
         },
         headerUrl: require("../assets/images/jobs/ihealphones/header.png"),
+        lastUpdated: "Dec. 18th, 2020",
         headerPosition: "50% 30%",
         icon: <MdSchool />,
         extraContent: <IHealPhones />
@@ -1020,6 +1143,7 @@ export const jobs = [
             ]
         },
         headerUrl: require("../assets/images/jobs/orhs/header.png"),
+        lastUpdated: "Dec. 18th, 2020",
         headerPosition: "50% 30%",
         icon: <MdSchool />,
         extraContent: <ORHS />

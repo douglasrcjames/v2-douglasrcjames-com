@@ -11,7 +11,7 @@ export const contactFormSchema = yup.object().shape({
       .string()
       .required("Your name is required.")
       .max(150,"Name must be at most 150 characters long.")
-      .min(2,"Name must be at least 2 characters long."),
+      .min(1,"Name must be at least 1 characters long."),
     message: yup
       .string()
       .required("A message is required.")

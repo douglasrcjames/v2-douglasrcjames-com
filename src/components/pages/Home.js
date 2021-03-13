@@ -186,16 +186,22 @@ export default class Home extends Component {
                     </h1>
                     <p className="sm-padding-l">
                         <span className="top-span">
+                            <b>+</b> I'm a web engineer at <Link to="/work/canary-marketing">Canary Marketing</Link> for their popup web shop system.<br/>
                             <b>+</b> I'm a freelance full-stack software developer working with React.js/Native to build great user experiences.<br/>
                             <b>+</b> I'm trained as a computer engineer in Silicon Valley, California.<br/>
-                            <b>+</b> I'm working on <Link to="/work/minute.tech-llc" className="">Minute.tech</Link> to connect non-techies to techies for tech support.
+                            <b>+</b> In my free time, I'm working on <Link to="/work/minute.tech-llc">Minute.tech</Link> to connect non-techies to techies for tech support.
                         </span>
                     </p>
                     <Link to="/work">
-                        <button className="md-blue-btn">
+                        <button className="md-blue-btn sm-margin">
                             View my work
                         </button>
                     </Link>
+                    <a href="https://www.minute.tech/douglasrcjames" target="_blank" rel="noopener noreferrer">
+                        <button className="md-white-btn sm-margin">
+                            Ask me a tech question!
+                        </button>
+                    </a>
                 </div>
                 <img alt="headshot" src={require('../../assets/images/misc/professional.png')} />
             </div>
@@ -297,7 +303,7 @@ export default class Home extends Component {
                                             </span>
                                         </li>
                                     </ul>
-                                    <span className="price">$500-$1000</span>
+                                    <span className="price">$1000-$2000</span>
                                 </div>
                                 
                                 <div className="pricing-plan">
@@ -328,7 +334,7 @@ export default class Home extends Component {
                                             </span>
                                         </li>
                                     </ul>
-                                    <span className="price">$1000-$2000</span>
+                                    <span className="price">$2000-$3000</span>
                                 </div>
                                 
                                 <div className="pricing-plan">
@@ -349,7 +355,7 @@ export default class Home extends Component {
                                             </span>
                                         </li>
                                     </ul>
-                                    <span className="price">$2000+</span>
+                                    <span className="price">$3000+</span>
                                 </div>
                             </div>
 

@@ -29,20 +29,24 @@ export const onMessageCreated = functions.firestore.document('messages/{messageI
         `
         // Config it
         const transporter = nodemailer.createTransport({
-            host: "smtp.gmail.com",
-            port: 465,
-            secure: true,
+            host: "smtp.office365.com",
+            port: 587,
+            secure: false,
+            requireTLS: true,
+            tls: {
+                ciphers: 'SSLv3'
+            },
             auth: {
                 user: functions.config().email.user,
                 pass: functions.config().email.password
             }
         })
         console.log("transporter = " + transporter)
-
+        // firebase functions:config:set email.user="im@douglasrcjames.com" email.password=""
         // Pack it
         const mailOptions = {
-            from: `drcj.dev@gmail.com`,
-            to: 'drcj.dev@gmail.com, douglasrcjames@gmail.com',
+            from: `im@douglasrcjames.com`,
+            to: 'douglasrcjames@gmail.com',
             replyTo: `${newValue.email}`,
             subject: `New douglasrcjames.com contact from ${newValue.name}`,
             text: newValue.message,

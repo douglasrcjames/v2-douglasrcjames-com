@@ -102,7 +102,6 @@ export default class Job extends Component {
                                     <div className="description-div">
                                         {this.props.job.longDescription}
                                     </div>
-                                    
                                     <Row center="xs">
                                         <Col xs={12} sm={6} className="sm-padding-t-b">
                                             <a href={this.props.job.link} rel="noopener noreferrer" target="_blank">
@@ -121,18 +120,19 @@ export default class Job extends Component {
                                             </Col>
                                         )}
                                     </Row>
-                                  
-                                   
                                 </Col>
-                                <Col md={12} lg={2}>
-                                    <Row center="xs">
-                                        <a href={this.props.job.link} target="_blank" rel="noopener noreferrer">
-                                            <Col>
-                                                <img className={`responsive ${this.props.job.logoSize} md-margin`} alt="job logo" src={this.props.job.logoUrl} />
-                                            </Col>
-                                        </a>
-                                    </Row>
-                                </Col>
+                                {this.props.job.logoUrl && (
+                                    <Col md={12} lg={2}>
+                                        <Row center="xs">
+                                            <a href={this.props.job.link} target="_blank" rel="noopener noreferrer">
+                                                <Col>
+                                                    <img className={`responsive ${this.props.job.logoSize} md-margin`} alt="job logo" src={this.props.job.logoUrl} />
+                                                </Col>
+                                            </a>
+                                        </Row>
+                                    </Col>
+                                )}
+                               
                             </Row>
                             <Row>
                                 <Col xs={12}>
@@ -206,6 +206,9 @@ export default class Job extends Component {
                             <Metrics metrics={this.props.job.metrics} />
                         )}
                         <br/>
+                        <div className="center-text">
+                            <span className="green"><b>Job page last updated:</b> {this.props.job.lastUpdated}</span>
+                        </div>
                     </div>
                     <div className="horiz-rule sm-margin-b" />
                     <div className="md-margin-b">

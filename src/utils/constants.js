@@ -1,7 +1,7 @@
 
 export const SITE_UPDATED = {
-    SHORT: "12/18/2020",
-    LONG: "Dec. 18th, 2020"
+    SHORT: "3/13/2021",
+    LONG: "Mar. 13th, 2021"
 }
 
 export const STATUS = {
@@ -13,7 +13,8 @@ export const SIZE = {
     SMALL: "small",
     MEDIUM: "medium",
     LARGE: "large",
-    XLARGE: "xlarge"
+    XLARGE: "xlarge",
+    ROUNDED: "rounded"
 }
 
 export const SKILLS = {
