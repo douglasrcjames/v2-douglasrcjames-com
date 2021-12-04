@@ -1,3 +1,74 @@
+// meerkatmedical.com
+export const meerkatFinalBuild = [
+    {
+        src: require("../assets/images/jobs/meerkatmedical/screens/Home.png"),
+        caption: "'Home' screen."
+    },
+    {
+        src: require("../assets/images/jobs/meerkatmedical/screens/Form.png"),
+        caption: "Quote Form screen."
+    },
+    {
+        src: require("../assets/images/jobs/meerkatmedical/screens/FormSuccess.png"),
+        caption: "Quote form screen with a success message!"
+    },
+]
+
+// streetsbythelake.com
+export const streetsFinalBuild = [
+    {
+        src: require("../assets/images/jobs/streetsonthelake/screens/Home.png"),
+        caption: "'Home' screen."
+    },
+    {
+        src: require("../assets/images/jobs/streetsonthelake/screens/Event.png"),
+        caption: "'Event' screen."
+    },
+    {
+        src: require("../assets/images/jobs/streetsonthelake/screens/RSVPSubmit.png"),
+        caption: "'RSVP' screen where the user would enter their name to check if they are on the guest list."
+    },
+    {
+        src: require("../assets/images/jobs/streetsonthelake/screens/RSVPEntryAlert.png"),
+        caption: "'RSVP' screen where the user successfully authenticated and is prompted to enter their details to register."
+    },
+    {
+        src: require("../assets/images/jobs/streetsonthelake/screens/Registry.png"),
+        caption: "'Registry' screen."
+    },
+    {
+        src: require("../assets/images/jobs/streetsonthelake/screens/DevMethods.png"),
+        caption: "Dev screen prompting the admin to enter the developer password."
+    },
+    {
+        src: require("../assets/images/jobs/streetsonthelake/screens/DevPassword.png"),
+        caption: "Dev method screen for the admin to download the current guest list, super simple."
+    },
+]
+
+export const streetsEvent = [
+    {
+        src: require("../assets/images/jobs/streetsonthelake/party/0.jpg"),
+        caption: "Ana and Doug!"
+    },
+    {
+        src: require("../assets/images/jobs/streetsonthelake/party/1.jpg"),
+        caption: "Bride and Groom!"
+    },
+    {
+        src: require("../assets/images/jobs/streetsonthelake/party/2.jpg"),
+        caption: "Bride and Groom!"
+    },
+    {
+        src: require("../assets/images/jobs/streetsonthelake/party/4.jpg"),
+        caption: "Bride and Groom dancin'!"
+    },
+    {
+        src: require("../assets/images/jobs/streetsonthelake/party/8.jpg"),
+        caption: "Ana and Doug dancin'!"
+    }
+]
+
 // smithzellner.consulting
 export const smithzellnerV1 = [
     {

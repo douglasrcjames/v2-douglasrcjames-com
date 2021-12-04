@@ -35,12 +35,18 @@ export const jobs = [
     {
         title: "meerkatmedical.com",
         role: "Web developer",
-        shortDescription: "Working on a full-stack website with API integration for an insurance company out of Tulsa, Oklahoma",
-        longDescription: <p>Tasked at creating a simple customer lead form collection web app that interfaces with their CRM backend API, AgencyBloc. Website is still in the works and will report back with the finished build details soon!</p>,
+        shortDescription: "Built on a full-stack website with API integration for an insurance company out of Tulsa, Oklahoma.",
+        longDescription: <div>
+            <p>Tasked at creating a simple customer lead form collection web app that interfaces with their CRM backend API, AgencyBloc. Toughest challenge was getting this AgencyBloc API working with Node.js. 
+            I seemed to be one of the first devs using their API with Node.js. 
+            Their documentation was not thorough, so I spent a few dozen emails working with their tech team to figure out how to properly make an API call. 
+            I was able to experiment with some fun SVG and CSS tricks with this site, like the slanted </p>
+            <p>Oh and I designed a simple cute logo for them real quick lol!</p>
+            </div>,
         logoUrl: require("../assets/images/jobs/meerkatmedical/logo.png"),
         logoSize: SIZE.LARGE,
-        period: "Feb. 2021 - Today",
-        status: STATUS.WORKING,
+        period: "Feb. 2021 - May 2021",
+        status: STATUS.COMPLETE,
         link: "https://www.meerkatmedical.com",
         githubLink: "https://github.com/douglasrcjames/meerkatmedical.com",
         skills: {
@@ -48,6 +54,32 @@ export const jobs = [
                 SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.NODE, SKILLS.REACT, SKILLS.GITHUB, SKILLS.FIREBASE
             ]
         },
+        metrics: [
+            {
+                name: METRICS.VISITORS,
+                value: 1224
+            },
+            {
+                name: METRICS.PAGE_VIEWS,
+                value: 2178
+            },
+            {
+                name: METRICS.COMMITS,
+                value: 17
+            },
+            {
+                name: METRICS.LOC,
+                value: 9000
+            },
+            {
+                name: METRICS.FILES,
+                value: 84
+            },
+            {
+                name: METRICS.SCREENS,
+                value: 18
+            },
+        ],
         headerUrl: require("../assets/images/jobs/meerkatmedical/header.png"),
         lastUpdated: "Mar. 13th, 2021",
         headerPosition: "50% 70%",
@@ -57,7 +89,7 @@ export const jobs = [
     {
         title: "Canary Marketing",
         role: "Web Engineer",
-        shortDescription: "Building an ecommerce web application for a marketing agency and hired full-time as their web expert.",
+        shortDescription: "Building ecommerce web applications for a marketing agency.",
         longDescription: <>
             <p>
                 Canary Marketing is a full service marketing agency with a simple mission. Create merch people actually want to keep. 
@@ -117,11 +149,21 @@ export const jobs = [
         title: "streetsonthelake.com",
         role: "Web developer",
         shortDescription: "Working on a full-stack web app with RSVP functionality for a friend's wedding out of Anchorage, Alaska",
-        longDescription: <p>Creating a website to showcase a friends upcoming wedding and to collect RSVPs for the event. Website is still in the works and will report back with the finished build details soon!</p>,
+        longDescription: <div>
+                <p>
+                    Created a wedding website for the Street's wedding in Big Lake, Alaska with the goal to detail the relationship, upcoming event, and to collect RSVPs for the guests of the event. 
+                    Website was built as a pro bono for our good friend; cheers to the Streets, what a fun wedding!!
+                </p>
+                <p>
+                    Launch was fairly smooth, one issue was that some users had thrown away or misplaced the letter the invite came in for them to know exactly how to enter their name on the site. 
+                    There were some guests who were labeled "Doe Family" or "The Doe Family", so some didn't know if they should input their individual first and last name, or the full family name or what, which is understandably confusing.
+                    A better approach would have been to clearly label a group # on the invite with a small note to use this to RSVP. The user could then be identified by their group number OR by their name.
+                </p>
+            </div>,
         logoUrl: require("../assets/images/jobs/streetsonthelake/logo.png"),
         logoSize: SIZE.ROUNDED,
-        period: "Jan. 2021 - Today",
-        status: STATUS.WORKING,
+        period: "Jan. 2021 - Aug. 2021",
+        status: STATUS.COMPLETE,
         link: "https://www.streetsonthelake.com",
         githubLink: "https://github.com/douglasrcjames/streetsonthelake.com",
         skills: {
@@ -129,8 +171,34 @@ export const jobs = [
                 SKILLS.HTML, SKILLS.CSS, SKILLS.JS, SKILLS.NODE, SKILLS.REACT, SKILLS.GITHUB, SKILLS.FIREBASE
             ]
         },
+        metrics: [
+            {
+                name: METRICS.VISITORS,
+                value: 498
+            },
+            {
+                name: METRICS.PAGE_VIEWS,
+                value: 2361
+            },
+            {
+                name: METRICS.COMMITS,
+                value: 9
+            },
+            {
+                name: METRICS.LOC,
+                value: 3500
+            },
+            {
+                name: METRICS.FILES,
+                value: 165
+            },
+            {
+                name: METRICS.SCREENS,
+                value: 10
+            },
+        ],
         headerUrl: require("../assets/images/jobs/streetsonthelake/header.png"),
-        lastUpdated: "Mar. 13th, 2021",
+        lastUpdated: "Dec. 3rd 2021",
         headerPosition: "50% 40%",
         icon: <BiCodeAlt />,
         extraContent: <StreetsOnTheLake />
@@ -208,11 +276,11 @@ export const jobs = [
         metrics: [
             {
                 name: METRICS.VISITORS,
-                value: 1277
+                value: 2561
             },
             {
                 name: METRICS.PAGE_VIEWS,
-                value: 66505
+                value: 70875
             },
             {
                 name: METRICS.COMMITS,
@@ -232,16 +300,16 @@ export const jobs = [
             },
             {
                 name: METRICS.TWILIO_MINS,
-                value: 9879
+                value: 3866
             },
             {
                 name: METRICS.STRIPE_DOLLARS,
-                value: 3892
+                value: 5135
 
             }
         ],
         headerUrl: require("../assets/images/jobs/minutetech/header.png"),
-        lastUpdated: "Dec. 18th, 2020",
+        lastUpdated: "Dec. 3rd, 2021",
         headerPosition: "50% 50%",
         icon: <BiRocket />,
         extraContent: <MinuteTech />

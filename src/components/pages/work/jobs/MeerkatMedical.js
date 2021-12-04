@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
+import { meerkatFinalBuild } from '../../../../utils/screens'
+import ScreensGallery from '../../../misc/ScreensGallery'
 
 export default class MeerkatMedical extends Component {
     render() {
         return (
             <div className="wrapper">
-                <h3>More information to come!</h3>
+                <ScreensGallery photos={meerkatFinalBuild} title={"Final Build"}/>
             </div>
         )
     }
